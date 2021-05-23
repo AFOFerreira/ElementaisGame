@@ -1,0 +1,1430 @@
+fileFormatVersion: 2
+guid: 6650f9a512e0d6643ae45d14a6c1087a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4017063373586681273
+    second: terra_0
+  - first:
+      213: -8852973315889406806
+    second: terra_1
+  - first:
+      213: 6211621378814532414
+    second: terra_2
+  - first:
+      213: -5506831087593167552
+    second: terra_3
+  - first:
+      213: -7738611620357898558
+    second: terra_4
+  - first:
+      213: -7268518752566476277
+    second: terra_5
+  - first:
+      213: -6138146623585941993
+    second: terra_6
+  - first:
+      213: -2310854621643995855
+    second: terra_7
+  - first:
+      213: -678698663169750024
+    second: terra_8
+  - first:
+      213: -3330204598164908193
+    second: terra_9
+  - first:
+      213: 8324457486939367916
+    second: terra_10
+  - first:
+      213: -7538875359521457100
+    second: terra_11
+  - first:
+      213: 2120341863976226475
+    second: terra_12
+  - first:
+      213: -7305980235177013623
+    second: terra_13
+  - first:
+      213: -1239004344867566717
+    second: terra_14
+  - first:
+      213: 8455473913968642839
+    second: terra_15
+  - first:
+      213: -4259843847288057448
+    second: terra_16
+  - first:
+      213: 1027925050712166831
+    second: terra_17
+  - first:
+      213: 8443918830238678264
+    second: terra_18
+  - first:
+      213: 7601347990559632247
+    second: terra_19
+  - first:
+      213: 8502461816298738272
+    second: terra_20
+  - first:
+      213: 4119800687535364803
+    second: terra_21
+  - first:
+      213: -3757064232429140871
+    second: terra_22
+  - first:
+      213: 8770763285061866867
+    second: terra_23
+  - first:
+      213: 2495700074566821043
+    second: terra_24
+  - first:
+      213: 6486894253580627038
+    second: terra_25
+  - first:
+      213: 8940147429090879540
+    second: terra_26
+  - first:
+      213: -8095807491625606239
+    second: terra_27
+  - first:
+      213: 5388849369282548133
+    second: terra_28
+  - first:
+      213: -3663129117042261622
+    second: terra_29
+  - first:
+      213: 7382785036057761002
+    second: terra_30
+  - first:
+      213: 7222701344854702083
+    second: terra_31
+  - first:
+      213: -8319958981825629086
+    second: terra_32
+  - first:
+      213: 536595783070686112
+    second: terra_33
+  - first:
+      213: 1046984792478649738
+    second: terra_34
+  - first:
+      213: 6549641188937150738
+    second: terra_35
+  - first:
+      213: -5756771816645995621
+    second: terra_36
+  - first:
+      213: 6846887455238319066
+    second: terra_37
+  - first:
+      213: -8412914032016614638
+    second: terra_38
+  - first:
+      213: 4867892630564972923
+    second: terra_39
+  - first:
+      213: 1084764569041590931
+    second: terra_40
+  - first:
+      213: -639322803101352536
+    second: terra_41
+  - first:
+      213: -540962786505352054
+    second: terra_42
+  - first:
+      213: 2146192804115301402
+    second: terra_43
+  - first:
+      213: -6622176237989029786
+    second: terra_44
+  - first:
+      213: -3159080247840052423
+    second: terra_45
+  - first:
+      213: 8562230103716986497
+    second: terra_46
+  - first:
+      213: 2073390508368175244
+    second: terra_47
+  - first:
+      213: -6376723417471135043
+    second: terra_48
+  - first:
+      213: 3384770975859643072
+    second: terra_49
+  - first:
+      213: 163642989624494273
+    second: terra_50
+  - first:
+      213: 1976398367856708402
+    second: terra_51
+  - first:
+      213: -5431147477377205789
+    second: terra_52
+  - first:
+      213: -6480854088997117882
+    second: terra_53
+  - first:
+      213: 8768341276051873025
+    second: terra_54
+  - first:
+      213: 8117760851029229976
+    second: terra_55
+  - first:
+      213: 4230626246893329761
+    second: terra_56
+  - first:
+      213: -3594107427274104895
+    second: terra_57
+  - first:
+      213: -4381504909759414692
+    second: terra_58
+  - first:
+      213: -1206191239848364706
+    second: terra_59
+  - first:
+      213: 2033971125459379835
+    second: terra_60
+  - first:
+      213: -5095394542150478151
+    second: terra_61
+  - first:
+      213: -2808188673716337411
+    second: terra_62
+  - first:
+      213: -5034768654460372159
+    second: terra_63
+  - first:
+      213: -5521380522887786014
+    second: terra_64
+  - first:
+      213: -2999531491137541484
+    second: terra_65
+  - first:
+      213: -1414481264561327460
+    second: terra_66
+  - first:
+      213: -2554226236993393370
+    second: terra_67
+  - first:
+      213: -7523102575249005774
+    second: terra_68
+  - first:
+      213: -5618731575658475779
+    second: terra_69
+  - first:
+      213: -4961313705031259380
+    second: terra_70
+  - first:
+      213: -6938133088602401735
+    second: terra_71
+  - first:
+      213: -5357659029322415913
+    second: terra_72
+  - first:
+      213: 5882331478303014093
+    second: terra_73
+  - first:
+      213: -7804832931457715087
+    second: terra_74
+  - first:
+      213: 2385028147845375596
+    second: terra_75
+  - first:
+      213: -1405175852998047177
+    second: terra_76
+  - first:
+      213: -8950616889787647913
+    second: terra_77
+  - first:
+      213: 9113040077622523889
+    second: terra_78
+  - first:
+      213: 8815288044099387404
+    second: terra_79
+  - first:
+      213: -6522575404619979915
+    second: terra_80
+  - first:
+      213: -2365425698485235656
+    second: terra_81
+  - first:
+      213: -6004144390520168928
+    second: terra_82
+  - first:
+      213: -3261514874542786659
+    second: terra_83
+  - first:
+      213: -8860939581251135037
+    second: terra_84
+  - first:
+      213: -2062682883287266599
+    second: terra_85
+  - first:
+      213: -1523073754409043493
+    second: terra_86
+  - first:
+      213: 8383890553727112031
+    second: terra_87
+  - first:
+      213: -8007744634068838459
+    second: terra_88
+  - first:
+      213: -5586444359553586562
+    second: terra_89
+  - first:
+      213: 1519623544383643599
+    second: terra_90
+  - first:
+      213: 2811648752920445641
+    second: terra_91
+  - first:
+      213: -4573889323327111859
+    second: terra_92
+  - first:
+      213: 8292696944177612345
+    second: terra_93
+  - first:
+      213: -3464782717491437068
+    second: terra_94
+  - first:
+      213: 3034689287311543526
+    second: terra_95
+  - first:
+      213: -109304564984304026
+    second: terra_96
+  - first:
+      213: -6140802019680937281
+    second: terra_97
+  - first:
+      213: 7702530019033513100
+    second: terra_98
+  - first:
+      213: -7981618258845957977
+    second: terra_99
+  - first:
+      213: -5839829230049774442
+    second: terra_100
+  - first:
+      213: -6643270014920684543
+    second: terra_101
+  - first:
+      213: -1456717653919710743
+    second: terra_102
+  - first:
+      213: 5966060309558744396
+    second: terra_103
+  - first:
+      213: 7601140804204874824
+    second: terra_104
+  - first:
+      213: -7228529606690593874
+    second: terra_105
+  - first:
+      213: 7145026681634867856
+    second: terra_106
+  - first:
+      213: -5806414018030595771
+    second: terra_107
+  - first:
+      213: 2942652930181619125
+    second: terra_108
+  - first:
+      213: -4541141641829470240
+    second: terra_109
+  - first:
+      213: 1809729493096520297
+    second: terra_110
+  - first:
+      213: -8009955369237614830
+    second: terra_111
+  - first:
+      213: 7480607512691550282
+    second: terra_112
+  - first:
+      213: -6977286717135087519
+    second: terra_113
+  - first:
+      213: -4765459545616138543
+    second: terra_114
+  - first:
+      213: 205909733879861292
+    second: terra_115
+  - first:
+      213: -8261602165233584882
+    second: terra_116
+  - first:
+      213: 8545488841054066301
+    second: terra_117
+  - first:
+      213: 6854702544710670766
+    second: terra_118
+  - first:
+      213: -4965391082137009096
+    second: terra_119
+  - first:
+      213: 3690047204452327146
+    second: terra_120
+  - first:
+      213: -9047680485765492986
+    second: terra_121
+  - first:
+      213: 2885733379939994129
+    second: terra_122
+  - first:
+      213: 548829809456579624
+    second: terra_123
+  - first:
+      213: 2537589525065268735
+    second: terra_124
+  - first:
+      213: -3883323197036537990
+    second: terra_125
+  - first:
+      213: -6115684439794803797
+    second: terra_126
+  - first:
+      213: -2983798110393597975
+    second: terra_127
+  - first:
+      213: 1326894392478183700
+    second: terra_128
+  - first:
+      213: 896415456612883722
+    second: terra_129
+  - first:
+      213: 4115084886041203382
+    second: terra_130
+  - first:
+      213: 40865713804554929
+    second: terra_131
+  - first:
+      213: 5811467122331445362
+    second: terra_132
+  - first:
+      213: -2070016476835471714
+    second: terra_133
+  - first:
+      213: -3485554370708850768
+    second: terra_134
+  - first:
+      213: -2675335231480923104
+    second: terra_135
+  - first:
+      213: -6682486944083144293
+    second: terra_136
+  - first:
+      213: -4615851446327798109
+    second: terra_137
+  - first:
+      213: -4723986967821141724
+    second: terra_138
+  - first:
+      213: -8065252322894690383
+    second: terra_139
+  - first:
+      213: 125097774748525972
+    second: terra_140
+  - first:
+      213: -5057052275186361516
+    second: terra_141
+  - first:
+      213: 3875156303460733176
+    second: terra_142
+  - first:
+      213: -3158069645180951026
+    second: terra_143
+  - first:
+      213: -1453993189240934254
+    second: terra_144
+  - first:
+      213: -3732276569637886951
+    second: terra_145
+  - first:
+      213: -5672504098142948259
+    second: terra_146
+  - first:
+      213: 250585540338134194
+    second: terra_147
+  - first:
+      213: -6177404923511719929
+    second: terra_148
+  - first:
+      213: -1056194282771910774
+    second: terra_149
+  - first:
+      213: 1568223695997647393
+    second: terra_150
+  - first:
+      213: 6849599194322136314
+    second: terra_151
+  - first:
+      213: -3608893106312989257
+    second: terra_152
+  - first:
+      213: -5841953066658442420
+    second: terra_153
+  - first:
+      213: 7787630140772967027
+    second: terra_154
+  - first:
+      213: 7365721767626351598
+    second: terra_155
+  - first:
+      213: -3072251607214428555
+    second: terra_156
+  - first:
+      213: -3181063813004307868
+    second: terra_157
+  - first:
+      213: -1415778306026412527
+    second: terra_158
+  - first:
+      213: 10457541765795183
+    second: terra_159
+  - first:
+      213: 2927508688123932645
+    second: terra_160
+  - first:
+      213: 6553941356140981825
+    second: terra_161
+  - first:
+      213: -1518647834379789659
+    second: terra_162
+  - first:
+      213: -3861459075384838930
+    second: terra_163
+  - first:
+      213: -7983372278061544161
+    second: terra_164
+  - first:
+      213: 2466704761529662475
+    second: terra_165
+  - first:
+      213: 6169326828058482740
+    second: terra_166
+  - first:
+      213: 3164791515888193457
+    second: terra_167
+  - first:
+      213: -3265232656815668108
+    second: terra_168
+  - first:
+      213: -4450447537106138339
+    second: terra_169
+  - first:
+      213: 2134344605615460169
+    second: terra_170
+  - first:
+      213: 580919074690604566
+    second: terra_171
+  - first:
+      213: 4025539491308719040
+    second: terra_172
+  - first:
+      213: -3166285867067125900
+    second: terra_173
+  - first:
+      213: 8455960040721715562
+    second: terra_174
+  - first:
+      213: 7958769886525533819
+    second: terra_175
+  - first:
+      213: -8777334903987182318
+    second: terra_176
+  - first:
+      213: 6314451130332723330
+    second: terra_177
+  - first:
+      213: 5511677204894111894
+    second: terra_178
+  - first:
+      213: -1004262368352637219
+    second: terra_179
+  - first:
+      213: 43252287985970777
+    second: terra_180
+  - first:
+      213: -9185158143089993171
+    second: terra_181
+  - first:
+      213: -957774427980439017
+    second: terra_182
+  - first:
+      213: -8321766979788183971
+    second: terra_183
+  - first:
+      213: 1114844680312238389
+    second: terra_184
+  - first:
+      213: 8153816086086643658
+    second: terra_185
+  - first:
+      213: 8231536519443934824
+    second: terra_186
+  - first:
+      213: -5836686796356670010
+    second: terra_187
+  - first:
+      213: -3727852616926881848
+    second: terra_188
+  - first:
+      213: 4933807880869361193
+    second: terra_189
+  - first:
+      213: 7268224637691961632
+    second: terra_0
+  - first:
+      213: 9022539243153084403
+    second: terra_1
+  - first:
+      213: -7374348449780853130
+    second: terra_2
+  - first:
+      213: 6578626668839634235
+    second: terra_3
+  - first:
+      213: 2102924321589258547
+    second: terra_4
+  - first:
+      213: 9032172910626030381
+    second: terra_5
+  - first:
+      213: -4005774984537721393
+    second: terra_6
+  - first:
+      213: -1655034159623555783
+    second: terra_7
+  - first:
+      213: 4964499785446011747
+    second: terra_8
+  - first:
+      213: -6498118721406579235
+    second: terra_9
+  - first:
+      213: -2485922055813801861
+    second: terra_10
+  - first:
+      213: -9100060930144409173
+    second: terra_11
+  - first:
+      213: 8379872714589914949
+    second: terra_12
+  - first:
+      213: 7956854207800393077
+    second: terra_13
+  - first:
+      213: 2418633487087875824
+    second: terra_14
+  - first:
+      213: 5460334716176196710
+    second: terra_15
+  - first:
+      213: -1120056647797626300
+    second: terra_16
+  - first:
+      213: -2769061011602672804
+    second: terra_17
+  - first:
+      213: 1549846515519798895
+    second: terra_18
+  - first:
+      213: 4077887861899914724
+    second: terra_19
+  - first:
+      213: -1614055439195020699
+    second: terra_20
+  - first:
+      213: 189095857113065104
+    second: terra_21
+  - first:
+      213: -4057572751081421228
+    second: terra_22
+  - first:
+      213: -8600629245479476322
+    second: terra_23
+  - first:
+      213: 159711006404908839
+    second: terra_24
+  - first:
+      213: 838307033057215270
+    second: terra_25
+  - first:
+      213: -4741788263814255094
+    second: terra_26
+  - first:
+      213: 3592556779505114069
+    second: terra_27
+  - first:
+      213: 3639336905388022385
+    second: terra_28
+  - first:
+      213: 4404209755655539047
+    second: terra_29
+  - first:
+      213: 429241424587311672
+    second: terra_30
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: terra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0212f5d9ccbedd460800000000000000
+      internalID: 7268224637691961632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_1
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff492063af763d70800000000000000
+      internalID: 9022539243153084403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_2
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6761cd8e72d09a990800000000000000
+      internalID: -7374348449780853130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_3
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b35091aa91afb4b50800000000000000
+      internalID: 6578626668839634235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_4
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3396bd957861f2d10800000000000000
+      internalID: 2102924321589258547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_5
+      rect:
+        serializedVersion: 2
+        x: 5425
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2345cf5869b85d70800000000000000
+      internalID: 9032172910626030381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_6
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc5bb7400e0a868c0800000000000000
+      internalID: -4005774984537721393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935308853332809e0800000000000000
+      internalID: -1655034159623555783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_8
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3633307704275e440800000000000000
+      internalID: 4964499785446011747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_9
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dddce3e837b02d5a0800000000000000
+      internalID: -6498118721406579235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_10
+      rect:
+        serializedVersion: 2
+        x: 3249
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78d8ebaf0b308dd0800000000000000
+      internalID: -2485922055813801861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_11
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba9e4585cc616b180800000000000000
+      internalID: -9100060930144409173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_12
+      rect:
+        serializedVersion: 2
+        x: 5425
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547ce10e5d94b4470800000000000000
+      internalID: 8379872714589914949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_13
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57db389aebc6c6e60800000000000000
+      internalID: 7956854207800393077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6bcbf8756b09120800000000000000
+      internalID: 2418633487087875824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_15
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6646a688e7107cb40800000000000000
+      internalID: 5460334716176196710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_16
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44a25b3c962c470f0800000000000000
+      internalID: -1120056647797626300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_17
+      rect:
+        serializedVersion: 2
+        x: 3261
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53f90a5ea15299d0800000000000000
+      internalID: -2769061011602672804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_18
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6e3fe5c139228510800000000000000
+      internalID: 1549846515519798895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_19
+      rect:
+        serializedVersion: 2
+        x: 5425
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edeb62a761979830800000000000000
+      internalID: 4077887861899914724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_20
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5626ef23129b999e0800000000000000
+      internalID: -1614055439195020699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096e8bf1eadcf9200800000000000000
+      internalID: 189095857113065104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_22
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456cc71b41b90b7c0800000000000000
+      internalID: -4057572751081421228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_23
+      rect:
+        serializedVersion: 2
+        x: 2164
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e932c52f44d64a880800000000000000
+      internalID: -8600629245479476322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_24
+      rect:
+        serializedVersion: 2
+        x: 3255
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7271c7b6058673200800000000000000
+      internalID: 159711006404908839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_25
+      rect:
+        serializedVersion: 2
+        x: 4340
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62346161ec342ab00800000000000000
+      internalID: 838307033057215270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_26
+      rect:
+        serializedVersion: 2
+        x: 5425
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e2c3772b8c13eb0800000000000000
+      internalID: -4741788263814255094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_27
+      rect:
+        serializedVersion: 2
+        x: 6510
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dbd2d55b535bd130800000000000000
+      internalID: 3592556779505114069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a5f9722a5818230800000000000000
+      internalID: 3639336905388022385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_29
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76988223075ee1d30800000000000000
+      internalID: 4404209755655539047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: terra_30
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ac86b2dc8f4f500800000000000000
+      internalID: 429241424587311672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,926 @@
+fileFormatVersion: 2
+guid: f87b0df80e6f7bd479910b2134cd5d6c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3878715525786082989
+    second: furaoTerra_0
+  - first:
+      213: 798153669865533030
+    second: furaoTerra_1
+  - first:
+      213: 6456760604684873998
+    second: furaoTerra_2
+  - first:
+      213: -957775653043602554
+    second: furaoTerra_3
+  - first:
+      213: -4653485526363207932
+    second: furaoTerra_4
+  - first:
+      213: -7155827698760585265
+    second: furaoTerra_5
+  - first:
+      213: -8106258238833244157
+    second: furaoTerra_6
+  - first:
+      213: 6348583292346701338
+    second: furaoTerra_7
+  - first:
+      213: 7678403346503413214
+    second: furaoTerra_8
+  - first:
+      213: 1337130980599015339
+    second: furaoTerra_9
+  - first:
+      213: -1799700442294738936
+    second: furaoTerra_10
+  - first:
+      213: -683986573562653815
+    second: furaoTerra_11
+  - first:
+      213: 4799149486875498234
+    second: furaoTerra_12
+  - first:
+      213: 4257559049949841380
+    second: furaoTerra_13
+  - first:
+      213: 861904719148386057
+    second: furaoTerra_14
+  - first:
+      213: 1587247649892064795
+    second: furaoTerra_15
+  - first:
+      213: 614253389320915904
+    second: furaoTerra_16
+  - first:
+      213: 35438556574505642
+    second: furaoTerra_17
+  - first:
+      213: 6556176627778155635
+    second: furaoTerra_18
+  - first:
+      213: -8931424708032494993
+    second: furaoTerra_19
+  - first:
+      213: 4397575378489472761
+    second: furaoTerra_20
+  - first:
+      213: 2458126634720978800
+    second: furaoTerra_21
+  - first:
+      213: 6559808740737079773
+    second: furaoTerra_22
+  - first:
+      213: -3318188454501225045
+    second: furaoTerra_23
+  - first:
+      213: 3110352767925096498
+    second: furaoTerra_24
+  - first:
+      213: -347752773636842476
+    second: furaoTerra_25
+  - first:
+      213: -6909479841694765039
+    second: furaoTerra_26
+  - first:
+      213: 7931503949729478869
+    second: furaoTerra_27
+  - first:
+      213: 5346051252388251617
+    second: furaoTerra_28
+  - first:
+      213: -2249390228146259481
+    second: furaoTerra_29
+  - first:
+      213: 8391291261459116335
+    second: furaoTerra_0
+  - first:
+      213: 496455340021059575
+    second: furaoTerra_1
+  - first:
+      213: -5527157528515145260
+    second: furaoTerra_2
+  - first:
+      213: 5233327719318095225
+    second: furaoTerra_3
+  - first:
+      213: -7463923100264020433
+    second: furaoTerra_4
+  - first:
+      213: -4658961123218930303
+    second: furaoTerra_5
+  - first:
+      213: 3695390430764875488
+    second: furaoTerra_6
+  - first:
+      213: -3251648886744713256
+    second: furaoTerra_7
+  - first:
+      213: 4283332062851060378
+    second: furaoTerra_8
+  - first:
+      213: -7507303967134036326
+    second: furaoTerra_9
+  - first:
+      213: 5986288800085561725
+    second: furaoTerra_10
+  - first:
+      213: -7513490123782423089
+    second: furaoTerra_11
+  - first:
+      213: -6891599558891212313
+    second: furaoTerra_13
+  - first:
+      213: 210096528524563933
+    second: furaoTerra_14
+  - first:
+      213: -8154138594223422549
+    second: furaoTerra_15
+  - first:
+      213: -433407123169959762
+    second: furaoTerra_16
+  - first:
+      213: -6327838341966021123
+    second: furaoTerra_17
+  - first:
+      213: 975614262398766247
+    second: furaoTerra_12
+  - first:
+      213: 141885197830140756
+    second: furaoTerra_18
+  - first:
+      213: -3373077764462073767
+    second: furaoTerra_19
+  - first:
+      213: 4411391897181485775
+    second: furaoTerra_20
+  - first:
+      213: 2537440810468617501
+    second: furaoTerra_21
+  - first:
+      213: -6462935970862223963
+    second: furaoTerra_22
+  - first:
+      213: 7545725181713658842
+    second: furaoTerra_23
+  - first:
+      213: -4919632402935533477
+    second: furaoTerra_24
+  - first:
+      213: -2188247664798499453
+    second: furaoTerra_25
+  - first:
+      213: -8927756051651185438
+    second: furaoTerra_26
+  - first:
+      213: -1526282126093141025
+    second: furaoTerra_27
+  - first:
+      213: 5391134303392288399
+    second: furaoTerra_28
+  - first:
+      213: 2660780082103555268
+    second: furaoTerra_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: furaoTerra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f213c1e71fad37470800000000000000
+      internalID: 8391291261459116335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d19a3f03879b43b0800000000000000
+      internalID: -5527157528515145260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 975092755d380a840800000000000000
+      internalID: 5233327719318095225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f264ee16c71da6890800000000000000
+      internalID: -7463923100264020433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_5
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1854e2cea8b085fb0800000000000000
+      internalID: -4658961123218930303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_6
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ee3e1c840aa84330800000000000000
+      internalID: 3695390430764875488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_7
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d77943c092dfd2d0800000000000000
+      internalID: -3251648886744713256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_8
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92574d21d3717b30800000000000000
+      internalID: 4283332062851060378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_9
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9e481a31d2b0d790800000000000000
+      internalID: -7507303967134036326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71dffb62f1931350800000000000000
+      internalID: 5986288800085561725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdfa846a88bab790800000000000000
+      internalID: -7513490123782423089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e1fc06e6be1c50a0800000000000000
+      internalID: -6891599558891212313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd5df37fda96ae200800000000000000
+      internalID: 210096528524563933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_15
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3820aa62ea6de80800000000000000
+      internalID: -8154138594223422549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_16
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea0a45c848a3cf9f0800000000000000
+      internalID: -433407123169959762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_17
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfdb407ed800f28a0800000000000000
+      internalID: -6327838341966021123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac451ca0041a8d00800000000000000
+      internalID: 975614262398766247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_18
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4533d8fe5d318f100800000000000000
+      internalID: 141885197830140756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_19
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958287105ab6031d0800000000000000
+      internalID: -3373077764462073767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcaf984de89683d30800000000000000
+      internalID: 4411391897181485775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1daf8229fcc63320800000000000000
+      internalID: 2537440810468617501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ada9a20af90f46a0800000000000000
+      internalID: -6462935970862223963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad333c4e21dc7b860800000000000000
+      internalID: 7545725181713658842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50b6851564f9bbb0800000000000000
+      internalID: -4919632402935533477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_25
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38d7b1bb758c1a1e0800000000000000
+      internalID: -2188247664798499453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_26
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4bcfb1c2d3a1480800000000000000
+      internalID: -8927756051651185438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_27
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdbb03f2e7e81dae0800000000000000
+      internalID: -1526282126093141025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_28
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ece12e51821da40800000000000000
+      internalID: 5391134303392288399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_29
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c49733236dfce420800000000000000
+      internalID: 2660780082103555268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: furaoTerra_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66e6280b88c931b00800000000000000
+      internalID: 798153669865533030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

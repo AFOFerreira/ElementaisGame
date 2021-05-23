@@ -1,0 +1,926 @@
+fileFormatVersion: 2
+guid: d8b64deed31afae449ef7d8b3408186b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6308542554840250438
+    second: gatoFogo_0
+  - first:
+      213: -8881909915879157713
+    second: gatoFogo_1
+  - first:
+      213: 7224058838075750827
+    second: gatoFogo_2
+  - first:
+      213: 6962989741720710776
+    second: gatoFogo_3
+  - first:
+      213: 1090598469875318011
+    second: gatoFogo_4
+  - first:
+      213: 1338601184080212639
+    second: gatoFogo_5
+  - first:
+      213: -5678828463402773133
+    second: gatoFogo_6
+  - first:
+      213: 6458102411284688737
+    second: gatoFogo_7
+  - first:
+      213: 3486456953894651117
+    second: gatoFogo_8
+  - first:
+      213: 874445062553895114
+    second: gatoFogo_9
+  - first:
+      213: 7367490497425413440
+    second: gatoFogo_10
+  - first:
+      213: 1529627518739332539
+    second: gatoFogo_11
+  - first:
+      213: 8837568210041212732
+    second: gatoFogo_12
+  - first:
+      213: -3681842639307325530
+    second: gatoFogo_13
+  - first:
+      213: 1551747186928268714
+    second: gatoFogo_14
+  - first:
+      213: 66719426483838352
+    second: gatoFogo_15
+  - first:
+      213: -6521598147131199512
+    second: gatoFogo_16
+  - first:
+      213: -380703918718774313
+    second: gatoFogo_17
+  - first:
+      213: -373420802868549322
+    second: gatoFogo_18
+  - first:
+      213: -6498186991492607435
+    second: gatoFogo_19
+  - first:
+      213: 2619515034935117548
+    second: gatoFogo_20
+  - first:
+      213: -1616559806799979452
+    second: gatoFogo_21
+  - first:
+      213: -1907222458036138169
+    second: gatoFogo_22
+  - first:
+      213: 2503083067793757136
+    second: gatoFogo_23
+  - first:
+      213: -685124510804847708
+    second: gatoFogo_24
+  - first:
+      213: -3530239874663528075
+    second: gatoFogo_25
+  - first:
+      213: -6304301968072584463
+    second: gatoFogo_26
+  - first:
+      213: -6546712889174881136
+    second: gatoFogo_27
+  - first:
+      213: 3051576927406851876
+    second: gatoFogo_28
+  - first:
+      213: 3168882297163367371
+    second: gatoFogo_29
+  - first:
+      213: 3041369319089215748
+    second: gatoFogo_0
+  - first:
+      213: -6387879918503935547
+    second: gatoFogo_1
+  - first:
+      213: 4434968901506900976
+    second: gatoFogo_2
+  - first:
+      213: -126080859228988763
+    second: gatoFogo_3
+  - first:
+      213: 4290546234548244562
+    second: gatoFogo_4
+  - first:
+      213: -5050815508340013921
+    second: gatoFogo_5
+  - first:
+      213: -4418846593862986030
+    second: gatoFogo_6
+  - first:
+      213: -8632778452708231647
+    second: gatoFogo_7
+  - first:
+      213: -2566253032726102883
+    second: gatoFogo_8
+  - first:
+      213: 8984244499105922799
+    second: gatoFogo_9
+  - first:
+      213: 5263727228081015272
+    second: gatoFogo_10
+  - first:
+      213: 6315399801174406031
+    second: gatoFogo_11
+  - first:
+      213: -2899064295507001655
+    second: gatoFogo_12
+  - first:
+      213: 6189102398936935435
+    second: gatoFogo_13
+  - first:
+      213: 3184725430430021250
+    second: gatoFogo_14
+  - first:
+      213: -5413822789244684446
+    second: gatoFogo_15
+  - first:
+      213: -2478509920780292300
+    second: gatoFogo_16
+  - first:
+      213: -2477504457241772837
+    second: gatoFogo_17
+  - first:
+      213: 2205967463665789014
+    second: gatoFogo_18
+  - first:
+      213: 5553432702166700830
+    second: gatoFogo_19
+  - first:
+      213: 749296428412160041
+    second: gatoFogo_20
+  - first:
+      213: -4965664046385752259
+    second: gatoFogo_21
+  - first:
+      213: -7802367435189826735
+    second: gatoFogo_22
+  - first:
+      213: -3414323298050325124
+    second: gatoFogo_23
+  - first:
+      213: 2586869294192624292
+    second: gatoFogo_24
+  - first:
+      213: 5951839691866203975
+    second: gatoFogo_25
+  - first:
+      213: -6426838216119614583
+    second: gatoFogo_26
+  - first:
+      213: 571891939846400639
+    second: gatoFogo_27
+  - first:
+      213: -3943633114267188773
+    second: gatoFogo_28
+  - first:
+      213: -2119034415406705181
+    second: gatoFogo_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gatoFogo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4099517284d153a20800000000000000
+      internalID: 3041369319089215748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c1c8bdfe01b957a0800000000000000
+      internalID: -6387879918503935547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3293ce7bc2c8d30800000000000000
+      internalID: 4434968901506900976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa1ea46022104ef0800000000000000
+      internalID: -126080859228988763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25053aa61151b8b30800000000000000
+      internalID: 4290546234548244562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_5
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f940c573e06e7e9b0800000000000000
+      internalID: -5050815508340013921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_6
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d61ad75f6a1da2c0800000000000000
+      internalID: -4418846593862986030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_7
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 126fda55cb5323880800000000000000
+      internalID: -8632778452708231647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_8
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c779c9676d26cd0800000000000000
+      internalID: -2566253032726102883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_9
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee377875c27eac70800000000000000
+      internalID: 8984244499105922799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9025886048c0940800000000000000
+      internalID: 5263727228081015272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f83b293a8aec4a750800000000000000
+      internalID: 6315399801174406031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ce7945126474c7d0800000000000000
+      internalID: -2899064295507001655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c672f27db14e550800000000000000
+      internalID: 6189102398936935435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2863fe3d7ea623c20800000000000000
+      internalID: 3184725430430021250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_15
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 267f72a5bdc3ed4b0800000000000000
+      internalID: -5413822789244684446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_16
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43feb97db509a9dd0800000000000000
+      internalID: -2478509920780292300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_17
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc38a092d22e9dd0800000000000000
+      internalID: -2477504457241772837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_18
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6586ed178bb2d9e10800000000000000
+      internalID: 2205967463665789014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_19
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e131fa88e91c11d40800000000000000
+      internalID: 5553432702166700830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 928c9f6b129066a00800000000000000
+      internalID: 749296428412160041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d379f39ebda661bb0800000000000000
+      internalID: -4965664046385752259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b4f6a082c68b390800000000000000
+      internalID: -7802367435189826735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c75ce5fdc03ed90d0800000000000000
+      internalID: -3414323298050325124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a287b0dae766e320800000000000000
+      internalID: 2586869294192624292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_25
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74761c16aae299250800000000000000
+      internalID: 5951839691866203975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_26
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 983094b71b84fc6a0800000000000000
+      internalID: -6426838216119614583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_27
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a247470b4cfe700800000000000000
+      internalID: 571891939846400639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_28
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd103aba3966549c0800000000000000
+      internalID: -3943633114267188773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gatoFogo_29
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e51bd22d6da792e0800000000000000
+      internalID: -2119034415406705181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 8bae2b730032f0649813cb9b0b7859ab
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1476930622716786361
+    second: ataqueEiva_0
+  - first:
+      213: 2257816937878158329
+    second: ataqueEiva_1
+  - first:
+      213: -4972378397851476622
+    second: ataqueEiva_2
+  - first:
+      213: 5069803921130798174
+    second: ataqueEiva_3
+  - first:
+      213: -3899063459124605166
+    second: ataqueEiva_4
+  - first:
+      213: 2192440240530936465
+    second: ataqueEiva_5
+  - first:
+      213: 2427617416475192165
+    second: ataqueEiva_6
+  - first:
+      213: 3887906008253456775
+    second: ataqueEiva_7
+  - first:
+      213: -1204947329244297694
+    second: ataqueEiva_8
+  - first:
+      213: -1234198135044456032
+    second: ataqueEiva_9
+  - first:
+      213: -7027045369381207771
+    second: ataqueEiva_10
+  - first:
+      213: 8078050762121480315
+    second: ataqueEiva_11
+  - first:
+      213: 6506585042977007293
+    second: ataqueEiva_12
+  - first:
+      213: -5238442351951829360
+    second: ataqueEiva_13
+  - first:
+      213: -5564899722739853538
+    second: ataqueEiva_14
+  - first:
+      213: -8487244939134657593
+    second: ataqueEiva_15
+  - first:
+      213: 2899971994942700815
+    second: ataqueEiva_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataqueEiva_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 812
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b63ee4839c1f7410800000000000000
+      internalID: 1476930622716786361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 812
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb7616ea80655f10800000000000000
+      internalID: 2257816937878158329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_2
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 812
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d9c3321309efab0800000000000000
+      internalID: -4972378397851476622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_3
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 812
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c32e72ecf8b5640800000000000000
+      internalID: 5069803921130798174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 609
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f0c2a217eb3e9c0800000000000000
+      internalID: -3899063459124605166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_5
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 609
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1925e1068cc1d6e10800000000000000
+      internalID: 2192440240530936465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_6
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 609
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56b2e8f9d21a0b120800000000000000
+      internalID: 2427617416475192165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_7
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 609
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 781ed0e5aed94f530800000000000000
+      internalID: 3887906008253456775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 406
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2268653c9ca274fe0800000000000000
+      internalID: -1204947329244297694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_9
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 406
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1c932d55f3fdee0800000000000000
+      internalID: -1234198135044456032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 406
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521ca79a77bea7e90800000000000000
+      internalID: -7027045369381207771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_11
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 406
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7803d96e500b1070800000000000000
+      internalID: 8078050762121480315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 203
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6a38b8f980c4a50800000000000000
+      internalID: 6506585042977007293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_13
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 203
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 096ac837f605d47b0800000000000000
+      internalID: -5238442351951829360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 203
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e17db6faf2185c2b0800000000000000
+      internalID: -5564899722739853538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_15
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 203
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cb9529f1bf373a80800000000000000
+      internalID: -8487244939134657593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueEiva_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 246
+        height: 203
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0df3292a25ce3820800000000000000
+      internalID: 2899971994942700815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2363 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9136939332326197826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Cristal ativando Criatura
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Cristal ativando Criatura
+  guid: af3edb1b28a2b949bf16921018689bef
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-9118805042625493201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Nega\xE7\xE3o"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Nega\xE7\xE3o"
+  guid: 7d3cffb95ca3304e8bc4041a1fe8496d
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3433
+--- !u!114 &-9004094255651602193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Relogio
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Relogio
+  guid: bcfe3da96c33dc4da38299b7697bda71
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2778
+--- !u!114 &-8877879968337411797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Derrota"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Derrota"
+  guid: 85d4ab0f5941c948845d8850b22c5cb9
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 219506
+--- !u!114 &-8859340147338586776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.bank
+  SubDir: 
+  lastModified: 637412524430000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-8563215821521554739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Abrir Hud
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Abrir Hud
+  guid: 5abfff15232edb4ea547e83679d9618b
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8087364575855025641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Cartas Embaralhando
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Cartas Embaralhando
+  guid: c007323eb09f064eb5cad7a99bf751ca
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3700
+--- !u!114 &-7932623163831904283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Dano Direto Masculino
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Dano Direto Masculino
+  guid: 45e19d79c551b440b7d568df7dac4d2f
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2149
+--- !u!114 &-7290177481954137766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Carta Mostrando ou Virando
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Carta Mostrando ou Virando
+  guid: 22c5a142f681e74c9eb7483cd7634bfc
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 700
+--- !u!114 &-6888032527469513181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Seta
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Seta
+  guid: ebc0cbd1ea4c414dbf1c3197751b26b0
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3065616147596184374}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14000
+--- !u!114 &-6620390893230333324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/Trilhas/Fanfarra Abertura e Loading
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/Trilhas/Fanfarra Abertura e Loading
+  guid: f214d215e3eceb499d03d16c264d0b92
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-6518192284791371764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.bank
+  SubDir: 
+  lastModified: 637356062860000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6479707402366477110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.strings.bank
+  SubDir: 
+  lastModified: 637412524300000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 2902
+  Exists: 1
+--- !u!114 &-6162171602344863996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCristal
+  m_EditorClassIdentifier: 
+  Name: TipoCristal
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &-5445942448741204540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Troca de Turno Secund\xE1ria"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Troca de Turno Secund\xE1ria"
+  guid: acc1249e737c6346a09bd923499c5cc5
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1182
+--- !u!114 &-5272376731983993824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Menu"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Menu"
+  guid: 201ea0c30e43744fb851cd01c1ddea8c
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 261794
+--- !u!114 &-5197852976667062410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Seta/Seta
+  m_EditorClassIdentifier: 
+  Name: Seta
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
+--- !u!114 &-5174871663712421417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Elemento
+  m_EditorClassIdentifier: 
+  Name: Elemento
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-4805732988494718867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Carta Baixando
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Carta Baixando
+  guid: dd803de490e29d48a02d91a8e6968cfd
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1933
+--- !u!114 &-4569211589576709493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o A"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o A"
+  guid: 01cefaf24657b147afb44748fed58d93
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4439787912285151784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.bank
+  SubDir: 
+  lastModified: 637387223280000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4126588960505378898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Carta na M\xE3o"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Carta na M\xE3o"
+  guid: e3c0ee89a6c0c44ebbed2eccf41258ab
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10482
+--- !u!114 &-4004240909821321850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.strings.bank
+  SubDir: 
+  lastModified: 637387223280000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 2902
+  Exists: 1
+--- !u!114 &-3256540446716073833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Efeitos/Invoca\xE7\xE3o de Criatura"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Efeitos/Invoca\xE7\xE3o de Criatura"
+  guid: 7df99e426012974580c16f190955bbcb
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-3065616147596184374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Seta/Seta
+  m_EditorClassIdentifier: 
+  Name: Seta
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-2786644082671643079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Seta/Seta
+  m_EditorClassIdentifier: 
+  Name: Seta
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &-2622710733304509008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Nega\xE7\xE3o"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Nega\xE7\xE3o"
+  guid: 7d3cffb95ca3304e8bc4041a1fe8496d
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3433
+--- !u!114 &-2539267062008748058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Ataque/Ataque Fogo
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Ataque/Ataque Fogo
+  guid: b3e97098be126a4e8698462dac6a5807
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1918
+--- !u!114 &-2520545515870928918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Reserva/Trilhas/Gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/Reserva/Trilhas/Gameplay
+  guid: 910d21715cb49e4da317b28117cfaa59
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 391466
+--- !u!114 &-2330329302332442451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Reserva/Trilhas/Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Reserva/Trilhas/Menu
+  guid: f18491b148a448478d274bda247a625a
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 465307
+--- !u!114 &-2314086823821942311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Carta Auxiliar
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Carta Auxiliar
+  guid: 8a41cb8f90e97349bb10938cf55c33d0
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2772
+--- !u!114 &-2271234813601963070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Carta Auxiliar
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Carta Auxiliar
+  guid: 8a41cb8f90e97349bb10938cf55c33d0
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2772
+--- !u!114 &-2142362006344346085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Moeda Sorteio
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Moeda Sorteio
+  guid: 75f279b14eef7e44ae386ad45b0648f7
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2182
+--- !u!114 &-2050306574720141636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Reserva/Trilhas/Menu
+  m_EditorClassIdentifier: 
+  Path: event:/Reserva/Trilhas/Menu
+  guid: f18491b148a448478d274bda247a625a
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 465307
+--- !u!114 &-1777152936989075194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Ataque/Ataque \xC1gua"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Ataque/Ataque \xC1gua"
+  guid: 2cc206f61e165048a9a06f6068529c9c
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2134
+--- !u!114 &-1498468344731070798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/Trilhas/Fanfarra Abertura e Loading
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/Trilhas/Fanfarra Abertura e Loading
+  guid: f214d215e3eceb499d03d16c264d0b92
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1428644377301213593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Troca de Turno Principal
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Troca de Turno Principal
+  guid: 2d496546e0bf174bb83ea3f327f29d68
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3706
+--- !u!114 &-1147091871257638595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Tela de Batalha"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Tela de Batalha"
+  guid: 704105ee924bd649949d779fc2149179
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 97044
+--- !u!114 &-1025225812340606369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Bot\xE3o Elementos"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Bot\xE3o Elementos"
+  guid: 9e033aee1314af4a8f9e64d3d0dff4cd
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1018541464036236606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Bot\xE3o Play Game"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Bot\xE3o Play Game"
+  guid: 0c7f29333ac983409b961dbbf1797b3d
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6825
+--- !u!114 &-839003188514445133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Fechar Hud
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Fechar Hud
+  guid: 62e0323c5762c441ad810c9cce6ae97a
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-832290404041308212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Fechar Hud
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Fechar Hud
+  guid: 62e0323c5762c441ad810c9cce6ae97a
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-816525069777995885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Carta Baixando
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Carta Baixando
+  guid: dd803de490e29d48a02d91a8e6968cfd
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1933
+--- !u!114 &-473316261739513861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCristal
+  m_EditorClassIdentifier: 
+  Name: TipoCristal
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-307056234245154391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCriatura
+  m_EditorClassIdentifier: 
+  Name: TipoCriatura
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &-147149658448460790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Ataque/Ataque Fogo
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Ataque/Ataque Fogo
+  guid: b3e97098be126a4e8698462dac6a5807
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1918
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -6479707402366477110}
+  - {fileID: -8859340147338586776}
+  EditorEvents:
+  - {fileID: -4569211589576709493}
+  - {fileID: 5265799240270648852}
+  - {fileID: 125107470901544907}
+  - {fileID: -5272376731983993824}
+  - {fileID: 9031347492610997455}
+  - {fileID: 1530588259477394454}
+  - {fileID: 6580103551867775296}
+  - {fileID: 3954991765123870720}
+  - {fileID: 285922751869926798}
+  - {fileID: 4393331509507616018}
+  - {fileID: 8047973889069494255}
+  - {fileID: 3209960229761068840}
+  - {fileID: 4628268293153344218}
+  - {fileID: -839003188514445133}
+  - {fileID: 4448599994828972505}
+  - {fileID: -1147091871257638595}
+  - {fileID: 3732420264418776497}
+  - {fileID: 4040435889968594560}
+  - {fileID: 6587278681851799763}
+  - {fileID: -9118805042625493201}
+  - {fileID: -3256540446716073833}
+  - {fileID: -8877879968337411797}
+  - {fileID: 5877580479024965063}
+  - {fileID: -2314086823821942311}
+  - {fileID: -2520545515870928918}
+  - {fileID: 7505788267606989957}
+  - {fileID: 4300871487982187522}
+  - {fileID: 5362568366760953187}
+  - {fileID: -5445942448741204540}
+  - {fileID: 6736933941683487536}
+  - {fileID: -147149658448460790}
+  - {fileID: 6212460399086267070}
+  - {fileID: -8087364575855025641}
+  - {fileID: -816525069777995885}
+  - {fileID: 4732294206658518801}
+  - {fileID: 3621319501133235043}
+  - {fileID: 5717816014470586292}
+  - {fileID: -6888032527469513181}
+  - {fileID: -2050306574720141636}
+  - {fileID: -6620390893230333324}
+  EditorParameters:
+  - {fileID: 2710128638770611635}
+  - {fileID: 6240805511866483591}
+  - {fileID: -6162171602344863996}
+  MasterBanks:
+  - {fileID: -8859340147338586776}
+  StringsBanks:
+  - {fileID: -6479707402366477110}
+  stringsBankWriteTime: 637412524300000000
+  cacheVersion: 3
+--- !u!114 &125107470901544907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Bot\xE3o Play Game"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Bot\xE3o Play Game"
+  guid: 0c7f29333ac983409b961dbbf1797b3d
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 6825
+--- !u!114 &152561639613338705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Seta
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Seta
+  guid: ebc0cbd1ea4c414dbf1c3197751b26b0
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2786644082671643079}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14000
+--- !u!114 &285922751869926798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Bot\xE3o Gen\xE9rico"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Bot\xE3o Gen\xE9rico"
+  guid: 43a6351eb47e53459845c6dfaa577f91
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1133
+--- !u!114 &514070546498555379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Elemento
+  m_EditorClassIdentifier: 
+  Name: Elemento
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &613400755358178917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Dano Direto Feminino
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Dano Direto Feminino
+  guid: 73a5ed5b17ea4546b9a26dd50bdef14a
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2192
+--- !u!114 &1530588259477394454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Ataque/Ataque \xC1gua"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Ataque/Ataque \xC1gua"
+  guid: 2cc206f61e165048a9a06f6068529c9c
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2134
+--- !u!114 &1552098990917336268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Vit\xF3ria"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Vit\xF3ria"
+  guid: 4e3405d03159fe4aaf0f805970937f54
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 189413
+--- !u!114 &1947210933745095957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCriatura
+  m_EditorClassIdentifier: 
+  Name: TipoCriatura
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &2190831973491615772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Ataque/Ataque Terra
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Ataque/Ataque Terra
+  guid: 04097cd94386f24e9abdb23b6aefc36f
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2721
+--- !u!114 &2275578607182639521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o A"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o A"
+  guid: 01cefaf24657b147afb44748fed58d93
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2669309320195767309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Seta/Seta
+  m_EditorClassIdentifier: 
+  Name: Seta
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
+--- !u!114 &2710128638770611635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCriatura
+  m_EditorClassIdentifier: 
+  Name: TipoCriatura
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &2961598428872153444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Tela de Batalha"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Tela de Batalha"
+  guid: 704105ee924bd649949d779fc2149179
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 97044
+--- !u!114 &3209960229761068840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Vit\xF3ria"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Vit\xF3ria"
+  guid: 4e3405d03159fe4aaf0f805970937f54
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 189413
+--- !u!114 &3279147532330104303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Bot\xE3o Gen\xE9rico"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Bot\xE3o Gen\xE9rico"
+  guid: 43a6351eb47e53459845c6dfaa577f91
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1133
+--- !u!114 &3477767140741187424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Elemento
+  m_EditorClassIdentifier: 
+  Name: Elemento
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &3505530363333324054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o A+"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o A+"
+  guid: 4a1df519ffb2f042a93c5dcdd5203e7e
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3621319501133235043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o B+"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o B+"
+  guid: e573151f436fd748be6331dea9f93840
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3732420264418776497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o C"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o C"
+  guid: 739d539d7cfb5c4e8bbfc2f146d78e29
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3954991765123870720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Lobby"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Lobby"
+  guid: 2fe6cf2f6888d543af5a743a0b86842e
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 138993
+--- !u!114 &4040435889968594560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Dano Direto Feminino
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Dano Direto Feminino
+  guid: 73a5ed5b17ea4546b9a26dd50bdef14a
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2192
+--- !u!114 &4300871487982187522
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Bot\xE3o Elementos"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Bot\xE3o Elementos"
+  guid: 9e033aee1314af4a8f9e64d3d0dff4cd
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4393331509507616018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Dano Direto Masculino
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Dano Direto Masculino
+  guid: 45e19d79c551b440b7d568df7dac4d2f
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2149
+--- !u!114 &4448599994828972505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Cristal obtido Elementos
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Cristal obtido Elementos
+  guid: 658a04de7486084bad70bf36d5c99c52
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4628268293153344218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Abrir Hud
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Abrir Hud
+  guid: 5abfff15232edb4ea547e83679d9618b
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &4732294206658518801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Carta na M\xE3o"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Carta na M\xE3o"
+  guid: e3c0ee89a6c0c44ebbed2eccf41258ab
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 10482
+--- !u!114 &5156475890386243376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCristal
+  m_EditorClassIdentifier: 
+  Name: TipoCristal
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &5265799240270648852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Ataque/Ataque Terra
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Ataque/Ataque Terra
+  guid: 04097cd94386f24e9abdb23b6aefc36f
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2721
+--- !u!114 &5351182300762861501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Efeitos/Invoca\xE7\xE3o de Criatura"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Efeitos/Invoca\xE7\xE3o de Criatura"
+  guid: 7df99e426012974580c16f190955bbcb
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &5362568366760953187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Tutorial"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Tutorial"
+  guid: ac965a4890abd44d869cba27bdbdae55
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 444656
+--- !u!114 &5499331767595092573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCriatura
+  m_EditorClassIdentifier: 
+  Name: TipoCriatura
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 0
+--- !u!114 &5614987727638647124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Cartas Embaralhando
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Cartas Embaralhando
+  guid: c007323eb09f064eb5cad7a99bf751ca
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3700
+--- !u!114 &5717816014470586292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Gameplay"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Gameplay"
+  guid: e655719b36e9194193224275a3d22770
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 268802
+--- !u!114 &5877580479024965063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Criatura Morrendo
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Criatura Morrendo
+  guid: 869aa20239da0a4fbc352b444118d6bd
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2230
+--- !u!114 &5929824425245043833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCristal
+  m_EditorClassIdentifier: 
+  Name: TipoCristal
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &6212460399086267070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Relogio
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Relogio
+  guid: bcfe3da96c33dc4da38299b7697bda71
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2778
+--- !u!114 &6240805511866483591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Elemento
+  m_EditorClassIdentifier: 
+  Name: Elemento
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &6564105301708519267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Criatura Morrendo
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Criatura Morrendo
+  guid: 869aa20239da0a4fbc352b444118d6bd
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2230
+--- !u!114 &6580103551867775296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Troca de Turno Principal
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Troca de Turno Principal
+  guid: 2d496546e0bf174bb83ea3f327f29d68
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 3706
+--- !u!114 &6587278681851799763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Moeda Sorteio
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Moeda Sorteio
+  guid: 75f279b14eef7e44ae386ad45b0648f7
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2182
+--- !u!114 &6736933941683487536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Efeitos/Cristal ativando Criatura
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Efeitos/Cristal ativando Criatura
+  guid: af3edb1b28a2b949bf16921018689bef
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6910949809295636592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Gameplay"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Gameplay"
+  guid: e655719b36e9194193224275a3d22770
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 268802
+--- !u!114 &7249244309352491276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Cristal obtido Elementos
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Cristal obtido Elementos
+  guid: 658a04de7486084bad70bf36d5c99c52
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7505788267606989957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Ataque/Ataque Ar
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Ataque/Ataque Ar
+  guid: 91de47a0ec1c154eb58fa1a26b84216e
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4908
+--- !u!114 &7519092530218715012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Ataque/Ataque Ar
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Ataque/Ataque Ar
+  guid: 91de47a0ec1c154eb58fa1a26b84216e
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4908
+--- !u!114 &8047973889069494255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o A+"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o A+"
+  guid: 4a1df519ffb2f042a93c5dcdd5203e7e
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8168588594637918136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Derrota"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/Fanfarra e M\xFAsica Derrota"
+  guid: 85d4ab0f5941c948845d8850b22c5cb9
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 219506
+--- !u!114 &8264908372334694785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Lobby"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Lobby"
+  guid: 2fe6cf2f6888d543af5a743a0b86842e
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 138993
+--- !u!114 &8317881252510756257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCriatura
+  m_EditorClassIdentifier: 
+  Name: TipoCriatura
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &8532264190792932349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.bank
+  SubDir: 
+  lastModified: 637387223280000000
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &8535978661387287688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: TipoCristal
+  m_EditorClassIdentifier: 
+  Name: TipoCristal
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &8662886901642168196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/SFX/Hud/Troca de Turno Secund\xE1ria"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/SFX/Hud/Troca de Turno Secund\xE1ria"
+  guid: acc1249e737c6346a09bd923499c5cc5
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1182
+--- !u!114 &8761315076556748155
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o B+"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o B+"
+  guid: e573151f436fd748be6331dea9f93840
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8844165781625428524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Tutorial"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Tutorial"
+  guid: ac965a4890abd44d869cba27bdbdae55
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 444656
+--- !u!114 &8855869023884615016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Reserva/SFX/Bot\xE3o C"
+  m_EditorClassIdentifier: 
+  Path: "event:/Reserva/SFX/Bot\xE3o C"
+  guid: 739d539d7cfb5c4e8bbfc2f146d78e29
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &8886973396366777216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Elemento
+  m_EditorClassIdentifier: 
+  Name: Elemento
+  Min: 0
+  Max: 4
+  Default: 0
+  Exists: 1
+--- !u!114 &8892085363986701086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: "event:/Principal/Trilhas/M\xFAsica Menu"
+  m_EditorClassIdentifier: 
+  Path: "event:/Principal/Trilhas/M\xFAsica Menu"
+  guid: 201ea0c30e43744fb851cd01c1ddea8c
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 261794
+--- !u!114 &8963326255359397121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Reserva/Trilhas/Gameplay
+  m_EditorClassIdentifier: 
+  Path: event:/Reserva/Trilhas/Gameplay
+  guid: 910d21715cb49e4da317b28117cfaa59
+  Banks:
+  - {fileID: -4439787912285151784}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 391466
+--- !u!114 &9031347492610997455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Principal/SFX/Hud/Carta Mostrando ou Virando
+  m_EditorClassIdentifier: 
+  Path: event:/Principal/SFX/Hud/Carta Mostrando ou Virando
+  guid: 22c5a142f681e74c9eb7483cd7634bfc
+  Banks:
+  - {fileID: -8859340147338586776}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 700
+--- !u!114 &9049238389587426592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/arquivos/Sons/Master.bank
+  SubDir: 
+  lastModified: 637412524437898316
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1

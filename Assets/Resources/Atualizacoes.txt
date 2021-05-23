@@ -1,0 +1,22 @@
+--------------------------------------------------
+#Mudanças efetuadas no sistema de login#
+--------------------------------------------------
+-> implementado novo audio.
+--------------------------------------------------
+#Mudanças efetuadas no sistema de loading#                   
+--------------------------------------------------
+->implementado sistema de loading dinamico, usando notação matemática.
+->implementado audio na tela de loading.
+->imagens atualizadas com os novos parametros idealizados pela equipe de design.
+--------------------------------------------------
+#Mudanças efetuadas no sistema de tutorial#                   
+--------------------------------------------------
+->implementado audio de slider das informações do player.
+--------------------------------------------------
+#Mudanças efetuadas no menu principal#                   
+--------------------------------------------------
+->implementado audio aos botões de navegação do multiplayer.
+->corrigido bug que impedia de cancelar a pesquisa de partidas antes de procurar uma.
+--------------------------------------------------
+    -> AGUARDO FEEDBACKS <-
+--------------------------------------------------

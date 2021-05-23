@@ -1,0 +1,727 @@
+fileFormatVersion: 2
+guid: c1598007bbb21f14da26ed205e41f05c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4414104844278989797
+    second: preFieldEarth_0
+  - first:
+      213: -3048591845143744121
+    second: preFieldEarth_1
+  - first:
+      213: 6169005906268630465
+    second: preFieldEarth_2
+  - first:
+      213: -462993242616411108
+    second: preFieldEarth_3
+  - first:
+      213: 5897339091811630395
+    second: preFieldEarth_4
+  - first:
+      213: 2049959983971585859
+    second: preFieldEarth_5
+  - first:
+      213: -6599238475653635253
+    second: preFieldEarth_6
+  - first:
+      213: -4054488066946358016
+    second: preFieldEarth_7
+  - first:
+      213: -7844662331218752636
+    second: preFieldEarth_8
+  - first:
+      213: -3217172956169310347
+    second: preFieldEarth_9
+  - first:
+      213: 4979482048374981903
+    second: preFieldEarth_10
+  - first:
+      213: -8899960603099229771
+    second: preFieldEarth_11
+  - first:
+      213: -8177605655317300268
+    second: preFieldEarth_12
+  - first:
+      213: -4372641429546709067
+    second: preFieldEarth_13
+  - first:
+      213: 7190833381425332828
+    second: preFieldEarth_14
+  - first:
+      213: 7803199140972297896
+    second: preFieldEarth_15
+  - first:
+      213: 3118676513614982225
+    second: preFieldEarth_16
+  - first:
+      213: 3752559206887786408
+    second: preFieldEarth_17
+  - first:
+      213: -7689327040389080800
+    second: preFieldEarth_18
+  - first:
+      213: -3886506923996509298
+    second: preFieldEarth_19
+  - first:
+      213: 8369161700601104262
+    second: preFieldEarth_20
+  - first:
+      213: 3427261040983465685
+    second: preFieldEarth_21
+  - first:
+      213: -3940410097576246483
+    second: preFieldEarth_22
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: preFieldEarth_0
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 1471
+        width: 438
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3132034f88e8da49ad701b746458a51
+      internalID: 4414104844278989797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_1
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 1521
+        width: 399
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b1442edb0e6ba469f2525891b1387e
+      internalID: -3048591845143744121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_2
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 1484
+        width: 433
+        height: 479
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1880f928b08bf4f86f733a598de1de
+      internalID: 6169005906268630465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_3
+      rect:
+        serializedVersion: 2
+        x: 1611
+        y: 1501
+        width: 336
+        height: 472
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa3478519f0b6745ab2c5da6236364d
+      internalID: -462993242616411108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_4
+      rect:
+        serializedVersion: 2
+        x: 2103
+        y: 1427
+        width: 343
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0840e484e6d1edb4782ef55e8075e03a
+      internalID: 5897339091811630395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_5
+      rect:
+        serializedVersion: 2
+        x: 2572
+        y: 1411
+        width: 409
+        height: 435
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60f8b50ce3046a449b19d9c0461e9305
+      internalID: 2049959983971585859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_6
+      rect:
+        serializedVersion: 2
+        x: 3107
+        y: 1384
+        width: 356
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee3520df7190824bb41cea850f74f66
+      internalID: -6599238475653635253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_7
+      rect:
+        serializedVersion: 2
+        x: 3653
+        y: 1378
+        width: 299
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224c3c38e6cb7f4429d30848ca6e9553
+      internalID: -4054488066946358016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_8
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 693
+        width: 389
+        height: 372
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc6d62a8341d3a742ae0f42fe50ae553
+      internalID: -7844662331218752636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_9
+      rect:
+        serializedVersion: 2
+        x: 567
+        y: 629
+        width: 386
+        height: 459
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b530e74e35842f64b8529fc2c84a04e9
+      internalID: -3217172956169310347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_10
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 663
+        width: 375
+        height: 412
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9765f0937fb0e4e87946b0e8f119d8
+      internalID: 4979482048374981903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_11
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 679
+        width: 383
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8f3f9c3ab9bab45a3384f3b0baa5e0
+      internalID: -8899960603099229771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_12
+      rect:
+        serializedVersion: 2
+        x: 2106
+        y: 696
+        width: 330
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00851a893fba8a74cb239c6889f98f3b
+      internalID: -8177605655317300268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_13
+      rect:
+        serializedVersion: 2
+        x: 2605
+        y: 686
+        width: 329
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7d629d788d7044481b26d1c1566503
+      internalID: -4372641429546709067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_14
+      rect:
+        serializedVersion: 2
+        x: 3147
+        y: 679
+        width: 289
+        height: 426
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e8861760320714a9efa58b9e456f39
+      internalID: 7190833381425332828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_15
+      rect:
+        serializedVersion: 2
+        x: 3626
+        y: 663
+        width: 359
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32a1dfd6ff0695a4aa5f4a3e13b53502
+      internalID: 7803199140972297896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_16
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 44
+        width: 366
+        height: 366
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb9538ef8f32224b9917b4550a1e07d
+      internalID: 3118676513614982225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_17
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 48
+        width: 445
+        height: 418
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f19ee2faa8665b49a3f0cb6a002d88e
+      internalID: 3752559206887786408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_18
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 58
+        width: 396
+        height: 405
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3195e26103fc44344bfd672b27a78c83
+      internalID: -7689327040389080800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_19
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 91
+        width: 429
+        height: 409
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be57d0805c47234b9e6595d2fb3ff7c
+      internalID: -3886506923996509298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_20
+      rect:
+        serializedVersion: 2
+        x: 2060
+        y: 38
+        width: 442
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebca97f4163a3744ad257a2acd4ee83
+      internalID: 8369161700601104262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_21
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 38
+        width: 452
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1769a0ce86d3504a8a6ce3c4ebd856c
+      internalID: 3427261040983465685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: preFieldEarth_22
+      rect:
+        serializedVersion: 2
+        x: 3074
+        y: 41
+        width: 459
+        height: 482
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a02860bd5d183d34592e8c78ef22c21c
+      internalID: -3940410097576246483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2fda8b204f6764a418a9bb3500e2f19a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

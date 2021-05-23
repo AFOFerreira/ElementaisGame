@@ -1,0 +1,1502 @@
+fileFormatVersion: 2
+guid: 89f9190c0f5bed441be1245ad0923d82
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8611555430944586918
+    second: gorila_terra_0
+  - first:
+      213: 5605859182642859585
+    second: gorila_terra_1
+  - first:
+      213: -3562516770801507125
+    second: gorila_terra_2
+  - first:
+      213: -1512571885113072392
+    second: gorila_terra_3
+  - first:
+      213: 946971305208445622
+    second: gorila_terra_4
+  - first:
+      213: -2616222850531233743
+    second: gorila_terra_5
+  - first:
+      213: -4155417202871945049
+    second: gorila_terra_6
+  - first:
+      213: -4653355346030317407
+    second: gorila_terra_7
+  - first:
+      213: -5570799483997789869
+    second: gorila_terra_8
+  - first:
+      213: -5950582891996593135
+    second: gorila_terra_9
+  - first:
+      213: -4899530789834868799
+    second: gorila_terra_10
+  - first:
+      213: -2136406057221225369
+    second: gorila_terra_11
+  - first:
+      213: 2358433824521207203
+    second: gorila_terra_12
+  - first:
+      213: 7640552325841787528
+    second: gorila_terra_13
+  - first:
+      213: 1977518359979493530
+    second: gorila_terra_14
+  - first:
+      213: -4518924329793825549
+    second: gorila_terra_15
+  - first:
+      213: 901899829835118988
+    second: gorila_terra_16
+  - first:
+      213: 4594290029924255919
+    second: gorila_terra_17
+  - first:
+      213: 7086881053329885465
+    second: gorila_terra_18
+  - first:
+      213: -3383164496266177205
+    second: gorila_terra_19
+  - first:
+      213: -3893345000168483701
+    second: gorila_terra_20
+  - first:
+      213: -7180170514202417557
+    second: gorila_terra_21
+  - first:
+      213: -5007253301546299177
+    second: gorila_terra_22
+  - first:
+      213: -1344217396902369673
+    second: gorila_terra_23
+  - first:
+      213: -8736639358478945529
+    second: gorila_terra_24
+  - first:
+      213: -7996926816261922508
+    second: gorila_terra_25
+  - first:
+      213: 6636417404290243477
+    second: gorila_terra_26
+  - first:
+      213: 2664562437339813157
+    second: gorila_terra_27
+  - first:
+      213: 4055509344627957843
+    second: gorila_terra_28
+  - first:
+      213: -595827168006525792
+    second: gorila_terra_29
+  - first:
+      213: 3723753632876032858
+    second: gorila_terra_0
+  - first:
+      213: -493674946439172915
+    second: gorila_terra_1
+  - first:
+      213: -4433530276581961446
+    second: gorila_terra_2
+  - first:
+      213: 4349787714476826563
+    second: gorila_terra_3
+  - first:
+      213: -1562722625204537793
+    second: gorila_terra_4
+  - first:
+      213: -4284083624488551711
+    second: gorila_terra_5
+  - first:
+      213: 1829025038406932515
+    second: gorila_terra_6
+  - first:
+      213: 1981109574881263513
+    second: gorila_terra_7
+  - first:
+      213: -8960309789553214499
+    second: gorila_terra_8
+  - first:
+      213: -56367751148234905
+    second: gorila_terra_9
+  - first:
+      213: 4602992035748136345
+    second: gorila_terra_10
+  - first:
+      213: -4387249856912699208
+    second: gorila_terra_11
+  - first:
+      213: 8088615176481858016
+    second: gorila_terra_12
+  - first:
+      213: 9163414424208701443
+    second: gorila_terra_13
+  - first:
+      213: 5580079574094525592
+    second: gorila_terra_14
+  - first:
+      213: -337358804955899110
+    second: gorila_terra_15
+  - first:
+      213: -1175588824230090498
+    second: gorila_terra_16
+  - first:
+      213: 3474515678101231512
+    second: gorila_terra_17
+  - first:
+      213: -6548837597910057819
+    second: gorila_terra_18
+  - first:
+      213: 938489723068217633
+    second: gorila_terra_19
+  - first:
+      213: 5997012471309642191
+    second: gorila_terra_20
+  - first:
+      213: 265566792879748440
+    second: gorila_terra_21
+  - first:
+      213: 3513815210360792017
+    second: gorila_terra_22
+  - first:
+      213: -2244295406302170066
+    second: gorila_terra_23
+  - first:
+      213: -34048082135758529
+    second: gorila_terra_24
+  - first:
+      213: 2859142396447035063
+    second: gorila_terra_25
+  - first:
+      213: -8299830854200670782
+    second: gorila_terra_26
+  - first:
+      213: 9180016599091384457
+    second: gorila_terra_27
+  - first:
+      213: 1700894893110258551
+    second: gorila_terra_28
+  - first:
+      213: 6910706701764032700
+    second: gorila_terra_29
+  - first:
+      213: -3693147353162531521
+    second: gorila_terra_30
+  - first:
+      213: 5400222995688947759
+    second: gorila_terra_31
+  - first:
+      213: -1469476589262372326
+    second: gorila_terra_32
+  - first:
+      213: -6769833188564240657
+    second: gorila_terra_33
+  - first:
+      213: -2808765923442486203
+    second: gorila_terra_34
+  - first:
+      213: 347456795185170499
+    second: gorila_terra_35
+  - first:
+      213: 5566127375851756206
+    second: gorila_terra_36
+  - first:
+      213: -3916008049300115032
+    second: gorila_terra_37
+  - first:
+      213: 8267827814307171204
+    second: gorila_terra_38
+  - first:
+      213: 6485284552471123370
+    second: gorila_terra_39
+  - first:
+      213: 6565667715714915662
+    second: gorila_terra_40
+  - first:
+      213: 2863494618505749690
+    second: gorila_terra_41
+  - first:
+      213: 6820681868416756148
+    second: gorila_terra_42
+  - first:
+      213: 4775948386990297812
+    second: gorila_terra_43
+  - first:
+      213: 6847315103947164915
+    second: gorila_terra_44
+  - first:
+      213: -603341029014043287
+    second: gorila_terra_45
+  - first:
+      213: -3440188354847968261
+    second: gorila_terra_46
+  - first:
+      213: 3135344493900132096
+    second: gorila_terra_47
+  - first:
+      213: -6844392211806877214
+    second: gorila_terra_48
+  - first:
+      213: -8806264656848989982
+    second: gorila_terra_49
+  - first:
+      213: -7710445503458336357
+    second: gorila_terra_50
+  - first:
+      213: 6619277682176742353
+    second: gorila_terra_51
+  - first:
+      213: 6834043073033577574
+    second: gorila_terra_52
+  - first:
+      213: 319158512095636504
+    second: gorila_terra_53
+  - first:
+      213: -340956330772523748
+    second: gorila_terra_54
+  - first:
+      213: 579111669677558607
+    second: gorila_terra_55
+  - first:
+      213: -7555387250591149747
+    second: gorila_terra_56
+  - first:
+      213: 733260551890893886
+    second: gorila_terra_57
+  - first:
+      213: -2844453501832110593
+    second: gorila_terra_58
+  - first:
+      213: 6786406008261673305
+    second: gorila_terra_59
+  - first:
+      213: -5458872957687062509
+    second: gorila_terra_60
+  - first:
+      213: -8559514754869043052
+    second: gorila_terra_61
+  - first:
+      213: 3413279461878194508
+    second: gorila_terra_62
+  - first:
+      213: 5388004973425917628
+    second: gorila_terra_63
+  - first:
+      213: -4415743514104122174
+    second: gorila_terra_64
+  - first:
+      213: -4708477229520723576
+    second: gorila_terra_65
+  - first:
+      213: 7890359915985192576
+    second: gorila_terra_66
+  - first:
+      213: -576785598509167465
+    second: gorila_terra_67
+  - first:
+      213: -4562567465173497551
+    second: gorila_terra_68
+  - first:
+      213: -7231054838707419762
+    second: gorila_terra_69
+  - first:
+      213: 9055799911185632555
+    second: gorila_terra_70
+  - first:
+      213: 3255705534687058085
+    second: gorila_terra_71
+  - first:
+      213: 1818449933606266416
+    second: gorila_terra_72
+  - first:
+      213: -228501455390497503
+    second: gorila_terra_73
+  - first:
+      213: -3126736511914975399
+    second: gorila_terra_74
+  - first:
+      213: -6173016042514052183
+    second: gorila_terra_75
+  - first:
+      213: -1539254749576923231
+    second: gorila_terra_76
+  - first:
+      213: 396312904849348425
+    second: gorila_terra_77
+  - first:
+      213: 7741916279168082608
+    second: gorila_terra_78
+  - first:
+      213: 3104336427681757817
+    second: gorila_terra_79
+  - first:
+      213: -3565016369375384904
+    second: gorila_terra_80
+  - first:
+      213: -6048059162426587993
+    second: gorila_terra_81
+  - first:
+      213: -2080336104087301750
+    second: gorila_terra_82
+  - first:
+      213: 6377007651099596473
+    second: gorila_terra_83
+  - first:
+      213: -6663826589417136068
+    second: gorila_terra_84
+  - first:
+      213: -3803019651933468594
+    second: gorila_terra_85
+  - first:
+      213: -7534305745275670110
+    second: gorila_terra_86
+  - first:
+      213: 184377495736367143
+    second: gorila_terra_87
+  - first:
+      213: -6554598148658340967
+    second: gorila_terra_88
+  - first:
+      213: 1717342236864211605
+    second: gorila_terra_89
+  - first:
+      213: -4713843031027170583
+    second: gorila_terra_90
+  - first:
+      213: -80734457312317551
+    second: gorila_terra_91
+  - first:
+      213: 1033747694193932279
+    second: gorila_terra_92
+  - first:
+      213: 990650426154573987
+    second: gorila_terra_93
+  - first:
+      213: -3745100013101447648
+    second: gorila_terra_94
+  - first:
+      213: -1039498814814491282
+    second: gorila_terra_95
+  - first:
+      213: 4634139041015271207
+    second: gorila_terra_96
+  - first:
+      213: 4419824648113497409
+    second: gorila_terra_97
+  - first:
+      213: 6614642547664109944
+    second: gorila_terra_98
+  - first:
+      213: 6113641944454432545
+    second: gorila_terra_99
+  - first:
+      213: 5865089333437052909
+    second: gorila_terra_100
+  - first:
+      213: -6433543590370879686
+    second: gorila_terra_101
+  - first:
+      213: 8738107464236782849
+    second: gorila_terra_102
+  - first:
+      213: 6505254047387217436
+    second: gorila_terra_103
+  - first:
+      213: 321049475098327353
+    second: gorila_terra_104
+  - first:
+      213: -2579124144924165090
+    second: gorila_terra_105
+  - first:
+      213: -1516384571003350318
+    second: gorila_terra_106
+  - first:
+      213: 8907441081789287115
+    second: gorila_terra_107
+  - first:
+      213: 725090039748675591
+    second: gorila_terra_108
+  - first:
+      213: 4939809463659179535
+    second: gorila_terra_109
+  - first:
+      213: 3126925535935027115
+    second: gorila_terra_110
+  - first:
+      213: 1193722688505262085
+    second: gorila_terra_111
+  - first:
+      213: -396977180882001709
+    second: gorila_terra_112
+  - first:
+      213: -8450838032437034709
+    second: gorila_terra_113
+  - first:
+      213: 6520408392165712754
+    second: gorila_terra_114
+  - first:
+      213: 3991508584383186869
+    second: gorila_terra_115
+  - first:
+      213: 4840642959794809646
+    second: gorila_terra_116
+  - first:
+      213: 4168003130172869067
+    second: gorila_terra_117
+  - first:
+      213: 7284734096320494327
+    second: gorila_terra_118
+  - first:
+      213: 4197999870874538971
+    second: gorila_terra_119
+  - first:
+      213: 40786567536526723
+    second: gorila_terra_120
+  - first:
+      213: 3366774113487958620
+    second: gorila_terra_121
+  - first:
+      213: -7408200447648533150
+    second: gorila_terra_122
+  - first:
+      213: 7748997332925247386
+    second: gorila_terra_123
+  - first:
+      213: -5783444667085468023
+    second: gorila_terra_124
+  - first:
+      213: 1638852237749837073
+    second: gorila_terra_125
+  - first:
+      213: 8361687498486896626
+    second: gorila_terra_126
+  - first:
+      213: -7997848723418212078
+    second: gorila_terra_127
+  - first:
+      213: -8352092308076514454
+    second: gorila_terra_128
+  - first:
+      213: -154146997395019990
+    second: gorila_terra_129
+  - first:
+      213: 8913998845006255479
+    second: gorila_terra_130
+  - first:
+      213: 6559437575138246660
+    second: gorila_terra_131
+  - first:
+      213: 3719806372919834747
+    second: gorila_terra_132
+  - first:
+      213: -7626808767978228665
+    second: gorila_terra_133
+  - first:
+      213: 6172149753596332184
+    second: gorila_terra_134
+  - first:
+      213: -6783154560245991411
+    second: gorila_terra_135
+  - first:
+      213: 8289699988847657022
+    second: gorila_terra_136
+  - first:
+      213: -1056026188106176567
+    second: gorila_terra_137
+  - first:
+      213: -8153369328961807288
+    second: gorila_terra_138
+  - first:
+      213: 4535357250884831361
+    second: gorila_terra_139
+  - first:
+      213: 2387412783493454989
+    second: gorila_terra_140
+  - first:
+      213: 8027206351378987713
+    second: gorila_terra_141
+  - first:
+      213: -961764812304244401
+    second: gorila_terra_142
+  - first:
+      213: 5120788149973013582
+    second: gorila_terra_143
+  - first:
+      213: -4704724253295150119
+    second: gorila_terra_144
+  - first:
+      213: -2788316552423045896
+    second: gorila_terra_145
+  - first:
+      213: 6395974920641116743
+    second: gorila_terra_146
+  - first:
+      213: 2941397676986491536
+    second: gorila_terra_147
+  - first:
+      213: -8217078461104702557
+    second: gorila_terra_148
+  - first:
+      213: -7907032389707151259
+    second: gorila_terra_149
+  - first:
+      213: 1775221910465231923
+    second: gorila_terra_150
+  - first:
+      213: 5031503752985841484
+    second: gorila_terra_151
+  - first:
+      213: -5755846715661720516
+    second: gorila_terra_152
+  - first:
+      213: 4678463721410771205
+    second: gorila_terra_153
+  - first:
+      213: 3823952687034495104
+    second: gorila_terra_154
+  - first:
+      213: -4938865762239091134
+    second: gorila_terra_155
+  - first:
+      213: 7731325372926282246
+    second: gorila_terra_156
+  - first:
+      213: 6057933168180787944
+    second: gorila_terra_157
+  - first:
+      213: -4210588888738358489
+    second: gorila_terra_158
+  - first:
+      213: -3844744656031148108
+    second: gorila_terra_159
+  - first:
+      213: -2348677455280704285
+    second: gorila_terra_160
+  - first:
+      213: 5617652342812847829
+    second: gorila_terra_161
+  - first:
+      213: -3817858536702901711
+    second: gorila_terra_162
+  - first:
+      213: -4383005228478039829
+    second: gorila_terra_163
+  - first:
+      213: -7540193915634807640
+    second: gorila_terra_164
+  - first:
+      213: -3000766390486495742
+    second: gorila_terra_165
+  - first:
+      213: -2393958676489685215
+    second: gorila_terra_166
+  - first:
+      213: -2372402010038636470
+    second: gorila_terra_167
+  - first:
+      213: 5262690226696213081
+    second: gorila_terra_168
+  - first:
+      213: 8745115029404036421
+    second: gorila_terra_169
+  - first:
+      213: -2384461359820399337
+    second: gorila_terra_170
+  - first:
+      213: -844480649411191760
+    second: gorila_terra_171
+  - first:
+      213: -6040039441768365409
+    second: gorila_terra_172
+  - first:
+      213: 7948473268009559661
+    second: gorila_terra_173
+  - first:
+      213: 249511358608889160
+    second: gorila_terra_174
+  - first:
+      213: 8110408866996101167
+    second: gorila_terra_175
+  - first:
+      213: -850394862527311418
+    second: gorila_terra_176
+  - first:
+      213: 2302505298684164518
+    second: gorila_terra_177
+  - first:
+      213: -7558024794407067572
+    second: gorila_terra_178
+  - first:
+      213: 423085186500938009
+    second: gorila_terra_179
+  - first:
+      213: -7725611552093999871
+    second: gorila_terra_180
+  - first:
+      213: 3894556498645634609
+    second: gorila_terra_181
+  - first:
+      213: -583558750281134653
+    second: gorila_terra_182
+  - first:
+      213: -4278442051529421109
+    second: gorila_terra_183
+  - first:
+      213: 3674580251819574440
+    second: gorila_terra_184
+  - first:
+      213: 5609734011782366563
+    second: gorila_terra_185
+  - first:
+      213: 7368307645125564920
+    second: gorila_terra_186
+  - first:
+      213: -5271456920193383460
+    second: gorila_terra_187
+  - first:
+      213: 7502632337936152633
+    second: gorila_terra_188
+  - first:
+      213: 6321399154344107741
+    second: gorila_terra_189
+  - first:
+      213: 2694115385587353892
+    second: gorila_terra_190
+  - first:
+      213: -5846323627493444195
+    second: gorila_terra_191
+  - first:
+      213: 4204602691408441734
+    second: gorila_terra_192
+  - first:
+      213: -2406838718340973690
+    second: gorila_terra_193
+  - first:
+      213: -3065809129209707817
+    second: gorila_terra_194
+  - first:
+      213: -6629228121599852429
+    second: gorila_terra_195
+  - first:
+      213: -7616689823665206609
+    second: gorila_terra_196
+  - first:
+      213: 3946695418597400384
+    second: gorila_terra_197
+  - first:
+      213: -7966757690787660926
+    second: gorila_terra_198
+  - first:
+      213: -73119424178712122
+    second: gorila_terra_199
+  - first:
+      213: 7105474769159618850
+    second: gorila_terra_200
+  - first:
+      213: -2455387837633664423
+    second: gorila_terra_201
+  - first:
+      213: 185649357870090829
+    second: gorila_terra_202
+  - first:
+      213: -205991751582344680
+    second: gorila_terra_203
+  - first:
+      213: -3745771857105068629
+    second: gorila_terra_204
+  - first:
+      213: 6177494645413211448
+    second: gorila_terra_205
+  - first:
+      213: -8094183120911020532
+    second: gorila_terra_206
+  - first:
+      213: 5248178103674917242
+    second: gorila_terra_207
+  - first:
+      213: -4598909549197007883
+    second: gorila_terra_208
+  - first:
+      213: 235801008234769451
+    second: gorila_terra_209
+  - first:
+      213: 4325048135846405384
+    second: gorila_terra_210
+  - first:
+      213: 6314139104441122843
+    second: gorila_terra_211
+  - first:
+      213: 1876537466957873979
+    second: gorila_terra_212
+  - first:
+      213: -3904689363298988540
+    second: gorila_terra_213
+  - first:
+      213: -8872540546062667413
+    second: gorila_terra_214
+  - first:
+      213: 5356112189733620278
+    second: gorila_terra_215
+  - first:
+      213: 8272879280799248549
+    second: gorila_terra_216
+  - first:
+      213: 1223119414818363359
+    second: gorila_terra_217
+  - first:
+      213: 4479613913036017875
+    second: gorila_terra_218
+  - first:
+      213: -4850227726039673281
+    second: gorila_terra_219
+  - first:
+      213: -6553335248304556966
+    second: gorila_terra_220
+  - first:
+      213: 1094619538708138317
+    second: gorila_terra_221
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gorila_terra_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5375a6233e6da330800000000000000
+      internalID: 3723753632876032858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14e0a4ab9330ccd40800000000000000
+      internalID: 5605859182642859585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4210a3fd56f8ec0800000000000000
+      internalID: -3562516770801507125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4a79a62e3420be0800000000000000
+      internalID: -1512571885113072392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baff638261542d00800000000000000
+      internalID: 946971305208445622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_5
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13073d4cd2f41bbd0800000000000000
+      internalID: -2616222850531233743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_6
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a83541021ef456c0800000000000000
+      internalID: -4155417202871945049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_7
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0b232a7f5fb6fb0800000000000000
+      internalID: -4653355346030317407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_8
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351e169726b80b2b0800000000000000
+      internalID: -5570799483997789869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_9
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 800
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114c60423684b6da0800000000000000
+      internalID: -5950582891996593135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7bdc994be510cb0800000000000000
+      internalID: -4899530789834868799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76406579206f952e0800000000000000
+      internalID: -2136406057221225369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad3ad06117dab020800000000000000
+      internalID: 2358433824521207203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a9595ebd1b80a60800000000000000
+      internalID: 7640552325841787528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a980467987e817b10800000000000000
+      internalID: 1977518359979493530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_15
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4d4cba34e8941c0800000000000000
+      internalID: -4518924329793825549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_16
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89be44ed11348c00800000000000000
+      internalID: 901899829835118988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_17
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa801ccc07232cf30800000000000000
+      internalID: 4594290029924255919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_18
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9198c2525c8a95260800000000000000
+      internalID: 7086881053329885465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_19
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 400
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45575fb0d59c01d0800000000000000
+      internalID: -3383164496266177205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b841ae4a95f08f9c0800000000000000
+      internalID: -3893345000168483701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b662b32a5f8ea5c90800000000000000
+      internalID: -7180170514202417557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d05eecd6a9a28ab0800000000000000
+      internalID: -5007253301546299177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776ebb44661685de0800000000000000
+      internalID: -1344217396902369673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7037a2bcac831c680800000000000000
+      internalID: -8736639358478945529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_25
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 431a9ed1e65350190800000000000000
+      internalID: -7996926816261922508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_26
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b90fbc77a491c50800000000000000
+      internalID: 6636417404290243477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_27
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5251d775b6d6af420800000000000000
+      internalID: 2664562437339813157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_28
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350a3dd0340184830800000000000000
+      internalID: 4055509344627957843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gorila_terra_29
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 0
+        width: 362
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aca177f8523bb7f0800000000000000
+      internalID: -595827168006525792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

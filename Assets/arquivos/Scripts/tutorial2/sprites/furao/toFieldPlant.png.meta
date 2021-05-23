@@ -1,0 +1,509 @@
+fileFormatVersion: 2
+guid: 52f471b9367b12c419bb9b5e3d7d7920
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7378326572385487928
+    second: toFieldPlant_0
+  - first:
+      213: 3485651598194298873
+    second: toFieldPlant_1
+  - first:
+      213: 2791755043175874850
+    second: toFieldPlant_2
+  - first:
+      213: -5406249194279190501
+    second: toFieldPlant_3
+  - first:
+      213: 6791813826379925333
+    second: toFieldPlant_4
+  - first:
+      213: 711606950921488810
+    second: toFieldPlant_5
+  - first:
+      213: -3019454038923830698
+    second: toFieldPlant_6
+  - first:
+      213: 4358078750546564791
+    second: toFieldPlant_7
+  - first:
+      213: -1869185793934884890
+    second: toFieldPlant_8
+  - first:
+      213: -159876212123854893
+    second: toFieldPlant_9
+  - first:
+      213: -5265706785730952513
+    second: toFieldPlant_10
+  - first:
+      213: -7501254111242624473
+    second: toFieldPlant_11
+  - first:
+      213: -78951245839486535
+    second: toFieldPlant_12
+  - first:
+      213: 8898881619573980511
+    second: toFieldPlant_13
+  - first:
+      213: 2852977159983596389
+    second: toFieldPlant_14
+  - first:
+      213: -7433195229282208345
+    second: toFieldPlant_15
+  - first:
+      213: -5592566644206749610
+    second: toFieldPlant_16
+  - first:
+      213: 8195519987221342903
+    second: toFieldPlant_17
+  - first:
+      213: -902994595246889613
+    second: toFieldPlant_18
+  - first:
+      213: -8214828280608846310
+    second: toFieldPlant_19
+  - first:
+      213: -8229263795432501066
+    second: toFieldPlant_20
+  - first:
+      213: -1460552931507178727
+    second: toFieldPlant_21
+  - first:
+      213: 3862417191260491777
+    second: toFieldPlant_22
+  - first:
+      213: -2475038826572067506
+    second: toFieldPlant_23
+  - first:
+      213: 4197774962730363172
+    second: toFieldPlant_24
+  - first:
+      213: 3898030704243270139
+    second: toFieldPlant_25
+  - first:
+      213: 7604362564318084411
+    second: toFieldPlant_26
+  - first:
+      213: 2712356987305168485
+    second: toFieldPlant_27
+  - first:
+      213: -3472972399786579660
+    second: toFieldPlant_28
+  - first:
+      213: -2510594146985204141
+    second: toFieldPlant_29
+  - first:
+      213: -5895233854555702182
+    second: toFieldPlant_30
+  - first:
+      213: 6590992913882039656
+    second: toFieldPlant_31
+  - first:
+      213: -1764434173879272077
+    second: toFieldPlant_32
+  - first:
+      213: -7305961671004209590
+    second: toFieldPlant_33
+  - first:
+      213: 5580100078131646492
+    second: toFieldPlant_34
+  - first:
+      213: -2352541775349858608
+    second: toFieldPlant_35
+  - first:
+      213: 434323893767526148
+    second: toFieldPlant_36
+  - first:
+      213: 7401700676644776504
+    second: toFieldPlant_37
+  - first:
+      213: 2472908315198667569
+    second: toFieldPlant_38
+  - first:
+      213: -2078410689951969964
+    second: toFieldPlant_39
+  - first:
+      213: -9185544538548528260
+    second: toFieldPlant_40
+  - first:
+      213: -5200188284198833831
+    second: toFieldPlant_41
+  - first:
+      213: 7648613759977419548
+    second: toFieldPlant_42
+  - first:
+      213: -2579941810759527288
+    second: toFieldPlant_43
+  - first:
+      213: -5847339740396171487
+    second: toFieldPlant_44
+  - first:
+      213: -2213508469040552195
+    second: toFieldPlant_45
+  - first:
+      213: 3196574968822610407
+    second: toFieldPlant_46
+  - first:
+      213: 5502530585028028325
+    second: toFieldPlant_47
+  - first:
+      213: -283143500935673495
+    second: toFieldPlant_48
+  - first:
+      213: 7786444200855177331
+    second: toFieldPlant_49
+  - first:
+      213: 2523759680380315185
+    second: toFieldPlant_50
+  - first:
+      213: 5240840053686206624
+    second: toFieldPlant_51
+  - first:
+      213: 7539841485943549416
+    second: toFieldPlant_52
+  - first:
+      213: 4381675121524105905
+    second: toFieldPlant_53
+  - first:
+      213: 6853361976282473359
+    second: toFieldPlant_54
+  - first:
+      213: 2839535528761840187
+    second: toFieldPlant_55
+  - first:
+      213: 2009012908146960941
+    second: toFieldPlant_56
+  - first:
+      213: 4009115471394889464
+    second: toFieldPlant_57
+  - first:
+      213: 6269703489643484869
+    second: toFieldPlant_58
+  - first:
+      213: 1139500870011557898
+    second: toFieldPlant_59
+  - first:
+      213: -2628434619213177851
+    second: toFieldPlant_60
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: toFieldPlant_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 414
+        width: 323
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83cccdfece4156660800000000000000
+      internalID: 7378326572385487928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_1
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 432
+        width: 357
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ffc42929a58f5030800000000000000
+      internalID: 3485651598194298873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_2
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 412
+        width: 345
+        height: 381
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2214760ab6e4eb620800000000000000
+      internalID: 2791755043175874850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_3
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 438
+        width: 320
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b104fb7500529f4b0800000000000000
+      internalID: -5406249194279190501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_4
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 443
+        width: 323
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55746f5c0be514e50800000000000000
+      internalID: 6791813826379925333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_5
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 39
+        width: 333
+        height: 324
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9cf5960c220e900800000000000000
+      internalID: 711606950921488810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_6
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 29
+        width: 345
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a9352ac8eb816d0800000000000000
+      internalID: -3019454038923830698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_7
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 13
+        width: 369
+        height: 394
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6918598810b7c30800000000000000
+      internalID: 4358078750546564791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_8
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 0
+        width: 360
+        height: 365
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6effd4d7c615f06e0800000000000000
+      internalID: -1869185793934884890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: toFieldPlant_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 396
+        height: 389
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d79250ae6108cdf0800000000000000
+      internalID: -159876212123854893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: a491c385947093a43a58a2ca14416648
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4204897107997718366
+    second: aguia_ar_0
+  - first:
+      213: -7833628653288603817
+    second: aguia_ar_1
+  - first:
+      213: -7426311893237971551
+    second: aguia_ar_2
+  - first:
+      213: -8576730032551865296
+    second: aguia_ar_3
+  - first:
+      213: -6157873205186540442
+    second: aguia_ar_4
+  - first:
+      213: -7556692187487613444
+    second: aguia_ar_5
+  - first:
+      213: 7504027004483337463
+    second: aguia_ar_6
+  - first:
+      213: 7021446349902537303
+    second: aguia_ar_7
+  - first:
+      213: 2360375970566601511
+    second: aguia_ar_8
+  - first:
+      213: -5190334086255344382
+    second: aguia_ar_9
+  - first:
+      213: 6765787549699935601
+    second: aguia_ar_10
+  - first:
+      213: 6282425057295449451
+    second: aguia_ar_11
+  - first:
+      213: 5577369808834625484
+    second: aguia_ar_12
+  - first:
+      213: -3237627550824505826
+    second: aguia_ar_13
+  - first:
+      213: 6879552332888363493
+    second: aguia_ar_14
+  - first:
+      213: 6443681012739172535
+    second: aguia_ar_15
+  - first:
+      213: 6548930411394183585
+    second: aguia_ar_16
+  - first:
+      213: 5021027360090652432
+    second: aguia_ar_17
+  - first:
+      213: 9106328769979342726
+    second: aguia_ar_18
+  - first:
+      213: 5936904862805852009
+    second: aguia_ar_19
+  - first:
+      213: -5271873074511206193
+    second: aguia_ar_20
+  - first:
+      213: -1212131418092113426
+    second: aguia_ar_21
+  - first:
+      213: -8919053977221608613
+    second: aguia_ar_22
+  - first:
+      213: 3395917804134382323
+    second: aguia_ar_23
+  - first:
+      213: 362015118070478537
+    second: aguia_ar_24
+  - first:
+      213: 8643905758631794831
+    second: aguia_ar_25
+  - first:
+      213: 8821605165540980906
+    second: aguia_ar_26
+  - first:
+      213: -925570501221499116
+    second: aguia_ar_27
+  - first:
+      213: 5607071629674426182
+    second: aguia_ar_28
+  - first:
+      213: 2754825736724155000
+    second: aguia_ar_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 12
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: aguia_ar_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 801
+        width: 296
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57754724abca5a30800000000000000
+      internalID: 4204897107997718366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_1
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 801
+        width: 296
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f39628e3c594390800000000000000
+      internalID: -7833628653288603817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 801
+        width: 297
+        height: 248
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5ca4ceda070f890800000000000000
+      internalID: -7426311893237971551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_3
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 801
+        width: 298
+        height: 249
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03452531a7559f880800000000000000
+      internalID: -8576730032551865296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_4
+      rect:
+        serializedVersion: 2
+        x: 1473
+        y: 801
+        width: 301
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66cc5f812f6da8aa0800000000000000
+      internalID: -6157873205186540442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_5
+      rect:
+        serializedVersion: 2
+        x: 1834
+        y: 801
+        width: 302
+        height: 255
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfdc4d71e7c312790800000000000000
+      internalID: -7556692187487613444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_6
+      rect:
+        serializedVersion: 2
+        x: 2192
+        y: 801
+        width: 303
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcfa237dc8a32860800000000000000
+      internalID: 7504027004483337463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_7
+      rect:
+        serializedVersion: 2
+        x: 2555
+        y: 801
+        width: 308
+        height: 262
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75267670140317160800000000000000
+      internalID: 7021446349902537303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_8
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 801
+        width: 309
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b7dfd707db1c020800000000000000
+      internalID: 2360375970566601511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_9
+      rect:
+        serializedVersion: 2
+        x: 3277
+        y: 801
+        width: 310
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205062be5aa38f7b0800000000000000
+      internalID: -5190334086255344382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_10
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 400
+        width: 311
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d00a50ee7e4ed50800000000000000
+      internalID: 6765787549699935601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_11
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 400
+        width: 313
+        height: 279
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6dbb1ccd48af2750800000000000000
+      internalID: 6282425057295449451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_12
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 400
+        width: 314
+        height: 283
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf739c7a4cc66d40800000000000000
+      internalID: 5577369808834625484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_13
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 400
+        width: 317
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1e561e65e2a113d0800000000000000
+      internalID: -3237627550824505826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_14
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 400
+        width: 316
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e15587b564197f50800000000000000
+      internalID: 6879552332888363493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_15
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 400
+        width: 317
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b86f32bdbd8c6950800000000000000
+      internalID: 6443681012739172535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_16
+      rect:
+        serializedVersion: 2
+        x: 2186
+        y: 400
+        width: 316
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a137ede28972ea50800000000000000
+      internalID: 6548930411394183585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_17
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 400
+        width: 315
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f78bd08c54ea540800000000000000
+      internalID: 5021027360090652432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_18
+      rect:
+        serializedVersion: 2
+        x: 2916
+        y: 400
+        width: 315
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68fd986d4cd206e70800000000000000
+      internalID: 9106328769979342726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_19
+      rect:
+        serializedVersion: 2
+        x: 3273
+        y: 400
+        width: 313
+        height: 285
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff4d4848f146250800000000000000
+      internalID: 5936904862805852009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_20
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1
+        width: 311
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc820dcce5b86d6b0800000000000000
+      internalID: -5271873074511206193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_21
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1
+        width: 309
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee1778bb5e4ad2fe0800000000000000
+      internalID: -1212131418092113426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_22
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 1
+        width: 308
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5bcb23b9a7293480800000000000000
+      internalID: -8919053977221608613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_23
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 1
+        width: 305
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fabad12049b02f20800000000000000
+      internalID: 3395917804134382323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_24
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1
+        width: 304
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c679e3f4d2260500800000000000000
+      internalID: 362015118070478537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_25
+      rect:
+        serializedVersion: 2
+        x: 1833
+        y: 1
+        width: 301
+        height: 258
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8893377d7255f770800000000000000
+      internalID: 8643905758631794831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_26
+      rect:
+        serializedVersion: 2
+        x: 2196
+        y: 1
+        width: 301
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa832d0c823ac6a70800000000000000
+      internalID: 8821605165540980906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_27
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 1
+        width: 299
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fbc147886b723f0800000000000000
+      internalID: -925570501221499116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_28
+      rect:
+        serializedVersion: 2
+        x: 2923
+        y: 1
+        width: 297
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f2aec80f150dd40800000000000000
+      internalID: 5607071629674426182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: aguia_ar_29
+      rect:
+        serializedVersion: 2
+        x: 3285
+        y: 1
+        width: 297
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87a0c8f696b1b3620800000000000000
+      internalID: 2754825736724155000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

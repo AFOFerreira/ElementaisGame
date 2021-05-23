@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: 442c5664cb920794ab47e90c63d45763
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4370844502033939714
+    second: ataqueFogo_0
+  - first:
+      213: 1299209398749360902
+    second: ataqueFogo_1
+  - first:
+      213: 1560468165891914852
+    second: ataqueFogo_2
+  - first:
+      213: 9004551314278880398
+    second: ataqueFogo_3
+  - first:
+      213: -3337527338266732935
+    second: ataqueFogo_4
+  - first:
+      213: -8237494997115606234
+    second: ataqueFogo_5
+  - first:
+      213: -257981905985524709
+    second: ataqueFogo_6
+  - first:
+      213: -4454698869541915716
+    second: ataqueFogo_7
+  - first:
+      213: 2008771234269623168
+    second: ataqueFogo_8
+  - first:
+      213: -238771825542218724
+    second: ataqueFogo_9
+  - first:
+      213: 7921821712727757640
+    second: ataqueFogo_10
+  - first:
+      213: -9201799641538314910
+    second: ataqueFogo_11
+  - first:
+      213: -1921576478753321338
+    second: ataqueFogo_12
+  - first:
+      213: 3675993813794893712
+    second: ataqueFogo_13
+  - first:
+      213: 7149656993815362254
+    second: ataqueFogo_14
+  - first:
+      213: 1966568217160679263
+    second: ataqueFogo_15
+  - first:
+      213: -3904465213830541063
+    second: ataqueFogo_16
+  - first:
+      213: 1723464499693208215
+    second: ataqueFogo_17
+  - first:
+      213: 8996164759189123843
+    second: ataqueFogo_18
+  - first:
+      213: 2914699954049479004
+    second: ataqueFogo_19
+  - first:
+      213: 9003700790962776348
+    second: ataqueFogo_20
+  - first:
+      213: -9084667512731035784
+    second: ataqueFogo_21
+  - first:
+      213: 8726053525836634445
+    second: ataqueFogo_22
+  - first:
+      213: -8063043073012518931
+    second: ataqueFogo_23
+  - first:
+      213: 6218384064922759148
+    second: ataqueFogo_24
+  - first:
+      213: -990008545396114701
+    second: ataqueFogo_25
+  - first:
+      213: 3671751933851693717
+    second: ataqueFogo_26
+  - first:
+      213: -8488162904816008038
+    second: ataqueFogo_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataqueFogo_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20db338baeb58ac30800000000000000
+      internalID: 4370844502033939714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_1
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603fd4d8018b70210800000000000000
+      internalID: 1299209398749360902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_2
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 3600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cfa477785e7a510800000000000000
+      internalID: 1560468165891914852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e849e5156b796fc70800000000000000
+      internalID: 9004551314278880398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_4
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976d47e9198bea1d0800000000000000
+      internalID: -3337527338266732935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_5
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 3200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62bedd9b1f98ead80800000000000000
+      internalID: -8237494997115606234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c2147c2d67b6cf0800000000000000
+      internalID: -257981905985524709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_7
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb3be9beafabd22c0800000000000000
+      internalID: -4454698869541915716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_8
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083f9ad6bc690eb10800000000000000
+      internalID: 2008771234269623168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c3f2c2a46bfacf0800000000000000
+      internalID: -238771825542218724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_10
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8435d1940e6ffed60800000000000000
+      internalID: 7921821712727757640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_11
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26dbacfaaf3ac4080800000000000000
+      internalID: -9201799641538314910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e892f9f503555e0800000000000000
+      internalID: -1921576478753321338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_13
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2000
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f27cbb5e0c30330800000000000000
+      internalID: 3675993813794893712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_14
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2000
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eca7046c72fa83360800000000000000
+      internalID: 7149656993815362254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f7f6acf57aa4b10800000000000000
+      internalID: 1966568217160679263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_16
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0d2c3239d80d9c0800000000000000
+      internalID: -3904465213830541063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_17
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 792c537c4d9fae710800000000000000
+      internalID: 1723464499693208215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 303fa5c4f2cc8dc70800000000000000
+      internalID: 8996164759189123843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_19
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5177fb5a28137820800000000000000
+      internalID: 2914699954049479004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_20
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c196d3d6a2293fc70800000000000000
+      internalID: 9003700790962776348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8779221a707cce180800000000000000
+      internalID: -9084667512731035784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_22
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49998af27b291970800000000000000
+      internalID: 8726053525836634445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_23
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def2a608b015a1090800000000000000
+      internalID: -8063043073012518931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cefaba25c532c4650800000000000000
+      internalID: 6218384064922759148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_25
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa30172978c242f0800000000000000
+      internalID: -990008545396114701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_26
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59275981eeea4f230800000000000000
+      internalID: 3671751933851693717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueFogo_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a944bce6fccf33a80800000000000000
+      internalID: -8488162904816008038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

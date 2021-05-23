@@ -1,0 +1,815 @@
+fileFormatVersion: 2
+guid: 219b17e4ff60e6548a613dbb4defd3d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4199190098805330997
+    second: ataqueAgua_0
+  - first:
+      213: -4605328425656611768
+    second: ataqueAgua_1
+  - first:
+      213: 3070669381824772551
+    second: ataqueAgua_2
+  - first:
+      213: 3600094668021773163
+    second: ataqueAgua_3
+  - first:
+      213: -5297600980676598790
+    second: ataqueAgua_4
+  - first:
+      213: -6392092523548465790
+    second: ataqueAgua_5
+  - first:
+      213: -3250354327286279648
+    second: ataqueAgua_6
+  - first:
+      213: 430128537964863775
+    second: ataqueAgua_7
+  - first:
+      213: 5768988222426868138
+    second: ataqueAgua_8
+  - first:
+      213: 8050508217582140306
+    second: ataqueAgua_9
+  - first:
+      213: -3856959701536885038
+    second: ataqueAgua_10
+  - first:
+      213: -6626385836205542640
+    second: ataqueAgua_11
+  - first:
+      213: -8565985779379499331
+    second: ataqueAgua_12
+  - first:
+      213: -4998631631153611131
+    second: ataqueAgua_13
+  - first:
+      213: 467393798879426848
+    second: ataqueAgua_14
+  - first:
+      213: 5668095999197053502
+    second: ataqueAgua_15
+  - first:
+      213: -14344518568809504
+    second: ataqueAgua_16
+  - first:
+      213: 816234748254416520
+    second: ataqueAgua_17
+  - first:
+      213: -5874344696273263164
+    second: ataqueAgua_18
+  - first:
+      213: 3278070385675613094
+    second: ataqueAgua_19
+  - first:
+      213: 5337612925910633935
+    second: ataqueAgua_20
+  - first:
+      213: -3332492539214043672
+    second: ataqueAgua_21
+  - first:
+      213: -2988127942129233093
+    second: ataqueAgua_22
+  - first:
+      213: -4812202362890027550
+    second: ataqueAgua_23
+  - first:
+      213: 3553532374627859766
+    second: ataqueAgua_24
+  - first:
+      213: 7090412586569346111
+    second: ataqueAgua_25
+  - first:
+      213: 3347591165623947027
+    second: ataqueAgua_26
+  - first:
+      213: -4237257460711484359
+    second: ataqueAgua_27
+  - first:
+      213: -3742550292659099993
+    second: ataqueAgua_28
+  - first:
+      213: -4209512896425789611
+    second: ataqueAgua_29
+  - first:
+      213: -6248418969088180225
+    second: ataqueAgua_30
+  - first:
+      213: -7702081432497149724
+    second: ataqueAgua_31
+  - first:
+      213: 752741600498728315
+    second: ataqueAgua_32
+  - first:
+      213: -552259063268718403
+    second: ataqueAgua_33
+  - first:
+      213: 7240256365454832974
+    second: ataqueAgua_34
+  - first:
+      213: 7979402375233732862
+    second: ataqueAgua_35
+  - first:
+      213: -137611874419502697
+    second: ataqueAgua_36
+  - first:
+      213: -2293328173186771676
+    second: ataqueAgua_37
+  - first:
+      213: 5311285563931517942
+    second: ataqueAgua_38
+  - first:
+      213: 753510780734477707
+    second: ataqueAgua_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ataqueAgua_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53411a78525864a30800000000000000
+      internalID: 4199190098805330997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_1
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 3200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c8aba62369610c0800000000000000
+      internalID: -4605328425656611768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_2
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 3200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9755e98853d9a20800000000000000
+      internalID: 3070669381824772551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b633735c60b16f130800000000000000
+      internalID: 3600094668021773163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_4
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3a209d9f32b76b0800000000000000
+      internalID: -5297600980676598790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_5
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 285a67277b9ba47a0800000000000000
+      internalID: -6392092523548465790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02292ffd5fb64e2d0800000000000000
+      internalID: -3250354327286279648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_7
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11672950af18f500800000000000000
+      internalID: 430128537964863775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_8
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa96a2f09309f0050800000000000000
+      internalID: 5768988222426868138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bb85a029629bf60800000000000000
+      internalID: 8050508217582140306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_10
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 2000
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d6b5e42693597ac0800000000000000
+      internalID: -3856959701536885038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_11
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 2000
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013f948a0395a04a0800000000000000
+      internalID: -6626385836205542640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe890571518f1980800000000000000
+      internalID: -8565985779379499331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_13
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ebe0ee30b41aab0800000000000000
+      internalID: -4998631631153611131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_14
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1600
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029bd680f248c7600800000000000000
+      internalID: 467393798879426848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3204f8c74f19ae40800000000000000
+      internalID: 5668095999197053502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_16
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eb6b328cb90dcff0800000000000000
+      internalID: -14344518568809504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_17
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 1200
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88ee80fcd29d35b00800000000000000
+      internalID: 816234748254416520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5ae625f922a7ea0800000000000000
+      internalID: -5874344696273263164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_19
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a33ce6d5ab0e7d20800000000000000
+      internalID: 3278070385675613094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_20
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 800
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdcf6d1da2031a40800000000000000
+      internalID: 5337612925910633935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e5e18f11bb90c1d0800000000000000
+      internalID: -3332492539214043672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_22
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33d7f9e7790886d0800000000000000
+      internalID: -2988127942129233093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_23
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 400
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edf4a4727f973db0800000000000000
+      internalID: -4812202362890027550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d3b870edea05130800000000000000
+      internalID: 3553532374627859766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_25
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3cac6d4ea4366260800000000000000
+      internalID: 7090412586569346111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ataqueAgua_26
+      rect:
+        serializedVersion: 2
+        x: 2170
+        y: 0
+        width: 1085
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31f4048cd68057e20800000000000000
+      internalID: 3347591165623947027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
