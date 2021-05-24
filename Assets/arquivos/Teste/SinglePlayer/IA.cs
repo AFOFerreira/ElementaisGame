@@ -6,7 +6,7 @@ public class IA : MonoBehaviour
 {
     public bool possoJogar;
 
-    public List<CampoSingle> camposParaJogarMonstro = new List<CampoSingle>();
+    [HideInInspector] public List<CampoSingle> camposParaJogarMonstro = new List<CampoSingle>();
 
     public CampoSingle campo;
 
@@ -34,22 +34,35 @@ public class IA : MonoBehaviour
                 fase = gameManager.faseAtual;
                 if (fase == TipoFase.MONSTRO)
                 {
-
                     if (camposParaJogarMonstro.Count > 0)
                     {
-                        for (int i = 0; i < camposParaJogarMonstro.Count; i++)
+                        if (campo == null)
                         {
-                            campo = camposParaJogarMonstro[i];
+                            for (int i = 0; i < camposParaJogarMonstro.Count; i++)
+                            {
+                                campo = camposParaJogarMonstro[i];
+                            }
                         }
-                        Debug.Log(tipoIA + ": Posso jogar no campo: " + campo.idCampo);
-                        
+                        else
+                        {
+                            Debug.Log(tipoIA + ": Posso jogar no campo: " + campo.idCampo);
+                            if (campo.vazio)
+                            {
+                                Debug.Log("Esperando jogada!");
+                            }
+                            else
+                            {
+                                Debug.Log(tipoIA + ": Joguei no campo " + campo.idCampo);
+                                gameManager.faseAtual = TipoFase.MAGICA;
+                            }         
+                        }
                     }
                     else
                     {
                         Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
                         //gameManager.PassaFase();
                         gameManager.faseAtual = TipoFase.MAGICA;
-                        
+
                     }
                 }
                 else if (fase == TipoFase.MAGICA)
@@ -57,19 +70,19 @@ public class IA : MonoBehaviour
                     //TURNO PARA JOGAR CARTAS MAGICAS.
                     Debug.Log(tipoIA + ": Esperando para jogar cartas magicas");
                     gameManager.PassaTurno();
-                 
+
                 }
                 else
                 {
                     //TURNO PARA DEFESA.
                     Debug.Log(tipoIA + ": Realizando defesa");
-                  
+
                 }
             }
             else
             {
                 Debug.Log(tipoIA + ": Não posso jogar, não é a minha vez!!");
-                
+                campo = null;
                 //DO NOTHING!
             }
         }
@@ -77,7 +90,7 @@ public class IA : MonoBehaviour
 
     void VerificaMeuTurno()
     {
-        if(tipoIA == gameManager.turno)
+        if (tipoIA == gameManager.turno)
             possoJogar = true;
         else
             possoJogar = false;
