@@ -6,9 +6,13 @@ public class IA : MonoBehaviour
 {
     public bool possoJogar;
 
-    [HideInInspector] public List<CampoSingle> camposParaJogarMonstro = new List<CampoSingle>();
+    public List<CampoSingle> camposParaJogarMonstro = new List<CampoSingle>();
+    public List<CampoSingle> camposParaJogarMagicas = new List<CampoSingle>();
+    public List<CampoSingle> campoOcupadosMagicas = new List<CampoSingle>();
+    public List<CampoSingle> camposOcupadosMonstros = new List<CampoSingle>();
+    public CartaSingle[] Mao;
 
-    public CampoSingle campo;
+    public CampoSingle campoSelecionado;
 
     public TipoJogador tipoIA;
     public TipoFase fase;
@@ -27,7 +31,6 @@ public class IA : MonoBehaviour
         if (gameManager.EmJogo)
         {
             VerificaMeuTurno();
-
             if (possoJogar)
             {
                 VerificaCampos();
@@ -36,25 +39,33 @@ public class IA : MonoBehaviour
                 {
                     if (camposParaJogarMonstro.Count > 0)
                     {
-                        if (campo == null)
+                        if (campoSelecionado == null)
                         {
                             for (int i = 0; i < camposParaJogarMonstro.Count; i++)
                             {
-                                campo = camposParaJogarMonstro[i];
+                                campoSelecionado = camposParaJogarMonstro[i];
                             }
                         }
                         else
                         {
-                            Debug.Log(tipoIA + ": Posso jogar no campo: " + campo.idCampo);
-                            if (campo.vazio)
+                            Debug.Log(tipoIA + ": Posso jogar no campo: " + campoSelecionado.idCampo);
+                            if (campoSelecionado.vazio)
                             {
                                 Debug.Log("Esperando jogada!");
+                                var cartaA = Mao[0];
+                                if (Input.GetButtonDown("Jump"))
+                                {
+                                   
+                                        //Debug.Log("Apertou");
+                                        gameManager.JogarCarta(campoSelecionado, cartaA.gameObject);
+                                    
+                                }
                             }
                             else
                             {
-                                Debug.Log(tipoIA + ": Joguei no campo " + campo.idCampo);
+                                Debug.Log(tipoIA + ": Joguei no campo " + campoSelecionado.idCampo);
                                 gameManager.faseAtual = TipoFase.MAGICA;
-                            }         
+                            }
                         }
                     }
                     else
@@ -62,27 +73,44 @@ public class IA : MonoBehaviour
                         Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
                         //gameManager.PassaFase();
                         gameManager.faseAtual = TipoFase.MAGICA;
-
                     }
                 }
                 else if (fase == TipoFase.MAGICA)
                 {
-                    //TURNO PARA JOGAR CARTAS MAGICAS.
-                    Debug.Log(tipoIA + ": Esperando para jogar cartas magicas");
-                    gameManager.PassaTurno();
+                    if (camposParaJogarMagicas.Count > 0)
+                    {
+                        for (int i = 0; i < camposParaJogarMagicas.Count; i++)
+                        {
+                            campoSelecionado = camposParaJogarMagicas[i];
+                        }
+                        Debug.Log(tipoIA + ": Posso jogar no campo: " + campoSelecionado.idCampo);
+                        if (campoSelecionado.vazio)
+                        {
+                            Debug.Log("Esperando jogada!");
+                            var cartaA = Mao[1];
+                            if (Input.GetButtonDown("Jump"))
+                            {
+                                gameManager.JogarCarta(campoSelecionado, cartaA.gameObject);
+                            }
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
+                        gameManager.PassaTurno();
 
+                    }
                 }
                 else
                 {
                     //TURNO PARA DEFESA.
                     Debug.Log(tipoIA + ": Realizando defesa");
-
                 }
             }
             else
             {
                 Debug.Log(tipoIA + ": Não posso jogar, não é a minha vez!!");
-                campo = null;
+                campoSelecionado = null;
                 //DO NOTHING!
             }
         }
@@ -98,13 +126,11 @@ public class IA : MonoBehaviour
 
     void VerificaCampos()
     {
-        if (tipoIA == TipoJogador.IA)
-        {
-            camposParaJogarMonstro = gameManager.VerificaCampoDisponivelIA();
-        }
-        else
-        {
-            camposParaJogarMonstro = gameManager.VerificaCampoDisponivelPlayer();
-        }
+        camposParaJogarMagicas = gameManager.VerificaCampoDisponivelMagicas(tipoIA);
+        campoOcupadosMagicas = gameManager.VerificaCampoOcupadoMagicas(tipoIA);
+        camposParaJogarMonstro = gameManager.VerificaCampoDisponivelMonstros(tipoIA);
+        camposOcupadosMonstros = gameManager.VerificaCampoOcupadoMonstros(tipoIA);
     }
+
+
 }
