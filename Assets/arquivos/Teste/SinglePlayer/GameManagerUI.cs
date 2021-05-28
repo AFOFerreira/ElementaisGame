@@ -1,9 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManagerUI : MonoBehaviour
 {
+    public TextMeshProUGUI turnoAtual;
+    public TextMeshProUGUI faseAtual;
     public static GameManagerUI _instance;
     private void Awake()
     {
@@ -27,6 +30,17 @@ public class GameManagerUI : MonoBehaviour
     {
         if (GameManagerIa.instance.EmJogo)
         {
+            if(GameManagerIa.instance.turno == TipoJogador.PLAYER)
+            {
+                turnoAtual.text = "Turno atual: PLAYER";
+            }
+            else
+            {
+                turnoAtual.text = "Turno atual: IA";
+            }
+
+       
+            faseAtual.text = "Fase atual: " + GameManagerIa.instance.faseAtual.ToString();
            // Debug.Log("Em Jogo -GameManagerUI-");
         }
     }
