@@ -55,10 +55,7 @@ public class IA : MonoBehaviour
                                 var cartaA = Mao[0];
                                 if (Input.GetButtonDown("Jump"))
                                 {
-                                   
-                                        //Debug.Log("Apertou");
-                                        gameManager.JogarCarta(campoSelecionado, cartaA.gameObject);
-                                    
+                                    gameManager.JogarCarta(campoSelecionado, cartaA.gameObject);
                                 }
                             }
                             else
@@ -98,7 +95,6 @@ public class IA : MonoBehaviour
                     {
                         Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
                         gameManager.PassaTurno();
-
                     }
                 }
                 else
