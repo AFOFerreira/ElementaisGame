@@ -8,6 +8,7 @@ using TMPro;
 
 public class GerenciadorUI : MonoBehaviour
 {
+    public bool uiPronta = false;
     public static GerenciadorUI gerenciadorUI;
     public AudioBase gerenciadorAudio;
     public GerenciadorJogo gerenciadorJogo;
@@ -103,7 +104,7 @@ public class GerenciadorUI : MonoBehaviour
 
         animDerrota = Resources.LoadAll<Sprite>("imagens/vitoriaDerrota/derrotaSprite").ToList();
         animVitoria = Resources.LoadAll<Sprite>("imagens/vitoriaDerrota/vitoriaSprite").ToList();
-
+        uiPronta = true;
     }
 
     public void atualizaCronometro(float tempo)

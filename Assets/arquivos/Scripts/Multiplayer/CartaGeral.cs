@@ -45,4 +45,5 @@ public class CartaGeral
         this.animCampo = carta.animCampo;
     }
 
+    public CartaGeral(){}
 }

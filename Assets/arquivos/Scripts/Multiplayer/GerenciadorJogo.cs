@@ -44,6 +44,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public bool turnoLocal = false;
     public bool EmJogo;
     public bool turnoDefesa;
+    public int JogadasPlayer = 1;
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
@@ -101,6 +102,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             turnoLocal = true;
         }
 
+        JogadasPlayer = 1;
         gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
 
         for (int i = 0; i < 5; i++)
@@ -111,8 +113,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         tempoCronometro = 18;
 
-        EmJogo = true;
         sorteio();
+
         fase = 1;
     }
 
@@ -120,7 +122,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         if (turnoLocal && !rodandoAnimacao)
         {
-            trocaTurno(true);
+            PassaTurno();
         }
     }
 
@@ -367,7 +369,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         }
     }
 
-    private void executaAtaqueLocal(int idAtacante, int idInimigo, bool P1)
+    public void executaAtaqueLocal(int idAtacante, int idInimigo, bool P1)
     {
         int vida;
 
@@ -462,7 +464,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
     public void dropElemental(GameObject cartaPrefabLocal, int idSlot)
     {
-        gerenciadorAudio.playCartaBaixando();
         slotsCampoP1[idSlot].ocupado = true;
         DOTween.Pause("slot" + idSlot);
         CartaPrefab prefabScript = cartaPrefabLocal.GetComponent<CartaPrefab>();
@@ -472,7 +473,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         slotsCampoP1[idSlot].imgAnimAtivar.ZeraAlfa();
         slotsCampoP1[idSlot].imgElementalCampo.ZeraAlfa();
 
-
+        gerenciadorAudio.playCartaBaixando();
+        JogadasPlayer = 0;
         Sequence surgirElemental = DOTween.Sequence().SetId("ativarElemental");
         surgirElemental.Append(cartaPrefabLocal.GetComponent<CanvasGroup>().DOFade(0, 0));
         surgirElemental.AppendCallback(() =>
@@ -684,6 +686,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
     void Update()
     {
+        if (gerenciadorUI.uiPronta)
+            EmJogo = true;
         if (tempoCronometro > 0)
         {
             tempoCronometro -= Time.deltaTime;
@@ -695,6 +699,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             tempoCronometro = -2;
             Timing.RunCoroutine(rodaAtaqueCampo());
             //trocar de turno
+            PassaTurno();
         }
     }
 
@@ -913,6 +918,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         if (turno == TipoJogador.IA)
         {
             gerenciadorUI.trocaBtnTurno(1);
+            JogadasPlayer++;
             turno = TipoJogador.PLAYER;
         }
         else

@@ -2,30 +2,44 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class IA : MonoBehaviour
 {
-    public bool possoJogar;
+    int qtdTurnos = 0;
+    int jogadasMonstro = 1;
+    GerenciadorJogo gerenciadorJogo;
+    private float tempoAtual = 0;
 
+
+    [Header("Cristais")]
+    //0-agua, 1-fogo, 2-terra, 3- ar
+    public int[] cristais = new int[4];
+
+
+    [Header("Campos")]
     public List<SlotCampo> camposParaJogarMonstro = new List<SlotCampo>();
     public List<SlotCampo> camposParaJogarMagicas = new List<SlotCampo>();
     public List<SlotCampo> campoOcupadosMagicas = new List<SlotCampo>();
     public List<SlotCampo> camposOcupadosMonstros = new List<SlotCampo>();
+    public SlotCampo campoSelecionado;
 
+    [Header("Deck")]
     public List<CartaGeral> deckTotal = new List<CartaGeral>();
     public List<CartaGeral> cemiterio = new List<CartaGeral>();
     public List<CartaGeral> mao = new List<CartaGeral>();
 
-    public SlotCampo campoSelecionado;
-
+    [Header("Controladores")]
+    public bool possoJogar, gCristal;
     public TipoJogador tipoIA;
     public TipoFase fase;
-    GerenciadorJogo gerenciadorJogo;
+    public float tempoPensamento = 0;
     // Start is called before the first frame update
 
     void Start()
     {
+        gCristal = false;
         gerenciadorJogo = GerenciadorJogo.instance;
         Timing.RunCoroutine(iniciarObjetos());
         VerificaCampos();
@@ -45,13 +59,16 @@ public class IA : MonoBehaviour
             VerificaMeuTurno();
             if (possoJogar)
             {
+                if(gCristal)
+                {
+                    GanharCristais();
+                }
                 VerificaCampos();
                 fase = gerenciadorJogo.faseAtual;
                 if (fase == TipoFase.MONSTRO)
                 {
-                    if (camposParaJogarMonstro.Count > camposOcupadosMonstros.Count -1)
+                    if (camposParaJogarMonstro.Count > 0 && jogadasMonstro > 0)
                     {
-
                         for (int i = 0; i < camposParaJogarMonstro.Count; i++)
                         {
                             campoSelecionado = camposParaJogarMonstro[i];
@@ -60,12 +77,14 @@ public class IA : MonoBehaviour
                         Debug.Log(tipoIA + ": Posso jogar no campo: " + campoSelecionado.idCampo);
                         if (campoSelecionado.ocupado == false)
                         {
-                            Debug.Log("Esperando jogada!");
-                            var c = Random.Range(0, mao.Count);
-                            var cartaA = mao[c];
-                            if (Input.GetButtonDown("Jump"))
+                            Debug.Log("Pensando...");
+                            if (Delay(tempoPensamento))
                             {
-                                gerenciadorJogo.JogarCarta(cartaA, campoSelecionado.idCampo);
+                                CartaGeral carta = PensaCartaMonstro();
+                                gerenciadorJogo.JogarCarta(carta, campoSelecionado.idCampo);
+                                mao.Remove(carta);
+                                jogadasMonstro--;
+                                carta = null;
                             }
                         }
                         else
@@ -77,7 +96,7 @@ public class IA : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
+                        Debug.Log(tipoIA + ": Não posso jogar, nao há jogadas ou campos disponivies!");
                         //gameManager.PassaFase();
                         gerenciadorJogo.faseAtual = TipoFase.MAGICA;
                     }
@@ -114,11 +133,15 @@ public class IA : MonoBehaviour
                     //TURNO PARA DEFESA.
                     Debug.Log(tipoIA + ": Realizando defesa");
                 }
+                qtdTurnos++;
+
             }
             else
             {
                 Debug.Log(tipoIA + ": Não posso jogar, não é a minha vez!!");
                 campoSelecionado = null;
+                jogadasMonstro = 1;
+                gCristal = true;
                 //DO NOTHING!
             }
         }
@@ -136,7 +159,10 @@ public class IA : MonoBehaviour
     void VerificaMeuTurno()
     {
         if (tipoIA == gerenciadorJogo.turno)
+        {
             possoJogar = true;
+            
+        }
         else
             possoJogar = false;
     }
@@ -149,6 +175,72 @@ public class IA : MonoBehaviour
         camposOcupadosMonstros = gerenciadorJogo.VerificaCampoOcupadoMonstros(tipoIA);
     }
 
+    bool Delay(float t)
+    {
+        bool b = false;
+        tempoAtual += 1f * Time.deltaTime;
+        if (tempoAtual >= t)
+        {
+            tempoAtual = 0f;
+            b = true;
+        }
+        return b;
+    }
+    public void sortearDeck()
+    {
+        if (deckTotal.Count > 0)
+        {
+            int id = Random.Range(0, deckTotal.Count - 1);
+            passarParaMao(id);
+            gCristal = false;
+        }
+    }
+
+    void GanharCristais()
+    {
+        var cristal = Random.Range(0, cristais.Length);
+        cristais[cristal]++;
+        gCristal = false;
+    }
+
+    CartaGeral PensaCartaMonstro()
+    {
+        var carta = new CartaGeral();
+        var c = mao[0];
+        var tatica = Random.Range(1, 10);
+        foreach (var obj in mao)
+        {
+            if (tatica < 5)
+            {
+                if (obj.ataque > c.ataque)
+                {
+                    carta = obj;
+                }
+                else
+                {
+                    carta = c;
+                }
+            }
+            else
+            {
+                if (obj.defesa > c.defesa)
+                {
+                    carta = obj;
+                }
+                else
+                {
+                    carta = c;
+                }
+            }
+        }
+        return carta;
+    }
+
+    CartaGeral PensaJogadaMagica()
+    {
+
+        return null;
+    }
     IEnumerator<float> iniciarObjetos()
     {
         ElementoGeral fogo = new ElementoGeral(2, "Fogo", Resources.Load<Sprite>("imagens/Elementos/icon_fogo"),

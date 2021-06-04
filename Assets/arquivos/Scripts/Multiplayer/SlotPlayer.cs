@@ -43,9 +43,9 @@ public class SlotPlayer : MonoBehaviour, IDropHandler
 
             if (camposVazios)
             {
-                //gerenciadorJogo.executaAtaqueDireto(eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot);
-                //gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot, 3);
-                gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer,eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, 3);
+                //gerenciadorJogo.executaAtaqueLocal(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, false);
+                gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, 3);
+                //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer,eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, 3);
             }
             else
             {
