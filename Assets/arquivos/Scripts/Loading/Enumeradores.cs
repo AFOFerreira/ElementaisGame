@@ -63,3 +63,9 @@ public enum TipoEfeito
     UNICO,
     CONTINUO
 }
+
+public enum TipoPartida
+{
+    LOCAL,
+    MULTIPLAYER
+}

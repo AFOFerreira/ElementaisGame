@@ -3,19 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class SlotElementalDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler
+public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IDropHandler, IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField]
     public int idSlot;
     private Bezier setaAtaque;
     private Canvas canvas;
     private GerenciadorJogo gerenciadorJogo;
+  
 
     private void Start()
     {
         setaAtaque = GameObject.FindGameObjectWithTag("SetaAtaque").GetComponent<Bezier>();
         canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
-        gerenciadorJogo = GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>();
+        gerenciadorJogo = GerenciadorJogo.instance;
     }
     public void OnDrop(PointerEventData eventData)
     {
@@ -30,11 +31,23 @@ public class SlotElementalDrop : MonoBehaviour, IPointerDownHandler, IBeginDragH
         {
             gerenciadorJogo.gerenciadorAudio.playNegacao();
         }
-        //ATIVAR ELEMENTAL
+        ////ATIVAR ELEMENTAL
         if (eventData.pointerDrag != null && !gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
         {
             //gerenciadorJogo.ativarElemental(idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot, true);
             gerenciadorJogo.photonView.RPC("ativarElemental", Photon.Pun.RpcTarget.AllBufferedViaServer, idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
+        }
+
+        if (eventData.pointerDrag != null && eventData.pointerDrag.GetComponent<SlotDrop>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
+        {
+            if (gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado
+                && gerenciadorJogo.slotsCampoP2[idSlot].ocupado &&
+                gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
+            {
+                //gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot, idSlot);
+                //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer, eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
+                gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel = false;
+            }
         }
     }
 
@@ -68,5 +81,17 @@ public class SlotElementalDrop : MonoBehaviour, IPointerDownHandler, IBeginDragH
     public void OnDrag(PointerEventData eventData)
     {
         //throw new System.NotImplementedException();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        setaAtaque.slotSobre = idSlot;
+        //Debug.Log("Mouse dentro ->" + idSlot);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        setaAtaque.slotSobre = -1;
+        //Debug.Log("Mouse fora ->" + idSlot);
     }
 }

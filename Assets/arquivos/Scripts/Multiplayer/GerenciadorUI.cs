@@ -8,6 +8,9 @@ using TMPro;
 
 public class GerenciadorUI : MonoBehaviour
 {
+    public static GerenciadorUI gerenciadorUI;
+    public AudioBase gerenciadorAudio;
+    public GerenciadorJogo gerenciadorJogo;
     public List<Sprite> spriteArcos;
     public Sprite fotoPadraoElemental;
     //---------------------------------------------------
@@ -52,7 +55,14 @@ public class GerenciadorUI : MonoBehaviour
 
     private void Awake()
     {
-
+        if(gerenciadorUI == null)
+        {
+            gerenciadorUI = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
         panelTopo.DOAnchorPos(new Vector2(0, 205), 0f);// posicionando o objeto fora da tela
         panelBaixo.DOAnchorPos(new Vector2(0, -200), 0f);// posicionando o objeto fora da tela
                                                          //-----------------------------------------
@@ -73,6 +83,8 @@ public class GerenciadorUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gerenciadorJogo = GerenciadorJogo.instance;
+        gerenciadorAudio = AudioBase._instance;
         foreach (var slot in slotDetalhesP1)
         {
             slot.alteraArco(0);
@@ -136,7 +148,7 @@ public class GerenciadorUI : MonoBehaviour
                 tiposCristaisCampo.Add(item.cartaGeralTemp.elemento.idElemento);
             }
         }
-        foreach (var item in GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().deckMao)
+        foreach (var item in GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().deckMaoPlayer)
         {
             tiposCristaisCampo.Add(item.elemento.idElemento);
         }

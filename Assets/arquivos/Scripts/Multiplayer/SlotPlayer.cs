@@ -25,11 +25,11 @@ public class SlotPlayer : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         if (!P1 && eventData.pointerDrag != null &&
-            eventData.pointerDrag.GetComponent<SlotElementalDrop>() != null &&
+            eventData.pointerDrag.GetComponent<SlotDrop>() != null &&
             gerenciadorJogo.turnoLocal &&
             !gerenciadorJogo.rodandoAnimacao &&
-            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot].ativado &&
-            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot].disponivel)
+            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado &&
+            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
         {
             bool camposVazios = true;
 
@@ -45,7 +45,7 @@ public class SlotPlayer : MonoBehaviour, IDropHandler
             {
                 //gerenciadorJogo.executaAtaqueDireto(eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot);
                 //gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot, 3);
-                gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer,eventData.pointerDrag.GetComponent<SlotElementalDrop>().idSlot, 3);
+                gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer,eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, 3);
             }
             else
             {

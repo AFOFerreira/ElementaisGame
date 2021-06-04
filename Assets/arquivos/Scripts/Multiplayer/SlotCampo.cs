@@ -6,11 +6,14 @@ using UnityEngine.UI;
 [System.Serializable]
 public class SlotCampo
 {
+    public int idCampo;
     public Image imgElementalCampo;
     public Image imgAnimAtivar;
     public Image imgAnimAtaque;
     public bool ocupado;
     public bool ativado;
     public bool disponivel;
-  
+    public TipoJogador donoCampo;
+    public TipoCarta tipoCartaCampo;
+
 }

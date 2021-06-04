@@ -7,6 +7,10 @@ using System;
 
 public class AudioBase : MonoBehaviour
 {
+    public static AudioBase _instance;
+
+    
+
     [FMODUnity.EventRef]
     Guid _musicaMenu = new Guid("c3a01e20-430e-4f74-b851-cd01c1ddea8c");
     FMOD.Studio.EventInstance musicaMenu;
@@ -173,7 +177,15 @@ public class AudioBase : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if(_instance == null)
+        {
+            _instance = this;
+        }
+        else
+        {
+            Destroy(this.gameObject);
+        }
+      
     }
 
     /// <summary>
