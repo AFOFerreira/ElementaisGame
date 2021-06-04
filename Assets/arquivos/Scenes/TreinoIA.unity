@@ -638,7 +638,6 @@ GameObject:
   - component: {fileID: 70102852}
   - component: {fileID: 70102854}
   - component: {fileID: 70102853}
-  - component: {fileID: 70102855}
   - component: {fileID: 70102856}
   m_Layer: 5
   m_Name: Campo3 (2)
@@ -705,21 +704,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70102851}
   m_CullTransparentMesh: 0
---- !u!114 &70102855
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 70102851}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddaeaaf22fdbe544ba3012d49d63556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idSlot: 2
-  gerenciadorJogo: {fileID: 0}
-  setaAtaque: {fileID: 0}
 --- !u!114 &70102856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3273,7 +3257,6 @@ GameObject:
   - component: {fileID: 678913565}
   - component: {fileID: 678913567}
   - component: {fileID: 678913566}
-  - component: {fileID: 678913568}
   - component: {fileID: 678913569}
   m_Layer: 5
   m_Name: Campo1 (2)
@@ -3340,21 +3323,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678913564}
   m_CullTransparentMesh: 0
---- !u!114 &678913568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678913564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddaeaaf22fdbe544ba3012d49d63556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idSlot: 0
-  gerenciadorJogo: {fileID: 0}
-  setaAtaque: {fileID: 0}
 --- !u!114 &678913569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9476,7 +9444,6 @@ GameObject:
   - component: {fileID: 1677589841}
   - component: {fileID: 1677589843}
   - component: {fileID: 1677589842}
-  - component: {fileID: 1677589844}
   - component: {fileID: 1677589845}
   m_Layer: 5
   m_Name: Campo2 (2)
@@ -9543,21 +9510,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677589840}
   m_CullTransparentMesh: 0
---- !u!114 &1677589844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1677589840}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bddaeaaf22fdbe544ba3012d49d63556, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  idSlot: 1
-  gerenciadorJogo: {fileID: 0}
-  setaAtaque: {fileID: 0}
 --- !u!114 &1677589845
 MonoBehaviour:
   m_ObjectHideFlags: 0
