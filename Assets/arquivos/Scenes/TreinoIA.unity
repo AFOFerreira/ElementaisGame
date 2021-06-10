@@ -577,7 +577,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
+  m_fontSize: 23.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -627,6 +627,178 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48371160}
   m_CullTransparentMesh: 0
+--- !u!1001 &54773410
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 364260084}
+    m_Modifications:
+    - target: {fileID: 8641438121614145616, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_Name
+      value: PanelSorteio
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145616, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 253b28478eaca374982d8e5f3dbd0b23, type: 3}
+--- !u!224 &54773411 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8641438121614145617, guid: 253b28478eaca374982d8e5f3dbd0b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 54773410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &54773412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8641438121614145616, guid: 253b28478eaca374982d8e5f3dbd0b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 54773410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &54773413 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8641438120208815736, guid: 253b28478eaca374982d8e5f3dbd0b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 54773410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &54773414 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8641438120328128100, guid: 253b28478eaca374982d8e5f3dbd0b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 54773410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &54773415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8641438121405225667, guid: 253b28478eaca374982d8e5f3dbd0b23,
+    type: 3}
+  m_PrefabInstance: {fileID: 54773410}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &70102851
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idSlot: 2
+  possoJogar: 0
+  donoCampo: 0
 --- !u!1 &90855594
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,7 +1125,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 119762348}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 45e9e9c00b11fc54c828a5bfd818d720, type: 3}
   m_Name: 
@@ -1186,7 +1360,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
+  m_fontSize: 23.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2126,6 +2300,7 @@ RectTransform:
   - {fileID: 6612001}
   - {fileID: 1909438857}
   - {fileID: 119762349}
+  - {fileID: 54773411}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2448,7 +2623,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3057,7 +3232,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Voltar ao Menu
+  m_text: Testar Novamente
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3336,6 +3511,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idSlot: 0
+  possoJogar: 0
+  donoCampo: 0
 --- !u!1 &711738784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,7 +4935,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5063,12 +5240,81 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f47a84f1648c4c419f943b535bc3933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animSorteio: []
+  animMoeda1: []
+  animMoeda2: []
+  resultadoVoce: {fileID: 21300000, guid: b24b17601e339c24ab073a9b6bb9dd43, type: 3}
+  resultadoOponente: {fileID: 21300000, guid: e5e1a29ae56f1834fb9c583383ea8f73, type: 3}
+  panelSorteio: {fileID: 54773412}
+  imgAnimSorteio: {fileID: 54773415}
+  imgAnimMoeda: {fileID: 54773414}
+  imgResultado: {fileID: 54773413}
   gerenciadorUI: {fileID: 0}
   gerenciadorAudio: {fileID: 0}
   deckTotal: []
   deckPlayer: []
   deckMaoPlayer: []
   cemiterioPlayer: []
+  ultimoCampoJogado:
+    cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 0
+    imgElementalCampo: {fileID: 0}
+    imgAnimAtivar: {fileID: 0}
+    imgAnimAtaque: {fileID: 0}
+    ocupado: 0
+    ativado: 0
+    disponivel: 0
+    donoCampo: 0
+    tipoCartaCampo: 0
+  ultimoCampoAtivado:
+    cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 0
+    imgElementalCampo: {fileID: 0}
+    imgAnimAtivar: {fileID: 0}
+    imgAnimAtaque: {fileID: 0}
+    ocupado: 0
+    ativado: 0
+    disponivel: 0
+    donoCampo: 0
+    tipoCartaCampo: 0
   brilhoCarta: []
   cartaPrefab: {fileID: 2632119975328241694, guid: 3bfe19a23e143f145a4f67b374a5738d,
     type: 3}
@@ -5079,8 +5325,29 @@ MonoBehaviour:
   EmJogo: 0
   turnoDefesa: 0
   JogadasPlayer: 1
+  p1: 0
   slotsCampoP1:
-  - idCampo: 0
+  - cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 0
     imgElementalCampo: {fileID: 1926923500}
     imgAnimAtivar: {fileID: 7057823}
     imgAnimAtaque: {fileID: 1628410026}
@@ -5089,7 +5356,27 @@ MonoBehaviour:
     disponivel: 0
     donoCampo: 0
     tipoCartaCampo: 0
-  - idCampo: 1
+  - cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 1
     imgElementalCampo: {fileID: 804127494}
     imgAnimAtivar: {fileID: 149762341}
     imgAnimAtaque: {fileID: 161097164}
@@ -5098,7 +5385,27 @@ MonoBehaviour:
     disponivel: 0
     donoCampo: 0
     tipoCartaCampo: 0
-  - idCampo: 2
+  - cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 2
     imgElementalCampo: {fileID: 631371425}
     imgAnimAtivar: {fileID: 1599355234}
     imgAnimAtaque: {fileID: 387305536}
@@ -5108,7 +5415,27 @@ MonoBehaviour:
     donoCampo: 0
     tipoCartaCampo: 0
   slotsCampoP2:
-  - idCampo: 0
+  - cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 0
     imgElementalCampo: {fileID: 678913566}
     imgAnimAtivar: {fileID: 911890025}
     imgAnimAtaque: {fileID: 1284995845}
@@ -5117,7 +5444,27 @@ MonoBehaviour:
     disponivel: 0
     donoCampo: 1
     tipoCartaCampo: 0
-  - idCampo: 1
+  - cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 1
     imgElementalCampo: {fileID: 1677589842}
     imgAnimAtivar: {fileID: 1614739120}
     imgAnimAtaque: {fileID: 1704950104}
@@ -5126,7 +5473,27 @@ MonoBehaviour:
     disponivel: 0
     donoCampo: 1
     tipoCartaCampo: 0
-  - idCampo: 2
+  - cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 2
     imgElementalCampo: {fileID: 70102853}
     imgAnimAtivar: {fileID: 7465139}
     imgAnimAtaque: {fileID: 2113536873}
@@ -5144,6 +5511,7 @@ MonoBehaviour:
   contagemAtaques: 0
   tempoCronometro: 0
   turno: 0
+  defendendo: 0
   faseAtual: 0
   tipoPartida: 0
   fase: 0
@@ -5635,7 +6003,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6552,12 +6920,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e4b8203819bd3418e0a3c4769bdecf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cristais: 00000000000000000000000000000000
+  cristais: 0a0000000a0000000a0000000a000000
   camposParaJogarMonstro: []
   camposParaJogarMagicas: []
   campoOcupadosMagicas: []
   camposOcupadosMonstros: []
   campoSelecionado:
+    cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
+    idCampo: 0
+    imgElementalCampo: {fileID: 0}
+    imgAnimAtivar: {fileID: 0}
+    imgAnimAtaque: {fileID: 0}
+    ocupado: 0
+    ativado: 0
+    disponivel: 0
+    donoCampo: 0
+    tipoCartaCampo: 0
+  ultimoCartaJogada:
+    cartaGeral:
+      idCarta: 0
+      imgCarta: {fileID: 0}
+      imgPerfil: {fileID: 0}
+      titulo: 
+      descricao: 
+      ataque: 0
+      defesa: 0
+      cristais: 0
+      nivel: 0
+      elemento:
+        idElemento: 0
+        nomeElemento: 
+        iconeElemento: {fileID: 0}
+        moldura: {fileID: 0}
+        bandeira: {fileID: 0}
+        animCriar: []
+        animAtaque1: []
+        animAtaque2: []
+      animCampo: []
     idCampo: 0
     imgElementalCampo: {fileID: 0}
     imgAnimAtivar: {fileID: 0}
@@ -6746,7 +7164,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7028,7 +7446,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7096,7 +7514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1328361249
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7295,6 +7713,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idSlot: 2
+  possoJogar: 0
+  donoCampo: 0
 --- !u!1 &1348136454
 GameObject:
   m_ObjectHideFlags: 0
@@ -7456,6 +7876,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idSlot: 0
+  possoJogar: 0
+  donoCampo: 0
 --- !u!1 &1411749620
 GameObject:
   m_ObjectHideFlags: 0
@@ -7652,7 +8074,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7859,7 +8281,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
+  m_fontSize: 23.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8409,6 +8831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idSlot: 1
+  possoJogar: 0
+  donoCampo: 0
 --- !u!1 &1588757354
 GameObject:
   m_ObjectHideFlags: 0
@@ -8640,7 +9064,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.4
+  m_fontSize: 23.2
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9387,7 +9811,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9527,6 +9951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   idSlot: 1
+  possoJogar: 0
+  donoCampo: 0
 --- !u!1 &1686220147
 GameObject:
   m_ObjectHideFlags: 0
@@ -9610,7 +10036,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.7
+  m_fontSize: 35.3
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9956,7 +10382,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 39.65
+  m_fontSize: 36.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10168,7 +10594,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10380,7 +10806,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10513,7 +10939,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10724,7 +11150,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.8
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11817,7 +12243,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 29.4
+  m_fontSize: 26.85
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

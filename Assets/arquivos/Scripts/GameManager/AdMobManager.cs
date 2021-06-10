@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using GoogleMobileAds.Api;
+using GoogleMobileAds.Common;
 
 //script para a criação de Ads no Elementais, utilizando o Admob com o Unity 
 public class AdMobManager : MonoBehaviour
@@ -10,7 +11,7 @@ public class AdMobManager : MonoBehaviour
     //Referencia para o banner
     private BannerView bannerView;
     //referencia para o video
-    private RewardBasedVideoAd rewardVideoAd;
+    //private RewardBasedVideoAd rewardVideoAd;
 
     //ID do Aplicativo no Admob
     private string APP_ID = "ca-app-pub-3119375714600951~1420686511";
@@ -50,7 +51,7 @@ public class AdMobManager : MonoBehaviour
         // Called when the user returned from the app after an ad click.
         this.bannerView.OnAdClosed += this.HandleOnAdClosed;
         // Called when the ad click caused the user to leave the application.
-        this.bannerView.OnAdLeavingApplication += this.HandleOnAdLeavingApplication;
+        //this.bannerView.On += this.HandleOnAdLeavingApplication;
         //Para o real 
          AdRequest adRequest = new AdRequest.Builder().Build();
         //Para teste
@@ -146,7 +147,7 @@ public class AdMobManager : MonoBehaviour
         // Called when an ad request has successfully loaded.
         this.rewardedAd.OnAdLoaded += HandleRewardedAdLoaded;
         // Called when an ad request failed to load.
-        this.rewardedAd.OnAdFailedToLoad += HandleRewardedAdFailedToLoad;
+        this.rewardedAd.OnAdFailedToShow += HandleRewardedAdFailedToLoad;
         // Called when an ad is shown.
         this.rewardedAd.OnAdOpening += HandleRewardedAdOpening;
         // Called when an ad request failed to show.

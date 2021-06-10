@@ -21,6 +21,6 @@ public class FinalScreen : MonoBehaviour
 
    void ChamaAd() 
     {
-        Main.Instance.ad.RequestBanner();
+        //Main.Instance.ad.RequestBanner();
     }
 }

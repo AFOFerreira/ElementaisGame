@@ -6,6 +6,7 @@ using UnityEngine.UI;
 [System.Serializable]
 public class SlotCampo
 {
+    public CartaGeral cartaGeral;
     public int idCampo;
     public Image imgElementalCampo;
     public Image imgAnimAtivar;

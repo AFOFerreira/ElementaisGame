@@ -20,6 +20,16 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     private const byte EXECUTA_ATAQUE_DIRETO = 5;
     private const byte EXECUTA_ATAQUE_CAMPO = 6;
 
+    [Header("ANIMACAO SORTEIO")]
+    public List<Sprite> animSorteio = new List<Sprite>();
+    public List<Sprite> animMoeda1 = new List<Sprite>();
+    public List<Sprite> animMoeda2 = new List<Sprite>();
+    public Sprite resultadoVoce, resultadoOponente;
+    //-------------------------------------------------
+    public GameObject panelSorteio;
+    public Image imgAnimSorteio;
+    public Image imgAnimMoeda;
+    public Image imgResultado;
     [Header("GERENCIADORES")]
     public GerenciadorUI gerenciadorUI;
     public AudioBase gerenciadorAudio;
@@ -32,6 +42,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public List<CartaGeral> deckPlayer = new List<CartaGeral>();
     public List<CartaGeral> deckMaoPlayer = new List<CartaGeral>();
     public List<CartaGeral> cemiterioPlayer = new List<CartaGeral>();
+    public SlotCampo ultimoCampoJogado = new SlotCampo();
+    public SlotCampo ultimoCampoAtivado = new SlotCampo();
 
     [Header("CARTA")]
     public List<Sprite> brilhoCarta;
@@ -45,6 +57,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public bool EmJogo;
     public bool turnoDefesa;
     public int JogadasPlayer = 1;
+    public bool p1 = false;
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
@@ -61,6 +74,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
     [Header("SELETORES(ENUMERATORS)")]
     public TipoJogador turno;
+    public TipoJogador defendendo;
     public TipoFase faseAtual;
     public TipoPartida tipoPartida;
 
@@ -82,6 +96,12 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
+        animSorteio.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/SorteioSprite1").ToList());
+        animSorteio.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/SorteioSprite2").ToList());
+        animSorteio.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/SorteioSprite3").ToList());
+
+        animMoeda1.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/MoedaSprite1").ToList());
+        animMoeda2.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/MoedaSprite2").ToList());
         gerenciadorAudio = AudioBase._instance;
         gerenciadorUI = GerenciadorUI.gerenciadorUI;
         gerenciadorAudio.playMusicaGameplay();
@@ -111,13 +131,12 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             passarParaMao(id, false);
         }
 
-        tempoCronometro = 18;
+        tempoCronometro = 15;
 
         sorteio();
 
         fase = 1;
     }
-
     public void btnTrocaTurno()
     {
         if (turnoLocal && !rodandoAnimacao)
@@ -125,7 +144,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             PassaTurno();
         }
     }
-
     [PunRPC]
     public void rpcZeraCronometro()
     {
@@ -183,8 +201,9 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }*/
 
     [PunRPC]
-    public void executaAtaque(int idAtacante, int idInimigo)
+    public void executaAtaque(int idAtacante, int idInimigo, bool p1)
     {
+
         //salva no vetor de ataques quem atacou/foi atacado para posteriormente rodar as animações
         ataques[contagemAtaques, 0] = idAtacante;
         ataques[contagemAtaques, 1] = idInimigo;
@@ -192,13 +211,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         Debug.Log(ataques[contagemAtaques, 0] + "-" + ataques[contagemAtaques, 1] + "/" + contagemAtaques);
 
         //incrementa o indice dos ataques
-        contagemAtaques++;
+        //contagemAtaques++;
 
         //aumenta 5 segundo no tempo após ataque
-        tempoCronometro += 5;
+        //tempoCronometro += 5;
 
         //adicionar marcadores no campo
-        alteraMarcadoresAtaque(idAtacante, idInimigo, turnoLocal);
+        alteraMarcadoresAtaque(idAtacante, idInimigo, p1);
 
         if (turnoLocal)
         {
@@ -206,9 +225,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             //PhotonNetwork.RaiseEvent(EXECUTA_ATAQUE_CAMPO, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
         }
     }
-
     // ReSharper disable Unity.PerformanceAnalysis
-    public static IEnumerator<float> rodaAtaqueCampo()
+    public static IEnumerator<float> rodaAtaqueCampo(bool p1)
     {
         Debug.Log("Rodando ataque campo");
         GerenciadorJogo gerenciadorJogo =
@@ -222,7 +240,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         {
             if (gerenciadorJogo.ataques[i, 0] > -1 && gerenciadorJogo.ataques[i, 1] > -1)
             {
-                if (gerenciadorJogo.turnoLocal)
+                if (p1)
                 {
                     atacanteCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]];
                     atacanteUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 0]];
@@ -235,7 +253,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
                 if (gerenciadorJogo.ataques[i, 1] < 3)
                 {
-                    if (gerenciadorJogo.turnoLocal)
+                    if (p1)
                     {
                         inimigoCampo = gerenciadorJogo.slotsCampoP2[gerenciadorJogo.ataques[i, 1]];
                         inimigoUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP2[gerenciadorJogo.ataques[i, 1]];
@@ -271,8 +289,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
                         if (vida <= 0)
                         {
-                            gerenciadorJogo.morteElemental(gerenciadorJogo.turnoLocal, gerenciadorJogo.ataques[i, 1]);
-                            gerenciadorJogo.executaAtaqueDiretoLocal(Mathf.Abs(vida));
+                            gerenciadorJogo.morteElemental(p1, gerenciadorJogo.ataques[i, 1]);
+                            gerenciadorJogo.executaAtaqueDiretoLocal(Mathf.Abs(vida), p1);
                             yield return Timing.WaitForSeconds(3);
                         }
                         else
@@ -283,7 +301,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                 }
                 else // ATAQUE DIRETO
                 {
-                    if (gerenciadorJogo.turnoLocal)
+                    if (p1)
                     {
                         atacanteCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]];
                         atacanteUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 0]];
@@ -304,7 +322,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                     s.Append(atacanteCampo.imgAnimAtaque.DOFade(0, .5f));
                     yield return Timing.WaitForSeconds(3);
 
-                    gerenciadorJogo.executaAtaqueDiretoLocal(atacanteUI.cartaGeralTemp.ataque);
+                    gerenciadorJogo.executaAtaqueDiretoLocal(atacanteUI.cartaGeralTemp.ataque, p1);
                     yield return Timing.WaitForSeconds(3);
                 }
             }
@@ -342,7 +360,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             //gerenciadorJogo.photonView.RPC("trocaTurno", Photon.Pun.RpcTarget.AllBufferedViaServer, true);
         }
     }
-
     public void alteraMarcadoresAtaque(int idAtacante, int idInimigo, bool P1)
     {
         if (P1) //se jogador 1 está atacando
@@ -368,7 +385,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             }
         }
     }
-
     public void executaAtaqueLocal(int idAtacante, int idInimigo, bool P1)
     {
         int vida;
@@ -399,12 +415,11 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             gerenciadorUI.slotDetalhesP2[idInimigo].atualizarInformações();
         }
     }
-
-    private void executaAtaqueDiretoLocal(int subVida)
+    private void executaAtaqueDiretoLocal(int subVida, bool p)
     {
-        if (turnoLocal)
+        if (p)
         {
-            object[] valoresRede = new object[] { subVida, false };
+            //object[] valoresRede = new object[] { subVida, false };
             //PhotonNetwork.RaiseEvent(EXECUTA_ATAQUE_DIRETO, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
 
             gerenciadorAudio.playDanoDiretoFeminino();
@@ -414,9 +429,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             gerenciadorAudio.playDanoDiretoMasculino();
         }
 
-        gerenciadorUI.AtaqueDireto(turnoLocal, subVida);
+        gerenciadorUI.AtaqueDireto(p, subVida);
     }
-
+    public void executaAtaqueDiretoIA(int subVida)
+    {
+        gerenciadorAudio.playDanoDiretoMasculino();
+        gerenciadorUI.AtaqueDireto(false, subVida);
+    }
     public void fimAtaqueDireto(int subVida, bool P1)
     {
         //verificar se morreu
@@ -424,6 +443,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         if (vidaAtual <= 0)
         {
+            EmJogo = false;
             gerenciadorUI.slotsPlayer[P1 ? 1 : 0].alteraVida(0);
             gerenciadorUI.animVitoriaDerrota(P1);
             //PhotonNetwork.Disconnect();
@@ -433,7 +453,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             gerenciadorUI.slotsPlayer[P1 ? 1 : 0].alteraVida(vidaAtual);
         }
     }
-
     public void morteElemental(bool P1, int idElemental)
     {
         gerenciadorAudio.playCriaturaMorrendo();
@@ -461,7 +480,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             slotsCampoP1[idElemental].disponivel = false;
         }
     }
-
     public void dropElemental(GameObject cartaPrefabLocal, int idSlot)
     {
         slotsCampoP1[idSlot].ocupado = true;
@@ -503,13 +521,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         gerenciadorUI.slotDetalhesP1[idSlot].setarInformações(cartaGeral);
         gerenciadorUI.slotDetalhesP1[idSlot].alteraArco(1);
-
+        slotsCampoP1[idSlot].cartaGeral = cartaPrefabLocal.GetComponent<CartaPrefab>().cartaGeral;
+        ultimoCampoJogado = slotsCampoP1[idSlot];
         //chma a função dropInimigo no segundo jogador
-        object[] valoresRede = new object[] { cartaGeral.idCarta, idSlot };
+        //object[] valoresRede = new object[] { cartaGeral.idCarta, idSlot };
         //PhotonNetwork.RaiseEvent(DROP_ELEMENTAL_INIMIGO, valoresRede, Photon.Realtime.RaiseEventOptions.Default, SendOptions.SendUnreliable);
         //photonView.RPC("dropElementalInimigo", Photon.Pun.RpcTarget.AllBufferedViaServer, cartaGeral.idCarta, idSlot);
     }
-
     [PunRPC]
     public void dropElementalInimigo(int idCarta, int idSlot)
     {
@@ -540,7 +558,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             gerenciadorUI.slotDetalhesP2[idSlot].alteraArco(1);
         }
     }
-
     IEnumerator<float> iniciarObjetos()
     {
         ElementoGeral fogo = new ElementoGeral(2, "Fogo", Resources.Load<Sprite>("imagens/Elementos/icon_fogo"),
@@ -669,7 +686,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         }
         zeraAtaques();
     }
-
     void zeraAtaques()
     {
         for (int i = 0; i <= 2; i++)
@@ -683,22 +699,61 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             slotsCampoP2[i].imgAnimAtaque.sprite = marcadoresAtaque[0];
         }
     }
-
     void Update()
     {
-        if (gerenciadorUI.uiPronta)
-            EmJogo = true;
+        if (EmJogo)
+        {
+            if (faseAtual != TipoFase.DEFESA)
+            {
+
+                if (tempoCronometro > 0)
+                {
+                    tempoCronometro -= 1f * Time.deltaTime;
+                    gerenciadorUI.atualizaCronometro(tempoCronometro);
+                }
+                else
+                {
+                    PassaTurno();
+                }
+            }
+            else
+            {
+                FaseDeBatalha();
+            }
+
+        }
+        else
+        {
+            Debug.Log("Nao estamos em jogo");
+        }
+    }
+
+    public void setTurnoBatalha()
+    {
+        tempoCronometro = 5f;
+        if (turno == TipoJogador.IA)
+        {
+            defendendo = TipoJogador.PLAYER;
+
+        }
+        else
+        {
+            defendendo = TipoJogador.IA;
+        }
+        faseAtual = TipoFase.DEFESA;
+    }
+    void FaseDeBatalha()
+    {
         if (tempoCronometro > 0)
         {
-            tempoCronometro -= Time.deltaTime;
+            tempoCronometro -= 1f * Time.deltaTime;
             gerenciadorUI.atualizaCronometro(tempoCronometro);
         }
-
-        if (tempoCronometro <= 0 && tempoCronometro > -2)
+        else
         {
-            tempoCronometro = -2;
-            Timing.RunCoroutine(rodaAtaqueCampo());
-            //trocar de turno
+
+            Timing.RunCoroutine(rodaAtaqueCampo(p1));
+
             PassaTurno();
         }
     }
@@ -767,37 +822,36 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     [PunRPC]
     public void ativarElemental(int idSlotElemental, int idSlotCristal)
     {
-        if (turnoLocal)
-        {
-            if (idSlotCristal == gerenciadorUI.slotDetalhesP1[idSlotElemental].cartaGeralTemp.elemento.idElemento)
-            {
-                if (gerenciadorUI.slotsCristais[idSlotCristal].qtdCristais >=
-                    gerenciadorUI.slotDetalhesP1[idSlotElemental].cartaGeralTemp.cristais)
-                {
-                    gerenciadorUI.slotsCristais[idSlotCristal]
-                        .usarCristais(gerenciadorUI.slotDetalhesP1[idSlotElemental].cartaGeralTemp.cristais);
-                    gerenciadorUI.slotDetalhesP1[idSlotElemental].alteraArco(2);
-                    slotsCampoP1[idSlotElemental].ativado = true;
 
-                    //object[] valoresRede = new object[] { idSlotElemental, idSlotCristal, false };
-                    //PhotonNetwork.RaiseEvent(ATIVAR_ELEMENTAL, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
-                }
-                else
-                {
-                    gerenciadorAudio.playNegacao();
-                }
+        if (idSlotCristal == gerenciadorUI.slotDetalhesP1[idSlotElemental].cartaGeralTemp.elemento.idElemento)
+        {
+            if (gerenciadorUI.slotsCristais[idSlotCristal].qtdCristais >=
+                gerenciadorUI.slotDetalhesP1[idSlotElemental].cartaGeralTemp.cristais)
+            {
+                gerenciadorUI.slotsCristais[idSlotCristal]
+                    .usarCristais(gerenciadorUI.slotDetalhesP1[idSlotElemental].cartaGeralTemp.cristais);
+                gerenciadorUI.slotDetalhesP1[idSlotElemental].alteraArco(2);
+                slotsCampoP1[idSlotElemental].ativado = true;
+                ultimoCampoAtivado = slotsCampoP1[idSlotElemental];
+                //object[] valoresRede = new object[] { idSlotElemental, idSlotCristal, false };
+                //PhotonNetwork.RaiseEvent(ATIVAR_ELEMENTAL, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
+            }
+            else
+            {
+                gerenciadorAudio.playNegacao();
             }
         }
-        else //P2
-        {
-            gerenciadorUI.slotDetalhesP2[idSlotElemental].alteraArco(2);
-            slotsCampoP2[idSlotElemental].ativado = true;
-        }
+        object[] valoresRede = new object[] { idSlotElemental, idSlotCristal, false };
+        //PhotonNetwork.RaiseEvent(ATIVAR_ELEMENTAL, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
     }
 
+    public void ativarElementalAI(int idSlotElemental)
+    {
+        gerenciadorUI.slotDetalhesP2[idSlotElemental].alteraArco(2);
+        slotsCampoP2[idSlotElemental].ativado = true;
 
+    }
     #region controle de campo
-
     public List<SlotCampo> VerificaCampoDisponivelMagicas(TipoJogador tipoJogador)
     {
         var CamposVazios = new List<SlotCampo>();
@@ -920,9 +974,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             gerenciadorUI.trocaBtnTurno(1);
             JogadasPlayer++;
             turno = TipoJogador.PLAYER;
+            p1 = true;
+            ultimoCampoJogado = null;
+            ultimoCampoAtivado = null;
         }
         else
         {
+            p1 = false;
             gerenciadorUI.trocaBtnTurno(0);
             turno = TipoJogador.IA;
         }
@@ -941,21 +999,71 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         {
             turno = TipoJogador.PLAYER;
             gerenciadorUI.trocaBtnTurno(1);
+            p1 = true;
         }
         else
         {
+            p1 = false;
             turno = TipoJogador.IA;
             gerenciadorUI.trocaBtnTurno(0);
         }
+
+        rodaAnimSorteio();
     }
 
     #endregion
 
     #region Controle de jogo
 
+    public void rodaAnimSorteio()
+    {
+        //ATENÇÃO - inicia o carregamento da cena
+
+        List<Sprite> animMoedaCompleta = animMoeda1;
+        if (p1)
+        {
+            imgResultado.sprite = resultadoVoce;
+        }
+        else
+        {
+            animMoedaCompleta.AddRange(animMoeda2);
+            imgResultado.sprite = resultadoOponente;
+        }
+
+
+        imgResultado.ZeraAlfa();
+        imgAnimMoeda.ZeraAlfa();
+        panelSorteio.GetComponent<Image>().color = new Color(panelSorteio.GetComponent<Image>().color.r, panelSorteio.GetComponent<Image>().color.g, panelSorteio.GetComponent<Image>().color.b, 0);
+        panelSorteio.SetActive(true);
+
+        Sequence s = DOTween.Sequence();
+        s.Append(panelSorteio.GetComponent<Image>().DOFade(1, .3f));
+        s.AppendCallback(() =>
+        {
+            FuncoesUteis.animacaoImagem(imgAnimSorteio, animSorteio, false, 6, false, () =>
+            {
+                EmJogo = true;
+                panelSorteio.SetActive(false);
+            });
+        });
+        s.AppendInterval(1);
+        s.Append(imgAnimMoeda.DOFade(1, .2f));
+        s.AppendCallback(() =>
+        {
+            FuncoesUteis.animacaoImagem(imgAnimMoeda, animMoedaCompleta, false, 6);
+            gerenciadorAudio.playMoedaSorteio();
+        });
+        s.AppendInterval(2.2f);
+        s.Append(imgResultado.DOFade(1, .2f));
+        s.AppendInterval(2.5f);
+        s.Append(imgResultado.DOFade(0, .2f));
+        s.Join(imgAnimMoeda.DOFade(0, .2f));
+
+    }
+
+
     public void JogarCarta(CartaGeral cartaGeral, int idSlot)
     {
-
 
         slotsCampoP2[idSlot].ocupado = true;
 
@@ -978,6 +1086,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         gerenciadorUI.slotDetalhesP2[idSlot].setarInformações(cartaGeral);
         gerenciadorUI.slotDetalhesP2[idSlot].alteraArco(1);
+        slotsCampoP2[idSlot].cartaGeral = cartaGeral;
     }
     #endregion
     #region descartado no modo single
@@ -1027,51 +1136,51 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     //{
     //    if (obj.Code == DROP_ELEMENTAL_INIMIGO)
     //    {
-    //        object[] valoresRede = (object[]) obj.CustomData;
-    //        int idCarta = (int) valoresRede[0];
-    //        int idSlot = (int) valoresRede[1];
+    //        object[] valoresRede = (object[])obj.CustomData;
+    //        int idCarta = (int)valoresRede[0];
+    //        int idSlot = (int)valoresRede[1];
 
     //        //dropElementalInimigo(idCarta, idSlot);
     //    }
 
     //    if (obj.Code == EXECUTA_ATAQUE)
     //    {
-    //        object[] valoresRede = (object[]) obj.CustomData;
-    //        int idAtacante = (int) valoresRede[0];
-    //        int idInimigo = (int) valoresRede[1];
-    //        bool P1 = (bool) valoresRede[2];
+    //        object[] valoresRede = (object[])obj.CustomData;
+    //        int idAtacante = (int)valoresRede[0];
+    //        int idInimigo = (int)valoresRede[1];
+    //        bool P1 = (bool)valoresRede[2];
     //        executaAtaqueLocal(idAtacante, idInimigo, P1);
     //    }
 
     //    if (obj.Code == ATIVAR_ELEMENTAL)
     //    {
-    //        object[] valoresRede = (object[]) obj.CustomData;
-    //        int idSlotElemental = (int) valoresRede[0];
-    //        int idSlotCristal = (int) valoresRede[1];
-    //        bool P1 = (bool) valoresRede[2];
+    //        object[] valoresRede = (object[])obj.CustomData;
+    //        int idSlotElemental = (int)valoresRede[0];
+    //        int idSlotCristal = (int)valoresRede[1];
+    //        bool P1 = (bool)valoresRede[2];
     //        //ativarElemental(idSlotElemental, idSlotCristal, P1);
     //    }
 
     //    if (obj.Code == TROCA_TURNO)
     //    {
-    //        object[] valoresRede = (object[]) obj.CustomData;
-    //        bool turno = (bool) valoresRede[0];
+    //        object[] valoresRede = (object[])obj.CustomData;
+    //        bool turno = (bool)valoresRede[0];
     //        //trocaTurno(turno);
     //    }
 
     //    if (obj.Code == EXECUTA_ATAQUE_DIRETO)
     //    {
-    //        object[] valoresRede = (object[]) obj.CustomData;
-    //        int subVida = (int) valoresRede[0];
-    //        bool P1 = (bool) valoresRede[1];
+    //        object[] valoresRede = (object[])obj.CustomData;
+    //        int subVida = (int)valoresRede[0];
+    //        bool P1 = (bool)valoresRede[1];
     //        executaAtaqueDiretoLocal(subVida);
     //    }
 
     //    if (obj.Code == EXECUTA_ATAQUE_CAMPO)
     //    {
-    //        object[] valoresRede = (object[]) obj.CustomData;
-    //        int idAtacante = (int) valoresRede[0];
-    //        int idInimigo = (int) valoresRede[1];
+    //        object[] valoresRede = (object[])obj.CustomData;
+    //        int idAtacante = (int)valoresRede[0];
+    //        int idInimigo = (int)valoresRede[1];
     //        //executaAtaque(idAtacante, idInimigo);
     //    }
     //}

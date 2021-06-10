@@ -10,7 +10,8 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     private Bezier setaAtaque;
     private Canvas canvas;
     private GerenciadorJogo gerenciadorJogo;
-    private bool possoJogar;
+    public bool possoJogar;
+    public TipoJogador donoCampo;
 
 
     private void Start()
@@ -22,33 +23,46 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void Update()
     {
-        if (gerenciadorJogo.turno == gerenciadorJogo.slotsCampoP1[idSlot].donoCampo)
-        {        
-                possoJogar = true;
+        VerificaDono();
+        if(donoCampo == TipoJogador.PLAYER)
+        {
+            if(gerenciadorJogo.ultimoCampoAtivado != gerenciadorJogo.slotsCampoP1[idSlot])
+            {
+                gerenciadorJogo.slotsCampoP1[idSlot].disponivel = true;
+            }
+        }
+    }
+
+    private void VerificaDono()
+    {
+        if (gerenciadorJogo.turno == donoCampo)
+        {
+            possoJogar = true;
         }
         else
         {
             possoJogar = false;
         }
-
     }
+
     public void OnDrop(PointerEventData eventData)
     {
-        if (possoJogar && gerenciadorJogo.JogadasPlayer >0)
+        if (possoJogar && gerenciadorJogo.JogadasPlayer > 0)
         {
             Debug.Log("DROPPPPXXXXXXXXXXXX DROPXXXXXXXXXXXX");
             //SE NÃO ESTIVER OCUPADO E ELE DROPAR ELEMENTAL
             if (eventData.pointerDrag != null && !gerenciadorJogo.slotsCampoP1[idSlot].ocupado && eventData.pointerDrag.GetComponent<CartaPrefab>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
             {
                 gerenciadorJogo.dropElemental(eventData.pointerDrag, idSlot);
-                
+
             }
             //SE TENTAR DROPAR ELEMENTAL COM ELE OCUPADO
-            if (eventData.pointerDrag != null && gerenciadorJogo.slotsCampoP1[idSlot].ocupado && eventData.pointerDrag.GetComponent<CartaPrefab>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
+            else
             {
                 gerenciadorJogo.gerenciadorAudio.playNegacao();
             }
-        }else if(possoJogar && gerenciadorJogo.JogadasPlayer ==0)
+        }
+        else if (possoJogar && gerenciadorJogo.JogadasPlayer == 0)
         {
             Debug.Log("Somente uma carta monstro por turno");
             gerenciadorJogo.gerenciadorAudio.playNegacao();
@@ -60,21 +74,22 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
         }
         ////ATIVAR ELEMENTAL
-        if (eventData.pointerDrag != null && !gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
+        if (eventData.pointerDrag != null && !gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[idSlot] != gerenciadorJogo.ultimoCampoJogado)
         {
             gerenciadorJogo.ativarElemental(idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
             //gerenciadorJogo.photonView.RPC("ativarElemental", Photon.Pun.RpcTarget.AllBufferedViaServer, idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
         }
 
-        if (eventData.pointerDrag != null && eventData.pointerDrag.GetComponent<SlotDrop>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
+        if (eventData.pointerDrag != null && eventData.pointerDrag.GetComponent<SlotDrop>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[idSlot] != gerenciadorJogo.ultimoCampoAtivado)
         {
             if (gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado
                 && gerenciadorJogo.slotsCampoP2[idSlot].ocupado &&
                 gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
             {
-                gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
+                gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot, true);
                 //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer, eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
                 gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel = false;
+                gerenciadorJogo.setTurnoBatalha();
             }
         }
     }
@@ -83,12 +98,12 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (gerenciadorJogo.slotsCampoP1[idSlot].ocupado && gerenciadorJogo.slotsCampoP1[idSlot].ativado
-            && gerenciadorJogo.turnoLocal &&
-            !gerenciadorJogo.rodandoAnimacao &&
-            gerenciadorJogo.slotsCampoP1[idSlot].disponivel)
+             && possoJogar &&
+            !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[idSlot].disponivel 
+            )
         {
             Debug.Log("pointer down campo");
-            //setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(GetComponent<RectTransform>().position/canvas.scaleFactor);
+            //setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(GetComponent<RectTransform>().position / canvas.scaleFactor);
             setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             setaAtaque.slotInicial = idSlot;
             setaAtaque.setaAtiva = true;

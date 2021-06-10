@@ -113,7 +113,15 @@ namespace Facebook.Unity.Example
             resultSummary += "id: " + profile.UserID + "\n";
             resultSummary += "email: " + profile.Email + "\n";
             resultSummary += "pic URL: " + profile.ImageURL + "\n";
+            resultSummary += "birthday: " + profile.Birthday + "\n";
+            resultSummary += "age range: " + profile.AgeRange + "\n";
+            resultSummary += "first name: " + profile.FirstName + "\n";
+            resultSummary += "middle name: " + profile.MiddleName + "\n";
+            resultSummary += "last name: " + profile.LastName + "\n";
             resultSummary += "friends: " + String.Join(",", profile.FriendIDs)  + "\n";
+            resultSummary += "hometown: " + profile.Hometown?.Name + "\n";
+            resultSummary += "location: " + profile.Location?.Name + "\n";
+            resultSummary += "gender: " + profile.Gender + "\n";
 
             LogView.AddLog(resultSummary);
         }
@@ -126,6 +134,7 @@ namespace Facebook.Unity.Example
                 GUILayout.BeginVertical();
             }
 
+            //GUILayout.Space(Screen.safeArea.yMin + 10);
             GUILayout.Label(this.GetType().Name, this.LabelStyle);
 
             this.AddStatus();

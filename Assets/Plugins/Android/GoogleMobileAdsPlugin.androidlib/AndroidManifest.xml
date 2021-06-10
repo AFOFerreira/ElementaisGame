@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.google.unity.ads" android:versionName="1.0" android:versionCode="1">
-  <uses-sdk android:minSdkVersion="14" android:targetSdkVersion="19" />
   <application>
-    <meta-data android:name="com.HoodStudios.tutorial" android:value="ca-app-pub-2275603008495619~7657995644" />
+    <uses-library android:required="false" android:name="org.apache.http.legacy" />
     <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3119375714600951~1420686511" />
   </application>
 </manifest>

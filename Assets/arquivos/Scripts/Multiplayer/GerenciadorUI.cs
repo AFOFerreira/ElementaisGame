@@ -104,7 +104,7 @@ public class GerenciadorUI : MonoBehaviour
 
         animDerrota = Resources.LoadAll<Sprite>("imagens/vitoriaDerrota/derrotaSprite").ToList();
         animVitoria = Resources.LoadAll<Sprite>("imagens/vitoriaDerrota/vitoriaSprite").ToList();
-        uiPronta = true;
+       
     }
 
     public void atualizaCronometro(float tempo)
@@ -274,13 +274,9 @@ public class GerenciadorUI : MonoBehaviour
     public void AtaqueDireto(bool P1, int subVida)
     {
         fotoPlayerAtaque.sprite = spritesFotoPlayer[P1 ? 1 : 0];
-
         fundoAtaqueDireto.ZeraAlfa();
         fotoPlayerAtaque.ZeraAlfa();
-
-
         panelAtaqueDireto.SetActive(true);
-
 
         Sequence s = DOTween.Sequence();
         s.Append(fotoPlayerAtaque.DOFade(1f, .4f));//
@@ -310,17 +306,17 @@ public class GerenciadorUI : MonoBehaviour
         s.Append(panelVitoriaDerrota.DOFade(1, .5f)); 
         s.AppendCallback(() =>
         {
-            Main.Instance.StopAllMusics();
+            //Main.Instance.StopAllMusics();
             if (venceu)
             {
                 FuncoesUteis.animacaoImagemLoopTrecho(panelVitoriaDerrota, animVitoria, 6, 29);
-                //GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().gerenciadorAudio.stopMusicaGameplay();
+                GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().gerenciadorAudio.stopMusicaGameplay();
                 GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().gerenciadorAudio.playMusicaVitoria();
             }
             else
             {
                 FuncoesUteis.animacaoImagemLoopTrecho(panelVitoriaDerrota, animDerrota, 6, 32);
-                //GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().gerenciadorAudio.stopMusicaGameplay();
+                GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().gerenciadorAudio.stopMusicaGameplay();
                 GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().gerenciadorAudio.playMusicaDerrota();
             }
 

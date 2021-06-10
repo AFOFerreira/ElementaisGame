@@ -27,14 +27,11 @@ public class slotCristal : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private void Start()
     {
         setaCristais = GameObject.FindGameObjectWithTag("SetaAtaque").GetComponent<Bezier>();
-        gerenciadorJogo = GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>();
+        gerenciadorJogo = GerenciadorJogo.instance;
     }
     public void addCristal(int qtdInserir)
     {
-        
-
         imgAnimCristal.sprite = animCristal[0];
-
         Sequence s = DOTween.Sequence();
         s.Join(imgAnimCristal.DOFade(1, .1f));
         s.AppendCallback(() =>
@@ -45,14 +42,13 @@ public class slotCristal : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
             });
         });
         s.AppendInterval(2.5f);
-        s.AppendCallback(()=>
+        s.AppendCallback(() =>
         {
-            //AQUI
-            gerenciadorJogo.gerenciadorAudio.playCristalElemento(idSlot);
+                //AQUI
+                gerenciadorJogo.gerenciadorAudio.playCristalElemento(idSlot);
         });
         s.AppendInterval(1f);
         s.Append(imgAnimCristal.DOFade(0, .1f));
-
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -64,11 +60,10 @@ public class slotCristal : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         //throw new System.NotImplementedException();
 
-        if (gerenciadorJogo.turnoLocal && qtdCristais > 0 && !gerenciadorJogo.rodandoAnimacao)
+        if (gerenciadorJogo.turnoLocal && qtdCristais > 0 && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.turno == TipoJogador.PLAYER)
         {
             setaCristais.initialPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             setaCristais.cor = cor;
-
             setaCristais.setaAtiva = true;
         }
 

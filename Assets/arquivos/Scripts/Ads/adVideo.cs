@@ -19,7 +19,7 @@ public class adVideo : MonoBehaviour
     [Obsolete]
     void Start()
     {
-        MobileAds.Initialize(APP_ID);
+        MobileAds.Initialize(initStatus => {});
 
         bannerPopUp();//inicializar o banner
         Video();//inicializar o video
@@ -99,7 +99,7 @@ public class adVideo : MonoBehaviour
         // Called when an ad request has successfully loaded.
         this.rewardedAd.OnAdLoaded += HandleRewardedAdLoaded;
         // Called when an ad request failed to load.
-        this.rewardedAd.OnAdFailedToLoad += HandleRewardedAdFailedToLoad;
+        //this.rewardedAd.OnAdFailedToLoad += HandleRewardedAdFailedToLoad;
         // Called when an ad is shown.
         this.rewardedAd.OnAdOpening += HandleRewardedAdOpening;
         // Called when an ad request failed to show.
@@ -124,10 +124,10 @@ public class adVideo : MonoBehaviour
 		InterstitialAd = new InterstitialAd(interstitial_ID);
 
 		//Para o real 
-		//AdRequest adRequest = new AdRequest.Builder().Build();
+		AdRequest adRequest = new AdRequest.Builder().Build();
 
 		//Para teste
-		AdRequest adRequest = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
+		//AdRequest adRequest = new AdRequest.Builder().AddTestDevice("2077ef9a63d2b398840261c8221a0c9b").Build();
 
 		//carregar video 
 		InterstitialAd.LoadAd(adRequest);
