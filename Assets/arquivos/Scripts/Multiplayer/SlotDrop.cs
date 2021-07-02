@@ -47,7 +47,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (possoJogar && gerenciadorJogo.JogadasPlayer > 0)
+        if (possoJogar && gerenciadorJogo.JogadasPlayer > 0 && gerenciadorJogo.faseAtual != TipoFase.DEFESA)
         {
             Debug.Log("DROPPPPXXXXXXXXXXXX DROPXXXXXXXXXXXX");
             //SE NÃO ESTIVER OCUPADO E ELE DROPAR ELEMENTAL
@@ -74,7 +74,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
         }
         ////ATIVAR ELEMENTAL
-        if (eventData.pointerDrag != null && !gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[idSlot] != gerenciadorJogo.ultimoCampoJogado)
+        if (eventData.pointerDrag != null && !gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && gerenciadorJogo.turnoLocal && !gerenciadorJogo.rodandoAnimacao)
         {
             gerenciadorJogo.ativarElemental(idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
             //gerenciadorJogo.photonView.RPC("ativarElemental", Photon.Pun.RpcTarget.AllBufferedViaServer, idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);

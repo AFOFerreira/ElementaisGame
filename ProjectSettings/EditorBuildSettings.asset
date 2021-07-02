@@ -4,5 +4,29 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/arquivos/Scenes/LoadingInitalScreen.unity
+    guid: 91e4a130230314b498f6d80ebd4a1124
+  - enabled: 1
+    path: Assets/arquivos/Scenes/LoginScene.unity
+    guid: c875a4a1da81b7b4183a718299017eaf
+  - enabled: 1
+    path: Assets/arquivos/Scenes/LoadingSecundarySystem.unity
+    guid: 76fac612bf05139418ac53a2a05b4511
+  - enabled: 1
+    path: Assets/arquivos/Scenes/menuPrincipal.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/arquivos/Scenes/jogoTutorial.unity
+    guid: fd54a119a0ac05b4895f92d318961670
+  - enabled: 1
+    path: Assets/arquivos/Scenes/jogoTutorial2.unity
+    guid: fd5f204de9519c540bd05a5771a40c3b
+  - enabled: 1
+    path: Assets/arquivos/Scenes/MultiplayerBatalha.unity
+    guid: ccb19e51c4603ad488b4feda59b72973
+  - enabled: 1
+    path: Assets/arquivos/Scenes/TreinoIA.unity
+    guid: 33d5b7b4fd102874cad7789fcf6203ff
   m_configObjects: {}

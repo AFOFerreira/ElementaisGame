@@ -78,6 +78,12 @@ public class Main : MonoBehaviour
         ls = LoadingState.TUTORIAL2;
 
     }
+    public void Treino()
+    {
+        LoadingMenu();
+        ls = LoadingState.TREINO;
+
+    }
     public void MultiplayerMenu()
     {
         LoadingMenu();
@@ -90,7 +96,7 @@ public class Main : MonoBehaviour
     {
         web = GetComponent<Web>();
         web = GetComponent<Web>();
-        audioBase = GetComponent<AudioBase>();
+        audioBase = AudioBase._instance;
         ad = GetComponent<AdMobManager>();
         usuario = GetComponent<config_usuario>();
         facebook = GetComponent<FacebookSetings>();

@@ -5,6 +5,7 @@
     TUTORIAL1,
     TUTORIAL2,
     MULTIPLAYER, 
+    TREINO,
     NONE
 }
 

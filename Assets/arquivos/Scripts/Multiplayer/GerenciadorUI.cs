@@ -53,10 +53,11 @@ public class GerenciadorUI : MonoBehaviour
     public float tempoCronometro = 15;
     public TextMeshProUGUI txtTempoCronometro;
 
+    public GameObject btnPronto;
 
     private void Awake()
     {
-        if(gerenciadorUI == null)
+        if (gerenciadorUI == null)
         {
             gerenciadorUI = this;
         }
@@ -95,16 +96,21 @@ public class GerenciadorUI : MonoBehaviour
             slot.alteraArco(0);
         }
 
-        Sequence s = DOTween.Sequence();
-
-        s.Append(panelTopo.DOAnchorPos(Vector2.zero, 1f));
-        s.Append(panelBaixo.DOAnchorPos(Vector2.zero, 1f));
-
-        s.Play();
+        //MostrarUI();
 
         animDerrota = Resources.LoadAll<Sprite>("imagens/vitoriaDerrota/derrotaSprite").ToList();
         animVitoria = Resources.LoadAll<Sprite>("imagens/vitoriaDerrota/vitoriaSprite").ToList();
-       
+
+    }
+
+    private void MostrarUI()
+    {
+        Sequence s = DOTween.Sequence();
+
+        s.Append(panelTopo.DOAnchorPos(Vector2.zero, 0.5f));
+        s.Append(panelBaixo.DOAnchorPos(Vector2.zero, 0.5f));
+
+        s.Play();
     }
 
     public void atualizaCronometro(float tempo)
@@ -212,6 +218,7 @@ public class GerenciadorUI : MonoBehaviour
 
     public void inicioAtaque(CartaGeral atacante, CartaGeral inimigo, bool P1)
     {
+        
         if (P1)
         {
             imgAnimAtaque.transform.DORotate(new Vector3(0, 0, 0), 0);
@@ -301,9 +308,9 @@ public class GerenciadorUI : MonoBehaviour
 
         panelVitoriaDerrota.ZeraAlfa();
         panelVitoriaDerrota.gameObject.SetActive(true);
-        
+
         Sequence s = DOTween.Sequence();
-        s.Append(panelVitoriaDerrota.DOFade(1, .5f)); 
+        s.Append(panelVitoriaDerrota.DOFade(1, .5f));
         s.AppendCallback(() =>
         {
             //Main.Instance.StopAllMusics();
@@ -325,4 +332,21 @@ public class GerenciadorUI : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (gerenciadorJogo.EmJogo)
+        {
+            MostrarUI();
+        }
+    }
+
+    public void HabilitarBtnPronto()
+    {
+        btnPronto.SetActive(true);
+    }
+
+    public void DesabilitarBtnPronto()
+    {
+        btnPronto.SetActive(false);
+    }
 }

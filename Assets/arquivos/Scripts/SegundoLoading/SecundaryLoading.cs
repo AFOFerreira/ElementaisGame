@@ -31,6 +31,8 @@ public class SecundaryLoading : MonoBehaviour
     //quando iniciado em cena
     private void Start()
     {
+        //define os valores iniciais para as variaveis e atribui os componentes 
+        SetDefaultsValues();
         //chama o metodo para carregar a proxima cena recebendo o parametro vindo do gerenciador
         LoadScreen(l);
     }
@@ -40,13 +42,13 @@ public class SecundaryLoading : MonoBehaviour
     #region defaults functions
     void StopAllMusics()
     {
-        Main.Instance.audioBase.stopMusicaMenu();
-        Main.Instance.audioBase.stopMusicaDerrota();
-        Main.Instance.audioBase.stopMusicaGameplay();
-        Main.Instance.audioBase.stopMusicaLobby();
-        Main.Instance.audioBase.stopMusicaTutorial();
-        Main.Instance.audioBase.stopMusicaVitoria();
-        Main.Instance.audioBase.stopMusicaTelaBatalha();
+        AudioBase._instance.stopMusicaMenu();
+        AudioBase._instance.stopMusicaDerrota();
+        AudioBase._instance.stopMusicaGameplay();
+        AudioBase._instance.stopMusicaLobby();
+        AudioBase._instance.stopMusicaTutorial();
+        AudioBase._instance.stopMusicaVitoria();
+        AudioBase._instance.stopMusicaTelaBatalha();
     }
 
     //define os valores iniciais
@@ -86,6 +88,9 @@ public class SecundaryLoading : MonoBehaviour
                 break;
             case LoadingState.MULTIPLAYER:
                 StartCoroutine(LoadingScreen(6));
+                break;
+            case LoadingState.TREINO:
+                StartCoroutine(LoadingScreen(7));
                 break;
         }
 

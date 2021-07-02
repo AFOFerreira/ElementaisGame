@@ -36,9 +36,12 @@ public class LoadingController : MonoBehaviour
 
     GameObject PrefabCarta;
 
+    AudioBase audioBase;
+
     //instruções a serem carregadas antes de tudo.
     private void Awake()
     {
+        audioBase = AudioBase._instance;
         status.text = null;
         slider.SetActive(false);
         PrefabCarta = Main.Instance.PrefabCarta;
@@ -48,7 +51,7 @@ public class LoadingController : MonoBehaviour
     private async void Start()
     {
         //toca a fanfarra de loading.
-        Main.Instance.audioBase.playFanfarraLoading();
+        audioBase.playFanfarraLoading();
         //mostra a primeira imagem.
         carFogo.fillAmount = 1;
         //informa que vai realizar um teste de conexão com o servidor.

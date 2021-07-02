@@ -58,6 +58,9 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public bool turnoDefesa;
     public int JogadasPlayer = 1;
     public bool p1 = false;
+    public bool emBatalha = false;
+    bool pularTempoEspera = false;
+    bool acabouTempo = false;
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
@@ -99,12 +102,12 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         animSorteio.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/SorteioSprite1").ToList());
         animSorteio.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/SorteioSprite2").ToList());
         animSorteio.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/SorteioSprite3").ToList());
-
         animMoeda1.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/MoedaSprite1").ToList());
         animMoeda2.AddRange(Resources.LoadAll<Sprite>("imagens/Sorteio/MoedaSprite2").ToList());
         gerenciadorAudio = AudioBase._instance;
         gerenciadorUI = GerenciadorUI.gerenciadorUI;
         gerenciadorAudio.playMusicaGameplay();
+
         Timing.RunCoroutine(iniciarObjetos());
         if (tipoPartida == TipoPartida.MULTIPLAYER)
         {
@@ -123,7 +126,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         }
 
         JogadasPlayer = 1;
-        gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
+        //gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
 
         for (int i = 0; i < 5; i++)
         {
@@ -136,10 +139,11 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         sorteio();
 
         fase = 1;
+        tempoCronometro = 30;
     }
     public void btnTrocaTurno()
     {
-        if (turnoLocal && !rodandoAnimacao)
+        if (turno == TipoJogador.PLAYER && !rodandoAnimacao)
         {
             PassaTurno();
         }
@@ -156,7 +160,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         gerenciadorAudio.playTrocaturnoprincipal();
         turnoLocal = !turnoLocal;
         gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
-        tempoCronometro = 15f;
+        tempoCronometro = 30f;
         contagemAtaques = 0;
         PassaTurno();
     }
@@ -360,6 +364,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             //gerenciadorJogo.photonView.RPC("trocaTurno", Photon.Pun.RpcTarget.AllBufferedViaServer, true);
         }
     }
+
     public void alteraMarcadoresAtaque(int idAtacante, int idInimigo, bool P1)
     {
         if (P1) //se jogador 1 está atacando
@@ -699,38 +704,43 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             slotsCampoP2[i].imgAnimAtaque.sprite = marcadoresAtaque[0];
         }
     }
-    void Update()
+    async void Update()
     {
-        if (EmJogo)
+       
+        if (tempoCronometro > 0)
         {
-            if (faseAtual != TipoFase.DEFESA)
-            {
-
-                if (tempoCronometro > 0)
-                {
-                    tempoCronometro -= 1f * Time.deltaTime;
-                    gerenciadorUI.atualizaCronometro(tempoCronometro);
-                }
-                else
-                {
-                    PassaTurno();
-                }
-            }
-            else
-            {
-                FaseDeBatalha();
-            }
-
+            tempoCronometro -= 1f * Time.deltaTime;
+            gerenciadorUI.atualizaCronometro(tempoCronometro);
         }
         else
         {
-            Debug.Log("Nao estamos em jogo");
+            FaseDeBatalha(false);
+           //Timing.RunCoroutine(rodaAtaqueCampo(p1));
+           
+            PassaTurno();
         }
+        
+    }
+
+    private void Cronometro()
+    {
+      
+        if (tempoCronometro > 0)
+        {
+            tempoCronometro -= 1f * Time.deltaTime;
+            gerenciadorUI.atualizaCronometro(tempoCronometro);
+            acabouTempo = false; 
+        }
+        else
+        {
+            acabouTempo = true;
+        }
+        
     }
 
     public void setTurnoBatalha()
     {
-        tempoCronometro = 5f;
+        tempoCronometro = 15f;
         if (turno == TipoJogador.IA)
         {
             defendendo = TipoJogador.PLAYER;
@@ -741,23 +751,33 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             defendendo = TipoJogador.IA;
         }
         faseAtual = TipoFase.DEFESA;
+        emBatalha = true;
     }
-    void FaseDeBatalha()
+    void FaseDeBatalha(bool pular)
     {
-        if (tempoCronometro > 0)
+
+        //contagemAtaques = 0;
+        if (!pular &&acabouTempo)
         {
-            tempoCronometro -= 1f * Time.deltaTime;
-            gerenciadorUI.atualizaCronometro(tempoCronometro);
+            Timing.RunCoroutine(rodaAtaqueCampo(p1),Segment.LateUpdate);
+            if (rodandoAnimacao == false)
+            {
+                PassaTurno();
+                emBatalha = false;
+            }
         }
         else
         {
-
             Timing.RunCoroutine(rodaAtaqueCampo(p1));
-
-            PassaTurno();
+            if (rodandoAnimacao == false)
+            {
+                PassaTurno();
+                emBatalha = false;
+            }
         }
-    }
 
+     
+    }
     public List<Sprite> cortarSpritesheet(Texture2D spritesheet, int largura, int altura, int qtdFrames)
     {
         List<Sprite> cortados = new List<Sprite>();
@@ -783,7 +803,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         return cortados;
     }
-
     public void passarParaMao(int id, bool rodaAnimacao = true)
     {
         if (deckMaoPlayer.Count >= 7)
@@ -967,8 +986,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public void PassaTurno()
     {
         gerenciadorAudio.playTrocaturnoprincipal();
-        tempoCronometro = 15f;
-        contagemAtaques = 0;
+        tempoCronometro = 30f;
+
         if (turno == TipoJogador.IA)
         {
             gerenciadorUI.trocaBtnTurno(1);
@@ -977,6 +996,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             p1 = true;
             ultimoCampoJogado = null;
             ultimoCampoAtivado = null;
+            sortearDeck(true);
         }
         else
         {
@@ -1061,6 +1081,15 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
     }
 
+    public void Pronto()
+    {
+        ExecutarAtaques();
+    }
+
+    private void ExecutarAtaques()
+    {
+
+    }
 
     public void JogarCarta(CartaGeral cartaGeral, int idSlot)
     {

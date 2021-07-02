@@ -43,6 +43,8 @@ public class IA : MonoBehaviour
         gCristal = false;
         gerenciadorJogo = GerenciadorJogo.instance;
         Timing.RunCoroutine(iniciarObjetos());
+        Timing.RunCoroutine(iniciarObjetos());
+        Timing.RunCoroutine(iniciarObjetos());
         VerificaCampos();
         VerificaMeuTurno();
         for (int i = 0; i < 5; i++)
@@ -331,7 +333,10 @@ public class IA : MonoBehaviour
 
         SlotCampo campoParaJogar = CampoEcolhidoJogar(camposDisponiveis);
         SlotCampo campoParaAtivar = CampoEcolhidoAtivar(camposParaAtivar);
-        if (Delay(tempoPensamento))
+
+        var t = Random.Range(2, tempoPensamento);
+
+        if (Delay(t))
         {
             if (campoParaJogar != null && campoParaAtivar == null)
             {

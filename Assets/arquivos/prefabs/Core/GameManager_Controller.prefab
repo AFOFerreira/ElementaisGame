@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5241836644461637163}
   - component: {fileID: 5241836644461637161}
   - component: {fileID: 1001479352339174286}
-  - component: {fileID: 6556061811592102120}
   - component: {fileID: 6042409461459443076}
   - component: {fileID: 8635652179371135757}
   - component: {fileID: 7954050705246910329}
@@ -67,7 +66,7 @@ MonoBehaviour:
     type: 3}
   PrefabCarta: {fileID: 1000428263057865265, guid: 82a11a0f06bfa70429ceb9c8c94ba7fe,
     type: 3}
-  deckPlayer: []
+  DeckInicial: []
 --- !u!114 &5241836644461637161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,18 +89,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78e44f5d190dfd34285d5d0533468a75, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6556061811592102120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5241836644461637160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 684f06510b6a59443bff261a967192f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6042409461459443076
@@ -152,4 +139,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e20048e009818c84dae201a008c32dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DeckInicial: []
+  monstroLista: []
