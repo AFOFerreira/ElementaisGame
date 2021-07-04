@@ -1,14 +1,12 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using funcoesUteis;
+using MEC;
+using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using MEC;
-using DG.Tweening;
-using Photon.Pun;
-using ExitGames.Client.Photon;
-using funcoesUteis;
-using Photon.Realtime;
 
 public class GerenciadorJogo : MonoBehaviourPunCallbacks
 {
@@ -59,8 +57,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public int JogadasPlayer = 1;
     public bool p1 = false;
     public bool emBatalha = false;
-    bool pularTempoEspera = false;
-    bool acabouTempo = false;
+    bool executarAnimAtaque = false;
+    bool aguardarAnimAtaque = false;
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
@@ -83,6 +81,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
     [Header("FASE")]
     public int fase;
+    private bool rodandoAnimacaoATAQUE = false;
 
     private void Awake()
     {
@@ -134,12 +133,12 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             passarParaMao(id, false);
         }
 
-        tempoCronometro = 15;
+        tempoCronometro = 15f;
 
         sorteio();
 
         fase = 1;
-        tempoCronometro = 30;
+        tempoCronometro = 30f;
     }
     public void btnTrocaTurno()
     {
@@ -151,7 +150,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     [PunRPC]
     public void rpcZeraCronometro()
     {
-        tempoCronometro = 1;
+        tempoCronometro = 1f;
     }
 
     [PunRPC]
@@ -161,7 +160,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         turnoLocal = !turnoLocal;
         gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
         tempoCronometro = 30f;
-        contagemAtaques = 0;
+
         PassaTurno();
     }
 
@@ -235,8 +234,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         Debug.Log("Rodando ataque campo");
         GerenciadorJogo gerenciadorJogo =
             GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>();
-        gerenciadorJogo.rodandoAnimacao = true;
-
+        gerenciadorJogo.rodandoAnimacaoATAQUE = true;
+        Sequence s = DOTween.Sequence();
         SlotCampo atacanteCampo, inimigoCampo;
         SlotElemental atacanteUI, inimigoUI;
 
@@ -269,7 +268,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                     }
 
                     // PARTE 1 ANIMAÇÃO
-                    Sequence s = DOTween.Sequence();
+
                     s.Append(gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]].imgAnimAtaque.DOFade(0, .5f));
                     s.AppendCallback(() => FuncoesUteis.animacaoImagem(atacanteCampo.imgAnimAtaque,
                         atacanteUI.cartaGeral.elemento.animAtaque1, false, 6));
@@ -317,7 +316,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                     }
 
                     // PARTE 1 ANIMAÇÃO
-                    Sequence s = DOTween.Sequence();
+                    s = DOTween.Sequence();
                     s.Append(gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]].imgAnimAtaque.DOFade(0, .5f));
                     s.AppendCallback(() => FuncoesUteis.animacaoImagem(atacanteCampo.imgAnimAtaque,
                         atacanteUI.cartaGeral.elemento.animAtaque1, false, 6));
@@ -338,9 +337,12 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             }
         }
 
-        gerenciadorJogo.rodandoAnimacao = false;
-
-        gerenciadorJogo.zeraAtaques();
+        if (!s.IsPlaying())
+        {
+            gerenciadorJogo.rodandoAnimacaoATAQUE = false;
+            gerenciadorJogo.zeraAtaques();
+            gerenciadorJogo.PassaTurno();
+        }
 
         for (int i = 0; i <= 2; i++)
         {
@@ -363,6 +365,144 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             //PhotonNetwork.RaiseEvent(TROCA_TURNO, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
             //gerenciadorJogo.photonView.RPC("trocaTurno", Photon.Pun.RpcTarget.AllBufferedViaServer, true);
         }
+    }
+
+    public IEnumerator rodaAtaqueCampo2(bool p1)
+    {
+        Debug.Log("Rodando ataque campo");
+        GerenciadorJogo gerenciadorJogo =
+            GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>();
+        gerenciadorJogo.rodandoAnimacaoATAQUE = true;
+        Sequence s = DOTween.Sequence();
+        SlotCampo atacanteCampo, inimigoCampo;
+        SlotElemental atacanteUI, inimigoUI;
+
+        for (int i = 0; i <= 2; i++)
+        {
+            if (gerenciadorJogo.ataques[i, 0] > -1 && gerenciadorJogo.ataques[i, 1] > -1)
+            {
+                if (p1)
+                {
+                    atacanteCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]];
+                    atacanteUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 0]];
+                }
+                else
+                {
+                    atacanteCampo = gerenciadorJogo.slotsCampoP2[gerenciadorJogo.ataques[i, 0]];
+                    atacanteUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP2[gerenciadorJogo.ataques[i, 0]];
+                }
+
+                if (gerenciadorJogo.ataques[i, 1] < 3)
+                {
+                    if (p1)
+                    {
+                        inimigoCampo = gerenciadorJogo.slotsCampoP2[gerenciadorJogo.ataques[i, 1]];
+                        inimigoUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP2[gerenciadorJogo.ataques[i, 1]];
+                    }
+                    else
+                    {
+                        inimigoCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 1]];
+                        inimigoUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 1]];
+                    }
+
+                    // PARTE 1 ANIMAÇÃO
+
+                    s.Append(gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]].imgAnimAtaque.DOFade(0, .5f));
+                    s.AppendCallback(() => FuncoesUteis.animacaoImagem(atacanteCampo.imgAnimAtaque,
+                        atacanteUI.cartaGeral.elemento.animAtaque1, false, 6));
+                    s.Join(atacanteCampo.imgAnimAtaque.DOFade(1, .5f));
+                    s.AppendInterval(1.1f);
+                    s.Append(atacanteCampo.imgAnimAtaque.DOFade(0, .5f));
+
+                    //----------------------Anim parte 2------------------------
+                    if (inimigoCampo.ocupado)
+                    {
+                        s.Append(inimigoCampo.imgAnimAtaque.DOFade(0, .5f));
+                        s.AppendCallback(() => FuncoesUteis.animacaoImagem(inimigoCampo.imgAnimAtaque,
+                            atacanteUI.cartaGeral.elemento.animAtaque2, false, 6));
+                        s.Join(inimigoCampo.imgAnimAtaque.DOFade(1, .5f));
+                        s.AppendInterval(1.1f);
+                        s.Append(inimigoCampo.imgAnimAtaque.DOFade(0, .5f));
+
+                        yield return Timing.WaitForSeconds(5);
+
+                        int vida = inimigoUI.cartaGeralTemp.defesa -= atacanteUI.cartaGeralTemp.ataque;
+
+                        if (vida <= 0)
+                        {
+                            gerenciadorJogo.morteElemental(p1, gerenciadorJogo.ataques[i, 1]);
+                            gerenciadorJogo.executaAtaqueDiretoLocal(Mathf.Abs(vida), p1);
+                            yield return new WaitForSeconds(3);
+                        }
+                        else
+                        {
+                            inimigoUI.atualizarInformações();
+                        }
+                    }
+                }
+                else // ATAQUE DIRETO
+                {
+                    if (p1)
+                    {
+                        atacanteCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]];
+                        atacanteUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 0]];
+                    }
+                    else
+                    {
+                        atacanteCampo = gerenciadorJogo.slotsCampoP2[gerenciadorJogo.ataques[i, 0]];
+                        atacanteUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP2[gerenciadorJogo.ataques[i, 0]];
+                    }
+
+                    // PARTE 1 ANIMAÇÃO
+                    s = DOTween.Sequence();
+                    s.Append(gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]].imgAnimAtaque.DOFade(0, .5f));
+                    s.AppendCallback(() => FuncoesUteis.animacaoImagem(atacanteCampo.imgAnimAtaque,
+                        atacanteUI.cartaGeral.elemento.animAtaque1, false, 6));
+                    s.Join(atacanteCampo.imgAnimAtaque.DOFade(1, .5f));
+                    s.AppendInterval(1.1f);
+                    s.Append(atacanteCampo.imgAnimAtaque.DOFade(0, .5f));
+                    yield return new WaitForSeconds(3);
+
+                    gerenciadorJogo.executaAtaqueDiretoLocal(atacanteUI.cartaGeralTemp.ataque, p1);
+                    yield return new WaitForSeconds(3);
+                }
+            }
+
+            if (gerenciadorJogo.gerenciadorUI.slotsPlayer[0].vida <= 0 ||
+                gerenciadorJogo.gerenciadorUI.slotsPlayer[1].vida <= 0)
+            {
+                break;
+            }
+            yield return s.WaitForCompletion();
+        }
+
+        rodandoAnimacaoATAQUE = false;
+        zeraAtaques();
+        PassaTurno();
+
+
+        for (int i = 0; i <= 2; i++)
+        {
+            if (gerenciadorJogo.slotsCampoP1[i].ativado)
+            {
+                gerenciadorJogo.slotsCampoP1[i].disponivel = true;
+            }
+
+            if (gerenciadorJogo.slotsCampoP2[i].ativado)
+            {
+                gerenciadorJogo.slotsCampoP2[i].disponivel = true;
+            }
+        }
+
+        if (gerenciadorJogo.turnoLocal)
+        {
+            //chama a função de trocar de turno
+            //gerenciadorJogo.trocaTurno(false);
+            //object[] valoresRede = new object[] { true };
+            //PhotonNetwork.RaiseEvent(TROCA_TURNO, valoresRede, Photon.Realtime.RaiseEventOptions.Default, ExitGames.Client.Photon.SendOptions.SendUnreliable);
+            //gerenciadorJogo.photonView.RPC("trocaTurno", Photon.Pun.RpcTarget.AllBufferedViaServer, true);
+        }
+        yield return null;
     }
 
     public void alteraMarcadoresAtaque(int idAtacante, int idInimigo, bool P1)
@@ -704,38 +844,55 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             slotsCampoP2[i].imgAnimAtaque.sprite = marcadoresAtaque[0];
         }
     }
-    async void Update()
+    void Update()
     {
-       
-        if (tempoCronometro > 0)
+        if (Input.GetButtonDown("Horizontal"))
+            executarAnimAtaque = true;
+
+        if (!emBatalha)
         {
-            tempoCronometro -= 1f * Time.deltaTime;
-            gerenciadorUI.atualizaCronometro(tempoCronometro);
+            var t = Cronometro();
+            if (t)
+            {
+                PassaTurno();
+            }
         }
         else
         {
-            FaseDeBatalha(false);
-           //Timing.RunCoroutine(rodaAtaqueCampo(p1));
-           
-            PassaTurno();
+            if (!aguardarAnimAtaque)
+            {
+                if (!executarAnimAtaque)
+                {
+                    var t = Cronometro();
+                    if (t)
+                    {
+                        FaseDeBatalha();
+                    }
+                }
+                else
+                {
+                    FaseDeBatalha();
+                }
+
+            }
         }
-        
+
     }
 
-    private void Cronometro()
+    private bool Cronometro()
     {
-      
-        if (tempoCronometro > 0)
+        bool b;
+        if (tempoCronometro >= 0f)
         {
             tempoCronometro -= 1f * Time.deltaTime;
             gerenciadorUI.atualizaCronometro(tempoCronometro);
-            acabouTempo = false; 
+            b = false;
         }
         else
         {
-            acabouTempo = true;
+            b = true;
         }
-        
+        return b;
     }
 
     public void setTurnoBatalha()
@@ -753,30 +910,11 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         faseAtual = TipoFase.DEFESA;
         emBatalha = true;
     }
-    void FaseDeBatalha(bool pular)
+    void FaseDeBatalha()
     {
-
-        //contagemAtaques = 0;
-        if (!pular &&acabouTempo)
-        {
-            Timing.RunCoroutine(rodaAtaqueCampo(p1),Segment.LateUpdate);
-            if (rodandoAnimacao == false)
-            {
-                PassaTurno();
-                emBatalha = false;
-            }
-        }
-        else
-        {
-            Timing.RunCoroutine(rodaAtaqueCampo(p1));
-            if (rodandoAnimacao == false)
-            {
-                PassaTurno();
-                emBatalha = false;
-            }
-        }
-
-     
+        aguardarAnimAtaque = true;
+        //Timing.RunCoroutine(rodaAtaqueCampo(p1));
+        StartCoroutine(rodaAtaqueCampo2(p1));
     }
     public List<Sprite> cortarSpritesheet(Texture2D spritesheet, int largura, int altura, int qtdFrames)
     {
@@ -986,7 +1124,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public void PassaTurno()
     {
         gerenciadorAudio.playTrocaturnoprincipal();
-        tempoCronometro = 30f;
 
         if (turno == TipoJogador.IA)
         {
@@ -1004,8 +1141,12 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             gerenciadorUI.trocaBtnTurno(0);
             turno = TipoJogador.IA;
         }
-
+        contagemAtaques = 0;
         faseAtual = TipoFase.MONSTRO;
+        tempoCronometro = 30f;
+        aguardarAnimAtaque = false;
+        emBatalha = false;
+        executarAnimAtaque = false;
     }
 
     #endregion
