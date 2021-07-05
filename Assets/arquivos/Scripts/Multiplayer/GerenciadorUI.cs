@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using System.Linq;
 using funcoesUteis;
 using TMPro;
+using System.Collections;
 
 public class GerenciadorUI : MonoBehaviour
 {
@@ -52,8 +53,16 @@ public class GerenciadorUI : MonoBehaviour
 
     public float tempoCronometro = 15;
     public TextMeshProUGUI txtTempoCronometro;
-
+    public TxtAlertaGame txtAlerta;
     public GameObject btnPronto;
+
+    [Header("IMG SORTEIO, TURNO")]
+    public Sprite P1COMECA;
+    public Sprite P2COMECA;
+    public Sprite P1TURNO;
+    public Sprite P2TURNO;
+    public GameObject ImagemAnimacao;
+    public GameObject ImagemAnimacaoTurno;
 
     private void Awake()
     {
@@ -81,8 +90,6 @@ public class GerenciadorUI : MonoBehaviour
  */
     }
 
-
-    // Start is called before the first frame update
     void Start()
     {
         gerenciadorJogo = GerenciadorJogo.instance;
@@ -112,12 +119,35 @@ public class GerenciadorUI : MonoBehaviour
 
         s.Play();
     }
-
+    public void MostrarAlerta(string msg)
+    {
+        txtAlerta.Ativar(msg);
+    }
     public void atualizaCronometro(float tempo)
     {
-        txtTempoCronometro.text = tempo.ToString("##");
-    }
+        if (tempo > 0f)
+        {
+            if (tempo > 20)
+            {
+                txtTempoCronometro.color = Color.green;
 
+            }
+            else if (tempo > 10)
+            {
+                txtTempoCronometro.color = Color.yellow;
+            }
+            else
+            {
+                txtTempoCronometro.color = Color.red;
+            }
+            txtTempoCronometro.text = tempo.ToString("##");
+        }
+        else
+        {
+            txtTempoCronometro.text = "----";
+            txtTempoCronometro.color = Color.red;
+        }
+    }
     public void abreFechaDetalhesElementaisP1()
     {
         /*DOTween.Kill("detalhesP1");
@@ -189,8 +219,8 @@ public class GerenciadorUI : MonoBehaviour
             btnTurno.enabled = true;
             slotsCristais[sorteado].addCristal(1);
         }
-    }
 
+    }
     public void abreFechaDetalhesElementaisP2()
     {
         /* DOTween.Kill("detalhesP2");
@@ -215,10 +245,9 @@ public class GerenciadorUI : MonoBehaviour
 
          s.Play();*/
     }
-
     public void inicioAtaque(CartaGeral atacante, CartaGeral inimigo, bool P1)
     {
-        
+
         if (P1)
         {
             imgAnimAtaque.transform.DORotate(new Vector3(0, 0, 0), 0);
@@ -263,7 +292,6 @@ public class GerenciadorUI : MonoBehaviour
         s.Join(imgAnimAtaque.DOFade(1, 1f));
 
     }
-
     public void fimAtaque()
     {
         Sequence s = DOTween.Sequence();
@@ -277,7 +305,6 @@ public class GerenciadorUI : MonoBehaviour
         s.Append(fundoAtaque.DOFade(0f, 1f));// 
         s.AppendCallback(() => { panelAtaque.SetActive(false); });
     }
-
     public void AtaqueDireto(bool P1, int subVida)
     {
         fotoPlayerAtaque.sprite = spritesFotoPlayer[P1 ? 1 : 0];
@@ -302,7 +329,42 @@ public class GerenciadorUI : MonoBehaviour
             GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().fimAtaqueDireto(subVida, P1);
         });
     }
+    public IEnumerator AnimacaoBandeiraSorteio(bool P1)
+    {
+        Sequence s = DOTween.Sequence();
+        if (P1)
+        {
+            ImagemAnimacao.GetComponent<Image>().sprite = P1COMECA;
+        }
+        else
+        {
+            ImagemAnimacao.GetComponent<Image>().sprite = P2COMECA;
+        }
+        s.Append(ImagemAnimacao.transform.DOScaleX(1, 0.5f));
 
+        yield return new WaitForSeconds(2f);
+        s.Complete();
+        gerenciadorJogo.EmJogo = true;
+        gerenciadorJogo.panelSorteio.SetActive(false);
+        yield return null;
+    }
+
+    public IEnumerator AnimacaoTrocarBandeiraTurno(bool P1)
+    {
+        Sequence s = DOTween.Sequence();
+        ImagemAnimacaoTurno.SetActive(true);
+        if (P1)
+        {
+            ImagemAnimacaoTurno.GetComponent<Image>().sprite = P1TURNO;
+        }
+        else
+        {
+            ImagemAnimacaoTurno.GetComponent<Image>().sprite = P2TURNO;
+        }
+        yield return new WaitForSeconds(2f);
+        ImagemAnimacaoTurno.SetActive(false);
+        yield return null;
+    }
     public void animVitoriaDerrota(bool venceu)
     {
 
@@ -331,7 +393,6 @@ public class GerenciadorUI : MonoBehaviour
         s.AppendInterval(3);
 
     }
-
     private void Update()
     {
         if (gerenciadorJogo.EmJogo)

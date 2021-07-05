@@ -31,7 +31,7 @@ public class slotCristal : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     }
     public void addCristal(int qtdInserir)
     {
-        
+
         imgAnimCristal.sprite = animCristal[0];
         Sequence s = DOTween.Sequence();
         s.Join(imgAnimCristal.DOFade(1, .1f));
@@ -50,6 +50,8 @@ public class slotCristal : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         });
         s.AppendInterval(1f);
         s.Append(imgAnimCristal.DOFade(0, .1f));
+
+
     }
 
     public void OnPointerDown(PointerEventData eventData)

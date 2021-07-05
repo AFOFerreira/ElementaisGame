@@ -10,10 +10,12 @@ public class SlotPlayer : MonoBehaviour, IDropHandler
     public TextMeshProUGUI txtVida;
     private GerenciadorJogo gerenciadorJogo;
     public bool P1;
+    GerenciadorUI gerenciadorUI = new GerenciadorUI();
 
     private void Start()
     {
         gerenciadorJogo = GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>();
+        gerenciadorUI = GerenciadorUI.gerenciadorUI;
     }
 
     public void alteraVida(int valor)
@@ -24,18 +26,16 @@ public class SlotPlayer : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (!P1 && eventData.pointerDrag != null &&
-            eventData.pointerDrag.GetComponent<SlotDrop>() != null &&
-            gerenciadorJogo.turnoLocal &&
-            !gerenciadorJogo.rodandoAnimacao &&
-            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado &&
-            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
+
+        if (!P1 && eventData.pointerDrag.GetComponent<SlotDrop>() != null 
+            && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot] 
+            != gerenciadorJogo.ultimoCampoAtivado)
         {
             bool camposVazios = true;
 
             foreach (var campo in gerenciadorJogo.slotsCampoP2)
             {
-                if(campo.ocupado)
+                if (campo.ocupado)
                 {
                     camposVazios = false;
                 }
@@ -49,12 +49,15 @@ public class SlotPlayer : MonoBehaviour, IDropHandler
             }
             else
             {
+                gerenciadorUI.MostrarAlerta("Ainda há elementais que precisam ser destruidos!");
                 gerenciadorJogo.gerenciadorAudio.playNegacao();
             }
         }
-            //throw new System.NotImplementedException();
+        else
+        {
+            gerenciadorJogo.gerenciadorAudio.playNegacao();
+            gerenciadorUI.MostrarAlerta("Você precisa esperar o proximo turno para atacar com este elemental!");
         }
 
-
-
+    }
 }
