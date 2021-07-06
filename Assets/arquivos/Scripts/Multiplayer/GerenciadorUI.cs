@@ -55,6 +55,7 @@ public class GerenciadorUI : MonoBehaviour
     public TextMeshProUGUI txtTempoCronometro;
     public TxtAlertaGame txtAlerta;
     public GameObject btnPronto;
+    bool uiM = false;
 
     [Header("IMG SORTEIO, TURNO")]
     public Sprite P1COMECA;
@@ -118,6 +119,7 @@ public class GerenciadorUI : MonoBehaviour
         s.Append(panelBaixo.DOAnchorPos(Vector2.zero, 0.5f));
 
         s.Play();
+        uiM = true;
     }
     public void MostrarAlerta(string msg)
     {
@@ -221,6 +223,7 @@ public class GerenciadorUI : MonoBehaviour
         }
 
     }
+
     public void abreFechaDetalhesElementaisP2()
     {
         /* DOTween.Kill("detalhesP2");
@@ -397,7 +400,10 @@ public class GerenciadorUI : MonoBehaviour
     {
         if (gerenciadorJogo.EmJogo)
         {
-            MostrarUI();
+
+            if (!uiM)
+                MostrarUI();
+            btnTurno.interactable = gerenciadorJogo.emBatalha || gerenciadorJogo.turno != TipoJogador.PLAYER ? false : true;
         }
     }
 
