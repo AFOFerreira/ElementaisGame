@@ -8,12 +8,13 @@ using UnityEngine;
 
 public class IA : MonoBehaviour
 {
+    #region Set Variables
     int qtdTurnos = 0;
     int jogadasMonstro = 1;
     GerenciadorJogo gerenciadorJogo;
-    private float tempoAtual = 0;
+    public float tempoAtual = 0;
+    public static IA instance;
 
-    
     [Header("Cristais")]
     //0-agua, 1-fogo, 2-terra, 3- ar
     public int[] cristais = new int[4];
@@ -32,12 +33,25 @@ public class IA : MonoBehaviour
     public List<CartaGeral> mao = new List<CartaGeral>();
 
     [Header("Controladores")]
-    public bool possoJogar, gCristal;
+    public bool possoJogar, gCristal, defendendo;
     public TipoJogador tipoIA;
     public TipoFase fase;
     public float tempoPensamento = 0;
     // Start is called before the first frame update
+    #endregion
 
+    #region UNITY DEFAULTS
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
     void Start()
     {
         gCristal = false;
@@ -59,13 +73,27 @@ public class IA : MonoBehaviour
     {
         if (gerenciadorJogo.EmJogo)
         {
-            VerificaMeuTurno();
-            if (possoJogar)
+            //VerificaMeuTurno();
+            if (gerenciadorJogo.emBatalha && possoJogar)
             {
-                if (gCristal)
+                var t = 5;
+                defendendo = gerenciadorJogo.turno == TipoJogador.PLAYER;
+                if (defendendo)
                 {
-                    GanharCristais();
+                    if (Delay(t))
+                    {
+                        Debug.Log("Nao tenho como defender ainda.");
+                        gerenciadorJogo.ExecutarAcaoBatalha();
+                    }
                 }
+                else
+                {
+                    Debug.Log("Estou esperando a acao do meu oponente.");
+                }
+
+            }
+            else if (possoJogar && !gerenciadorJogo.emBatalha)
+            {
                 VerificaCampos();
                 fase = gerenciadorJogo.faseAtual;
                 if (fase == TipoFase.MONSTRO)
@@ -99,32 +127,21 @@ public class IA : MonoBehaviour
                     //}
 
                     gerenciadorJogo.PassaTurno();
-                }
-                else
-                {
-                    if(gerenciadorJogo.defendendo == TipoJogador.IA)
-                    {
-                     Debug.Log(tipoIA + ": Realizando defesa");
-                    }
-                    else
-                    {
-                        Debug.Log("Esperando");
-                    }
-                    //TURNO PARA DEFESA.
+
                 }
                 qtdTurnos++;
-
             }
             else
             {
                 Debug.Log(tipoIA + ": Não posso jogar, não é a minha vez!!");
                 campoSelecionado = null;
                 jogadasMonstro = 1;
-                gCristal = true;
+
                 //DO NOTHING!
             }
         }
     }
+    #endregion
 
     #region Deck
     public void passarParaMao(int id)
@@ -239,6 +256,7 @@ public class IA : MonoBehaviour
 
     }
     #endregion
+
     #region Turno
     void VerificaMeuTurno()
     {
@@ -251,6 +269,7 @@ public class IA : MonoBehaviour
     }
 
     #endregion
+
     #region Padrao
     void VerificaCampos()
     {
@@ -266,55 +285,106 @@ public class IA : MonoBehaviour
         tempoAtual += 1f * Time.deltaTime;
         if (tempoAtual >= t)
         {
-            tempoAtual = 0f;
             b = true;
+            tempoAtual = 0f;
         }
         return b;
+
     }
 
-    void GanharCristais()
+
+    public int rng()
+    {
+        var rng = Random.Range(1, 100);
+        if (rng <= 40)
+        {
+            return 1;
+        }
+        else if (rng <= 75)
+        {
+            return 2;
+        }
+        else
+        {
+            return 3;
+        }
+
+
+    }
+
+    public void GanharCristais()
     {
         var cristal = Random.Range(0, cristais.Length);
-        var cristalQtd = Random.Range(1,2);
+        var cristalQtd = Random.Range(1, 2);
 
-        cristais[cristal]+= cristalQtd;
+        cristais[cristal] += cristalQtd;
         gCristal = false;
     }
 
+
     #endregion
+
     #region Estrategia
     CartaGeral PensaCartaMonstro()
     {
         var carta = new CartaGeral();
         var c = mao[0];
         var tatica = Random.Range(1, 10);
+
         foreach (var obj in mao)
         {
-            if (tatica < 5)
+            switch (obj.elemento.nomeElemento)
             {
-                if (obj.ataque > c.ataque)
-                {
-                    carta = obj;
+                case "Água":
+                    if (cristais[0] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+                    }
                     break;
-                }
-                else
-                {
-                    carta = c;
+
+                case "Fogo":
+                    if (cristais[1] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+                    }
                     break;
-                }
-            }
-            else
-            {
-                if (obj.defesa > c.defesa)
-                {
-                    carta = obj;
+
+                case "Terra":
+                    if (cristais[2] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+                    }
                     break;
-                }
-                else
-                {
-                    carta = c;
+                case "Ar":
+                    if (cristais[3] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+                    }
                     break;
-                }
             }
 
         }
@@ -326,6 +396,7 @@ public class IA : MonoBehaviour
     }
     void PensaJogadaMonstro()
     {
+
         var camposDisponiveis = camposParaJogarMonstro.Where(x => (!x.ocupado)).ToList();
         var camposAtivados = camposOcupadosMonstros.Where(x => (x.ativado)).ToList();
         var camposParaAtivar = camposOcupadosMonstros.Where(x => (!x.ativado)).ToList();
@@ -335,82 +406,58 @@ public class IA : MonoBehaviour
         SlotCampo campoParaAtivar = CampoEcolhidoAtivar(camposParaAtivar);
 
         var t = Random.Range(2, tempoPensamento);
+        var r = rng();
 
         if (Delay(t))
         {
-            if (campoParaJogar != null && campoParaAtivar == null)
+            if (r == 1 && campoParaJogar != null)
             {
+                Debug.Log("A");
+                var tempRng = Random.Range(0, 4);
                 if (JogarCartaNoCampo(campoParaJogar))
-                    gerenciadorJogo.faseAtual = TipoFase.MAGICA;
-            }
-            else
-            {
-                var rng = Random.Range(1, 4);
-
-                if (rng <= 2)
                 {
-                    Debug.Log("Cogitar ataque?");
-                    if (CombinacaoAtaque(camposAlvos, camposAtivados))
-                    {
-                        gerenciadorJogo.setTurnoBatalha();
-                    }
+                    if (tempRng < 3)
+                        StartCoroutine(AtivarELemental(campoParaJogar));
                     else
-                    {
-                        if (campoParaAtivar != null)
-                        {
-                            AtivarELemental(campoParaAtivar);
-                        }
-                        else
-                        {
-                            gerenciadorJogo.faseAtual = TipoFase.MAGICA;
-                        }
-                    }
+                        return;
+                }
+            }
+            else if (r == 2 && campoParaAtivar != null)
+            {
+                Debug.Log("B");
+                if (campoParaAtivar != null)
+                {
+                    StartCoroutine(AtivarELemental(campoParaAtivar));
                 }
                 else
                 {
-                    Debug.Log("Cogitar ataque?");
-                    if (CombinacaoAtaque(camposAlvos, camposAtivados))
-                    {
-                        gerenciadorJogo.setTurnoBatalha();
-                    }
-                    else
-                    {
-                        if (campoParaJogar != null)
-                        {
-                            if (JogarCartaNoCampo(campoParaJogar))
-                                gerenciadorJogo.faseAtual = TipoFase.MAGICA;
-                        }
-                        else
-                        {
-                            gerenciadorJogo.faseAtual = TipoFase.MAGICA;
-                        }
-                    }
+                    return;
                 }
             }
-        }
+            else if (r == 3 && camposAtivados.Count > 0)
+            {
+                Debug.Log("C");
+                if (CombinacaoAtaque(camposAlvos, camposAtivados))
+                {
+                    gerenciadorJogo.setTurnoBatalha();
+                }
+                else
+                {
+                    return;
+                }
+            }
 
+
+        }
     }
     SlotCampo CampoEcolhidoAtivar(List<SlotCampo> camposParaAtivar)
     {
-        if (camposParaAtivar.Count > 0)
-        {
-            return camposParaAtivar[Random.Range(0, camposParaAtivar.Count)];
-        }
-        else
-        {
-            return null;
-        }
+        return camposParaAtivar.Count > 0 ? camposParaAtivar[Random.Range(0, camposParaAtivar.Count)] : null;
     }
     SlotCampo CampoEcolhidoJogar(List<SlotCampo> camposDisponiveis)
     {
-        if (camposDisponiveis.Count > 0)
-        {
-            return camposDisponiveis[Random.Range(0, camposDisponiveis.Count)];
-        }
-        else
-        {
-            return null;
-        }
+
+        return camposDisponiveis.Count > 0 ? camposDisponiveis[Random.Range(0, camposDisponiveis.Count)] : null;
     }
     SlotCampo MelhorCartaEmCampo(List<SlotCampo> cartaAtivas)
     {
@@ -425,74 +472,87 @@ public class IA : MonoBehaviour
     }
     SlotCampo MelhorCartaOponente(List<SlotCampo> cartaOponente)
     {
+        var rng = Random.Range(0, 1f);
+
         if (cartaOponente.Count > 0)
         {
-            var itemMaxHeight = cartaOponente.Min(y => y.cartaGeral.defesa);
-            var itemsMax = cartaOponente.Where(x => x.cartaGeral.defesa == itemMaxHeight).First();
-            return itemsMax;
+            if (rng < 0.75f)
+            {
+                var itemMaxHeight = cartaOponente.Min(y => y.cartaGeral.defesa);
+                var itemsMax = cartaOponente.Where(x => x.cartaGeral.defesa == itemMaxHeight).First();
+                return itemsMax;
+            }
+            else
+            {
+                return cartaOponente[Random.Range(0, cartaOponente.Count)];
+            }
         }
         else
-            return null;    
+            return null;
     }
-    void AtivarELemental(SlotCampo elementalAtacante)
+    IEnumerator AtivarELemental(SlotCampo elementalAtacante)
     {
 
+        yield return new WaitForSeconds(2f);
         switch (elementalAtacante.cartaGeral.elemento.nomeElemento)
         {
             case "Água":
-                if (cristais[0] > elementalAtacante.cartaGeral.cristais)
+                if (cristais[0] >= elementalAtacante.cartaGeral.cristais)
                 {
                     cristais[0] -= elementalAtacante.cartaGeral.cristais;
                     gerenciadorJogo.ativarElementalAI(elementalAtacante.idCampo);
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
                 else
                 {
                     Debug.Log("Nao tenho cristais suficientes");
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
-                break;
             case "Fogo":
-                if (cristais[1] > elementalAtacante.cartaGeral.cristais)
+                if (cristais[1] >= elementalAtacante.cartaGeral.cristais)
                 {
                     cristais[1] -= elementalAtacante.cartaGeral.cristais;
                     gerenciadorJogo.ativarElementalAI(elementalAtacante.idCampo);
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
                 else
                 {
                     Debug.Log("Nao tenho cristais suficientes");
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
-                break;
 
             case "Terra":
-                if (cristais[2] > elementalAtacante.cartaGeral.cristais)
+                if (cristais[2] >= elementalAtacante.cartaGeral.cristais)
                 {
                     cristais[2] -= elementalAtacante.cartaGeral.cristais;
                     gerenciadorJogo.ativarElementalAI(elementalAtacante.idCampo);
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
                 else
                 {
                     Debug.Log("Nao tenho cristais suficientes");
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
-                break;
             case "Ar":
-                if (cristais[3] > elementalAtacante.cartaGeral.cristais)
+                if (cristais[3] >= elementalAtacante.cartaGeral.cristais)
                 {
                     cristais[3] -= elementalAtacante.cartaGeral.cristais;
                     gerenciadorJogo.ativarElementalAI(elementalAtacante.idCampo);
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
                 else
                 {
                     Debug.Log("Nao tenho cristais suficientes");
                     gerenciadorJogo.faseAtual = TipoFase.MAGICA;
+                    break;
                 }
-                break;
-
         }
     }
     bool JogarCartaNoCampo(SlotCampo campo)
@@ -521,20 +581,30 @@ public class IA : MonoBehaviour
     {
         var melhorOpcao = MelhorCartaEmCampo(cartas);
         var cartaOponente = MelhorCartaOponente(camposAlvos);
-        bool b = false;
+        var rng = Random.Range(0, 5);
+        bool b;
         if (camposAlvos.Count > 0)
         {
             Debug.Log("Há elementais que precisam ser destruidos");
             if (melhorOpcao != null)
             {
-                if (melhorOpcao.cartaGeral.ataque > cartaOponente.cartaGeral.defesa)
+                if (rng < 2)
                 {
-                    gerenciadorJogo.executaAtaque( melhorOpcao.idCampo, cartaOponente.idCampo, false);
+                    gerenciadorJogo.executaAtaque(melhorOpcao.idCampo, cartaOponente.idCampo, false);
                     b = true;
                 }
                 else
                 {
-                    b = false;
+                    if (melhorOpcao.cartaGeral.ataque > cartaOponente.cartaGeral.defesa)
+                    {
+                        gerenciadorJogo.executaAtaque(melhorOpcao.idCampo, cartaOponente.idCampo, false);
+                        b = true;
+                    }
+                    else
+                    {
+                        b = false;
+                    }
+
                 }
             }
             else
@@ -555,7 +625,7 @@ public class IA : MonoBehaviour
                 b = false;
             }
         }
-        
+
         return b;
     }
     #endregion

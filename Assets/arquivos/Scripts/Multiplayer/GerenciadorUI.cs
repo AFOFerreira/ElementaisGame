@@ -64,6 +64,7 @@ public class GerenciadorUI : MonoBehaviour
     public Sprite P2TURNO;
     public GameObject ImagemAnimacao;
     public GameObject ImagemAnimacaoTurno;
+    public GameObject MensagemBatalha;
 
     private void Awake()
     {
@@ -223,7 +224,6 @@ public class GerenciadorUI : MonoBehaviour
         }
 
     }
-
     public void abreFechaDetalhesElementaisP2()
     {
         /* DOTween.Kill("detalhesP2");
@@ -351,7 +351,6 @@ public class GerenciadorUI : MonoBehaviour
         gerenciadorJogo.panelSorteio.SetActive(false);
         yield return null;
     }
-
     public IEnumerator AnimacaoTrocarBandeiraTurno(bool P1)
     {
         Sequence s = DOTween.Sequence();
@@ -404,12 +403,23 @@ public class GerenciadorUI : MonoBehaviour
             if (!uiM)
                 MostrarUI();
             btnTurno.interactable = gerenciadorJogo.emBatalha || gerenciadorJogo.turno != TipoJogador.PLAYER ? false : true;
+            
         }
     }
 
     public void HabilitarBtnPronto()
     {
         btnPronto.SetActive(true);
+    }
+
+    public void HabilitarAlertaBatalha(bool b)
+    {
+        MensagemBatalha.SetActive(b);
+    }
+
+    public void Pronto()
+    {
+        gerenciadorJogo.ExecutarAcaoBatalha();
     }
 
     public void DesabilitarBtnPronto()

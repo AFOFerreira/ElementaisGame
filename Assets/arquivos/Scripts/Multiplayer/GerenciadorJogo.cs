@@ -19,8 +19,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     private const byte EXECUTA_ATAQUE_DIRETO = 5;
     private const byte EXECUTA_ATAQUE_CAMPO = 6;
 
-
-
     public Sprite resultadoVoce, resultadoOponente;
     //-------------------------------------------------
     public GameObject panelSorteio;
@@ -31,6 +29,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public GerenciadorUI gerenciadorUI;
     public AudioBase gerenciadorAudio;
     public static GerenciadorJogo instance;
+    public IA ia;
 
     [Header("DECK TOTAL")]
     public List<CartaGeral> deckTotal = new List<CartaGeral>();
@@ -97,6 +96,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     void Start()
     {
+        ia = IA.instance;
         gerenciadorAudio = AudioBase._instance;
         gerenciadorUI = GerenciadorUI.gerenciadorUI;
         gerenciadorAudio.playMusicaGameplay();
@@ -121,8 +121,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         if (EmJogo)
         {
-            if (Input.GetButtonDown("Horizontal"))
-                executarAnimAtaque = true;
 
             if (!emBatalha)
             {
@@ -134,6 +132,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             }
             else
             {
+
                 if (!aguardarAnimAtaque)
                 {
                     if (!executarAnimAtaque)
@@ -180,20 +179,28 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         if (turno == TipoJogador.IA)
         {
+            defendendo = TipoJogador.IA;
             gerenciadorUI.trocaBtnTurno(1);
             JogadasPlayer++;
             turno = TipoJogador.PLAYER;
             p1 = true;
-            StartCoroutine( gerenciadorUI.AnimacaoTrocarBandeiraTurno(true));
+            StartCoroutine(gerenciadorUI.AnimacaoTrocarBandeiraTurno(true));
+            ia.possoJogar = false;
             ultimoCampoJogado = null;
             ultimoCampoAtivado = null;
             sortearDeck(true);
+
         }
         else
         {
+            ia.tempoAtual = 0f;
+            ia.possoJogar = true;
+            defendendo = TipoJogador.PLAYER;
             p1 = false;
             gerenciadorUI.trocaBtnTurno(0);
-            StartCoroutine( gerenciadorUI.AnimacaoTrocarBandeiraTurno(false));
+            ia.sortearDeck();
+            ia.GanharCristais();
+            StartCoroutine(gerenciadorUI.AnimacaoTrocarBandeiraTurno(false));
             turno = TipoJogador.IA;
         }
         contagemAtaques = 0;
@@ -202,6 +209,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         aguardarAnimAtaque = false;
         emBatalha = false;
         executarAnimAtaque = false;
+        gerenciadorUI.HabilitarAlertaBatalha(false);
     }
     public void setTurnoBatalha()
     {
@@ -210,12 +218,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             tempoCronometro = 15f;
             if (turno == TipoJogador.IA)
             {
-                defendendo = TipoJogador.PLAYER;
 
+                gerenciadorUI.HabilitarBtnPronto();
+                gerenciadorUI.HabilitarAlertaBatalha(true);
             }
             else
             {
-                defendendo = TipoJogador.IA;
+                ia.possoJogar = true;
             }
             faseAtual = TipoFase.DEFESA;
             emBatalha = true;
@@ -491,10 +500,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public static IEnumerator<float> rodaAtaqueCampo(bool p1)
     {
         Debug.Log("Rodando ataque campo");
+
         GerenciadorJogo gerenciadorJogo =
             GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>();
         gerenciadorJogo.rodandoAnimacaoATAQUE = true;
         Sequence s;
+        gerenciadorJogo.gerenciadorUI.DesabilitarBtnPronto();
+        gerenciadorJogo.gerenciadorUI.HabilitarAlertaBatalha(false);
         SlotCampo atacanteCampo, inimigoCampo;
         SlotElemental atacanteUI, inimigoUI;
 
@@ -524,6 +536,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                         inimigoCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 1]];
                         inimigoUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 1]];
                     }
+                    gerenciadorJogo.gerenciadorAudio.playAtaqueElemental(atacanteUI.cartaGeral.elemento.idElemento);
 
                     // PARTE 1 ANIMAÇÃO
                     s = DOTween.Sequence();
@@ -625,7 +638,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public void rodaAnimSorteio()
     {
         panelSorteio.SetActive(true);
-        StartCoroutine( gerenciadorUI.AnimacaoBandeiraSorteio(p1));
+        StartCoroutine(gerenciadorUI.AnimacaoBandeiraSorteio(p1));
     }
     #endregion
 
@@ -784,6 +797,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         {
             p1 = false;
             turno = TipoJogador.IA;
+            ia.possoJogar = true;
+            ia.tempoAtual = 0f;
             gerenciadorUI.trocaBtnTurno(0);
         }
 
@@ -1032,6 +1047,11 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         gerenciadorUI.slotDetalhesP2[idSlot].setarInformações(cartaGeral);
         gerenciadorUI.slotDetalhesP2[idSlot].alteraArco(1);
         slotsCampoP2[idSlot].cartaGeral = cartaGeral;
+    }
+
+    public void ExecutarAcaoBatalha()
+    {
+        executarAnimAtaque = true;
     }
     #endregion
 
