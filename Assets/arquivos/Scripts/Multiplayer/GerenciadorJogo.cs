@@ -55,8 +55,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public int JogadasPlayer = 1;
     public bool p1 = false;
     public bool emBatalha = false;
-    bool executarAnimAtaque = false;
-    bool aguardarAnimAtaque = false;
+    public bool executarAnimAtaque = false;
+    public bool aguardarAnimAtaque = false;
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
@@ -73,7 +73,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
     [Header("SELETORES(ENUMERATORS)")]
     public TipoJogador turno;
-    public TipoJogador defendendo;
+    public TipoJogador defensor;
+    public TipoJogador selecionando;
     public TipoFase faseAtual;
     public TipoPartida tipoPartida;
 
@@ -121,7 +122,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         if (EmJogo)
         {
-
+            //SetDefensor();
             if (!emBatalha)
             {
                 var t = Cronometro();
@@ -137,17 +138,18 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                 {
                     if (!executarAnimAtaque)
                     {
+
                         var t = Cronometro();
                         if (t)
                         {
                             gerenciadorUI.atualizaCronometro(0f);
-                            FaseDeBatalha();
+                            PassaFaseBatalha();
                         }
                     }
                     else
                     {
                         gerenciadorUI.atualizaCronometro(0f);
-                        FaseDeBatalha();
+                        PassaFaseBatalha();
                     }
 
                 }
@@ -177,9 +179,16 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         gerenciadorAudio.playTrocaturnoprincipal();
 
+        contagemAtaques = 0;
+        faseAtual = TipoFase.MONSTRO;
+        tempoCronometro = 30f;
+        aguardarAnimAtaque = false;
+        emBatalha = false;
+        executarAnimAtaque = false;
+        gerenciadorUI.HabilitarAlertaBatalha(false, null);
         if (turno == TipoJogador.IA)
         {
-            defendendo = TipoJogador.IA;
+            defensor = TipoJogador.IA;
             gerenciadorUI.trocaBtnTurno(1);
             JogadasPlayer++;
             turno = TipoJogador.PLAYER;
@@ -189,27 +198,21 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             ultimoCampoJogado = null;
             ultimoCampoAtivado = null;
             sortearDeck(true);
-
+            selecionando = TipoJogador.PLAYER;
         }
         else
         {
             ia.tempoAtual = 0f;
             ia.possoJogar = true;
-            defendendo = TipoJogador.PLAYER;
+            defensor = TipoJogador.PLAYER;
             p1 = false;
             gerenciadorUI.trocaBtnTurno(0);
             ia.sortearDeck();
             ia.GanharCristais();
             StartCoroutine(gerenciadorUI.AnimacaoTrocarBandeiraTurno(false));
             turno = TipoJogador.IA;
+            selecionando = TipoJogador.IA;
         }
-        contagemAtaques = 0;
-        faseAtual = TipoFase.MONSTRO;
-        tempoCronometro = 30f;
-        aguardarAnimAtaque = false;
-        emBatalha = false;
-        executarAnimAtaque = false;
-        gerenciadorUI.HabilitarAlertaBatalha(false);
     }
     public void setTurnoBatalha()
     {
@@ -218,13 +221,16 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             tempoCronometro = 15f;
             if (turno == TipoJogador.IA)
             {
-
-                gerenciadorUI.HabilitarBtnPronto();
-                gerenciadorUI.HabilitarAlertaBatalha(true);
+                selecionando = TipoJogador.IA;
+                gerenciadorUI.HabilitarAlertaBatalha(true, "Prepare-se para reagir ao ataque!");
+                //gerenciadorUI.HabilitarBtnPronto();
+                ia.possoJogar = true;
             }
             else
             {
-                ia.possoJogar = true;
+                selecionando = TipoJogador.PLAYER;
+                gerenciadorUI.HabilitarBtnPronto();
+                gerenciadorUI.HabilitarAlertaBatalha(true, "Selecione os elementais que deseja atacar!");
             }
             faseAtual = TipoFase.DEFESA;
             emBatalha = true;
@@ -506,7 +512,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         gerenciadorJogo.rodandoAnimacaoATAQUE = true;
         Sequence s;
         gerenciadorJogo.gerenciadorUI.DesabilitarBtnPronto();
-        gerenciadorJogo.gerenciadorUI.HabilitarAlertaBatalha(false);
+        gerenciadorJogo.gerenciadorUI.HabilitarAlertaBatalha(false, null);
         SlotCampo atacanteCampo, inimigoCampo;
         SlotElemental atacanteUI, inimigoUI;
 
@@ -790,6 +796,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         if (valor >= 0 && valor <= 49)
         {
             turno = TipoJogador.PLAYER;
+            defensor = TipoJogador.IA;
+            selecionando = turno;
             gerenciadorUI.trocaBtnTurno(1);
             p1 = true;
         }
@@ -797,6 +805,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         {
             p1 = false;
             turno = TipoJogador.IA;
+            defensor = TipoJogador.PLAYER;
+            selecionando = turno;
             ia.possoJogar = true;
             ia.tempoAtual = 0f;
             gerenciadorUI.trocaBtnTurno(0);
@@ -1011,6 +1021,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     void FaseDeBatalha()
     {
+        tempoCronometro = 0f;
+        executarAnimAtaque = true;
         aguardarAnimAtaque = true;
         Timing.RunCoroutine(rodaAtaqueCampo(p1));
     }
@@ -1049,6 +1061,43 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         slotsCampoP2[idSlot].cartaGeral = cartaGeral;
     }
 
+    public void SetDefensor()
+    {
+        defensor = turno == TipoJogador.PLAYER ? TipoJogador.IA : TipoJogador.PLAYER;
+    }
+    public void PassaFaseBatalha()
+    {
+        if (emBatalha)
+        {
+            if (defensor == selecionando)
+            {
+                if (!aguardarAnimAtaque)
+                {
+                    if (!executarAnimAtaque)
+                    {
+                        FaseDeBatalha();
+                    }
+                }
+            }
+            else
+            {
+                tempoCronometro = 15f;
+                if (selecionando == TipoJogador.PLAYER)
+                {
+                    selecionando = TipoJogador.IA;
+                    ia.possoJogar = true;
+                    gerenciadorUI.DesabilitarBtnPronto();
+                    gerenciadorUI.HabilitarAlertaBatalha(true, "Selecione os elementais que deseja atacar!");
+                }
+                else
+                {
+                    gerenciadorUI.HabilitarAlertaBatalha(true, "Prepare-se para reagir ao ataque!");
+                    gerenciadorUI.HabilitarBtnPronto();
+                    selecionando = TipoJogador.PLAYER;
+                }
+            }
+        }
+    }
     public void ExecutarAcaoBatalha()
     {
         executarAnimAtaque = true;

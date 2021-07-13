@@ -412,14 +412,16 @@ public class GerenciadorUI : MonoBehaviour
         btnPronto.SetActive(true);
     }
 
-    public void HabilitarAlertaBatalha(bool b)
+    public void HabilitarAlertaBatalha(bool b,string msg)
     {
+        MensagemBatalha.GetComponent<TextMeshProUGUI>().text = msg;
         MensagemBatalha.SetActive(b);
     }
 
+
     public void Pronto()
     {
-        gerenciadorJogo.ExecutarAcaoBatalha();
+        gerenciadorJogo.PassaFaseBatalha();
     }
 
     public void DesabilitarBtnPronto()

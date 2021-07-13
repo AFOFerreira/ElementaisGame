@@ -78,15 +78,26 @@ public class IA : MonoBehaviour
             {
                 var t = 5;
                 defendendo = gerenciadorJogo.turno == TipoJogador.PLAYER;
-                if (defendendo)
+                var selecionando = gerenciadorJogo.selecionando == TipoJogador.IA;
+                if (defendendo && selecionando)
                 {
                     if (Delay(t))
                     {
                         Debug.Log("Nao tenho como defender ainda.");
-                        gerenciadorJogo.ExecutarAcaoBatalha();
+                        gerenciadorJogo.PassaFaseBatalha();
                     }
                 }
-                else
+                else if(!defendendo && selecionando)
+                {
+                    Debug.Log("Estou Selecionando meus elementais para atacar.");
+                    if (Delay(t))
+                    {
+                        Debug.Log("Pronto.");
+                        gerenciadorJogo.PassaFaseBatalha();
+                    }
+
+                }
+                else 
                 {
                     Debug.Log("Estou esperando a acao do meu oponente.");
                 }
