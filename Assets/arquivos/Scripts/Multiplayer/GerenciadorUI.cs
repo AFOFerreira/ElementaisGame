@@ -372,7 +372,7 @@ public class GerenciadorUI : MonoBehaviour
 
         panelVitoriaDerrota.ZeraAlfa();
         panelVitoriaDerrota.gameObject.SetActive(true);
-
+        gerenciadorJogo.EmJogo = false;
         Sequence s = DOTween.Sequence();
         s.Append(panelVitoriaDerrota.DOFade(1, .5f));
         s.AppendCallback(() =>

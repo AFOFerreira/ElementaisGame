@@ -25,6 +25,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public Image imgAnimSorteio;
     public Image imgAnimMoeda;
     public Image imgResultado;
+
     [Header("GERENCIADORES")]
     public GerenciadorUI gerenciadorUI;
     public AudioBase gerenciadorAudio;
@@ -55,12 +56,14 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public int JogadasPlayer = 1;
     public bool p1 = false;
     public bool emBatalha = false;
+    public bool ataqueDireto = false;
     public bool executarAnimAtaque = false;
     public bool aguardarAnimAtaque = false;
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
     public List<SlotCampo> slotsCampoP2;
+    public List<SlotDrop> camposMarcados;
     public Sprite imgDropElementalPos;
 
     [Header("ATAQUES")]
@@ -69,7 +72,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public int contagemAtaques = 0;
 
     [Header("CRONOMETRO")]
-    public float tempoCronometro = 18;
+    public float tempoTurno = 60f, tempoBatalha = 30f;
+    public float tempoCronometro = 0f;
 
     [Header("SELETORES(ENUMERATORS)")]
     public TipoJogador turno;
@@ -116,7 +120,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         sorteio();
 
         fase = 1;
-        tempoCronometro = 30f;
+        tempoCronometro = tempoTurno;
     }
     void Update()
     {
@@ -171,17 +175,18 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         gerenciadorAudio.playTrocaturnoprincipal();
         turnoLocal = !turnoLocal;
         gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
-        tempoCronometro = 30f;
+        tempoCronometro = tempoTurno;
 
         PassaTurno();
     }
     public void PassaTurno()
     {
         gerenciadorAudio.playTrocaturnoprincipal();
-
+        slotsCampoP1.ForEach(x => x.marcado = false);
+        slotsCampoP2.ForEach(x => x.marcado = false);
         contagemAtaques = 0;
         faseAtual = TipoFase.MONSTRO;
-        tempoCronometro = 30f;
+        tempoCronometro = tempoTurno;
         aguardarAnimAtaque = false;
         emBatalha = false;
         executarAnimAtaque = false;
@@ -202,23 +207,21 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         }
         else
         {
-            ia.tempoAtual = 0f;
-            ia.possoJogar = true;
+            ia.SetDefaults();
             defensor = TipoJogador.PLAYER;
             p1 = false;
             gerenciadorUI.trocaBtnTurno(0);
-            ia.sortearDeck();
-            ia.GanharCristais();
             StartCoroutine(gerenciadorUI.AnimacaoTrocarBandeiraTurno(false));
             turno = TipoJogador.IA;
             selecionando = TipoJogador.IA;
         }
+        RemoverCampoMarcado();
     }
     public void setTurnoBatalha()
     {
         if (!emBatalha)
         {
-            tempoCronometro = 15f;
+            tempoCronometro = tempoBatalha;
             if (turno == TipoJogador.IA)
             {
                 selecionando = TipoJogador.IA;
@@ -333,7 +336,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         slotsCampoP1[idSlot].cartaGeral = cartaPrefabLocal.GetComponent<CartaPrefab>().cartaGeral;
         ultimoCampoJogado = slotsCampoP1[idSlot];
 
-        //chma a função dropInimigo no segundo jogador
+        //chama a função dropInimigo no segundo jogador
         //object[] valoresRede = new object[] { cartaGeral.idCarta, idSlot };
         //PhotonNetwork.RaiseEvent(DROP_ELEMENTAL_INIMIGO, valoresRede, Photon.Realtime.RaiseEventOptions.Default, SendOptions.SendUnreliable);
         //photonView.RPC("dropElementalInimigo", Photon.Pun.RpcTarget.AllBufferedViaServer, cartaGeral.idCarta, idSlot);
@@ -479,11 +482,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         {
             slotsCampoP2[idAtacante].imgAnimAtaque.sprite = marcadoresAtaque[1];
             slotsCampoP2[idAtacante].imgAnimAtaque.DOFade(1, .5f);
+            slotsCampoP2[idAtacante].marcado = true;
             //----------------------------------------------
             if (idInimigo < 3)
             {
                 slotsCampoP1[idInimigo].imgAnimAtaque.sprite = marcadoresAtaque[2];
                 slotsCampoP1[idInimigo].imgAnimAtaque.DOFade(1, .5f);
+                slotsCampoP1[idInimigo].marcado = true;
             }
         }
     }
@@ -753,6 +758,25 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         return CamposVazios;
     }
+    public bool VerificaCampoMarcado(SlotDrop campo)
+    {
+        if (campo.donoCampo == TipoJogador.PLAYER)
+        {
+            if (camposMarcados.Where(x => x == campo).ToList().Count > 0)
+                return false;
+        }
+        return true;
+    }
+    public void AdicionarCampoMarcado(SlotDrop campo)
+    {
+        camposMarcados.Add(campo);
+        Debug.Log("Campo marcado!");
+    }
+    public void RemoverCampoMarcado()
+    {
+        camposMarcados.Clear();
+        Debug.Log("Campos marcados limpos");
+    }
     #endregion
 
     #region ativacao
@@ -1021,7 +1045,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     void FaseDeBatalha()
     {
-        tempoCronometro = 0f;
+        
         executarAnimAtaque = true;
         aguardarAnimAtaque = true;
         Timing.RunCoroutine(rodaAtaqueCampo(p1));
@@ -1065,6 +1089,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         defensor = turno == TipoJogador.PLAYER ? TipoJogador.IA : TipoJogador.PLAYER;
     }
+
     public void PassaFaseBatalha()
     {
         if (emBatalha)
@@ -1075,13 +1100,14 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                 {
                     if (!executarAnimAtaque)
                     {
+                        gerenciadorUI.atualizaCronometro(0f);
                         FaseDeBatalha();
                     }
                 }
             }
             else
             {
-                tempoCronometro = 15f;
+                tempoCronometro = tempoBatalha;
                 if (selecionando == TipoJogador.PLAYER)
                 {
                     selecionando = TipoJogador.IA;

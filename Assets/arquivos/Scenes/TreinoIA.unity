@@ -577,7 +577,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.6
+  m_fontSize: 24.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -891,6 +891,7 @@ MonoBehaviour:
   gerenciadorUI: {fileID: 0}
   possoJogar: 0
   donoCampo: 0
+  marcado: 0
 --- !u!1 &90855594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1166,10 +1167,10 @@ RectTransform:
   m_Father: {fileID: 1769432288}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.23831959, y: 0.11100001}
-  m_AnchorMax: {x: 0.44236085, y: 0.9012984}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -221.5, y: -85}
+  m_SizeDelta: {x: 283, y: 136}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &131211752
 MonoBehaviour:
@@ -1360,7 +1361,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.6
+  m_fontSize: 24.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2286,7 +2287,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1018338178}
-        m_MethodName: ExecutarAcaoBatalha
+        m_MethodName: PassaFaseBatalha
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2752,7 +2753,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 28.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3643,6 +3644,7 @@ MonoBehaviour:
   gerenciadorUI: {fileID: 0}
   possoJogar: 0
   donoCampo: 0
+  marcado: 0
 --- !u!1 &711738784
 GameObject:
   m_ObjectHideFlags: 0
@@ -4866,10 +4868,10 @@ RectTransform:
   m_Father: {fileID: 1769432288}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.013319586, y: -0.53182465}
-  m_AnchorMax: {x: 0.22000001, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 161.5, y: -131.5}
+  m_SizeDelta: {x: 287, y: 263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &908560455
 MonoBehaviour:
@@ -5065,7 +5067,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 28.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -5411,6 +5413,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   ultimoCampoAtivado:
@@ -5441,6 +5444,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   brilhoCarta: []
@@ -5455,6 +5459,9 @@ MonoBehaviour:
   JogadasPlayer: 1
   p1: 0
   emBatalha: 0
+  ataqueDireto: 0
+  executarAnimAtaque: 0
+  aguardarAnimAtaque: 0
   slotsCampoP1:
   - cartaGeral:
       idCarta: 0
@@ -5483,6 +5490,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   - cartaGeral:
@@ -5512,6 +5520,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   - cartaGeral:
@@ -5541,6 +5550,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   slotsCampoP2:
@@ -5571,6 +5581,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 1
     tipoCartaCampo: 0
   - cartaGeral:
@@ -5600,6 +5611,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 1
     tipoCartaCampo: 0
   - cartaGeral:
@@ -5629,8 +5641,10 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 1
     tipoCartaCampo: 0
+  camposMarcados: []
   imgDropElementalPos: {fileID: 21300000, guid: 17d25f4a487ae2b43999ff528400a454,
     type: 3}
   marcadoresAtaque:
@@ -5638,9 +5652,12 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 706d2f3d6933a9f4d8f3cd8a0a478c1d, type: 3}
   - {fileID: 21300000, guid: b28c9510faf6e5a4788a16c3ce17408a, type: 3}
   contagemAtaques: 0
+  tempoTurno: 60
+  tempoBatalha: 30
   tempoCronometro: 0
   turno: 0
-  defendendo: 0
+  defensor: 0
+  selecionando: 0
   faseAtual: 0
   tipoPartida: 0
   fase: 0
@@ -6132,7 +6149,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 28.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -6292,10 +6309,10 @@ RectTransform:
   m_Father: {fileID: 1564849554}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7105842, y: 0.202}
-  m_AnchorMax: {x: 0.95446044, y: 0.762435}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 95, y: -4.5}
+  m_SizeDelta: {x: 70, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1091687583
 MonoBehaviour:
@@ -6924,10 +6941,10 @@ RectTransform:
   m_Father: {fileID: 1769432288}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.40253848, y: 0.3305261}
-  m_AnchorMax: {x: 0.605, y: 0.8485262}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 5.5, y: -70.5}
+  m_SizeDelta: {x: 281, y: 89}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1199197856
 MonoBehaviour:
@@ -7052,6 +7069,8 @@ MonoBehaviour:
   tempoAtual: 0
   cristais: 00000000000000000000000000000000
   camposParaJogarMonstro: []
+  camposAtacantes: []
+  camposParaAtacar: []
   camposParaJogarMagicas: []
   campoOcupadosMagicas: []
   camposOcupadosMonstros: []
@@ -7083,6 +7102,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   ultimoCartaJogada:
@@ -7113,6 +7133,7 @@ MonoBehaviour:
     ocupado: 0
     ativado: 0
     disponivel: 0
+    marcado: 0
     donoCampo: 0
     tipoCartaCampo: 0
   deckTotal: []
@@ -7418,7 +7439,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7700,7 +7721,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -7970,6 +7991,7 @@ MonoBehaviour:
   gerenciadorUI: {fileID: 0}
   possoJogar: 0
   donoCampo: 0
+  marcado: 0
 --- !u!1 &1348136454
 GameObject:
   m_ObjectHideFlags: 0
@@ -8150,10 +8172,10 @@ RectTransform:
   m_Father: {fileID: 1769432288}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -89.12207}
-  m_SizeDelta: {x: -705.64075, y: -121.75641}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -175.12207}
+  m_SizeDelta: {x: 680.35925, y: 50.24359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1384823359
 MonoBehaviour:
@@ -8268,6 +8290,7 @@ MonoBehaviour:
   gerenciadorUI: {fileID: 0}
   possoJogar: 0
   donoCampo: 0
+  marcado: 0
 --- !u!1 &1411749620
 GameObject:
   m_ObjectHideFlags: 0
@@ -8464,7 +8487,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8671,7 +8694,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.6
+  m_fontSize: 24.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -8796,10 +8819,10 @@ RectTransform:
   m_Father: {fileID: 1729276798}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.037, y: 0.26246276}
-  m_AnchorMax: {x: 0.24321608, y: 1.1313483}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 192, y: 94}
+  m_SizeDelta: {x: 282, y: 118}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1545785604
 MonoBehaviour:
@@ -9016,10 +9039,10 @@ RectTransform:
   m_Father: {fileID: 1769432288}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.77400005, y: -0.53182465}
-  m_AnchorMax: {x: 0.9803197, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -170, y: -131.5}
+  m_SizeDelta: {x: 286, y: 263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564849555
 MonoBehaviour:
@@ -9094,10 +9117,10 @@ RectTransform:
   m_Father: {fileID: 908560454}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.7105842, y: 0.202}
-  m_AnchorMax: {x: 0.95446044, y: 0.762435}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 95, y: -4.5}
+  m_SizeDelta: {x: 70, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1571213291
 MonoBehaviour:
@@ -9213,6 +9236,7 @@ MonoBehaviour:
   gerenciadorUI: {fileID: 0}
   possoJogar: 0
   donoCampo: 0
+  marcado: 0
 --- !u!1 &1588757354
 GameObject:
   m_ObjectHideFlags: 0
@@ -9444,7 +9468,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24.6
+  m_fontSize: 24.7
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -9756,10 +9780,10 @@ RectTransform:
   m_Father: {fileID: 1769432288}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.57000005, y: 0.11100001}
-  m_AnchorMax: {x: 0.77400005, y: 0.89512306}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 238.5, y: -85.5}
+  m_SizeDelta: {x: 283, y: 135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1641910875
 MonoBehaviour:
@@ -10193,7 +10217,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10336,6 +10360,7 @@ MonoBehaviour:
   gerenciadorUI: {fileID: 0}
   possoJogar: 0
   donoCampo: 0
+  marcado: 0
 --- !u!1 &1686220147
 GameObject:
   m_ObjectHideFlags: 0
@@ -10419,7 +10444,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 37.5
+  m_fontSize: 37.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10579,10 +10604,10 @@ RectTransform:
   m_Father: {fileID: 1564849554}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39153945, y: 0.202}
-  m_AnchorMax: {x: 0.63500005, y: 0.762435}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: -4.5}
+  m_SizeDelta: {x: 70, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714426794
 MonoBehaviour:
@@ -10765,7 +10790,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 38.4
+  m_fontSize: 38.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -10853,10 +10878,10 @@ RectTransform:
   m_Father: {fileID: 1637862839}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.0033195864, y: -0.0153608285}
-  m_AnchorMax: {x: 0.99331963, y: 0.15827835}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -2.5, y: -11.999939}
+  m_SizeDelta: {x: 1371, y: 135}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1729276799
 MonoBehaviour:
@@ -11146,7 +11171,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 28.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11234,10 +11259,10 @@ RectTransform:
   m_Father: {fileID: 1637862839}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.7796364}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1386, y: 172}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1769432289
 MonoBehaviour:
@@ -11359,7 +11384,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11492,7 +11517,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 28.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11703,7 +11728,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.45
+  m_fontSize: 28.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -11789,10 +11814,10 @@ RectTransform:
   m_Father: {fileID: 908560454}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.39153945, y: 0.202}
-  m_AnchorMax: {x: 0.63500005, y: 0.762435}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 4, y: -4}
+  m_SizeDelta: {x: 70, y: 148}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1844296923
 MonoBehaviour:
@@ -12097,10 +12122,10 @@ RectTransform:
   m_Father: {fileID: 908560454}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.072123684, y: 0.202}
-  m_AnchorMax: {x: 0.31575269, y: 0.762435}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -88, y: -4.5}
+  m_SizeDelta: {x: 70, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897330699
 MonoBehaviour:
@@ -12610,10 +12635,10 @@ RectTransform:
   m_Father: {fileID: 1564849554}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.07164678, y: 0.202}
-  m_AnchorMax: {x: 0.31240427, y: 0.762435}
-  m_AnchoredPosition: {x: 0.49993896, y: 0}
-  m_SizeDelta: {x: 1, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -88.00006, y: -4.5}
+  m_SizeDelta: {x: 70, y: 147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2013286678
 MonoBehaviour:
@@ -12796,7 +12821,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28.5
+  m_fontSize: 28.4
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -13107,10 +13132,10 @@ RectTransform:
   m_Father: {fileID: 1729276798}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.24400002, y: 0.24683711}
-  m_AnchorMax: {x: 0.7593746, y: 0.9428372}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 2.5, y: 80}
+  m_SizeDelta: {x: 707, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2119546729
 MonoBehaviour:

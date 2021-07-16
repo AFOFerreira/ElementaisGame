@@ -14,6 +14,8 @@ public class IA : MonoBehaviour
     GerenciadorJogo gerenciadorJogo;
     public float tempoAtual = 0;
     public static IA instance;
+    int jogadas = 0;
+    int idUltimoCristal;
 
     [Header("Cristais")]
     //0-agua, 1-fogo, 2-terra, 3- ar
@@ -21,6 +23,8 @@ public class IA : MonoBehaviour
 
     [Header("Campos")]
     public List<SlotCampo> camposParaJogarMonstro = new List<SlotCampo>();
+    public List<SlotCampo> camposAtacantes = new List<SlotCampo>();
+    public List<SlotCampo> camposParaAtacar = new List<SlotCampo>();
     public List<SlotCampo> camposParaJogarMagicas = new List<SlotCampo>();
     public List<SlotCampo> campoOcupadosMagicas = new List<SlotCampo>();
     public List<SlotCampo> camposOcupadosMonstros = new List<SlotCampo>();
@@ -37,6 +41,7 @@ public class IA : MonoBehaviour
     public TipoJogador tipoIA;
     public TipoFase fase;
     public float tempoPensamento = 0;
+    int rng, tempRng;
     // Start is called before the first frame update
     #endregion
 
@@ -54,6 +59,7 @@ public class IA : MonoBehaviour
     }
     void Start()
     {
+        SetDefaults();
         gCristal = false;
         gerenciadorJogo = GerenciadorJogo.instance;
         Timing.RunCoroutine(iniciarObjetos());
@@ -87,17 +93,17 @@ public class IA : MonoBehaviour
                         gerenciadorJogo.PassaFaseBatalha();
                     }
                 }
-                else if(!defendendo && selecionando)
+                else if (!defendendo && selecionando)
                 {
                     Debug.Log("Estou Selecionando meus elementais para atacar.");
+
                     if (Delay(t))
                     {
                         Debug.Log("Pronto.");
                         gerenciadorJogo.PassaFaseBatalha();
                     }
-
                 }
-                else 
+                else
                 {
                     Debug.Log("Estou esperando a acao do meu oponente.");
                 }
@@ -136,9 +142,7 @@ public class IA : MonoBehaviour
                     //    Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
                     //    gerenciadorJogo.PassaTurno();
                     //}
-
                     gerenciadorJogo.PassaTurno();
-
                 }
                 qtdTurnos++;
             }
@@ -289,7 +293,6 @@ public class IA : MonoBehaviour
         camposParaJogarMonstro = gerenciadorJogo.VerificaCampoDisponivelMonstros(tipoIA);
         camposOcupadosMonstros = gerenciadorJogo.VerificaCampoOcupadoMonstros(tipoIA);
     }
-
     bool Delay(float t)
     {
         bool b = false;
@@ -302,204 +305,46 @@ public class IA : MonoBehaviour
         return b;
 
     }
-
-
-    public int rng()
+    public void SetDefaults()
     {
-        var rng = Random.Range(1, 100);
-        if (rng <= 40)
-        {
-            return 1;
-        }
-        else if (rng <= 75)
-        {
-            return 2;
-        }
-        else
-        {
-            return 3;
-        }
-
-
+        jogadas = 1;
+        rng = 0;
+        tempRng = 0;
+        tempoAtual = 0f;
+        possoJogar = true;
+        sortearDeck();
+        GanharCristais();
     }
-
     public void GanharCristais()
     {
+
         var cristal = Random.Range(0, cristais.Length);
-        var cristalQtd = Random.Range(1, 2);
+        var cristalQtd = 1;
 
         cristais[cristal] += cristalQtd;
         gCristal = false;
     }
-
-
-    #endregion
-
-    #region Estrategia
-    CartaGeral PensaCartaMonstro()
+    bool JogarCartaNoCampo(SlotCampo campo)
     {
-        var carta = new CartaGeral();
-        var c = mao[0];
-        var tatica = Random.Range(1, 10);
-
-        foreach (var obj in mao)
+        bool b = false;
+        campoSelecionado = campo;
+        Debug.Log("Pensando...");
+        CartaGeral carta = PensaCartaMonstro();
+        if (carta != null)
         {
-            switch (obj.elemento.nomeElemento)
-            {
-                case "Água":
-                    if (cristais[0] >= obj.cristais)
-                    {
-                        carta = obj;
-                        break;
-                    }
-                    else
-                    {
-                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
-                        carta = mao[Random.Range(0, mao.Count)];
-                    }
-                    break;
-
-                case "Fogo":
-                    if (cristais[1] >= obj.cristais)
-                    {
-                        carta = obj;
-                        break;
-                    }
-                    else
-                    {
-                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
-                        carta = mao[Random.Range(0, mao.Count)];
-                    }
-                    break;
-
-                case "Terra":
-                    if (cristais[2] >= obj.cristais)
-                    {
-                        carta = obj;
-                        break;
-                    }
-                    else
-                    {
-                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
-                        carta = mao[Random.Range(0, mao.Count)];
-                    }
-                    break;
-                case "Ar":
-                    if (cristais[3] >= obj.cristais)
-                    {
-                        carta = obj;
-                        break;
-                    }
-                    else
-                    {
-                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
-                        carta = mao[Random.Range(0, mao.Count)];
-                    }
-                    break;
-            }
-
-        }
-        return carta;
-    }
-    CartaGeral PensaJogadaMagica()
-    {
-        return null;
-    }
-    void PensaJogadaMonstro()
-    {
-
-        var camposDisponiveis = camposParaJogarMonstro.Where(x => (!x.ocupado)).ToList();
-        var camposAtivados = camposOcupadosMonstros.Where(x => (x.ativado)).ToList();
-        var camposParaAtivar = camposOcupadosMonstros.Where(x => (!x.ativado)).ToList();
-        var camposAlvos = gerenciadorJogo.slotsCampoP1.Where(x => (x.ocupado)).ToList();
-
-        SlotCampo campoParaJogar = CampoEcolhidoJogar(camposDisponiveis);
-        SlotCampo campoParaAtivar = CampoEcolhidoAtivar(camposParaAtivar);
-
-        var t = Random.Range(2, tempoPensamento);
-        var r = rng();
-
-        if (Delay(t))
-        {
-            if (r == 1 && campoParaJogar != null)
-            {
-                Debug.Log("A");
-                var tempRng = Random.Range(0, 4);
-                if (JogarCartaNoCampo(campoParaJogar))
-                {
-                    if (tempRng < 3)
-                        StartCoroutine(AtivarELemental(campoParaJogar));
-                    else
-                        return;
-                }
-            }
-            else if (r == 2 && campoParaAtivar != null)
-            {
-                Debug.Log("B");
-                if (campoParaAtivar != null)
-                {
-                    StartCoroutine(AtivarELemental(campoParaAtivar));
-                }
-                else
-                {
-                    return;
-                }
-            }
-            else if (r == 3 && camposAtivados.Count > 0)
-            {
-                Debug.Log("C");
-                if (CombinacaoAtaque(camposAlvos, camposAtivados))
-                {
-                    gerenciadorJogo.setTurnoBatalha();
-                }
-                else
-                {
-                    return;
-                }
-            }
-
-
-        }
-    }
-    SlotCampo CampoEcolhidoAtivar(List<SlotCampo> camposParaAtivar)
-    {
-        return camposParaAtivar.Count > 0 ? camposParaAtivar[Random.Range(0, camposParaAtivar.Count)] : null;
-    }
-    SlotCampo CampoEcolhidoJogar(List<SlotCampo> camposDisponiveis)
-    {
-
-        return camposDisponiveis.Count > 0 ? camposDisponiveis[Random.Range(0, camposDisponiveis.Count)] : null;
-    }
-    SlotCampo MelhorCartaEmCampo(List<SlotCampo> cartaAtivas)
-    {
-        if (cartaAtivas.Count > 0)
-        {
-            var itemMaxHeight = cartaAtivas.Max(y => y.cartaGeral.ataque);
-            var itemsMax = cartaAtivas.Where(x => x.cartaGeral.ataque == itemMaxHeight).First();
-            return itemsMax;
+            gerenciadorJogo.JogarCarta(carta, campoSelecionado.idCampo);
+            mao.Remove(carta);
+            jogadasMonstro--;
+            carta = null;
+            ultimoCartaJogada = campoSelecionado;
+            b = true;
         }
         else
-            return null;
-    }
-    SlotCampo MelhorCartaOponente(List<SlotCampo> cartaOponente)
-    {
-        var rng = Random.Range(0, 1f);
-
-        if (cartaOponente.Count > 0)
         {
-            if (rng < 0.75f)
-            {
-                var itemMaxHeight = cartaOponente.Min(y => y.cartaGeral.defesa);
-                var itemsMax = cartaOponente.Where(x => x.cartaGeral.defesa == itemMaxHeight).First();
-                return itemsMax;
-            }
-            else
-            {
-                return cartaOponente[Random.Range(0, cartaOponente.Count)];
-            }
+            b = false;
         }
-        else
-            return null;
+
+        return b;
     }
     IEnumerator AtivarELemental(SlotCampo elementalAtacante)
     {
@@ -566,78 +411,262 @@ public class IA : MonoBehaviour
                 }
         }
     }
-    bool JogarCartaNoCampo(SlotCampo campo)
-    {
-        bool b = false;
-        campoSelecionado = campo;
-        Debug.Log("Pensando...");
-        CartaGeral carta = PensaCartaMonstro();
-        if (carta != null)
-        {
-            gerenciadorJogo.JogarCarta(carta, campoSelecionado.idCampo);
-            mao.Remove(carta);
-            jogadasMonstro--;
-            carta = null;
-            ultimoCartaJogada = campoSelecionado;
-            b = true;
-        }
-        else
-        {
-            b = false;
-        }
+    #endregion
 
-        return b;
-    }
-    bool CombinacaoAtaque(List<SlotCampo> camposAlvos, List<SlotCampo> cartas)
+    #region Estrategia
+    void PensaJogadaMonstro()
     {
-        var melhorOpcao = MelhorCartaEmCampo(cartas);
-        var cartaOponente = MelhorCartaOponente(camposAlvos);
-        var rng = Random.Range(0, 5);
-        bool b;
-        if (camposAlvos.Count > 0)
+        var camposDisponiveis = camposParaJogarMonstro.Where(x => (!x.ocupado)).ToList();
+        var camposAtivados = camposOcupadosMonstros.Where(x => (x.ativado)).ToList();
+        camposAtacantes = camposAtivados;
+        var camposParaAtivar = camposOcupadosMonstros.Where(x => (!x.ativado)).ToList();
+        var camposAlvos = gerenciadorJogo.slotsCampoP1.Where(x => (x.ocupado)).ToList();
+        camposParaAtacar = camposAlvos;
+        SlotCampo campoParaJogar = CampoEcolhidoJogar(camposDisponiveis);
+        SlotCampo campoParaAtivar = CampoEcolhidoAtivar(camposParaAtivar);
+        var t = Random.Range(2, tempoPensamento);
+        if (rng <= 0)
         {
-            Debug.Log("Há elementais que precisam ser destruidos");
-            if (melhorOpcao != null)
+            rng = Rng();
+        }
+        Debug.Log(rng);
+
+        if (Delay(t))
+        {
+            if (rng == 1 && campoParaJogar != null)
             {
-                if (rng < 2)
+                Debug.Log("A");
+                if (tempRng == 0)
+                    tempRng = Random.Range(1, 4);
+                Debug.Log(tempRng);
+                if (!campoParaJogar.ocupado)
                 {
-                    gerenciadorJogo.executaAtaque(melhorOpcao.idCampo, cartaOponente.idCampo, false);
-                    b = true;
-                }
-                else
-                {
-                    if (melhorOpcao.cartaGeral.ataque > cartaOponente.cartaGeral.defesa)
+                    if (jogadasMonstro == 1)
                     {
-                        gerenciadorJogo.executaAtaque(melhorOpcao.idCampo, cartaOponente.idCampo, false);
-                        b = true;
+                        if (JogarCartaNoCampo(campoParaJogar))
+                        {
+                            StartCoroutine(AtivarELemental(campoParaJogar));
+                        }
+
                     }
                     else
                     {
-                        b = false;
+                        StartCoroutine(AtivarELemental(campoParaJogar));
                     }
-
                 }
+            }
+            else if (rng == 2 && campoParaAtivar != null)
+            {
+                Debug.Log("B");
+                if (campoParaAtivar != null)
+                {
+                    StartCoroutine(AtivarELemental(campoParaAtivar));
+                }
+                else
+                {
+                    return;
+                }
+            }
+            else if (rng == 3 && camposAtivados.Count > 0)
+            {
+                Debug.Log("C");
+                if (CombinacaoAtaque(camposAlvos, camposAtivados))
+                {
+                    gerenciadorJogo.setTurnoBatalha();
+                }
+                else
+                {
+                    return;
+                }
+            }
+
+
+        }
+    }
+    CartaGeral PensaCartaMonstro()
+    {
+        var carta = new CartaGeral();
+        var c = mao[0];
+        var tatica = Random.Range(1, 10);
+
+        foreach (var obj in mao)
+        {
+            switch (obj.elemento.nomeElemento)
+            {
+                case "Água":
+                    if (cristais[0] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+
+                    }
+                    break;
+
+                case "Fogo":
+                    if (cristais[1] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+
+                    }
+                    break;
+
+                case "Terra":
+                    if (cristais[2] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+                    }
+                    break;
+                case "Ar":
+                    if (cristais[3] >= obj.cristais)
+                    {
+                        carta = obj;
+                        break;
+                    }
+                    else
+                    {
+                        Debug.Log("Nao tenho cristais suficientes, pegando carta aleatoria");
+                        carta = mao[Random.Range(0, mao.Count)];
+                    }
+                    break;
+            }
+
+        }
+        return carta;
+    }
+    CartaGeral PensaJogadaMagica()
+    {
+        return null;
+    }
+    SlotCampo CampoEcolhidoAtivar(List<SlotCampo> camposParaAtivar)
+    {
+        return camposParaAtivar.Count > 0 ? camposParaAtivar[Random.Range(0, camposParaAtivar.Count)] : null;
+    }
+    SlotCampo CampoEcolhidoJogar(List<SlotCampo> camposDisponiveis)
+    {
+
+        return camposDisponiveis.Count > 0 ? camposDisponiveis[Random.Range(0, camposDisponiveis.Count)] : null;
+    }
+    SlotCampo MelhorCartaEmCampo(List<SlotCampo> cartaAtivas)
+    {
+        if (cartaAtivas.Count > 0)
+        {
+            var itemMaxHeight = cartaAtivas.Max(y => y.cartaGeral.ataque);
+            var itemsMax = cartaAtivas.Where(x => x.cartaGeral.ataque == itemMaxHeight).First();
+            return itemsMax;
+        }
+        else
+            return null;
+    }
+    SlotCampo MelhorCartaOponente(List<SlotCampo> cartaOponente)
+    {
+        var rng = Random.Range(0, 1f);
+
+        if (cartaOponente.Count > 0)
+        {
+            if (rng < 0.75f)
+            {
+                var itemMaxHeight = cartaOponente.Min(y => y.cartaGeral.defesa);
+                var itemsMax = cartaOponente.Where(x => x.cartaGeral.defesa == itemMaxHeight).First();
+                return itemsMax;
             }
             else
             {
-                b = false;
+                return cartaOponente[Random.Range(0, cartaOponente.Count)];
             }
         }
         else
+            return null;
+    }
+    int Rng()
+    {
+        var totalCamposNaoAtivados = camposOcupadosMonstros.Where(x => !x.ativado).ToList().Count;
+        var totalCamposAtivados = camposOcupadosMonstros.Where(x => x.ativado).ToList().Count;
+        var totalCamposDisponiveis = camposParaJogarMonstro.Count;
+        var rng = Random.Range(1, 60);
+        if (rng <= 20)
         {
-            if (melhorOpcao != null)
-            {
-                Debug.Log("Posso atacar diretamente");
-                gerenciadorJogo.executaAtaqueDiretoIA(melhorOpcao.cartaGeral.ataque);
-                b = true;
-            }
+            Debug.Log("RNG:Caso-A");
+            if (totalCamposDisponiveis > 0 && totalCamposDisponiveis > totalCamposNaoAtivados)
+                return 1;
+            else if (totalCamposNaoAtivados > 0 && totalCamposNaoAtivados > totalCamposAtivados)
+                return 2;
             else
-            {
-                b = false;
-            }
+                return 3;
+        }
+        else if (rng <= 40)
+        {
+            Debug.Log("RNG:Caso-B");
+            if (totalCamposNaoAtivados > 0 && totalCamposNaoAtivados > totalCamposAtivados)
+                return 2;
+            else if (totalCamposAtivados > 0 && totalCamposAtivados > totalCamposDisponiveis)
+                return 3;
+            else
+                return 1;
+        }
+        else
+        {
+            Debug.Log("RNG:Caso-C");
+            if (totalCamposAtivados > 0)
+                return 3;
+            else if (totalCamposDisponiveis > 0 && totalCamposDisponiveis > totalCamposNaoAtivados)
+                return 1;
+            else
+                return 2;
         }
 
-        return b;
+
+    }
+    bool CombinacaoAtaque(List<SlotCampo> camposAlvos, List<SlotCampo> cartas)
+    {
+        Debug.Log(cartas.Count + " , " + camposAlvos.Count);
+        if (camposAlvos.Count > 0)
+        {
+            for (int i = 0; i < cartas.Count; i++)
+            {
+                for (int j = 0; j < camposAlvos.Count; j++)
+                {
+                    if (!cartas[i].marcado && !camposAlvos[j].marcado)
+                    {
+                        gerenciadorJogo.executaAtaque(cartas[i].idCampo, camposAlvos[j].idCampo, false);
+                        return false;
+                    }
+                }
+            }
+            Debug.Log("Saiu ataque ao elemental");
+        }
+        else
+        {
+            for (int i = 0; i < cartas.Count; i++)
+            {
+                Debug.Log("Posso atacar diretamente");
+                if (!cartas[i].marcado)
+                {
+                    gerenciadorJogo.executaAtaque(cartas[i].idCampo, 3, false);
+                    return false;
+                }
+            }
+            Debug.Log("Saiu ataque direto");
+        }
+
+        return true;
     }
     #endregion
 }

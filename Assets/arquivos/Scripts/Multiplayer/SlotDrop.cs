@@ -14,9 +14,11 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public bool possoJogar;
     public TipoJogador donoCampo;
     bool arrastando;
+    public bool marcado;
 
     private void Start()
     {
+        marcado = false;
         setaAtaque = GameObject.FindGameObjectWithTag("SetaAtaque").GetComponent<Bezier>();
         canvas = GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
         gerenciadorUI = GerenciadorUI.gerenciadorUI;
@@ -43,6 +45,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         }
         else
         {
+            marcado = false;
             possoJogar = false;
         }
     }
@@ -90,10 +93,20 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                                 && gerenciadorJogo.slotsCampoP2[idSlot].ocupado &&
                                 gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
                             {
-                                gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot, true);
-                                //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer, eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
-                                gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel = false;
-                                gerenciadorJogo.setTurnoBatalha();
+                                if (gerenciadorJogo.VerificaCampoMarcado(this))
+                                {
+                                    gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot, true);
+                                    //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer, eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
+                                    gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel = false;
+                                    gerenciadorJogo.setTurnoBatalha();
+                                    gerenciadorJogo.AdicionarCampoMarcado(this);
+                                    marcado = true;
+                                }
+                                else
+                                {
+                                    gerenciadorJogo.gerenciadorAudio.playNegacao();
+                                    gerenciadorUI.MostrarAlerta("Esse campo já está marcado para ataque!");
+                                }
                             }
                             else
                             {

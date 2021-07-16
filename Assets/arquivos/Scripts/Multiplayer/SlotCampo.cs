@@ -14,6 +14,7 @@ public class SlotCampo
     public bool ocupado;
     public bool ativado;
     public bool disponivel;
+    public bool marcado;
     public TipoJogador donoCampo;
     public TipoCarta tipoCartaCampo;
 
