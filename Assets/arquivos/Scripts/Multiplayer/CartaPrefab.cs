@@ -10,27 +10,34 @@ using funcoesUteis;
 
 public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IDropHandler
 {
+    //================================VARIAVEIS
+    //-----------------Geral
+    public CartaGeral cartaGeral;
     private Sprite foto;
-    private Sprite iconeElemento;
-    private Sprite moldura;
     private string titulo;
     private string descricao;
+    private Sprite moldura;
+
+    //-----------------Elemental
+    private Sprite iconeElemento;
     private int ataque;
     private int defesa;
     private int cristais;
     private int nivel;
-
+    //=================================Elementos UI======================================
+    //-----------------Geral
     public Image imgFoto;
-    public Image imgIconeElemento;
+    public TextMeshProUGUI txtTitulo;
+    public TextMeshProUGUI txtDescricao;
     public Image imgMoldura;
     public Image imgEfeito;
-    public TextMeshProUGUI txtTitulo;
+    public Image imgIconeElemento;
+    //-----------------Elemental
     public TextMeshProUGUI txtCristais;
-    public TextMeshProUGUI txtDescricao;
     public TextMeshProUGUI txtAtaque;
     public TextMeshProUGUI txtDefesa;
     public TextMeshProUGUI txtNivel;
-
+    //------------------Elementos Gestão
     private HorizontalLayoutGroup horizontalLayoutGroup;
     private RectTransform rectTransform;
     private Canvas canvas;
@@ -38,18 +45,18 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     private GerenciadorUI gerenciadorUI;
     public GerenciadorJogo gerenciadorJogo;
 
-    public CartaGeral cartaGeral;
 
 
     #region Monobehaviour
     private void Awake()
     {
         imgFoto.ZeraAlfa();
-        imgIconeElemento.ZeraAlfa();
-        imgMoldura.ZeraAlfa();
-        imgEfeito.ZeraAlfa();
         txtTitulo.ZeraAlfa();
         txtDescricao.ZeraAlfa();
+        imgMoldura.ZeraAlfa();
+        imgEfeito.ZeraAlfa();
+        imgIconeElemento.ZeraAlfa();
+
         txtAtaque.ZeraAlfa();
         txtDefesa.ZeraAlfa();
         txtCristais.ZeraAlfa();
@@ -65,7 +72,7 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     private void Start()
     {
-        
+
     }
 
     #endregion
@@ -81,14 +88,17 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         Sequence s = DOTween.Sequence();
         s.Append(imgFoto.DOFade(1, 1));
-        s.Join(imgIconeElemento.DOFade(1, 1));
-        s.Join(imgMoldura.DOFade(1, 1));
         s.Join(txtTitulo.DOFade(1, 1));
         s.Join(txtDescricao.DOFade(1, 1));
-        s.Join(txtAtaque.DOFade(1, 1));
-        s.Join(txtDefesa.DOFade(1, 1));
-        s.Join(txtCristais.DOFade(1, 1));
-        s.Join(txtNivel.DOFade(1, 1));
+        s.Join(imgMoldura.DOFade(1, 1));
+        s.Join(imgIconeElemento.DOFade(1, 1));
+        if (cartaGeral.tipoCarta == TipoCarta.Elemental)
+        {
+            s.Join(txtAtaque.DOFade(1, 1));
+            s.Join(txtDefesa.DOFade(1, 1));
+            s.Join(txtCristais.DOFade(1, 1));
+            s.Join(txtNivel.DOFade(1, 1));
+        }
     }
 
     IEnumerator<float> aparecerAnimacaoCorrotina()
@@ -102,7 +112,7 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
         float posX = rectTransform.anchoredPosition.x;
         float posY = rectTransform.anchoredPosition.y;
-        
+
         horizontalLayoutGroup.enabled = false;
 
         //rectTransform.DOAnchorPos(new Vector2(348, 348), 0);
@@ -114,14 +124,17 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
         Sequence s = DOTween.Sequence();
         s.Append(imgFoto.DOFade(1, 1));
-        s.Join(imgIconeElemento.DOFade(1, 1));
-        s.Join(imgMoldura.DOFade(1, 1));
         s.Join(txtTitulo.DOFade(1, 1));
         s.Join(txtDescricao.DOFade(1, 1));
-        s.Join(txtAtaque.DOFade(1, 1));
-        s.Join(txtDefesa.DOFade(1, 1));
-        s.Join(txtCristais.DOFade(1, 1));
-        s.Join(txtNivel.DOFade(1, 1));
+        s.Join(imgMoldura.DOFade(1, 1));
+        s.Join(imgIconeElemento.DOFade(1, 1));
+        if (cartaGeral.tipoCarta == TipoCarta.Elemental)
+        {
+            s.Join(txtAtaque.DOFade(1, 1));
+            s.Join(txtDefesa.DOFade(1, 1));
+            s.Join(txtCristais.DOFade(1, 1));
+            s.Join(txtNivel.DOFade(1, 1));
+        }
         s.Join(rectTransform.DOAnchorPos(new Vector2(348, 348), 1));
         s.Join(rectTransform.DOSizeDelta(new Vector2(360, 468), 1));
         s.AppendInterval(.3f);
@@ -140,26 +153,39 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     #region getters&setters
     public void atributos(CartaGeral carta)
     {
+        cartaGeral = carta;
+
         Foto = carta.imgCarta;
-        IconeElemento = carta.elemento.iconeElemento;
-        Moldura = carta.elemento.moldura;
         Titulo = carta.titulo;
         Descricao = carta.descricao;
-        Ataque = carta.ataque;
-        Defesa = carta.defesa;
-        Cristais = carta.cristais;
-        Nivel = carta.nivel;
 
-        cartaGeral = carta;
+        if ((carta.tipoCarta == TipoCarta.Auxiliar) || (carta.tipoCarta == TipoCarta.Armadilha))
+        {
+            Moldura = carta.auxArm.moldura;
+            IconeElemento = carta.auxArm.icone;
+        }
+
+        if (carta.tipoCarta == TipoCarta.Elemental)
+        {
+            Moldura = carta.elemento.moldura;
+            IconeElemento = carta.elemento.iconeElemento;
+
+            Ataque = carta.ataque;
+            Defesa = carta.defesa;
+            Cristais = carta.cristais;
+            Nivel = carta.nivel;
+        }
+
     }
 
     public void atributos(Sprite foto, Sprite iconeElemento, Sprite moldura, string titulo, string descricao, int ataque, int defesa, int cristais, int nivel)
     {
         Foto = foto;
-        IconeElemento = iconeElemento;
-        Moldura = moldura;
         Titulo = titulo;
         Descricao = descricao;
+        Moldura = moldura;
+
+        IconeElemento = iconeElemento;
         Ataque = ataque;
         Defesa = defesa;
         Cristais = cristais;
@@ -309,7 +335,7 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        gerenciadorJogo.gerenciadorAudio.stopCartanaMao();   
+        gerenciadorJogo.gerenciadorAudio.stopCartanaMao();
         canvasGroup.blocksRaycasts = true;
         gerenciadorJogo.movimentandoCarta = false;
         gerenciadorJogo.endDragCarta();
@@ -325,7 +351,7 @@ public class CartaPrefab : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
             gerenciadorJogo.gerenciadorAudio.playCartanaMao();
             canvasGroup.blocksRaycasts = false;
             gerenciadorJogo.movimentandoCarta = true;
-            gerenciadorJogo.startDragCarta();
+            gerenciadorJogo.startDragCarta(cartaGeral.tipoCarta);
             FuncoesUteis.animacaoImagem(imgEfeito, gerenciadorJogo.brilhoCarta, true, 6, false, null, "brilhoCarta");
             imgEfeito.DOFade(1, 1);
             horizontalLayoutGroup.enabled = false;

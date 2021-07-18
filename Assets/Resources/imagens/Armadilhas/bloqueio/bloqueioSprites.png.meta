@@ -1,0 +1,1148 @@
+fileFormatVersion: 2
+guid: 1ad2d9ae80e8a9e46b9eab1293325b1a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4703610869251038503
+    second: bloqueioSprites_0
+  - first:
+      213: 5506090236167019203
+    second: bloqueioSprites_1
+  - first:
+      213: 6748360891436307643
+    second: bloqueioSprites_2
+  - first:
+      213: 608163107862378510
+    second: bloqueioSprites_3
+  - first:
+      213: -2219331547060261056
+    second: bloqueioSprites_4
+  - first:
+      213: 4233775292483269704
+    second: bloqueioSprites_5
+  - first:
+      213: 4943770354553000780
+    second: bloqueioSprites_6
+  - first:
+      213: -2175156101449985321
+    second: bloqueioSprites_7
+  - first:
+      213: 6754326997913742452
+    second: bloqueioSprites_8
+  - first:
+      213: -7363574708511422990
+    second: bloqueioSprites_9
+  - first:
+      213: 4521467762753454671
+    second: bloqueioSprites_10
+  - first:
+      213: -6021087397598901135
+    second: bloqueioSprites_11
+  - first:
+      213: -3802395495605769666
+    second: bloqueioSprites_12
+  - first:
+      213: 4972949841409706096
+    second: bloqueioSprites_13
+  - first:
+      213: -5402106033817195319
+    second: bloqueioSprites_14
+  - first:
+      213: -7028970461419704033
+    second: bloqueioSprites_15
+  - first:
+      213: -6850093870878603229
+    second: bloqueioSprites_16
+  - first:
+      213: -2369073125812433002
+    second: bloqueioSprites_17
+  - first:
+      213: 5313093611473887002
+    second: bloqueioSprites_18
+  - first:
+      213: 4401735680771863399
+    second: bloqueioSprites_19
+  - first:
+      213: -4825190957680183705
+    second: bloqueioSprites_20
+  - first:
+      213: 4749101688570663321
+    second: bloqueioSprites_21
+  - first:
+      213: -3995140862338427162
+    second: bloqueioSprites_22
+  - first:
+      213: -4692651243428209194
+    second: bloqueioSprites_23
+  - first:
+      213: 4638287066679984712
+    second: bloqueioSprites_24
+  - first:
+      213: -97691662389083357
+    second: bloqueioSprites_25
+  - first:
+      213: 6731326614246982770
+    second: bloqueioSprites_26
+  - first:
+      213: 2081063782519019940
+    second: bloqueioSprites_27
+  - first:
+      213: 2274981326712590884
+    second: bloqueioSprites_28
+  - first:
+      213: 8004099093179339059
+    second: bloqueioSprites_29
+  - first:
+      213: -8069213468223325468
+    second: bloqueioSprites_30
+  - first:
+      213: 4245541812228593998
+    second: bloqueioSprites_31
+  - first:
+      213: -9204086284761876223
+    second: bloqueioSprites_32
+  - first:
+      213: 7770445498630986314
+    second: bloqueioSprites_33
+  - first:
+      213: 8177883419385478279
+    second: bloqueioSprites_34
+  - first:
+      213: 2935000366187092723
+    second: bloqueioSprites_35
+  - first:
+      213: -3974546406750072184
+    second: bloqueioSprites_36
+  - first:
+      213: -5750445068050251869
+    second: bloqueioSprites_37
+  - first:
+      213: -459813311821712548
+    second: bloqueioSprites_38
+  - first:
+      213: -5845996935346974376
+    second: bloqueioSprites_39
+  - first:
+      213: -3406730195385680866
+    second: bloqueioSprites_40
+  - first:
+      213: -697169396725817615
+    second: bloqueioSprites_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bloqueioSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d220a0d5da69beb0800000000000000
+      internalID: -4703610869251038503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca5bf3b5ef896c40800000000000000
+      internalID: 5506090236167019203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb41336f97ef6ad50800000000000000
+      internalID: 6748360891436307643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0872a9df11a07800800000000000000
+      internalID: 608163107862378510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fa7aa67b95331e0800000000000000
+      internalID: -2219331547060261056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_5
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8447a4f623461ca30800000000000000
+      internalID: 4233775292483269704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_6
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c431d3ab1fccb9440800000000000000
+      internalID: 4943770354553000780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_7
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2dc0adc0b40d1e0800000000000000
+      internalID: -2175156101449985321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_8
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47caa7f5e903cbd50800000000000000
+      internalID: 6754326997913742452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_9
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5402601d35fc990800000000000000
+      internalID: -7363574708511422990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_10
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42cc4679fa7fbe30800000000000000
+      internalID: 4521467762753454671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_11
+      rect:
+        serializedVersion: 2
+        x: 3982
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17c4988b9ecc07ca0800000000000000
+      internalID: -6021087397598901135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_12
+      rect:
+        serializedVersion: 2
+        x: 4344
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3a6fd4517d2b3bc0800000000000000
+      internalID: -3802395495605769666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_13
+      rect:
+        serializedVersion: 2
+        x: 4706
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0788f0f6887730540800000000000000
+      internalID: 4972949841409706096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_14
+      rect:
+        serializedVersion: 2
+        x: 5068
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cce45f0f2dd705b0800000000000000
+      internalID: -5402106033817195319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_15
+      rect:
+        serializedVersion: 2
+        x: 5430
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f117d5e3b94147e90800000000000000
+      internalID: -7028970461419704033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_16
+      rect:
+        serializedVersion: 2
+        x: 5792
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3284334fae39fe0a0800000000000000
+      internalID: -6850093870878603229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_17
+      rect:
+        serializedVersion: 2
+        x: 6154
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f86014b8c5f1fd0800000000000000
+      internalID: -2369073125812433002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_18
+      rect:
+        serializedVersion: 2
+        x: 6516
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f5c4a5d76ebb940800000000000000
+      internalID: 5313093611473887002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_19
+      rect:
+        serializedVersion: 2
+        x: 6878
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763b19fb74b161d30800000000000000
+      internalID: 4401735680771863399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_20
+      rect:
+        serializedVersion: 2
+        x: 7240
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 766bb02936a790db0800000000000000
+      internalID: -4825190957680183705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991567de2d238e140800000000000000
+      internalID: 4749101688570663321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_22
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e69ba88d886e88c0800000000000000
+      internalID: -3995140862338427162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_23
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd9aac8e8a50eeb0800000000000000
+      internalID: -4692651243428209194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_24
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842cfbf23818e5040800000000000000
+      internalID: 4638287066679984712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_25
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32308cd53fde4aef0800000000000000
+      internalID: -97691662389083357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_26
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274035d34e97a6d50800000000000000
+      internalID: 6731326614246982770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_27
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a91af7fb7c61ec10800000000000000
+      internalID: 2081063782519019940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_28
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 422d959967b529f10800000000000000
+      internalID: 2274981326712590884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_29
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3311bfbb7b5441f60800000000000000
+      internalID: 8004099093179339059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_30
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea30c96a15640090800000000000000
+      internalID: -8069213468223325468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_31
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4914fcc8c13bea30800000000000000
+      internalID: 4245541812228593998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_32
+      rect:
+        serializedVersion: 2
+        x: 3982
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10939b21a44844080800000000000000
+      internalID: -9204086284761876223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_33
+      rect:
+        serializedVersion: 2
+        x: 4344
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ade6ce20b26db60800000000000000
+      internalID: 7770445498630986314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_34
+      rect:
+        serializedVersion: 2
+        x: 4706
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c370344adad7170800000000000000
+      internalID: 8177883419385478279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_35
+      rect:
+        serializedVersion: 2
+        x: 5068
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa193268473bb820800000000000000
+      internalID: 2935000366187092723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_36
+      rect:
+        serializedVersion: 2
+        x: 5430
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8825b52e91397d8c0800000000000000
+      internalID: -3974546406750072184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_37
+      rect:
+        serializedVersion: 2
+        x: 5792
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afb7728da05230b0800000000000000
+      internalID: -5750445068050251869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_38
+      rect:
+        serializedVersion: 2
+        x: 6154
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c53fed5aa3a6e99f0800000000000000
+      internalID: -459813311821712548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_39
+      rect:
+        serializedVersion: 2
+        x: 6516
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8511f9eb2c8dedea0800000000000000
+      internalID: -5845996935346974376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_40
+      rect:
+        serializedVersion: 2
+        x: 6878
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1c707adfecd8b0d0800000000000000
+      internalID: -3406730195385680866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bloqueioSprites_41
+      rect:
+        serializedVersion: 2
+        x: 7240
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe52ef90282356f0800000000000000
+      internalID: -697169396725817615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

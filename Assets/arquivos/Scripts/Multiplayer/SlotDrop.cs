@@ -55,7 +55,11 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         if (possoJogar)
         {
 
-            if (!gerenciadorJogo.slotsCampoP1[idSlot].ocupado && eventData.pointerDrag != null && eventData.pointerDrag.GetComponent<CartaPrefab>() != null)
+            if (!gerenciadorJogo.slotsCampoP1[idSlot].ocupado
+                && eventData.pointerDrag != null
+                && eventData.pointerDrag.GetComponent<CartaPrefab>() != null
+                && gerenciadorJogo.slotsCampoP1[idSlot].tipoSlot == TipoCarta.Elemental
+            && eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.tipoCarta == TipoCarta.Elemental)
             {
                 if (gerenciadorJogo.JogadasPlayer > 0)
                 {
@@ -66,7 +70,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                         gerenciadorJogo.dropElemental(eventData.pointerDrag, idSlot);
 
                     }
-                    //SE TENTAR DROPAR ELEMENTAL COM ELE OCUPADO
+
                 }
                 else
                 {
@@ -74,8 +78,24 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                     gerenciadorJogo.gerenciadorAudio.playNegacao();
                 }
             }
+            else if (eventData.pointerDrag != null &&
+                          !gerenciadorJogo.slotsCampoP1[idSlot].ocupado && eventData.pointerDrag.GetComponent<CartaPrefab>() != null
+                 && eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.tipoCarta != TipoCarta.Elemental
+                 && gerenciadorJogo.slotsCampoP1[idSlot].tipoSlot == TipoCarta.AuxArm)
+            {
+                if (!gerenciadorJogo.rodandoAnimacao)
+                {
+                    gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
+                }
+                else
+                {
+                    gerenciadorUI.MostrarAlerta("Não é possivel baixar essa carta!");
+                    gerenciadorJogo.gerenciadorAudio.playNegacao();
+                }
+            }
             else
             {
+
                 if (eventData.pointerDrag.GetComponent<CartaPrefab>() == null)
                 {
                     if (!gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && !gerenciadorJogo.rodandoAnimacao)
@@ -126,15 +146,17 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                     gerenciadorUI.MostrarAlerta("Este campo já esta ocupado!");
                     gerenciadorJogo.gerenciadorAudio.playNegacao();
                 }
+
             }
+
         }
         else
         {
             gerenciadorUI.MostrarAlerta("Não é sua vez!");
             gerenciadorJogo.gerenciadorAudio.playNegacao();
         }
-    }
 
+    }
 
     public void OnBeginDrag(PointerEventData eventData)
     {

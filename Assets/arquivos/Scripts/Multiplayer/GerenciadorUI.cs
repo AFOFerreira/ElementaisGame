@@ -64,6 +64,7 @@ public class GerenciadorUI : MonoBehaviour
     public Sprite P2TURNO;
     public GameObject ImagemAnimacao;
     public GameObject ImagemAnimacaoTurno;
+    public GameObject ImagemAnimacaoTurnoFundo;
     public GameObject MensagemBatalha;
 
     private void Awake()
@@ -117,7 +118,7 @@ public class GerenciadorUI : MonoBehaviour
         Sequence s = DOTween.Sequence();
 
         s.Append(panelTopo.DOAnchorPos(Vector2.zero, 0.5f));
-        s.Append(panelBaixo.DOAnchorPos(Vector2.zero, 0.5f));
+        s.Append(panelBaixo.DOAnchorPos(new Vector2(0,-30), 0.5f));
 
         s.Play();
         uiM = true;
@@ -188,10 +189,10 @@ public class GerenciadorUI : MonoBehaviour
                 tiposCristaisCampo.Add(item.cartaGeralTemp.elemento.idElemento);
             }
         }
-        foreach (var item in GameObject.FindGameObjectWithTag("GerenciadorJogo").GetComponent<GerenciadorJogo>().deckMaoPlayer)
-        {
-            tiposCristaisCampo.Add(item.elemento.idElemento);
-        }
+        //foreach (var item in gerenciadorJogo.deckMaoPlayer)
+        //{
+        //    tiposCristaisCampo.Add(item.elemento.idElemento);
+        //}
 
         int alvoSorteio = Random.Range(0, 1);
         int sorteado;
@@ -355,6 +356,7 @@ public class GerenciadorUI : MonoBehaviour
     {
         Sequence s = DOTween.Sequence();
         ImagemAnimacaoTurno.SetActive(true);
+        ImagemAnimacaoTurnoFundo.SetActive(true);
         if (P1)
         {
             ImagemAnimacaoTurno.GetComponent<Image>().sprite = P1TURNO;
@@ -365,6 +367,7 @@ public class GerenciadorUI : MonoBehaviour
         }
         yield return new WaitForSeconds(2f);
         ImagemAnimacaoTurno.SetActive(false);
+        ImagemAnimacaoTurnoFundo.SetActive(false);
         yield return null;
     }
     public void animVitoriaDerrota(bool venceu)

@@ -36,7 +36,7 @@ public class GerenciadorColecao : MonoBehaviour
             Foto = foto1,
             Moldura = img1,
             Id = 5,
-            TipoCarta = TipoCarta.MAGICA,
+            TipoCarta = TipoCarta.AuxArm,
             TipoEfeito = TipoEfeito.CONTINUO,
             TipoMagica = TipoMagica.AUXILIAR,
             qtdTurno = 0
@@ -49,7 +49,7 @@ public class GerenciadorColecao : MonoBehaviour
             Foto = foto2,
             Moldura = img2,
             Id = 5,
-            TipoCarta = TipoCarta.MAGICA,
+            TipoCarta = TipoCarta.AuxArm,
             TipoEfeito = TipoEfeito.UNICO,
             TipoMagica = TipoMagica.ARMAILHA,
             qtdTurno = 4

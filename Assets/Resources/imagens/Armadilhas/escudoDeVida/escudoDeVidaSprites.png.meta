@@ -1,0 +1,1148 @@
+fileFormatVersion: 2
+guid: affda39f7f283e948b14570cc43c46fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4642135208778176829
+    second: escudoDeVidaSprites_0
+  - first:
+      213: -1831444781204970477
+    second: escudoDeVidaSprites_1
+  - first:
+      213: -258176317917440303
+    second: escudoDeVidaSprites_2
+  - first:
+      213: 7227098184307897011
+    second: escudoDeVidaSprites_3
+  - first:
+      213: 5381515171511658622
+    second: escudoDeVidaSprites_4
+  - first:
+      213: 7239023441995419232
+    second: escudoDeVidaSprites_5
+  - first:
+      213: -8000775676079681762
+    second: escudoDeVidaSprites_6
+  - first:
+      213: 273011040925968731
+    second: escudoDeVidaSprites_7
+  - first:
+      213: -7802460370672527771
+    second: escudoDeVidaSprites_8
+  - first:
+      213: 6313079176545742244
+    second: escudoDeVidaSprites_9
+  - first:
+      213: -4452690539802478663
+    second: escudoDeVidaSprites_10
+  - first:
+      213: -2202288034605510004
+    second: escudoDeVidaSprites_11
+  - first:
+      213: -5675086252739187128
+    second: escudoDeVidaSprites_12
+  - first:
+      213: -364851966941416793
+    second: escudoDeVidaSprites_13
+  - first:
+      213: 4175663845960790444
+    second: escudoDeVidaSprites_14
+  - first:
+      213: 1131681415267895178
+    second: escudoDeVidaSprites_15
+  - first:
+      213: -8294627418112661326
+    second: escudoDeVidaSprites_16
+  - first:
+      213: -3108533962131514791
+    second: escudoDeVidaSprites_17
+  - first:
+      213: 2372564626457836254
+    second: escudoDeVidaSprites_18
+  - first:
+      213: 3817733987334241175
+    second: escudoDeVidaSprites_19
+  - first:
+      213: 5823196716907423766
+    second: escudoDeVidaSprites_20
+  - first:
+      213: -2153142903448818402
+    second: escudoDeVidaSprites_21
+  - first:
+      213: -3359754332794123222
+    second: escudoDeVidaSprites_22
+  - first:
+      213: 8222006078527776559
+    second: escudoDeVidaSprites_23
+  - first:
+      213: 427547875479071666
+    second: escudoDeVidaSprites_24
+  - first:
+      213: -7265468460081326107
+    second: escudoDeVidaSprites_25
+  - first:
+      213: -1911298865495506864
+    second: escudoDeVidaSprites_26
+  - first:
+      213: -7287034152575265214
+    second: escudoDeVidaSprites_27
+  - first:
+      213: 582556340107961441
+    second: escudoDeVidaSprites_28
+  - first:
+      213: -5146907378177839644
+    second: escudoDeVidaSprites_29
+  - first:
+      213: 970564205872527255
+    second: escudoDeVidaSprites_30
+  - first:
+      213: -4224994335805109751
+    second: escudoDeVidaSprites_31
+  - first:
+      213: 2011603599375768568
+    second: escudoDeVidaSprites_32
+  - first:
+      213: 5349721963780868091
+    second: escudoDeVidaSprites_33
+  - first:
+      213: 5020613815834828061
+    second: escudoDeVidaSprites_34
+  - first:
+      213: 5630664752303660528
+    second: escudoDeVidaSprites_35
+  - first:
+      213: 4233436390825166581
+    second: escudoDeVidaSprites_36
+  - first:
+      213: -2651171361515950721
+    second: escudoDeVidaSprites_37
+  - first:
+      213: 519716163357483683
+    second: escudoDeVidaSprites_38
+  - first:
+      213: -1065196180664055041
+    second: escudoDeVidaSprites_39
+  - first:
+      213: 5271549655110012328
+    second: escudoDeVidaSprites_40
+  - first:
+      213: -2069996823454329388
+    second: escudoDeVidaSprites_41
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d399e86906d2c6040800000000000000
+      internalID: 4642135208778176829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314e886cca66596e0800000000000000
+      internalID: -1831444781204970477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6dc19b106ca6cf0800000000000000
+      internalID: -258176317917440303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b2fa80028fcb4460800000000000000
+      internalID: 7227098184307897011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e78e357398bfeaa40800000000000000
+      internalID: 5381515171511658622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_5
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06eccdc677d267460800000000000000
+      internalID: 7239023441995419232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_6
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f4fab99e887f090800000000000000
+      internalID: -8000775676079681762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_7
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59e622681ee9c300800000000000000
+      internalID: 273011040925968731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_8
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5665000d1a718b390800000000000000
+      internalID: -7802460370672527771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_9
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4adacec10109c9750800000000000000
+      internalID: 6313079176545742244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_10
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7b450ab8dd432c0800000000000000
+      internalID: -4452690539802478663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82de3463b6ef61e0800000000000000
+      internalID: -2202288034605510004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_12
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e27cbfe1b0e31b0800000000000000
+      internalID: -5675086252739187128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_13
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a2bad2b119cfeaf0800000000000000
+      internalID: -364851966941416793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_14
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca13fefe420f2f930800000000000000
+      internalID: 4175663845960790444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_15
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8744f3504a84bf00800000000000000
+      internalID: 1131681415267895178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_16
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8ed2f5f4093ec80800000000000000
+      internalID: -8294627418112661326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_17
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95ad9e6c4d44cd4d0800000000000000
+      internalID: -3108533962131514791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_18
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda3da615fa0de020800000000000000
+      internalID: 2372564626457836254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_19
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b3ef195d05bf430800000000000000
+      internalID: 3817733987334241175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_20
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618ec78bf8620d050800000000000000
+      internalID: 5823196716907423766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_21
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1da749efef7e12e0800000000000000
+      internalID: -2153142903448818402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c0a3d2c31cf51d0800000000000000
+      internalID: -3359754332794123222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_23
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2720c367fe6a1270800000000000000
+      internalID: 8222006078527776559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_24
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb276a0784fee500800000000000000
+      internalID: 427547875479071666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_25
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e75c0efdeedb2b90800000000000000
+      internalID: -7265468460081326107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_26
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 050888eeec3b975e0800000000000000
+      internalID: -1911298865495506864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_27
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2469c9deb014fda90800000000000000
+      internalID: -7287034152575265214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_28
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16469c1a7e7a51800800000000000000
+      internalID: 582556340107961441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_29
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed6fdf42038298b0800000000000000
+      internalID: -5146907378177839644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_30
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797bdb2c003287d00800000000000000
+      internalID: 970564205872527255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_31
+      rect:
+        serializedVersion: 2
+        x: 3258
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90a8c4c590ecd55c0800000000000000
+      internalID: -4224994335805109751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_32
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fb90b1d0d6aaeb10800000000000000
+      internalID: 2011603599375768568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf7834238c70e3a40800000000000000
+      internalID: 5349721963780868091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_34
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1dd0474aadcca540800000000000000
+      internalID: 5020613815834828061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_35
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd5f5a72c3242e40800000000000000
+      internalID: 5630664752303660528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_36
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6885eb7ff20ca30800000000000000
+      internalID: 4233436390825166581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_37
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7d272671b5253bd0800000000000000
+      internalID: -2651171361515950721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_38
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a2a3f4d817663700800000000000000
+      internalID: 519716163357483683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_39
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa8a63a7b9a731f0800000000000000
+      internalID: -1065196180664055041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_40
+      rect:
+        serializedVersion: 2
+        x: 2534
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad4aa04b7e482940800000000000000
+      internalID: 5271549655110012328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: escudoDeVidaSprites_41
+      rect:
+        serializedVersion: 2
+        x: 2896
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d551db3bd4e543e0800000000000000
+      internalID: -2069996823454329388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

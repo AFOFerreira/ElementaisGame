@@ -67,7 +67,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposIa)
             {
-                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.MAGICA)
+                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -77,7 +77,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposPlayer)
             {
-                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.MAGICA)
+                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -92,7 +92,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposIa)
             {
-                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.MAGICA)
+                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -102,7 +102,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposPlayer)
             {
-                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.MAGICA)
+                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -117,7 +117,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposIa)
             {
-                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.ELEMENTAL)
+                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -127,7 +127,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposPlayer)
             {
-                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.ELEMENTAL)
+                if (obj.vazio == true && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -142,7 +142,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposIa)
             {
-                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.ELEMENTAL)
+                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -152,7 +152,7 @@ public class GameManagerIa : MonoBehaviour
         {
             foreach (var obj in camposPlayer)
             {
-                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.ELEMENTAL)
+                if (obj.vazio == false && obj.tipoCartaCampo == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }

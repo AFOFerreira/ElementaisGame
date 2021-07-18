@@ -121,6 +121,10 @@ namespace funcoesUteis
             texto.color = new Color(texto.color.r, texto.color.g, texto.color.b, 0f);
         }
 
+        public static void ZeraAlfa(this CanvasGroup canvasGroup)
+        {
+            canvasGroup.alpha = 0f;
+        }
     }
 }
 

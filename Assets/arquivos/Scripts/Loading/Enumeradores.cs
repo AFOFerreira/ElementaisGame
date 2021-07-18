@@ -41,8 +41,7 @@ public enum AudioSFX
 
 public enum TipoCarta 
 {
-    ELEMENTAL,
-    MAGICA
+    Elemental, Auxiliar, Armadilha, AuxArm
 }
 
 public enum TipoElemental 

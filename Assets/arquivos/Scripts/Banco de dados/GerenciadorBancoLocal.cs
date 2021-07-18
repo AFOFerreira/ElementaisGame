@@ -155,7 +155,7 @@ public class GerenciadorBancoLocal
             //var elementoID = ConsultarElementoPeloId(x.idElemento);
             //var j = ImageManager.instance.LoadImages(elementoID.nome + elementoID.idElemento);
             //c.Moldura = ImageManager.instance.BytesToSprite(j);
-            c.TipoCarta = TipoCarta.ELEMENTAL;
+            c.TipoCarta = TipoCarta.Elemental;
             //cartasLista.Add(c);
             _connection.Insert(c);
         }
