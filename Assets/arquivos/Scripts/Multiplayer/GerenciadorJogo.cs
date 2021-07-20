@@ -399,6 +399,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         DOTween.Pause("slot" + idSlot);
         CartaPrefab prefabScript = cartaPrefabLocal.GetComponent<CartaPrefab>();
         CartaGeral cartaGeral = prefabScript.cartaGeral;
+        slotsCampoP1[idSlot].cartaGeral = cartaGeral;
         deckMaoPlayer.Remove(cartaGeral);
 
 
@@ -418,11 +419,35 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         Sequence surgirAuxArm = DOTween.Sequence().SetId("surgirAuxArm");
         surgirAuxArm.Append(cartaPrefabLocal.GetComponent<CanvasGroup>().DOFade(0, 0));
         surgirAuxArm.Append(slotsCampoP1[idSlot].canvasGroup.DOFade(1, .3f));
-        surgirAuxArm.AppendCallback(() => {
+        surgirAuxArm.AppendCallback(() =>
+        {
             Destroy(cartaPrefabLocal);
         });
 
 
+    }
+    public void dropAuxArm(CartaGeral cartaGeral, int idSlot, TipoJogador jogador)
+    {
+        Debug.Log(idSlot);
+        gerenciadorAudio.playCartaBaixando();
+        slotsCampoP2[idSlot].ocupado = true;
+        slotsCampoP2[idSlot].ativado = false;
+        slotsCampoP2[idSlot].disponivel = true;
+        DOTween.Pause("slot" + idSlot);
+        deckMaoPlayer.Remove(cartaGeral);
+        slotsCampoP2[idSlot].cartaGeral = cartaGeral;
+        slotsCampoP2[idSlot].imgAnimAtivar.ZeraAlfa();
+        slotsCampoP2[idSlot].imgElementalCampo.ZeraAlfa();
+        slotsCampoP2[idSlot].imgElementalCampo.ZeraAlfa();
+
+        slotsCampoP2[idSlot].canvasGroup.ZeraAlfa();
+
+        //slotsCampoP1[idSlot].mask.sprite = cartaGeral.auxArm.mask;
+        slotsCampoP2[idSlot].molduraCampo.sprite = cartaGeral.auxArm.molduraCampo;
+        slotsCampoP2[idSlot].fotocarta.sprite = cartaGeral.imgCarta;
+
+        Sequence surgirAuxArm = DOTween.Sequence().SetId("surgirAuxArm");
+        surgirAuxArm.Append(slotsCampoP2[idSlot].canvasGroup.DOFade(1, .3f));
     }
 
     #endregion
@@ -726,7 +751,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         {
             foreach (var obj in slotsCampoP2)
             {
-                if (!obj.ocupado == true && obj.tipoSlot == TipoCarta.AuxArm)
+                if (!obj.ocupado && obj.tipoSlot == TipoCarta.AuxArm)
                 {
                     CamposVazios.Add(obj);
                 }
@@ -1092,7 +1117,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     void FaseDeBatalha()
     {
-        
+
         executarAnimAtaque = true;
         aguardarAnimAtaque = true;
         Timing.RunCoroutine(rodaAtaqueCampo(p1));

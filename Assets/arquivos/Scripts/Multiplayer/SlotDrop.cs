@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using funcoesUteis;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -7,6 +8,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 {
     [SerializeField]
     public int idSlot;
+    
     private Bezier setaAtaque;
     private Canvas canvas;
     private GerenciadorJogo gerenciadorJogo;
@@ -15,6 +17,9 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     public TipoJogador donoCampo;
     bool arrastando;
     public bool marcado;
+    public Sprite ImgNaoAtivado;
+    Sprite tempImg;
+    Sprite tempMoldura;
 
     private void Start()
     {
@@ -33,6 +38,22 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             if (gerenciadorJogo.ultimoCampoAtivado != gerenciadorJogo.slotsCampoP1[idSlot])
             {
                 gerenciadorJogo.slotsCampoP1[idSlot].disponivel = true;
+            }
+        }
+        else
+        {
+            if (gerenciadorJogo.slotsCampoP2[idSlot].tipoSlot != TipoCarta.Elemental && gerenciadorJogo.slotsCampoP2[idSlot].ocupado && !gerenciadorJogo.slotsCampoP2[idSlot].ativado){
+                tempImg = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.imgCarta;
+                tempMoldura = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.auxArm.molduraCampo;
+                gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = ImgNaoAtivado;
+                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.sprite = null;
+                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.color = Color.black;
+            }
+            else
+            {
+                gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = tempMoldura;
+                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.sprite = tempImg;
+                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.color = Color.white;
             }
         }
     }

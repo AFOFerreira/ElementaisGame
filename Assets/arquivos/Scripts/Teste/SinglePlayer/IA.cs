@@ -26,7 +26,7 @@ public class IA : MonoBehaviour
     public List<SlotCampo> camposAtacantes = new List<SlotCampo>();
     public List<SlotCampo> camposParaAtacar = new List<SlotCampo>();
     public List<SlotCampo> camposParaJogarMagicas = new List<SlotCampo>();
-    public List<SlotCampo> campoOcupadosMagicas = new List<SlotCampo>();
+    public List<SlotCampo> camposOcupadosMagicas = new List<SlotCampo>();
     public List<SlotCampo> camposOcupadosMonstros = new List<SlotCampo>();
     public SlotCampo campoSelecionado;
     public SlotCampo ultimoCartaJogada;
@@ -119,30 +119,8 @@ public class IA : MonoBehaviour
                 }
                 else if (fase == TipoFase.MAGICA)
                 {
-                    //if (camposParaJogarMagicas.Count > 0)
-                    //{
-                    //    for (int i = 0; i < camposParaJogarMagicas.Count; i++)
-                    //    {
-                    //        campoSelecionado = camposParaJogarMagicas[i];
-                    //    }
-                    //    Debug.Log(tipoIA + ": Posso jogar no campo: " + campoSelecionado.idCampo);
-                    //    if (!campoSelecionado.ocupado)
-                    //    {
-                    //        Debug.Log("Esperando jogada!");
-                    //        var c = Random.Range(0, mao.Count);
-                    //        var cartaA = mao[c];
-                    //        if (Input.GetButtonDown("Jump"))
-                    //        {
-                    //            //gerenciadorJogo.JogarCarta(campoSelecionado, cartaA.gameObject);
-                    //        }
-                    //    }
-                    //}
-                    //else
-                    //{
-                    //    Debug.Log(tipoIA + ": Não posso jogar, nao há campos disponiveis!");
-                    //    gerenciadorJogo.PassaTurno();
-                    //}
-                    gerenciadorJogo.PassaTurno();
+                    Debug.Log("Fase Magica");
+                    PensaJogadaMagica();
                 }
                 qtdTurnos++;
             }
@@ -230,8 +208,8 @@ public class IA : MonoBehaviour
     #region Padrao
     void VerificaCampos()
     {
-        //camposParaJogarMagicas = gerenciadorJogo.VerificaCampoDisponivelMagicas(tipoIA);
-        //campoOcupadosMagicas = gerenciadorJogo.VerificaCampoOcupadoMagicas(tipoIA);
+        camposParaJogarMagicas = gerenciadorJogo.VerificaCampoDisponivelMagicas(tipoIA);
+        camposOcupadosMagicas = gerenciadorJogo.VerificaCampoOcupadoMagicas(tipoIA);
         camposParaJogarMonstro = gerenciadorJogo.VerificaCampoDisponivelMonstros(tipoIA);
         camposOcupadosMonstros = gerenciadorJogo.VerificaCampoOcupadoMonstros(tipoIA);
     }
@@ -278,6 +256,28 @@ public class IA : MonoBehaviour
             mao.Remove(carta);
             jogadasMonstro--;
             carta = null;
+            ultimoCartaJogada = campoSelecionado;
+            b = true;
+        }
+        else
+        {
+            b = false;
+        }
+
+        return b;
+    }
+    bool JogarCartaMagicaNoCampo(SlotCampo campo)
+    {
+        bool b = false;
+        campoSelecionado = campo;
+        Debug.Log("Pensando...");
+        CartaGeral carta = PensaCartaArmadilha();
+        if (carta != null)
+        {
+            gerenciadorJogo.dropAuxArm(carta, campoSelecionado.idCampo, tipoIA);
+            mao.Remove(carta);
+            carta = null;
+            Debug.Log("Joguei uma carta auxiliar");
             ultimoCartaJogada = campoSelecionado;
             b = true;
         }
@@ -356,6 +356,8 @@ public class IA : MonoBehaviour
     #endregion
 
     #region Estrategia
+
+    #region Elementais
     void PensaJogadaMonstro()
     {
         var camposDisponiveis = camposParaJogarMonstro.Where(x => (!x.ocupado && x.tipoSlot == TipoCarta.Elemental)).ToList();
@@ -381,7 +383,7 @@ public class IA : MonoBehaviour
                 if (tempRng == 0)
                     tempRng = Random.Range(1, 4);
                 Debug.Log(tempRng);
-                if (!campoParaJogar.ocupado)
+                if (!campoParaJogar.ocupado )
                 {
                     if (jogadasMonstro == 1)
                     {
@@ -495,10 +497,76 @@ public class IA : MonoBehaviour
         }
         return carta;
     }
-    CartaGeral PensaJogadaMagica()
+    #endregion
+
+    #region Magicas
+    CartaGeral PensaCartaArmadilha()
     {
-        return null;
+        var carta = new CartaGeral();
+        var tempMao = mao.Where(x => x.tipoCarta == TipoCarta.Auxiliar).ToList();
+        if (tempMao.Count > 0)
+        {
+            foreach (var obj in tempMao)
+            {
+                carta = obj;
+            }
+        }
+        else
+        {
+            carta = null;
+        }
+        return carta;
     }
+    void PensaJogadaMagica()
+    {
+        var camposDisponiveis = camposParaJogarMagicas.Where(x => (!x.ocupado && x.tipoSlot == TipoCarta.AuxArm)).ToList();
+        var camposAtivados = camposOcupadosMagicas.Where(x => (x.ativado)).ToList();
+        camposAtacantes = camposAtivados;
+        var camposParaAtivar = camposOcupadosMagicas.Where(x => (!x.ativado)).ToList();
+        //var camposAlvos = gerenciadorJogo.slotsCampoP1.Where(x => (x.ocupado)).ToList();
+        //camposParaAtacar = camposAlvos;
+        SlotCampo campoParaJogar = CampoEcolhidoJogarMagicas(camposDisponiveis);
+        SlotCampo campoParaAtivar = CampoEcolhidoAtivarMagicas(camposParaAtivar);
+        var t = Random.Range(2, tempoPensamento);
+
+        if (Delay(t))
+        {
+            if (campoParaJogar != null)
+            {
+
+                if (JogarCartaMagicaNoCampo(campoParaJogar))
+                {
+                    gerenciadorJogo.PassaTurno();
+                }
+                else
+                {
+                    gerenciadorJogo.PassaTurno();
+                }
+
+            }
+            else
+            {
+                gerenciadorJogo.PassaTurno();
+            }
+            //else if (rng == 2 && campoParaAtivar != null)
+            //{
+            //    Debug.Log("B");
+            //    if (campoParaAtivar != null)
+            //    {
+            //        StartCoroutine(AtivarELemental(campoParaAtivar));
+            //    }
+            //    else
+            //    {
+            //        return;
+            //    }
+            //}
+        }
+
+    }
+
+    #endregion
+
+    #region Campos
     SlotCampo CampoEcolhidoAtivar(List<SlotCampo> camposParaAtivar)
     {
         return camposParaAtivar.Count > 0 ? camposParaAtivar[Random.Range(0, camposParaAtivar.Count)] : null;
@@ -508,6 +576,18 @@ public class IA : MonoBehaviour
 
         return camposDisponiveis.Count > 0 ? camposDisponiveis[Random.Range(0, camposDisponiveis.Count)] : null;
     }
+    SlotCampo CampoEcolhidoAtivarMagicas(List<SlotCampo> camposParaAtivar)
+    {
+        return camposParaAtivar.Count > 0 ? camposParaAtivar[Random.Range(0, camposParaAtivar.Count)] : null;
+    }
+    SlotCampo CampoEcolhidoJogarMagicas(List<SlotCampo> camposDisponiveis)
+    {
+
+        return camposDisponiveis.Count > 0 ? camposDisponiveis[Random.Range(0, camposDisponiveis.Count)] : null;
+    }
+    #endregion
+
+    #region MelhoresCartas
     SlotCampo MelhorCartaEmCampo(List<SlotCampo> cartaAtivas)
     {
         if (cartaAtivas.Count > 0)
@@ -539,6 +619,9 @@ public class IA : MonoBehaviour
         else
             return null;
     }
+    #endregion
+
+    #region RNG
     int Rng()
     {
         var totalCamposNaoAtivados = camposOcupadosMonstros.Where(x => !x.ativado).ToList().Count;
@@ -612,5 +695,7 @@ public class IA : MonoBehaviour
 
         return true;
     }
+    #endregion
+
     #endregion
 }
