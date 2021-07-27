@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: 77fd216dac657d0429c9ea5a13148bd0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4473143352271056130
+    second: emGloriaSprites_0
+  - first:
+      213: -1417207591616985873
+    second: emGloriaSprites_1
+  - first:
+      213: 6226667245102107082
+    second: emGloriaSprites_2
+  - first:
+      213: -5493900130197852400
+    second: emGloriaSprites_3
+  - first:
+      213: -5170158814437444547
+    second: emGloriaSprites_4
+  - first:
+      213: -2807400903815429040
+    second: emGloriaSprites_5
+  - first:
+      213: 3679137840598405622
+    second: emGloriaSprites_6
+  - first:
+      213: 8007925719612426014
+    second: emGloriaSprites_7
+  - first:
+      213: -3629968195280599548
+    second: emGloriaSprites_8
+  - first:
+      213: -2026582404318221173
+    second: emGloriaSprites_9
+  - first:
+      213: -1486347844167394894
+    second: emGloriaSprites_10
+  - first:
+      213: -7390576906821618281
+    second: emGloriaSprites_11
+  - first:
+      213: 447136843763594879
+    second: emGloriaSprites_12
+  - first:
+      213: 3510028312261317485
+    second: emGloriaSprites_13
+  - first:
+      213: -722362072928507439
+    second: emGloriaSprites_14
+  - first:
+      213: -707674432839969573
+    second: emGloriaSprites_15
+  - first:
+      213: -280376571534080824
+    second: emGloriaSprites_16
+  - first:
+      213: 601809969201151278
+    second: emGloriaSprites_17
+  - first:
+      213: 6880446877483418688
+    second: emGloriaSprites_18
+  - first:
+      213: 4717172874357480662
+    second: emGloriaSprites_19
+  - first:
+      213: -3217248086333311351
+    second: emGloriaSprites_20
+  - first:
+      213: -6197006586602777197
+    second: emGloriaSprites_21
+  - first:
+      213: 353434438836998962
+    second: emGloriaSprites_22
+  - first:
+      213: -4033740208534376919
+    second: emGloriaSprites_23
+  - first:
+      213: -1835408115179657092
+    second: emGloriaSprites_24
+  - first:
+      213: 8458797959067930383
+    second: emGloriaSprites_25
+  - first:
+      213: 3658731885074454685
+    second: emGloriaSprites_26
+  - first:
+      213: -2172743945022252575
+    second: emGloriaSprites_27
+  - first:
+      213: 4675392594675155509
+    second: emGloriaSprites_28
+  - first:
+      213: -867551162971692224
+    second: emGloriaSprites_29
+  - first:
+      213: 2001610329736506758
+    second: emGloriaSprites_30
+  - first:
+      213: -4396395202244507804
+    second: emGloriaSprites_31
+  - first:
+      213: 4594497802882484580
+    second: emGloriaSprites_32
+  - first:
+      213: -547398821201021951
+    second: emGloriaSprites_33
+  - first:
+      213: 8967720148571524185
+    second: emGloriaSprites_34
+  - first:
+      213: 9188084597714716922
+    second: emGloriaSprites_35
+  - first:
+      213: -1920504722202161524
+    second: emGloriaSprites_36
+  - first:
+      213: -7639709823040562663
+    second: emGloriaSprites_37
+  - first:
+      213: 5713976998793653618
+    second: emGloriaSprites_38
+  - first:
+      213: 9135333208197899956
+    second: emGloriaSprites_39
+  - first:
+      213: 8387738690773652257
+    second: emGloriaSprites_40
+  - first:
+      213: 6202012061885677560
+    second: emGloriaSprites_41
+  - first:
+      213: -4353761107259545065
+    second: emGloriaSprites_42
+  - first:
+      213: 3293453528741044179
+    second: emGloriaSprites_43
+  - first:
+      213: -3791587818298343377
+    second: emGloriaSprites_44
+  - first:
+      213: -703489643899103119
+    second: emGloriaSprites_45
+  - first:
+      213: -9023495833992865839
+    second: emGloriaSprites_46
+  - first:
+      213: -3951163794317720481
+    second: emGloriaSprites_47
+  - first:
+      213: -1429262594259823016
+    second: emGloriaSprites_48
+  - first:
+      213: 3279418177470957060
+    second: emGloriaSprites_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: emGloriaSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3591
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d248ddd2cc31e30800000000000000
+      internalID: 4473143352271056130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 3591
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe4cea04431155ce0800000000000000
+      internalID: -1417207591616985873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 3591
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac90fde7ed0996650800000000000000
+      internalID: 6226667245102107082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 3591
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fa51480feb1c3b0800000000000000
+      internalID: -5493900130197852400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 3591
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d34f91173f7ef38b0800000000000000
+      internalID: -5170158814437444547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3192
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05488f190cb1a09d0800000000000000
+      internalID: -2807400903815429040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 3192
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1d0948f5cee0330800000000000000
+      internalID: 3679137840598405622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 3192
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e178631a30ed12f60800000000000000
+      internalID: 8007925719612426014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_8
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 3192
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4068556a823cf9dc0800000000000000
+      internalID: -3629968195280599548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 3192
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c2e826a0220e3e0800000000000000
+      internalID: -2026582404318221173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b91cbfb28e6f5be0800000000000000
+      internalID: -1486347844167394894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79531bfc5756f6990800000000000000
+      internalID: -7390576906821618281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f76b482279c843600800000000000000
+      internalID: 447136843763594879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6356ef272026b030800000000000000
+      internalID: 3510028312261317485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9a1eb9587a9f5f0800000000000000
+      internalID: -722362072928507439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd492fd4ad5dd26f0800000000000000
+      internalID: -707674432839969573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c48e526ef6eb1cf0800000000000000
+      internalID: -280376571534080824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_17
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2df58c7afe0a5800800000000000000
+      internalID: 601809969201151278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_18
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 044485c1bf14c7f50800000000000000
+      internalID: 6880446877483418688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_19
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dc9f209cb3c67140800000000000000
+      internalID: 4717172874357480662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9863cc349e90a53d0800000000000000
+      internalID: -3217248086333311351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39519c6b75fcff9a0800000000000000
+      internalID: -6197006586602777197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 233d442efb6a7e400800000000000000
+      internalID: 353434438836998962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e291ae6a64508c0800000000000000
+      internalID: -4033740208534376919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c78e8dc2b025786e0800000000000000
+      internalID: -1835408115179657092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f0b095defa36570800000000000000
+      internalID: 8458797959067930383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d981242c34d66c230800000000000000
+      internalID: 3658731885074454685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_27
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e95119c4ecd8d1e0800000000000000
+      internalID: -2172743945022252575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_28
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 532ca172bc452e040800000000000000
+      internalID: 4675392594675155509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_29
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043689250d6d5f3f0800000000000000
+      internalID: -867551162971692224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d62ba6df527cb10800000000000000
+      internalID: 2001610329736506758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4670cfd4bdddcf2c0800000000000000
+      internalID: -4396395202244507804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_32
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4698f16b86fe2cf30800000000000000
+      internalID: 4594497802882484580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10478df1caf3768f0800000000000000
+      internalID: -547398821201021951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_34
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95c08bc46fdb37c70800000000000000
+      internalID: 8967720148571524185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af80605d242a28f70800000000000000
+      internalID: 9188084597714716922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_36
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e0ea3612ff855e0800000000000000
+      internalID: -1920504722202161524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_37
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91ada92946c4af590800000000000000
+      internalID: -7639709823040562663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_38
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d29d37ecf1c4f40800000000000000
+      internalID: 5713976998793653618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_39
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b6277bd62937ce70800000000000000
+      internalID: 9135333208197899956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1231d5c26eb376470800000000000000
+      internalID: 8387738690773652257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_41
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff32615c19f11650800000000000000
+      internalID: 6202012061885677560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_42
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a22e417555493c0800000000000000
+      internalID: -4353761107259545065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_43
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dfddd0f882b4bd20800000000000000
+      internalID: 3293453528741044179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_44
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2001abc7f2916bc0800000000000000
+      internalID: -3791587818298343377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1785a3865e3bc36f0800000000000000
+      internalID: -703489643899103119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_46
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d753a6f85a16c280800000000000000
+      internalID: -9023495833992865839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_47
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ce469675aa29c0800000000000000
+      internalID: -3951163794317720481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_48
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856d36a3e3d3a2ce0800000000000000
+      internalID: -1429262594259823016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emGloriaSprites_49
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4068d121575d28d20800000000000000
+      internalID: 3279418177470957060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

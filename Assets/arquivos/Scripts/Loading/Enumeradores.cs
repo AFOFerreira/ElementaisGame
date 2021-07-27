@@ -1,16 +1,16 @@
-﻿public enum LoadingState 
+﻿public enum LoadingState
 {
     LOGIN,
     MENU_INICIAL,
     TUTORIAL1,
     TUTORIAL2,
-    MULTIPLAYER, 
+    MULTIPLAYER,
     TREINO,
     NONE
 }
 
-public enum TipoJogador 
-{ 
+public enum TipoJogador
+{
     PLAYER,
     IA
 }
@@ -20,7 +20,7 @@ public enum TipoFase
     MAGICA,
     DEFESA
 }
-public enum AudioSounds 
+public enum AudioSounds
 {
     GAMEPLAY,
     MENU,
@@ -39,12 +39,12 @@ public enum AudioSFX
     HUD_OUT
 }
 
-public enum TipoCarta 
+public enum TipoCarta
 {
     Elemental, Auxiliar, Armadilha, AuxArm
 }
 
-public enum TipoElemental 
+public enum TipoElemental
 {
     AGUA,
     FOGO,
@@ -52,7 +52,7 @@ public enum TipoElemental
     AR
 }
 
-public enum TipoMagica 
+public enum TipoMagica
 {
     AUXILIAR,
     ARMAILHA
@@ -60,12 +60,21 @@ public enum TipoMagica
 
 public enum TipoEfeito
 {
-    UNICO,
-    CONTINUO
+    Temporario, Continuo
 }
 
 public enum TipoPartida
 {
     LOCAL,
     MULTIPLAYER
+}
+
+public enum EfeitoAo
+{
+    Dropar, Selecionar
+}
+
+public enum LocalAnim
+{
+    CampoCartas, CampoMeio
 }

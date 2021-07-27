@@ -1,0 +1,860 @@
+fileFormatVersion: 2
+guid: 46f0f2f261063764bb83c3cb6246ea53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2996694913556612392
+    second: reforcoSprites_0
+  - first:
+      213: 8869948067845247317
+    second: reforcoSprites_1
+  - first:
+      213: -1569012061224690649
+    second: reforcoSprites_2
+  - first:
+      213: 4890142400382243428
+    second: reforcoSprites_3
+  - first:
+      213: 4742515464270108550
+    second: reforcoSprites_4
+  - first:
+      213: 6609877113523956302
+    second: reforcoSprites_5
+  - first:
+      213: 3182555867842988191
+    second: reforcoSprites_6
+  - first:
+      213: -1792706949868406450
+    second: reforcoSprites_7
+  - first:
+      213: 3228877109272712602
+    second: reforcoSprites_8
+  - first:
+      213: 7584021641863111038
+    second: reforcoSprites_9
+  - first:
+      213: 956885355704884053
+    second: reforcoSprites_10
+  - first:
+      213: 4787118536530973604
+    second: reforcoSprites_11
+  - first:
+      213: -9215383520082943394
+    second: reforcoSprites_12
+  - first:
+      213: 1897266725350773514
+    second: reforcoSprites_13
+  - first:
+      213: 3294091560249220357
+    second: reforcoSprites_14
+  - first:
+      213: -2402235788161894363
+    second: reforcoSprites_15
+  - first:
+      213: 3093421501020174403
+    second: reforcoSprites_16
+  - first:
+      213: 1419221549424854604
+    second: reforcoSprites_17
+  - first:
+      213: -3568905359178580074
+    second: reforcoSprites_18
+  - first:
+      213: 2410941447669446597
+    second: reforcoSprites_19
+  - first:
+      213: -6210516548623961667
+    second: reforcoSprites_20
+  - first:
+      213: -8585963078900649288
+    second: reforcoSprites_21
+  - first:
+      213: -4575587952073928574
+    second: reforcoSprites_22
+  - first:
+      213: 4913733366095070062
+    second: reforcoSprites_23
+  - first:
+      213: 417266152750197779
+    second: reforcoSprites_24
+  - first:
+      213: 7801471681670016231
+    second: reforcoSprites_25
+  - first:
+      213: -8365628110283131477
+    second: reforcoSprites_26
+  - first:
+      213: -7604611854981749084
+    second: reforcoSprites_27
+  - first:
+      213: 3326270716059048931
+    second: reforcoSprites_28
+  - first:
+      213: -3692150066522380988
+    second: reforcoSprites_29
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: reforcoSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2000
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82503ce8526669920800000000000000
+      internalID: 2996694913556612392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_1
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 2000
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5511410d5c2681b70800000000000000
+      internalID: 8869948067845247317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_2
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 2000
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72c1662e7dfb93ae0800000000000000
+      internalID: -1569012061224690649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 2000
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4621cd3aa964dd340800000000000000
+      internalID: 4890142400382243428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2000
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 687dd9510bcc0d140800000000000000
+      internalID: 4742515464270108550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1600
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a6490d6300bbb50800000000000000
+      internalID: 6609877113523956302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_6
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1600
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f98cd9c23b5ba2c20800000000000000
+      internalID: 3182555867842988191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_7
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1600
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4938baf6860f17e0800000000000000
+      internalID: -1792706949868406450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_8
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1600
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a951791af964fcc20800000000000000
+      internalID: 3228877109272712602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1600
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71202c508bdf3960800000000000000
+      internalID: 7584021641863111038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55b1095492a874d00800000000000000
+      internalID: 956885355704884053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_11
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 1200
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3dd9b12f24f6240800000000000000
+      internalID: 4787118536530973604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_12
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 1200
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52a77083816c1080800000000000000
+      internalID: -9215383520082943394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_13
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 1200
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0393b8d802745a10800000000000000
+      internalID: 1897266725350773514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_14
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1200
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d544a32d6f6bd20800000000000000
+      internalID: 3294091560249220357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52831eb374b89aed0800000000000000
+      internalID: -2402235788161894363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_16
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 800
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348fcdc277a0eea20800000000000000
+      internalID: 3093421501020174403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_17
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 800
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c464c07da7612b310800000000000000
+      internalID: 1419221549424854604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_18
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 800
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f3c251c73b87ec0800000000000000
+      internalID: -3568905359178580074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_19
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 800
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c77a921972657120800000000000000
+      internalID: 2410941447669446597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1759f8a10dfc9a0800000000000000
+      internalID: -6210516548623961667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_21
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 400
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2f183f11888d880800000000000000
+      internalID: -8585963078900649288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_22
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 400
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2809316000f3080c0800000000000000
+      internalID: -4575587952073928574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_23
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 400
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63c41f5676113440800000000000000
+      internalID: 4913733366095070062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_24
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 400
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c287bea5d6ac500800000000000000
+      internalID: 417266152750197779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ece5371925644c60800000000000000
+      internalID: 7801471681670016231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_26
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba53d838e8157eb80800000000000000
+      internalID: -8365628110283131477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_27
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a6a6111fcdf67690800000000000000
+      internalID: -7604611854981749084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_28
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebdb79c799492e20800000000000000
+      internalID: 3326270716059048931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: reforcoSprites_29
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 0
+        width: 363
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 445af7b8319d2ccc0800000000000000
+      internalID: -3692150066522380988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

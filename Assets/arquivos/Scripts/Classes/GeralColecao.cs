@@ -59,19 +59,19 @@ public class GeralColecao
     }
     public List<Magica> ConsultarArmadilhasContinua()
     {
-        return Magica.Where(x => x.TipoMagica == TipoMagica.ARMAILHA && x.TipoEfeito == TipoEfeito.CONTINUO).ToList();
+        return Magica.Where(x => x.TipoMagica == TipoMagica.ARMAILHA && x.TipoEfeito == TipoEfeito.Temporario).ToList();
     }
     public List<Magica> ConsultarArmadilhasUnica()
     {
-        return Magica.Where(x => x.TipoMagica == TipoMagica.ARMAILHA && x.TipoEfeito == TipoEfeito.UNICO).ToList();
+        return Magica.Where(x => x.TipoMagica == TipoMagica.ARMAILHA && x.TipoEfeito == TipoEfeito.Temporario).ToList();
     }
     public List<Magica> ConsultarAuxiliarContinua()
     {
-        return Magica.Where(x => x.TipoMagica == TipoMagica.AUXILIAR && x.TipoEfeito == TipoEfeito.CONTINUO).ToList();
+        return Magica.Where(x => x.TipoMagica == TipoMagica.AUXILIAR && x.TipoEfeito == TipoEfeito.Continuo).ToList();
     }
     public List<Magica> ConsultarAuxiliarUnica()
     {
-        return Magica.Where(x => x.TipoMagica == TipoMagica.AUXILIAR && x.TipoEfeito == TipoEfeito.UNICO).ToList();
+        return Magica.Where(x => x.TipoMagica == TipoMagica.AUXILIAR && x.TipoEfeito == TipoEfeito.Temporario).ToList();
     }
 }
 

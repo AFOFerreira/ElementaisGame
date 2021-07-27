@@ -8,7 +8,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 {
     [SerializeField]
     public int idSlot;
-    
+
     private Bezier setaAtaque;
     private Canvas canvas;
     private GerenciadorJogo gerenciadorJogo;
@@ -42,7 +42,8 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         }
         else
         {
-            if (gerenciadorJogo.slotsCampoP2[idSlot].tipoSlot != TipoCarta.Elemental && gerenciadorJogo.slotsCampoP2[idSlot].ocupado && !gerenciadorJogo.slotsCampoP2[idSlot].ativado){
+            if (gerenciadorJogo.slotsCampoP2[idSlot].tipoSlot != TipoCarta.Elemental && gerenciadorJogo.slotsCampoP2[idSlot].ocupado && !gerenciadorJogo.slotsCampoP2[idSlot].ativado)
+            {
                 tempImg = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.imgCarta;
                 tempMoldura = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.auxArm.molduraCampo;
                 gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = ImgNaoAtivado;
@@ -60,7 +61,11 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     private void VerificaDono()
     {
-        if (gerenciadorJogo.turno == donoCampo)
+        if (gerenciadorJogo.turno == donoCampo && !gerenciadorJogo.emBatalha)
+        {
+            possoJogar = true;
+        }
+        else if (gerenciadorJogo.defensor == donoCampo && gerenciadorJogo.emBatalha)
         {
             possoJogar = true;
         }
@@ -75,99 +80,117 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         if (possoJogar)
         {
-
-            if (!gerenciadorJogo.slotsCampoP1[idSlot].ocupado
-                && eventData.pointerDrag != null
-                && eventData.pointerDrag.GetComponent<CartaPrefab>() != null
-                && gerenciadorJogo.slotsCampoP1[idSlot].tipoSlot == TipoCarta.Elemental
-            && eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.tipoCarta == TipoCarta.Elemental)
+            if (!gerenciadorJogo.emBatalha && gerenciadorJogo.turno == donoCampo)
             {
-                if (gerenciadorJogo.JogadasPlayer > 0)
+
+                if (!gerenciadorJogo.slotsCampoP1[idSlot].ocupado
+                    && eventData.pointerDrag != null
+                    && eventData.pointerDrag.GetComponent<CartaPrefab>() != null
+                    && gerenciadorJogo.slotsCampoP1[idSlot].tipoSlot == TipoCarta.Elemental
+                && eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.tipoCarta == TipoCarta.Elemental)
                 {
-                    Debug.Log("DROPPPPXXXXXXXXXXXX DROPXXXXXXXXXXXX");
-                    //SE NÃO ESTIVER OCUPADO E ELE DROPAR ELEMENTAL
-                    if (!gerenciadorJogo.rodandoAnimacao)
+                    if (gerenciadorJogo.JogadasPlayer > 0)
                     {
-                        gerenciadorJogo.dropElemental(eventData.pointerDrag, idSlot);
+                        Debug.Log("DROPPPPXXXXXXXXXXXX DROPXXXXXXXXXXXX");
+                        //SE NÃO ESTIVER OCUPADO E ELE DROPAR ELEMENTAL
+                        if (!gerenciadorJogo.rodandoAnimacao)
+                        {
+                            gerenciadorJogo.dropElemental(eventData.pointerDrag, idSlot);
 
-                    }
+                        }
 
-                }
-                else
-                {
-                    gerenciadorUI.MostrarAlerta("Somente uma carta monstro por turno!");
-                    gerenciadorJogo.gerenciadorAudio.playNegacao();
-                }
-            }
-            else if (eventData.pointerDrag != null &&
-                          !gerenciadorJogo.slotsCampoP1[idSlot].ocupado && eventData.pointerDrag.GetComponent<CartaPrefab>() != null
-                 && eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.tipoCarta != TipoCarta.Elemental
-                 && gerenciadorJogo.slotsCampoP1[idSlot].tipoSlot == TipoCarta.AuxArm)
-            {
-                if (!gerenciadorJogo.rodandoAnimacao)
-                {
-                    gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
-                }
-                else
-                {
-                    gerenciadorUI.MostrarAlerta("Não é possivel baixar essa carta!");
-                    gerenciadorJogo.gerenciadorAudio.playNegacao();
-                }
-            }
-            else
-            {
-
-                if (eventData.pointerDrag.GetComponent<CartaPrefab>() == null)
-                {
-                    if (!gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && !gerenciadorJogo.rodandoAnimacao)
-                    {
-                        gerenciadorJogo.ativarElemental(idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
-                        //gerenciadorJogo.photonView.RPC("ativarElemental", Photon.Pun.RpcTarget.AllBufferedViaServer, idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
                     }
                     else
                     {
+                        gerenciadorUI.MostrarAlerta("Somente uma carta monstro por turno!");
+                        gerenciadorJogo.gerenciadorAudio.playNegacao();
+                    }
+                }
+                else if (eventData.pointerDrag != null &&
+                              !gerenciadorJogo.slotsCampoP1[idSlot].ocupado && eventData.pointerDrag.GetComponent<CartaPrefab>() != null
+                     && eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.tipoCarta != TipoCarta.Elemental
+                     && gerenciadorJogo.slotsCampoP1[idSlot].tipoSlot == TipoCarta.AuxArm)
+                {
+                    if (!gerenciadorJogo.rodandoAnimacao)
+                    {
+                        Debug.Log("Teste aqui!" + eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.verificaAcoesBool(gerenciadorJogo)+", "+
+                            eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.titulo);
+                        //if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.verificaAcoesBool(gerenciadorJogo))
+                        {
+                            gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
+                        }
+                        ////else
+                        //{
+                        //    gerenciadorUI.MostrarAlerta("Nao há elementais para essa carta ser usada!");
+                        //    gerenciadorJogo.gerenciadorAudio.playNegacao();
+                        //}
+                    }
+                    else
+                    {
+                        gerenciadorUI.MostrarAlerta("Não é possivel baixar essa carta!");
+                        gerenciadorJogo.gerenciadorAudio.playNegacao();
+                    }
+                }
+                else
+                {
 
-                        if (eventData.pointerDrag.GetComponent<SlotDrop>() != null && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot] != gerenciadorJogo.ultimoCampoAtivado)
+                    if (eventData.pointerDrag.GetComponent<CartaPrefab>() == null)
+                    {
+                        if (!gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && !gerenciadorJogo.rodandoAnimacao)
+                        {
+                            gerenciadorJogo.ativarElemental(idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
+                            //gerenciadorJogo.photonView.RPC("ativarElemental", Photon.Pun.RpcTarget.AllBufferedViaServer, idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);
+                        }
+                        else
                         {
 
-                            if (gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado
-                                && gerenciadorJogo.slotsCampoP2[idSlot].ocupado &&
-                                gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
+                            if (eventData.pointerDrag.GetComponent<SlotDrop>() != null && !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot] != gerenciadorJogo.ultimoCampoAtivado)
                             {
-                                if (gerenciadorJogo.VerificaCampoMarcado(this))
+
+                                if (gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado
+                                    && gerenciadorJogo.slotsCampoP2[idSlot].ocupado &&
+                                    gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel)
                                 {
-                                    gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot, true);
-                                    //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer, eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
-                                    gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel = false;
-                                    gerenciadorJogo.setTurnoBatalha();
-                                    gerenciadorJogo.AdicionarCampoMarcado(this);
-                                    marcado = true;
+                                    if (gerenciadorJogo.VerificaCampoMarcado(this))
+                                    {
+                                        gerenciadorJogo.executaAtaque(eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot, true);
+                                        //gerenciadorJogo.photonView.RPC("executaAtaque", Photon.Pun.RpcTarget.AllBufferedViaServer, eventData.pointerDrag.GetComponent<SlotDrop>().idSlot, idSlot);
+                                        gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].disponivel = false;
+                                        gerenciadorJogo.setTurnoBatalha();
+                                        gerenciadorJogo.AdicionarCampoMarcado(this);
+                                        marcado = true;
+                                    }
+                                    else
+                                    {
+                                        gerenciadorJogo.gerenciadorAudio.playNegacao();
+                                        gerenciadorUI.MostrarAlerta("Esse campo já está marcado para ataque!");
+                                    }
                                 }
                                 else
                                 {
                                     gerenciadorJogo.gerenciadorAudio.playNegacao();
-                                    gerenciadorUI.MostrarAlerta("Esse campo já está marcado para ataque!");
+                                    gerenciadorUI.MostrarAlerta("Não é possivel atacar esse campo!");
                                 }
                             }
                             else
                             {
                                 gerenciadorJogo.gerenciadorAudio.playNegacao();
-                                gerenciadorUI.MostrarAlerta("Não é possivel atacar esse campo!");
+                                gerenciadorUI.MostrarAlerta("Você precisa esperar o proximo turno para atacar com este elemental!");
                             }
                         }
-                        else
-                        {
-                            gerenciadorJogo.gerenciadorAudio.playNegacao();
-                            gerenciadorUI.MostrarAlerta("Você precisa esperar o proximo turno para atacar com este elemental!");
-                        }
                     }
-                }
-                else
-                {
-                    gerenciadorUI.MostrarAlerta("Este campo já esta ocupado!");
-                    gerenciadorJogo.gerenciadorAudio.playNegacao();
+                    else
+                    {
+                        gerenciadorUI.MostrarAlerta("Este campo já esta ocupado!");
+                        gerenciadorJogo.gerenciadorAudio.playNegacao();
+                    }
+
                 }
 
+            }
+            else if (gerenciadorJogo.emBatalha && gerenciadorJogo.defensor == donoCampo)
+            {
+                Debug.Log("executar acao magicas");
             }
 
         }
@@ -181,17 +204,30 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        if (gerenciadorJogo.slotsCampoP1[idSlot].ocupado && gerenciadorJogo.slotsCampoP1[idSlot].ativado
-             && possoJogar &&
-            !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[idSlot].disponivel
-            )
+        if (possoJogar)
         {
-            arrastando = true;
-            Debug.Log("pointer down campo");
-            //setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(GetComponent<RectTransform>().position / canvas.scaleFactor);
-            setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            setaAtaque.slotInicial = idSlot;
-            setaAtaque.setaAtiva = true;
+            if (gerenciadorJogo.slotsCampoP1[idSlot].ocupado && gerenciadorJogo.slotsCampoP1[idSlot].ativado
+                &&
+                !gerenciadorJogo.rodandoAnimacao && gerenciadorJogo.slotsCampoP1[idSlot].disponivel &&
+                gerenciadorJogo.slotsCampoP1[idSlot].cartaGeral.tipoCarta == TipoCarta.Elemental
+                )
+            {
+                arrastando = true;
+                Debug.Log("pointer down campo");
+                //setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(GetComponent<RectTransform>().position / canvas.scaleFactor);
+                setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                setaAtaque.slotInicial = idSlot;
+                setaAtaque.setaAtiva = true;
+            }
+            else if (gerenciadorJogo.defensor == donoCampo && gerenciadorJogo.slotsCampoP1[idSlot].cartaGeral.efeitoAo == EfeitoAo.Selecionar)
+            {
+                arrastando = true;
+                Debug.Log("pointer down campo magica");
+                //setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(GetComponent<RectTransform>().position / canvas.scaleFactor);
+                setaAtaque.initialPoint = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                setaAtaque.slotInicial = idSlot;
+                setaAtaque.setaAtiva = true;
+            }
         }
     }
 

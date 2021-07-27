@@ -1,0 +1,836 @@
+fileFormatVersion: 2
+guid: c2716d736c2ecbb468b9291ff8e4252c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2258498807305391710
+    second: vigorSprites_0
+  - first:
+      213: 5105685136177974844
+    second: vigorSprites_1
+  - first:
+      213: -8726448619306718130
+    second: vigorSprites_2
+  - first:
+      213: -2450623177459465871
+    second: vigorSprites_3
+  - first:
+      213: 4779482630260660720
+    second: vigorSprites_4
+  - first:
+      213: 1962574854161923782
+    second: vigorSprites_5
+  - first:
+      213: -7105052620951580658
+    second: vigorSprites_6
+  - first:
+      213: 7839483832839187464
+    second: vigorSprites_7
+  - first:
+      213: -8476195576185575879
+    second: vigorSprites_8
+  - first:
+      213: -7722042544783930719
+    second: vigorSprites_9
+  - first:
+      213: -8510181668762972089
+    second: vigorSprites_10
+  - first:
+      213: 3364706227707809547
+    second: vigorSprites_11
+  - first:
+      213: -4079025981548155685
+    second: vigorSprites_12
+  - first:
+      213: -3703722197934732091
+    second: vigorSprites_13
+  - first:
+      213: 4264417312320094505
+    second: vigorSprites_14
+  - first:
+      213: 5869604993263711419
+    second: vigorSprites_15
+  - first:
+      213: -7397065568440845930
+    second: vigorSprites_16
+  - first:
+      213: 100108140984739599
+    second: vigorSprites_17
+  - first:
+      213: 4385891521069850807
+    second: vigorSprites_18
+  - first:
+      213: 2055201643627218903
+    second: vigorSprites_19
+  - first:
+      213: 3728265916972177721
+    second: vigorSprites_20
+  - first:
+      213: -5634420393797321768
+    second: vigorSprites_21
+  - first:
+      213: 2612458489251441788
+    second: vigorSprites_22
+  - first:
+      213: 5201908201264815578
+    second: vigorSprites_23
+  - first:
+      213: 5994944201923436358
+    second: vigorSprites_24
+  - first:
+      213: 7699319660305433675
+    second: vigorSprites_25
+  - first:
+      213: 8164030992802981883
+    second: vigorSprites_26
+  - first:
+      213: 1397321293679692174
+    second: vigorSprites_27
+  - first:
+      213: 3827560391217380410
+    second: vigorSprites_28
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: vigorSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ec41ff2bcc75f10800000000000000
+      internalID: 2258498807305391710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e41ec84990bd640800000000000000
+      internalID: 5105685136177974844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c6687273d65e680800000000000000
+      internalID: -8726448619306718130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 171803d3433adfdd0800000000000000
+      internalID: -2450623177459465871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f916d22122245240800000000000000
+      internalID: 4779482630260660720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce7f638e677c3b10800000000000000
+      internalID: 1962574854161923782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0019b11948c56d90800000000000000
+      internalID: -7105052620951580658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c2cc6b2017bcc60800000000000000
+      internalID: 7839483832839187464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_8
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936a8b248018e5a80800000000000000
+      internalID: -8476195576185575879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa43b9f73bc5d490800000000000000
+      internalID: -7722042544783930719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74097537cd2c5e980800000000000000
+      internalID: -8510181668762972089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0f8114bc76d1be20800000000000000
+      internalID: 3364706227707809547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdcab3c3b736467c0800000000000000
+      internalID: -4079025981548155685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc0f5db84cb99cc0800000000000000
+      internalID: -3703722197934732091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9218dd2a3f04e2b30800000000000000
+      internalID: 4264417312320094505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4b75394a6057150800000000000000
+      internalID: 5869604993263711419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6997fcc8e08585990800000000000000
+      internalID: -7397065568440845930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_17
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f072586e2d7a36100800000000000000
+      internalID: 100108140984739599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_18
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b024c8d911dddc30800000000000000
+      internalID: 4385891521069850807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_19
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d70336810b858c10800000000000000
+      internalID: 2055201643627218903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939925929167db330800000000000000
+      internalID: 3728265916972177721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8db7e7811848ec1b0800000000000000
+      internalID: -5634420393797321768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c29429721514420800000000000000
+      internalID: 2612458489251441788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add949ab2f3e03840800000000000000
+      internalID: 5201908201264815578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64f1fe33df1523350800000000000000
+      internalID: 5994944201923436358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b44cfa4307a79da60800000000000000
+      internalID: 7699319660305433675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf72d4ddee67c4170800000000000000
+      internalID: 8164030992802981883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_27
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e890ed23058446310800000000000000
+      internalID: 1397321293679692174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: vigorSprites_28
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3cfdd285e93e1530800000000000000
+      internalID: 3827560391217380410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

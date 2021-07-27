@@ -1,0 +1,1115 @@
+fileFormatVersion: 2
+guid: 67f7fb74aa8c1044684152276b7ff001
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1939426510865438858
+    second: pocaoDeGaiaSprites_0
+  - first:
+      213: -7927735083188706998
+    second: pocaoDeGaiaSprites_1
+  - first:
+      213: 6824888705722579404
+    second: pocaoDeGaiaSprites_2
+  - first:
+      213: -7033330671832494132
+    second: pocaoDeGaiaSprites_3
+  - first:
+      213: -6171119672606034714
+    second: pocaoDeGaiaSprites_4
+  - first:
+      213: -7454440909933040864
+    second: pocaoDeGaiaSprites_5
+  - first:
+      213: -5135419447778235679
+    second: pocaoDeGaiaSprites_6
+  - first:
+      213: -5335115043225924419
+    second: pocaoDeGaiaSprites_7
+  - first:
+      213: -1021527392090772380
+    second: pocaoDeGaiaSprites_8
+  - first:
+      213: 2129329349598485829
+    second: pocaoDeGaiaSprites_9
+  - first:
+      213: -757734586986934198
+    second: pocaoDeGaiaSprites_10
+  - first:
+      213: -3113571719627031506
+    second: pocaoDeGaiaSprites_11
+  - first:
+      213: -1209913987023344979
+    second: pocaoDeGaiaSprites_12
+  - first:
+      213: -7671464986346752981
+    second: pocaoDeGaiaSprites_13
+  - first:
+      213: -9025382744318287923
+    second: pocaoDeGaiaSprites_14
+  - first:
+      213: -242014059846730640
+    second: pocaoDeGaiaSprites_15
+  - first:
+      213: 130577023351672159
+    second: pocaoDeGaiaSprites_16
+  - first:
+      213: 5202336033795615608
+    second: pocaoDeGaiaSprites_17
+  - first:
+      213: -8169786930347316075
+    second: pocaoDeGaiaSprites_18
+  - first:
+      213: -2377989633117563636
+    second: pocaoDeGaiaSprites_19
+  - first:
+      213: -8365549147777257465
+    second: pocaoDeGaiaSprites_20
+  - first:
+      213: 5471911764340059748
+    second: pocaoDeGaiaSprites_21
+  - first:
+      213: 5532981093148169902
+    second: pocaoDeGaiaSprites_22
+  - first:
+      213: -8000273395715294850
+    second: pocaoDeGaiaSprites_23
+  - first:
+      213: 4522879692551816335
+    second: pocaoDeGaiaSprites_24
+  - first:
+      213: -5872279200971830244
+    second: pocaoDeGaiaSprites_25
+  - first:
+      213: 4992621872232196022
+    second: pocaoDeGaiaSprites_26
+  - first:
+      213: -9039671472556114166
+    second: pocaoDeGaiaSprites_27
+  - first:
+      213: -1427276920745630361
+    second: pocaoDeGaiaSprites_28
+  - first:
+      213: 3233784923356781934
+    second: pocaoDeGaiaSprites_29
+  - first:
+      213: 7811532061297244217
+    second: pocaoDeGaiaSprites_30
+  - first:
+      213: -6676834906605547585
+    second: pocaoDeGaiaSprites_31
+  - first:
+      213: -961931473667950086
+    second: pocaoDeGaiaSprites_32
+  - first:
+      213: -8320530740704630402
+    second: pocaoDeGaiaSprites_33
+  - first:
+      213: -7978072129144749951
+    second: pocaoDeGaiaSprites_34
+  - first:
+      213: 6189893818659465067
+    second: pocaoDeGaiaSprites_35
+  - first:
+      213: -6786259544633291945
+    second: pocaoDeGaiaSprites_36
+  - first:
+      213: 7095663671178148075
+    second: pocaoDeGaiaSprites_37
+  - first:
+      213: 3831438410371476430
+    second: pocaoDeGaiaSprites_38
+  - first:
+      213: -760784169168753504
+    second: pocaoDeGaiaSprites_39
+  - first:
+      213: 8603302349599233454
+    second: pocaoDeGaiaSprites_40
+  - first:
+      213: -8567142832720279317
+    second: pocaoDeGaiaSprites_41
+  - first:
+      213: -6855069380859408208
+    second: pocaoDeGaiaSprites_42
+  - first:
+      213: -7313535244438082602
+    second: pocaoDeGaiaSprites_43
+  - first:
+      213: -7208200712370549824
+    second: pocaoDeGaiaSprites_44
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677e3e72dd5c515e0800000000000000
+      internalID: -1939426510865438858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a41a22dd1f60bf190800000000000000
+      internalID: -7927735083188706998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc97b283e10e6be50800000000000000
+      internalID: 6824888705722579404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf8095a407946e90800000000000000
+      internalID: -7033330671832494132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e474ef8a57cb5aa0800000000000000
+      internalID: -6171119672606034714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b2d4cdc718c8890800000000000000
+      internalID: -7454440909933040864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaab8a88335bb8b0800000000000000
+      internalID: -5135419447778235679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc0da4822dd5f5b0800000000000000
+      internalID: -5335115043225924419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_8
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c291acf3ec2d1f0800000000000000
+      internalID: -1021527392090772380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d91a403c5ec8d10800000000000000
+      internalID: 2129329349598485829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40dd94686cfb75f0800000000000000
+      internalID: -757734586986934198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2cbde4740f5ac4d0800000000000000
+      internalID: -3113571719627031506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa62b2a3a5853fe0800000000000000
+      internalID: -1209913987023344979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2474f57d3b798590800000000000000
+      internalID: -7671464986346752981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcfd7fa66366fb280800000000000000
+      internalID: -9025382744318287923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c7f2cae7134acf0800000000000000
+      internalID: -242014059846730640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5d44b46c17efc100800000000000000
+      internalID: 130577023351672159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_17
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b2a904f09623840800000000000000
+      internalID: 5202336033795615608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_18
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59ce40e72161f9e80800000000000000
+      internalID: -8169786930347316075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_19
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05577e170faffed0800000000000000
+      internalID: -2377989633117563636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7003aa76f5997eb80800000000000000
+      internalID: -8365549147777257465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e25cb12c220fb40800000000000000
+      internalID: 5471911764340059748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea69c0e3df819cc40800000000000000
+      internalID: 5532981093148169902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e79b16edbb159f090800000000000000
+      internalID: -8000273395715294850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84016cfd1f74ce30800000000000000
+      internalID: 4522879692551816335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1cc82ced29718ea0800000000000000
+      internalID: -5872279200971830244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7ee38042b594540800000000000000
+      internalID: 4992621872232196022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_27
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f7f00a0b2ac8280800000000000000
+      internalID: -9039671472556114166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_28
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765e7ded33b413ce0800000000000000
+      internalID: -1427276920745630361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_29
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6dd1b42146b0ec20800000000000000
+      internalID: 3233784923356781934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9387231c503286c60800000000000000
+      internalID: 7811532061297244217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbf09df170e1753a0800000000000000
+      internalID: -6676834906605547585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_32
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9f0c5db6886a2f0800000000000000
+      internalID: -961931473667950086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7925991069878c80800000000000000
+      internalID: -8320530740704630402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_34
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18002ed0ba1384190800000000000000
+      internalID: -7978072129144749951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b676592f1abe6e550800000000000000
+      internalID: 6189893818659465067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_36
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b478836ec52d1a0800000000000000
+      internalID: -6786259544633291945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_37
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8b736b38cd87260800000000000000
+      internalID: 7095663671178148075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_38
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecbaaf43fe00c2530800000000000000
+      internalID: 3831438410371476430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDeGaiaSprites_39
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aca4f534d62175f0800000000000000
+      internalID: -760784169168753504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

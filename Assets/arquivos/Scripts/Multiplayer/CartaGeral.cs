@@ -1,6 +1,9 @@
-﻿using System;
+﻿using DG.Tweening;
+using funcoesUteis;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
 [System.Serializable]
@@ -24,8 +27,11 @@ public class CartaGeral
 
     //-------------------AuxArm
     public AuxArmGeral auxArm;
-    public string localAnim;
+    public LocalAnim localAnim;
     public List<Acoes> listAcoes;
+    public TipoEfeito tipoEfeito;
+    public EfeitoAo efeitoAo;
+    public int qtdTurnos;
 
     //-------------------Default constructor
     public CartaGeral()
@@ -56,7 +62,7 @@ public class CartaGeral
 
     //=========AUX ARM
     public CartaGeral(TipoCarta tipoCarta, int idCarta, Sprite imgCarta, string titulo, string descricao, List<Sprite> animCampo,
-        AuxArmGeral auxArm, string localAnim, List<Acoes> listAcoes)
+        AuxArmGeral auxArm, LocalAnim localAnim, EfeitoAo efeitoAo,int qtdTurno,TipoEfeito tipoEfeito, List<Acoes> listAcoes)
     {
         this.tipoCarta = tipoCarta;
         this.idCarta = idCarta;
@@ -64,10 +70,12 @@ public class CartaGeral
         this.titulo = titulo;
         this.descricao = descricao;
         this.animCampo = animCampo;
-
+        this.qtdTurnos = qtdTurno;
         this.auxArm = auxArm;
         this.localAnim = localAnim;
+        this.efeitoAo = efeitoAo;
         this.listAcoes = listAcoes;
+        this.tipoEfeito = tipoEfeito;
 
     }
 
@@ -94,6 +102,112 @@ public class CartaGeral
             this.auxArm = carta.auxArm;
             this.localAnim = carta.localAnim;
             this.listAcoes = carta.listAcoes;
+            this.efeitoAo = carta.efeitoAo;
+            this.tipoEfeito = carta.tipoEfeito;
+            this.qtdTurnos = carta.qtdTurnos;
         }
+    }
+
+    public void executaAcoes(GerenciadorJogo gerenciadorJogo, List<int> idSlot = null, bool player = true)
+    {
+        List<IdSlotsExecutado> idSlotsExecutado = new List<IdSlotsExecutado>();
+        List<IdSlotsExecutado> idSlotsExecutadoTemp = new List<IdSlotsExecutado>();
+        foreach (Acoes acaoAtual in listAcoes)
+        {
+            if (acaoAtual.acao != AcoesDisponiveis.nada)
+            {
+                acaoAtual.parametros[0] = gerenciadorJogo;
+
+                if (idSlot != null)
+                {
+                    acaoAtual.parametros[1] = idSlot;
+                }
+
+                //acaoAtual.parametros[2] = player;
+                player = (bool)acaoAtual.parametros[2];
+                //acaoAtual.parametros.Add(false); 
+                acaoAtual.parametros[acaoAtual.parametros.Count - 1] = false;// Parametro testando, se True está testando, False irá executar a ação
+                Debug.Log("EXECUTA PARAMETROS: " + acaoAtual.parametros.Count);
+                if (efeitoAo == EfeitoAo.Selecionar)
+                {
+                    if (acaoAtual.parametros[1] != null)
+                    {
+                        idSlotsExecutadoTemp = (List<IdSlotsExecutado>)typeof(listaAcoesClass).GetMethod(((AcoesDisponiveis)acaoAtual.acao).ToString()).
+                                        Invoke(this, acaoAtual.parametros.ToArray());
+                    }
+
+                }
+                else
+                {
+                    idSlotsExecutadoTemp = (List<IdSlotsExecutado>)typeof(listaAcoesClass).GetMethod(((AcoesDisponiveis)acaoAtual.acao).ToString()).
+                                        Invoke(this, acaoAtual.parametros.ToArray());
+                }
+                if (idSlotsExecutadoTemp != null)
+                {
+                    idSlotsExecutado.AddRange(idSlotsExecutadoTemp);
+                }
+
+            }
+        }
+        //executar animação
+        if (localAnim == LocalAnim.CampoCartas)
+        {
+            if (idSlotsExecutado != null)
+            {
+                foreach (IdSlotsExecutado item in idSlotsExecutado.Distinct())
+                {
+                    List<SlotCampo> slotBusca = ((item.player) ? gerenciadorJogo.slotsCampoP1 : gerenciadorJogo.slotsCampoP2);
+
+                    slotBusca[item.idSlot].imgAnimAtivar.DOFade(1, .3f);
+                    FuncoesUteis.animacaoImagem(slotBusca[item.idSlot].imgAnimAtivar, animCampo, false, 6, false, () =>
+                    {
+                        slotBusca[item.idSlot].imgAnimAtivar.DOFade(0, .3f);
+                    });
+                }
+            }
+        }
+        else if (localAnim == LocalAnim.CampoMeio)
+        {
+            gerenciadorJogo.animAuxArm.DOFade(1, .3f);
+            FuncoesUteis.animacaoImagem(gerenciadorJogo.animAuxArm, animCampo, false, 6, false, () =>
+            {
+                gerenciadorJogo.animAuxArm.DOFade(0, .3f);
+            });
+        }
+    }
+
+    public List<IdSlotsExecutado> verificaAcoesList(GerenciadorJogo gerenciadorJogo, List<int> idSlot = null, bool player = true)
+    {
+        List<IdSlotsExecutado> idSlotsExecutado = new List<IdSlotsExecutado>();
+        List<IdSlotsExecutado> idSlotsExecutadoTemp = new List<IdSlotsExecutado>();
+        foreach (Acoes acaoAtual in listAcoes)
+        {
+            if (acaoAtual.acao != AcoesDisponiveis.nada)
+            {
+                acaoAtual.parametros[0] = gerenciadorJogo;
+                acaoAtual.parametros[1] = idSlot;
+                //acaoAtual.parametros[2] = player;
+                //acaoAtual.parametros.Add(true);// Parametro testando, se True está testando, False irá executar a ação
+                acaoAtual.parametros[acaoAtual.parametros.Count - 1] = true;// Parametro testando, se True está testando, False irá executar a ação
+                player = (bool)acaoAtual.parametros[2];
+
+                idSlotsExecutadoTemp = (List<IdSlotsExecutado>)typeof(listaAcoesClass).GetMethod(((AcoesDisponiveis)acaoAtual.acao).ToString()).
+                                        Invoke(this, acaoAtual.parametros.ToArray());
+                if (idSlotsExecutadoTemp != null)
+                {
+                    idSlotsExecutado.AddRange(idSlotsExecutadoTemp);
+                }
+
+            }
+        }
+
+        return idSlotsExecutado;
+    }
+
+    public bool verificaAcoesBool(GerenciadorJogo gerenciadorJogo, List<int> idSlot = null, bool player = true)
+    {
+
+        return verificaAcoesList(gerenciadorJogo, idSlot, player).Count > 0;
+
     }
 }

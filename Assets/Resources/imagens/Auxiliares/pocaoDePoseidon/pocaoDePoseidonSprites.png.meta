@@ -1,0 +1,1100 @@
+fileFormatVersion: 2
+guid: ee43f66fc21caed4a995ebe9154370d8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8066488123929136598
+    second: pocaoDePoseidonSprites_0
+  - first:
+      213: -8871648431143851383
+    second: pocaoDePoseidonSprites_1
+  - first:
+      213: -6741652822923644505
+    second: pocaoDePoseidonSprites_2
+  - first:
+      213: -4891096532899060363
+    second: pocaoDePoseidonSprites_3
+  - first:
+      213: 3424584657450229164
+    second: pocaoDePoseidonSprites_4
+  - first:
+      213: 8789541144507547485
+    second: pocaoDePoseidonSprites_5
+  - first:
+      213: -8005933284782587764
+    second: pocaoDePoseidonSprites_6
+  - first:
+      213: -6370567944792548730
+    second: pocaoDePoseidonSprites_7
+  - first:
+      213: -746967101357155432
+    second: pocaoDePoseidonSprites_8
+  - first:
+      213: -8215172672816176661
+    second: pocaoDePoseidonSprites_9
+  - first:
+      213: -5930760846808290137
+    second: pocaoDePoseidonSprites_10
+  - first:
+      213: -4884372409760807714
+    second: pocaoDePoseidonSprites_11
+  - first:
+      213: -8041319777410046011
+    second: pocaoDePoseidonSprites_12
+  - first:
+      213: 1017170774124771397
+    second: pocaoDePoseidonSprites_13
+  - first:
+      213: -4969728686162308785
+    second: pocaoDePoseidonSprites_14
+  - first:
+      213: -2726887727453890734
+    second: pocaoDePoseidonSprites_15
+  - first:
+      213: -5333561624255977934
+    second: pocaoDePoseidonSprites_16
+  - first:
+      213: -4757074396084260657
+    second: pocaoDePoseidonSprites_17
+  - first:
+      213: 5968888325066818301
+    second: pocaoDePoseidonSprites_18
+  - first:
+      213: 293464749133589439
+    second: pocaoDePoseidonSprites_19
+  - first:
+      213: 2309678197179503507
+    second: pocaoDePoseidonSprites_20
+  - first:
+      213: 5922475933679638220
+    second: pocaoDePoseidonSprites_21
+  - first:
+      213: 1663235945624860139
+    second: pocaoDePoseidonSprites_22
+  - first:
+      213: 5225904305647179597
+    second: pocaoDePoseidonSprites_23
+  - first:
+      213: -3967862219158777429
+    second: pocaoDePoseidonSprites_24
+  - first:
+      213: -1773305866639977926
+    second: pocaoDePoseidonSprites_25
+  - first:
+      213: 2042741317071213137
+    second: pocaoDePoseidonSprites_26
+  - first:
+      213: 604193576419294659
+    second: pocaoDePoseidonSprites_27
+  - first:
+      213: -5283825093505312211
+    second: pocaoDePoseidonSprites_28
+  - first:
+      213: -5545246773243546994
+    second: pocaoDePoseidonSprites_29
+  - first:
+      213: -5674751713231995901
+    second: pocaoDePoseidonSprites_30
+  - first:
+      213: 8760268740598344778
+    second: pocaoDePoseidonSprites_31
+  - first:
+      213: 7475308100105338354
+    second: pocaoDePoseidonSprites_32
+  - first:
+      213: 1702228006094756211
+    second: pocaoDePoseidonSprites_33
+  - first:
+      213: 4891052453916134424
+    second: pocaoDePoseidonSprites_34
+  - first:
+      213: -1443530520797195194
+    second: pocaoDePoseidonSprites_35
+  - first:
+      213: 582054148041584188
+    second: pocaoDePoseidonSprites_36
+  - first:
+      213: 4381676720308291271
+    second: pocaoDePoseidonSprites_37
+  - first:
+      213: -4387457664631363552
+    second: pocaoDePoseidonSprites_38
+  - first:
+      213: -7465590435664244762
+    second: pocaoDePoseidonSprites_39
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd04bbe53ce1ff60800000000000000
+      internalID: 8066488123929136598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98ae48181c291e480800000000000000
+      internalID: -8871648431143851383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a170a2f976d072a0800000000000000
+      internalID: -6741652822923644505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57528621e955f1cb0800000000000000
+      internalID: -4891096532899060363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2793
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadd29a0a91968f20800000000000000
+      internalID: 3424584657450229164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f7d091a19baf970800000000000000
+      internalID: 8789541144507547485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_6
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80ce01481635e090800000000000000
+      internalID: -8005933284782587764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_7
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a5629f4323797a0800000000000000
+      internalID: -6370567944792548730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_8
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89b14b0016d32a5f0800000000000000
+      internalID: -746967101357155432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_9
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 2394
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be1ab4cdaf7ddfd80800000000000000
+      internalID: -8215172672816176661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac623eae64b1bda0800000000000000
+      internalID: -5930760846808290137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_11
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed40d7dfb29373cb0800000000000000
+      internalID: -4884372409760807714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_12
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7a626644e776090800000000000000
+      internalID: -8041319777410046011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_13
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548bd9b0e67bd1e00800000000000000
+      internalID: 1017170774124771397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_14
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1995
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f411a37371af70bb0800000000000000
+      internalID: -4969728686162308785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2571dbe3f06282ad0800000000000000
+      internalID: -2726887727453890734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_16
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236219e06f16bf5b0800000000000000
+      internalID: -5333561624255977934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_17
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0ba437a0a7bfdb0800000000000000
+      internalID: -4757074396084260657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_18
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2859f9e40c5d250800000000000000
+      internalID: 5968888325066818301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_19
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1596
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbe43e62a8921400800000000000000
+      internalID: 293464749133589439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39359584510ad0020800000000000000
+      internalID: 2309678197179503507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_21
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc656c9ab7cd03250800000000000000
+      internalID: 5922475933679638220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_22
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be571a4c740051710800000000000000
+      internalID: 1663235945624860139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_23
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47d8482744268840800000000000000
+      internalID: 5225904305647179597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_24
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 1197
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1195595525fe8c0800000000000000
+      internalID: -3967862219158777429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32decca5b3f367e0800000000000000
+      internalID: -1773305866639977926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_26
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1521b0ca766495c10800000000000000
+      internalID: 2042741317071213137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_27
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cd7b0a4bd6826800800000000000000
+      internalID: 604193576419294659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_28
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a125682151ca6b0800000000000000
+      internalID: -5283825093505312211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_29
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 798
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e82ffe090735b03b0800000000000000
+      internalID: -5545246773243546994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c7448026b3f31b0800000000000000
+      internalID: -5674751713231995901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_31
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ca254710ab29970800000000000000
+      internalID: 8760268740598344778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_32
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fdf0657c11adb760800000000000000
+      internalID: 7475308100105338354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_33
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 379dffd4a578f9710800000000000000
+      internalID: 1702228006094756211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_34
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 399
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c497dfa4280e340800000000000000
+      internalID: 4891052453916134424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644d275b3ac87fbe0800000000000000
+      internalID: -1443530520797195194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_36
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eaf0ee92fd31800800000000000000
+      internalID: 582054148041584188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_37
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c6039213c7decc30800000000000000
+      internalID: 4381676720308291271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_38
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0282590ff7e9c13c0800000000000000
+      internalID: -4387457664631363552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pocaoDePoseidonSprites_39
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 399
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6efcdab9d05e46890800000000000000
+      internalID: -7465590435664244762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1038,6 +1038,80 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 54773410}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &60251991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 60251992}
+  - component: {fileID: 60251993}
+  - component: {fileID: 60251994}
+  m_Layer: 5
+  m_Name: animAuxArm
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &60251992
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60251991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2081954892}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 500}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &60251993
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60251991}
+  m_CullTransparentMesh: 0
+--- !u!114 &60251994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60251991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 50945ef81b4defc4286962e9f7c10d5f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &70102851
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,7 +6443,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 0
     marcado: 0
     donoCampo: 0
@@ -6412,7 +6489,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 0
     marcado: 0
     donoCampo: 0
@@ -6443,6 +6523,7 @@ MonoBehaviour:
   ataqueDireto: 0
   executarAnimAtaque: 0
   aguardarAnimAtaque: 0
+  animAuxArm: {fileID: 60251994}
   slotsCampoP1:
   - cartaGeral:
       idCarta: 0
@@ -6470,7 +6551,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 0
     marcado: 0
     donoCampo: 0
@@ -6512,7 +6596,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 1
     marcado: 0
     donoCampo: 0
@@ -6554,7 +6641,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 2
     marcado: 0
     donoCampo: 0
@@ -6596,7 +6686,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 3
     marcado: 0
     donoCampo: 0
@@ -6638,7 +6731,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 4
     marcado: 0
     donoCampo: 0
@@ -6680,7 +6776,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 5
     marcado: 0
     donoCampo: 0
@@ -6723,7 +6822,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 0
     marcado: 0
     donoCampo: 1
@@ -6765,7 +6867,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 1
     marcado: 0
     donoCampo: 1
@@ -6807,7 +6912,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 2
     marcado: 0
     donoCampo: 1
@@ -6849,7 +6957,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 3
     marcado: 0
     donoCampo: 1
@@ -6891,7 +7002,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 4
     marcado: 0
     donoCampo: 1
@@ -6933,7 +7047,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 5
     marcado: 0
     donoCampo: 1
@@ -7715,7 +7832,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
   cartaGeralTemp:
     idCarta: 0
     tipoCarta: 0
@@ -7742,7 +7862,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
 --- !u!1 &1099237555
 GameObject:
   m_ObjectHideFlags: 0
@@ -8432,7 +8555,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 0
     marcado: 0
     donoCampo: 0
@@ -8475,7 +8601,10 @@ MonoBehaviour:
         icone: {fileID: 0}
         mask: {fileID: 0}
         molduraCampo: {fileID: 0}
-      localAnim: 
+      localAnim: 0
+      tipoEfeito: 0
+      efeitoAo: 0
+      qtdTurnos: 0
     idCampo: 0
     marcado: 0
     donoCampo: 0
@@ -10959,7 +11088,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
   cartaGeralTemp:
     idCarta: 0
     tipoCarta: 0
@@ -10986,7 +11118,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
 --- !u!114 &1581638037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12474,7 +12609,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
   cartaGeralTemp:
     idCarta: 0
     tipoCarta: 0
@@ -12501,7 +12639,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
 --- !u!1 &1724145554
 GameObject:
   m_ObjectHideFlags: 0
@@ -13728,7 +13869,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
   cartaGeralTemp:
     idCarta: 0
     tipoCarta: 0
@@ -13755,7 +13899,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
 --- !u!1 &1879293409
 GameObject:
   m_ObjectHideFlags: 0
@@ -14050,7 +14197,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
   cartaGeralTemp:
     idCarta: 0
     tipoCarta: 0
@@ -14077,7 +14227,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
 --- !u!1 &1909438856
 GameObject:
   m_ObjectHideFlags: 0
@@ -14676,7 +14829,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
   cartaGeralTemp:
     idCarta: 0
     tipoCarta: 0
@@ -14703,7 +14859,10 @@ MonoBehaviour:
       icone: {fileID: 0}
       mask: {fileID: 0}
       molduraCampo: {fileID: 0}
-    localAnim: 
+    localAnim: 0
+    tipoEfeito: 0
+    efeitoAo: 0
+    qtdTurnos: 0
 --- !u!1 &2017153038
 GameObject:
   m_ObjectHideFlags: 0
@@ -15055,6 +15214,7 @@ RectTransform:
   m_Children:
   - {fileID: 534767979}
   - {fileID: 860001849}
+  - {fileID: 60251992}
   m_Father: {fileID: 364260084}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
