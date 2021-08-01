@@ -52,12 +52,12 @@
     <file>Assets/Plugins/Android/androidx.versionedparcelable.versionedparcelable-1.1.0.aar</file>
     <file>Assets/Plugins/Android/androidx.viewpager.viewpager-1.0.0.aar</file>
     <file>Assets/Plugins/Android/com.android.installreferrer.installreferrer-1.0.aar</file>
-    <file>Assets/Plugins/Android/com.facebook.android.facebook-applinks-11.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.facebook.android.facebook-common-11.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.facebook.android.facebook-core-11.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.facebook.android.facebook-gamingservices-11.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.facebook.android.facebook-login-11.0.0.aar</file>
-    <file>Assets/Plugins/Android/com.facebook.android.facebook-share-11.0.0.aar</file>
+    <file>Assets/Plugins/Android/com.facebook.android.facebook-applinks-11.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.facebook.android.facebook-common-11.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.facebook.android.facebook-core-11.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.facebook.android.facebook-gamingservices-11.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.facebook.android.facebook-login-11.1.1.aar</file>
+    <file>Assets/Plugins/Android/com.facebook.android.facebook-share-11.1.1.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-19.3.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-base-19.3.0.aar</file>
     <file>Assets/Plugins/Android/com.google.android.gms.play-services-ads-identifier-17.0.0.aar</file>
@@ -78,7 +78,7 @@
   </files>
   <settings>
     <setting name="androidAbis" value="arm64-v8a,armeabi-v7a" />
-    <setting name="bundleId" value="com.HoodStudios.ElementaisGame" />
+    <setting name="bundleId" value="com.odddreamkey.hood.elementais" />
     <setting name="explodeAars" value="True" />
     <setting name="gradleBuildEnabled" value="True" />
     <setting name="gradleTemplateEnabled" value="False" />

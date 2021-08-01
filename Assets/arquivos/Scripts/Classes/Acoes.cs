@@ -57,7 +57,7 @@ public static class listaAcoesClass
             {
                 foreach (ElementoGeral elemento in elementos)
                 {
-                    if (slot.cartaGeralTemp.elemento == elemento)
+                    if ((slot.cartaGeralTemp.defesa > 0) && (slot.cartaGeralTemp.elemento.idElemento == elemento.idElemento))
                     {
                         idSlots.Add(slot.idSlot);
                     }
@@ -73,7 +73,7 @@ public static class listaAcoesClass
             {
                 foreach (var elemento in elementos)
                 {
-                    if (slot.cartaGeralTemp.elemento == elemento)
+                    if ((slot.cartaGeralTemp.defesa > 0) && (slot.cartaGeralTemp.elemento.idElemento == elemento.idElemento))
                     {
                         deuCerto = true;
                         idSlotsExecutado = alterarAtaqueDefesa(gerenciadorJogo, idSlots, player, parametroAlvo, qtdAlterar, verificando);

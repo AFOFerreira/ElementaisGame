@@ -14,9 +14,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/arquivos/Scenes/LoadingSecundarySystem.unity
     guid: 76fac612bf05139418ac53a2a05b4511
-  - enabled: 1
+  - enabled: 0
     path: Assets/arquivos/Scenes/menuPrincipal.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/arquivos/Scenes/NEWmenuPrincipal1.unity
+    guid: 66d7a84ac9f43fc43bf2ff6314736815
   - enabled: 1
     path: Assets/arquivos/Scenes/jogoTutorial.unity
     guid: fd54a119a0ac05b4895f92d318961670

@@ -113,17 +113,22 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                 {
                     if (!gerenciadorJogo.rodandoAnimacao)
                     {
-                        Debug.Log("Teste aqui!" + eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.verificaAcoesBool(gerenciadorJogo)+", "+
-                            eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.titulo);
-                        //if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.verificaAcoesBool(gerenciadorJogo))
+                        if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.efeitoAo == EfeitoAo.Selecionar)
+                        {
+                            gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
+                            gerenciadorUI.MostrarAlerta("Para ativar a carta arraste para algum elemental!");
+                        }
+                        else if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.efeitoAo == EfeitoAo.Dropar &&
+                                eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.verificaAcoesBool(gerenciadorJogo)
+                            )
                         {
                             gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
                         }
-                        ////else
-                        //{
-                        //    gerenciadorUI.MostrarAlerta("Nao há elementais para essa carta ser usada!");
-                        //    gerenciadorJogo.gerenciadorAudio.playNegacao();
-                        //}
+                        else
+                        {
+                            gerenciadorUI.MostrarAlerta("Nao há elementais para essa carta ser usada!");
+                            gerenciadorJogo.gerenciadorAudio.playNegacao();
+                        }
                     }
                     else
                     {
@@ -136,6 +141,27 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
 
                     if (eventData.pointerDrag.GetComponent<CartaPrefab>() == null)
                     {
+                        if (gerenciadorJogo.slotsCampoP1[idSlot].ocupado &&
+                            eventData.pointerDrag.GetComponent<SlotDrop>() != null &&
+                            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].tipoSlot == TipoCarta.AuxArm &&
+                            gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].cartaGeral.efeitoAo == EfeitoAo.Selecionar)
+                        {
+                            CartaGeral carta;
+                            carta = gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].cartaGeral;
+
+                            if (carta.verificaAcoesBool(gerenciadorJogo, new List<int>() { this.idSlot }))
+                            {
+                                gerenciadorJogo.slotsCampoP1[eventData.pointerDrag.GetComponent<SlotDrop>().idSlot].ativado = true;
+                                carta.qtdTurnos--;
+                                carta.executaAcoes(gerenciadorJogo, new List<int>() { this.idSlot });
+                            }
+                            else
+                            {
+                                gerenciadorJogo.gerenciadorAudio.playNegacao();
+                                gerenciadorUI.MostrarAlerta("Esta carta não funciona para esse elemental!");
+                            }
+                        }
+                        else
                         if (!gerenciadorJogo.slotsCampoP1[idSlot].ativado && eventData.pointerDrag.GetComponent<slotCristal>() != null && !gerenciadorJogo.rodandoAnimacao)
                         {
                             gerenciadorJogo.ativarElemental(idSlot, eventData.pointerDrag.GetComponent<slotCristal>().idSlot);

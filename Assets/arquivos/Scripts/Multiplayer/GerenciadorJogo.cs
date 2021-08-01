@@ -399,7 +399,6 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         Debug.Log(idSlot);
         gerenciadorAudio.playCartaBaixando();
         slotsCampoP1[idSlot].ocupado = true;
-        slotsCampoP1[idSlot].ativado = true;
         slotsCampoP1[idSlot].disponivel = true;
         DOTween.Pause("slot" + idSlot);
         CartaPrefab prefabScript = cartaPrefabLocal.GetComponent<CartaPrefab>();
@@ -409,6 +408,8 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         if (cartaGeral.efeitoAo == EfeitoAo.Dropar)
         {
             cartaGeral.executaAcoes(this);
+            cartaGeral.qtdTurnos--;
+            slotsCampoP1[idSlot].ativado = true;
         }
 
         slotsCampoP1[idSlot].imgAnimAtivar.ZeraAlfa();
@@ -447,6 +448,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         slotsCampoP2[idSlot].imgAnimAtivar.ZeraAlfa();
         slotsCampoP2[idSlot].imgElementalCampo.ZeraAlfa();
         slotsCampoP2[idSlot].imgElementalCampo.ZeraAlfa();
+
+        //-----------TESTAR JUNTO COM A IA-------------//
+        if (cartaGeral.efeitoAo == EfeitoAo.Dropar)
+        {
+            cartaGeral.executaAcoes(this);
+            cartaGeral.qtdTurnos--;
+        }
 
         slotsCampoP2[idSlot].canvasGroup.ZeraAlfa();
 
@@ -746,7 +754,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         foreach (var item in VerificaCampoOcupadoMagicas(tipoJogador))
         {
-            if (item.cartaGeral.qtdTurnos <= 1)
+            if (item.cartaGeral.qtdTurnos <= 0)
             {
                 if (tipoJogador == TipoJogador.PLAYER)
                 {
