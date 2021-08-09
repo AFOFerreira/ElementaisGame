@@ -5,6 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using System.Threading.Tasks;
 using UnityEngine.UI;
 [System.Serializable]
 public class CartaGeral
@@ -62,7 +63,7 @@ public class CartaGeral
 
     //=========AUX ARM
     public CartaGeral(TipoCarta tipoCarta, int idCarta, Sprite imgCarta, string titulo, string descricao, List<Sprite> animCampo,
-        AuxArmGeral auxArm, LocalAnim localAnim, EfeitoAo efeitoAo,int qtdTurno,TipoEfeito tipoEfeito, List<Acoes> listAcoes)
+        AuxArmGeral auxArm, LocalAnim localAnim, EfeitoAo efeitoAo, int qtdTurno, TipoEfeito tipoEfeito, List<Acoes> listAcoes)
     {
         this.tipoCarta = tipoCarta;
         this.idCarta = idCarta;
@@ -112,6 +113,7 @@ public class CartaGeral
     {
         List<IdSlotsExecutado> idSlotsExecutado = new List<IdSlotsExecutado>();
         List<IdSlotsExecutado> idSlotsExecutadoTemp = new List<IdSlotsExecutado>();
+        gerenciadorJogo.EmAnimacao(true);
         foreach (Acoes acaoAtual in listAcoes)
         {
             if (acaoAtual.acao != AcoesDisponiveis.nada)
@@ -123,8 +125,16 @@ public class CartaGeral
                     acaoAtual.parametros[1] = idSlot;
                 }
 
-                //acaoAtual.parametros[2] = player;
-                player = (bool)acaoAtual.parametros[2];
+
+                if (player)
+                {
+                    acaoAtual.parametros[2] = player;
+                }
+                else
+                {
+                    player = (bool)acaoAtual.parametros[2];
+                    Debug.Log("P: " + player);
+                }
                 //acaoAtual.parametros.Add(false); 
                 acaoAtual.parametros[acaoAtual.parametros.Count - 1] = false;// Parametro testando, se True está testando, False irá executar a ação
                 Debug.Log("EXECUTA PARAMETROS: " + acaoAtual.parametros.Count);
@@ -161,6 +171,7 @@ public class CartaGeral
                     slotBusca[item.idSlot].imgAnimAtivar.DOFade(1, .3f);
                     FuncoesUteis.animacaoImagem(slotBusca[item.idSlot].imgAnimAtivar, animCampo, false, 6, false, () =>
                     {
+                        gerenciadorJogo.EmAnimacao(false);
                         slotBusca[item.idSlot].imgAnimAtivar.DOFade(0, .3f);
                     });
                 }
@@ -171,6 +182,7 @@ public class CartaGeral
             gerenciadorJogo.animAuxArm.DOFade(1, .3f);
             FuncoesUteis.animacaoImagem(gerenciadorJogo.animAuxArm, animCampo, false, 6, false, () =>
             {
+                gerenciadorJogo.EmAnimacao(false);
                 gerenciadorJogo.animAuxArm.DOFade(0, .3f);
             });
         }

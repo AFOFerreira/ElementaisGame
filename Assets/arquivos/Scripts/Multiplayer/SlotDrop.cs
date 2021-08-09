@@ -42,19 +42,28 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         }
         else
         {
-            if (gerenciadorJogo.slotsCampoP2[idSlot].tipoSlot != TipoCarta.Elemental && gerenciadorJogo.slotsCampoP2[idSlot].ocupado && !gerenciadorJogo.slotsCampoP2[idSlot].ativado)
+            if (gerenciadorJogo.slotsCampoP2[idSlot].tipoSlot != TipoCarta.Elemental)
             {
-                tempImg = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.imgCarta;
-                tempMoldura = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.auxArm.molduraCampo;
-                gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = ImgNaoAtivado;
-                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.sprite = null;
-                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.color = Color.black;
+                if(gerenciadorJogo.slotsCampoP2[idSlot].ocupado && !gerenciadorJogo.slotsCampoP2[idSlot].ativado)
+                {
+                    gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = ImgNaoAtivado;
+                    gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.sprite = null;
+                    gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.color = Color.black;
+                }
+                else
+                {
+                    tempImg = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.imgCarta;
+                    tempMoldura = gerenciadorJogo.slotsCampoP2[idSlot].cartaGeral.auxArm.molduraCampo;
+
+                    gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = tempMoldura;
+                    gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.sprite = tempImg;
+                    gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.color = Color.white;
+                }
+                
             }
             else
             {
-                gerenciadorJogo.slotsCampoP2[idSlot].molduraCampo.sprite = tempMoldura;
-                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.sprite = tempImg;
-                gerenciadorJogo.slotsCampoP2[idSlot].fotocarta.color = Color.white;
+               
             }
         }
     }
@@ -118,7 +127,14 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                             gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
                             gerenciadorUI.MostrarAlerta("Para ativar a carta arraste para algum elemental!");
                         }
-                        else if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.efeitoAo == EfeitoAo.Dropar &&
+                        else
+                        if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.efeitoAo == EfeitoAo.MorteElemental)
+                        {
+                            gerenciadorJogo.dropAuxArm(eventData.pointerDrag, idSlot);
+                            gerenciadorUI.MostrarAlerta("Essa carta será ativada automaticamente quando algum de seus elementais for morto.");
+                        }
+                        else
+                        if (eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.efeitoAo == EfeitoAo.Dropar &&
                                 eventData.pointerDrag.GetComponent<CartaPrefab>().cartaGeral.verificaAcoesBool(gerenciadorJogo)
                             )
                         {
@@ -129,6 +145,7 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
                             gerenciadorUI.MostrarAlerta("Nao há elementais para essa carta ser usada!");
                             gerenciadorJogo.gerenciadorAudio.playNegacao();
                         }
+
                     }
                     else
                     {
@@ -218,7 +235,6 @@ public class SlotDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
             {
                 Debug.Log("executar acao magicas");
             }
-
         }
         else
         {

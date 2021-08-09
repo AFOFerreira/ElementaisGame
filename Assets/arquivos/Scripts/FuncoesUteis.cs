@@ -10,7 +10,16 @@ namespace funcoesUteis
 {
     public static class FuncoesUteis
     {
-
+        public static bool Delay(float t)
+        {
+            var tempo = t;
+            while(tempo> 0)
+            {
+                tempo--;
+                return false;
+            }
+            return true;
+        }
         public static void killCorroutines(String tag)
         {
             Timing.KillCoroutines(tag);
@@ -72,6 +81,7 @@ namespace funcoesUteis
                         }
                     }
                 }
+                
                 yield return Timing.WaitForOneFrame;
             }
         }

@@ -197,18 +197,18 @@ public class GerenciadorUI : MonoBehaviour
         int alvoSorteio = Random.Range(0, 1);
         int sorteado;
 
-        if (alvoSorteio == 0 && tiposCristaisCampo.Count > 0)
+        //if (alvoSorteio == 0 && tiposCristaisCampo.Count > 0)
+        //{
+        //    sorteado = tiposCristaisCampo[Random.Range(0, tiposCristaisCampo.Count - 1)];
+        //}
+        //else if (alvoSorteio == 1 && tiposCristaisMao.Count > 0)
         {
-            sorteado = tiposCristaisCampo[Random.Range(0, tiposCristaisCampo.Count - 1)];
+            sorteado = tiposCristaisCampo[Random.Range(0, tiposCristaisCampo.Count )];
         }
-        else if (alvoSorteio == 1 && tiposCristaisMao.Count > 0)
-        {
-            sorteado = tiposCristaisCampo[Random.Range(0, tiposCristaisCampo.Count - 1)];
-        }
-        else
-        {
-            sorteado = Random.Range(0, 3);
-        }
+        //else
+        //{
+        //    sorteado = Random.Range(0, 3);
+        //}
 
         //0 - Turno oponente
         //1 - Seu turno

@@ -1,10 +1,13 @@
-﻿using DG.Tweening;
+﻿using Cysharp.Threading.Tasks;
+using DG.Tweening;
 using funcoesUteis;
 using MEC;
 using Photon.Pun;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -60,6 +63,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public bool executarAnimAtaque = false;
     public bool aguardarAnimAtaque = false;
     public Image animAuxArm;
+    public bool ExecutandoAnimacao { get; private set; }
 
     [Header("CAMPOS")]
     public List<SlotCampo> slotsCampoP1;
@@ -113,9 +117,23 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         }
         JogadasPlayer = 1;
         //gerenciadorUI.trocaBtnTurno(turnoLocal ? 1 : 0);
+        var c = deckPlayer.Where(x => x.tipoCarta == TipoCarta.Auxiliar && x.idCarta == 21).FirstOrDefault();
+        if (c != null)
+        {
+            passarParaMaoEspecifica(c);
+        }
+
+        c = deckPlayer.Where(x => x.tipoCarta == TipoCarta.Auxiliar).FirstOrDefault();
+        if (c != null)
+        {
+            passarParaMaoEspecifica(c);
+        }
+        else
+            Debug.Log("nao entrado");
+
         for (int i = 0; i < 5; i++)
         {
-            int id = Random.Range(0, deckPlayer.Count - 1);
+            int id = UnityEngine.Random.Range(0, deckPlayer.Count - 1);
             passarParaMao(id, false);
         }
         sorteio();
@@ -123,6 +141,9 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         fase = 1;
         tempoCronometro = tempoTurno;
     }
+
+
+
     void Update()
     {
         if (EmJogo)
@@ -182,6 +203,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     public void PassaTurno()
     {
+
         gerenciadorAudio.playTrocaturnoprincipal();
         slotsCampoP1.ForEach(x => x.marcado = false);
         slotsCampoP2.ForEach(x => x.marcado = false);
@@ -207,6 +229,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             ultimoCampoAtivado = null;
             sortearDeck(true);
             selecionando = TipoJogador.PLAYER;
+            
         }
         else
         {
@@ -221,6 +244,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             selecionando = TipoJogador.IA;
         }
         RemoverCampoMarcado();
+
     }
     public void setTurnoBatalha()
     {
@@ -350,7 +374,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         surgirElemental.Join(slotsCampoP1[idSlot].imgAnimAtivar.DOFade(1, 1f));
         surgirElemental.AppendCallback(() =>
         {
-            FuncoesUteis.animacaoImagem(slotsCampoP1[idSlot].imgElementalCampo, cartaGeral.animCampo, true, 6, false,
+            FuncoesUteis.animacaoImagem(slotsCampoP1[idSlot].imgElementalCampo, cartaGeral.animCampo, true, 4, false,
                 null, "P1" + idSlot.ToString());
             surgirElemental.Append(slotsCampoP1[idSlot].imgElementalCampo.DOFade(1, 1f));
         });
@@ -385,7 +409,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             surgirElemental.Join(slotsCampoP2[idSlot].imgAnimAtivar.DOFade(1, .5f));
             surgirElemental.AppendCallback(() =>
             {
-                FuncoesUteis.animacaoImagem(slotsCampoP2[idSlot].imgElementalCampo, cartaGeral.animCampo, true, 6,
+                FuncoesUteis.animacaoImagem(slotsCampoP2[idSlot].imgElementalCampo, cartaGeral.animCampo, true, 4,
                     false, null, "P2" + idSlot.ToString());
             });
             surgirElemental.Join(slotsCampoP2[idSlot].imgElementalCampo.DOFade(1, .5f));
@@ -396,6 +420,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     public void dropAuxArm(GameObject cartaPrefabLocal, int idSlot)
     {
+
         Debug.Log(idSlot);
         gerenciadorAudio.playCartaBaixando();
         slotsCampoP1[idSlot].ocupado = true;
@@ -407,7 +432,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         deckMaoPlayer.Remove(cartaGeral);
         if (cartaGeral.efeitoAo == EfeitoAo.Dropar)
         {
-            cartaGeral.executaAcoes(this);
+            cartaGeral.executaAcoes(this, null, false);
             cartaGeral.qtdTurnos--;
             slotsCampoP1[idSlot].ativado = true;
         }
@@ -437,10 +462,11 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     }
     public void dropAuxArm(CartaGeral cartaGeral, int idSlot, TipoJogador jogador)
     {
+        
         Debug.Log(idSlot);
         gerenciadorAudio.playCartaBaixando();
         slotsCampoP2[idSlot].ocupado = true;
-        slotsCampoP2[idSlot].ativado = false;
+        slotsCampoP2[idSlot].ativado = true;
         slotsCampoP2[idSlot].disponivel = true;
         DOTween.Pause("slot" + idSlot);
         deckMaoPlayer.Remove(cartaGeral);
@@ -452,7 +478,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         //-----------TESTAR JUNTO COM A IA-------------//
         if (cartaGeral.efeitoAo == EfeitoAo.Dropar)
         {
-            cartaGeral.executaAcoes(this);
+            cartaGeral.executaAcoes(this, null, true);
             cartaGeral.qtdTurnos--;
         }
 
@@ -464,6 +490,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
 
         Sequence surgirAuxArm = DOTween.Sequence().SetId("surgirAuxArm");
         surgirAuxArm.Append(slotsCampoP2[idSlot].canvasGroup.DOFade(1, .3f));
+
     }
 
     #endregion
@@ -643,23 +670,24 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
                         inimigoCampo = gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 1]];
                         inimigoUI = gerenciadorJogo.gerenciadorUI.slotDetalhesP1[gerenciadorJogo.ataques[i, 1]];
                     }
-                    gerenciadorJogo.gerenciadorAudio.playAtaqueElemental(atacanteUI.cartaGeral.elemento.idElemento);
 
                     // PARTE 1 ANIMAÇÃO
                     s = DOTween.Sequence();
                     s.Append(gerenciadorJogo.slotsCampoP1[gerenciadorJogo.ataques[i, 0]].imgAnimAtaque.DOFade(0, .5f));
                     s.AppendCallback(() => FuncoesUteis.animacaoImagem(atacanteCampo.imgAnimAtaque,
-                        atacanteUI.cartaGeral.elemento.animAtaque1, false, 6));
+                        atacanteUI.cartaGeral.elemento.animAtaque1, false, 5));
                     s.Join(atacanteCampo.imgAnimAtaque.DOFade(1, .5f));
                     s.AppendInterval(0.5f);
                     s.Append(atacanteCampo.imgAnimAtaque.DOFade(0, .5f));
 
+                    gerenciadorJogo.gerenciadorAudio.playAtaqueElemental(atacanteUI.cartaGeral.elemento.idElemento);
                     //----------------------Anim parte 2------------------------
                     if (inimigoCampo.ocupado)
                     {
                         s.Append(inimigoCampo.imgAnimAtaque.DOFade(0, .5f));
                         s.AppendCallback(() => FuncoesUteis.animacaoImagem(inimigoCampo.imgAnimAtaque,
-                            atacanteUI.cartaGeral.elemento.animAtaque2, false, 6));
+                            atacanteUI.cartaGeral.elemento.animAtaque2, false, 5));
+
                         s.Join(inimigoCampo.imgAnimAtaque.DOFade(1, .5f));
                         s.AppendInterval(1.1f);
                         s.Append(inimigoCampo.imgAnimAtaque.DOFade(0, .5f));
@@ -955,9 +983,36 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     #endregion
 
     #region Controle de jogo
+
+    private void passarParaMaoEspecifica(CartaGeral c, bool rodaAnimacao = true)
+    {
+
+        if (deckMaoPlayer.Count >= 7)
+        {
+            gerenciadorUI.MostrarAlerta("Sua mao está cheia.");
+            gerenciadorAudio.playNegacao();
+        }
+        else
+        {
+            deckPlayer.Remove(c);
+            GameObject _cartaPrefab = Instantiate(cartaPrefab, panelCartas.transform);
+            CartaPrefab scriptPrefab = _cartaPrefab.GetComponent<CartaPrefab>();
+            scriptPrefab.atributos(c);
+            if (rodaAnimacao)
+            {
+                scriptPrefab.aparecerAnimacaoZoom();
+            }
+            else
+            {
+                scriptPrefab.aparecerAnimacaoFade();
+            }
+            deckMaoPlayer.Add(c);
+        }
+
+    }
     public void sorteio()
     {
-        int valor = Random.Range(0, 100);
+        int valor = UnityEngine.Random.Range(0, 100);
         if (valor >= 0 && valor <= 49)
         {
             turno = TipoJogador.PLAYER;
@@ -975,6 +1030,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             ia.possoJogar = true;
             ia.tempoAtual = 0f;
             gerenciadorUI.trocaBtnTurno(0);
+            
         }
 
         rodaAnimSorteio();
@@ -1005,6 +1061,13 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             slotsCampoP1[idElemental].ativado = false;
             slotsCampoP1[idElemental].disponivel = false;
         }
+        foreach (SlotCampo slot in VerificaCampoOcupadoMagicas((!P1) ? TipoJogador.PLAYER : TipoJogador.IA))
+        {
+            if (slot.cartaGeral.efeitoAo == EfeitoAo.MorteElemental)
+            {
+                slot.cartaGeral.executaAcoes(this);
+            }
+        }
     }
     public void passarParaMao(int id, bool rodaAnimacao = true)
     {
@@ -1031,7 +1094,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
             deckMaoPlayer.Add(carta);
         }
     }
-    IEnumerator<float> iniciarObjetos()
+    public IEnumerator<float> iniciarObjetos()
     {
 
 
@@ -1041,22 +1104,464 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
         ElementoGeral ar = new ElementoGeral(3, "Ar", Resources.Load<Sprite>("imagens/Elementos/icon_ar"), Resources.Load<Sprite>("imagens/Elementos/modelo_ar"), Resources.Load<Sprite>("imagens/Elementos/bandeiraAr"), Resources.LoadAll<Sprite>("imagens/Elementos/arAtivar").ToList(), Resources.LoadAll<Sprite>("imagens/Elementos/AtaqueNovo/Ar1Sprite").ToList(), Resources.LoadAll<Sprite>("imagens/Elementos/AtaqueNovo/Ar2Sprite").ToList());
 
 
-        deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 0, Resources.Load<Sprite>("imagens/Elementais/01/01-card"), "Pandion", "Este é o Pandion de fogo uma águia da espécie Imperial Oriental de estágio 1 da classe Guerreiro, seus ataques são rápidos e ferozes.", Resources.LoadAll<Sprite>("imagens/Elementais/01/01-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/01/01_arco"), 28, 19, 1, 1, fogo));
-        deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 1, Resources.Load<Sprite>("imagens/Elementais/02/02-card"), "Pandion", "Este é o Pandion de ar uma águia da espécie Harpia de estágio 1 da raça Curandeiro. Suas habilidades são seus chicotes dourados, e claro sua agilidade.", Resources.LoadAll<Sprite>("imagens/Elementais/02/02-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/02/02_arco"), 19, 22, 1, 1, ar));
-        deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 2, Resources.Load<Sprite>("imagens/Elementais/03/03-card"), "Dubhan", "Este Elemental é da espécie de Jabutis é muito comum ser encontrado nas matas brasileiras do Nordeste ou Sudeste.", Resources.LoadAll<Sprite>("imagens/Elementais/03/03-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/03/03_arco"), 24, 56, 1, 2, terra));
-        deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 3, Resources.Load<Sprite>("imagens/Elementais/04/04-card"), "Dubhan", "Este Dubhan de fogo é da família dos Jabutis, este elemental é um mini vulcão ambulante, seus tentáculos são capazes de prender um predador ou cuspir um forte jato de uma espécie de gás inflamável.", Resources.LoadAll<Sprite>("imagens/Elementais/04/04-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/04/04_arco"), 59, 44, 1, 2, fogo));
-        deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 4, Resources.Load<Sprite>("imagens/Elementais/05/05-card"), "Dubhan", "Este Dubhan é o segundo estágio de evolução da espécie de Jabutis de água, com ataque 55 e defesa 37.", Resources.LoadAll<Sprite>("imagens/Elementais/05/05-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/05/05_arco"), 55, 37, 2, 1, agua));
-        deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 5, Resources.Load<Sprite>("imagens/Elementais/06/06-card"), "Taireth", "Taireth é uma mutação dos tubaões brancos, ele vive em zonas tropicais de águas quentes, seu tamanho pode chegar aos 5 metros e a pesar 200Kg.", Resources.LoadAll<Sprite>("imagens/Elementais/06/06-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/06/06_arco"), 25, 12, 1, 1, agua));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 6, Resources.Load<Sprite>("imagens/Elementais/07/07-card"), "Taireth", "Taireth de terra é da família do Tubarão-tigre, vive em águas tropicais, em suas costas este Elemental carrega uma espécie de coral hipnótico paralisante, que serve para facilitar a caça.", Resources.LoadAll<Sprite>("imagens/Elementais/07/07-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/07/07_arco"), 17, 30, 1, 1, agua));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 7, Resources.Load<Sprite>("imagens/Elementais/08/08-card"), "Caedin", "Caedin de terra é um cachorro com uma super proteção natural, seu corpo tem pequenos escudos de pedra, e ao longo do tempo conseguiu controlar muito bem a terra e pedras ao seu redor.", Resources.LoadAll<Sprite>("imagens/Elementais/08/08-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/08/08_arco"), 21, 36, 1, 1, terra));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 8, Resources.Load<Sprite>("imagens/Elementais/09/09-card"), "Caedin", "Caedin de terra é um cachorro com uma super proteção natural, seu corpo tem pequenos escudos de pedra, e ao longo do tempo conseguiru controlar muito bem a terra e pedras ao seu redor.", Resources.LoadAll<Sprite>("imagens/Elementais/09/09-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/09/09_arco"), 21, 5, 1, 1, fogo));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 9, Resources.Load<Sprite>("imagens/Elementais/10/10-card"), "Caedin", "Caedin de fogo é o segundo estágio da evolução de um cachorro do elemento fogo. Agora, Caedin tem uma calda a mais, seu corpo tem uma inversão de cores e seus olho grande quantia de calor.", Resources.LoadAll<Sprite>("imagens/Elementais/10/10-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/10/10_arco"), 49, 38, 1, 2, fogo));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 10, Resources.Load<Sprite>("imagens/Elementais/11/11-card"), "Gork", "Gorki tem habilidades para controlar as plantas terrestres, ele consegue fazer as flores soltarem venenos, as raízes saírem do chão e fazer com que as gramas cresçam muito alto e rapidamente.", Resources.LoadAll<Sprite>("imagens/Elementais/11/11-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/11/11_arco"), 19, 31, 1, 1, terra));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 11, Resources.Load<Sprite>("imagens/Elementais/12/12-card"), "Gork", "Este Primata do elemento fogo em estágio 1 da raça Guerreiro com ataque 29 e defesa 20, possui poderes vulcânicos.", Resources.LoadAll<Sprite>("imagens/Elementais/12/12-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/12/12_arco"), 29, 20, 1, 1, fogo));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 12, Resources.Load<Sprite>("imagens/Elementais/13/13-card"), "Gaeron", "Gaeron de fogo é está em seu primeiro estágio evolutivo, sua maior habilidade são os disparos de pequenas bolas de chamas. Em sua cabeça e coluna é possível ver alguns ossos saltando de seu corpo.", Resources.LoadAll<Sprite>("imagens/Elementais/13/13-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/13/13_arco"), 33, 5, 1, 1, fogo));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 13, Resources.Load<Sprite>("imagens/Elementais/14/14-card"), "Gaeron", "Este Elemental felino em estágio de evolução 2 possui suas habilidades e amaduras melhoradas e fortificadas.", Resources.LoadAll<Sprite>("imagens/Elementais/14/14-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/14/14_arco"), 69, 48, 1, 2, fogo));
-        //deckTotal.Add(new CartaGeral(TipoCarta.Elemental, 14, Resources.Load<Sprite>("imagens/Elementais/15/15-card"), "Gaeron", "Evolução de estágio 2 do felino de terra da classe Tanque e possui uma forte defesa decorrente de sua armadura evoluida.", Resources.LoadAll<Sprite>("imagens/Elementais/15/15-sprites").ToList(), Resources.Load<Sprite>("imagens/Elementais/15/15_arco"), 38, 57, 1, 2, terra));
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                01, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/01/01_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Pandion",//Titulo da carta
+                "Este é o Pandion de fogo uma águia da espécie Imperial Oriental de estágio 1 da classe Guerreiro, seus ataques são rápidos e ferozes.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/01/01_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/01/01_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                3, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                02, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/02/02_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Pandion",//Titulo da carta
+                "Este ó o Pandion de ar uma águia da espécie Harpia de estágio 1 da raça Curandeiro. Suas habilidades são seus chocotes dourados e claro sua agilidade. ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/02/02_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/02/02_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                2, //Ataque
+                3, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                ar //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                03, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/03/03_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Dubhan",//Titulo da carta
+                "Este Elemental é da espécie de Jabutis é muito comum ser encontrado nas matas brasileiras do Nordeste ou Sudeste   ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/03/03_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/03/03_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                3, //Ataque
+                8, //Defesa
+                1, //Cristais
+                2, //Evolução(nivel)
+                terra //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                04, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/04/04_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Dubhan",//Titulo da carta
+                "Este Dubhan de fogo é da familía dos Jabutis, este elemental é um mini vulcão embulante, seus tentáculos são capases de prender um predador ou cuspir um frte jatos de uma eséci de gás inflamável.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/04/04_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/04/04_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                12, //Ataque
+                6, //Defesa
+                2, //Cristais
+                3, //Evolução(nivel)
+                fogo //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                05, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/05/05_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Dubhan",//Titulo da carta
+                "Este Dubhan é o segundo estágio de evolução da espécie de Jabutis de água, com ataque 55 e defesa 37",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/05/05_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/05/05_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                6, //Ataque
+                12, //Defesa
+                4, //Cristais
+                3, //Evolução(nivel)
+                agua //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                06, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/06/06_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Taireth",//Titulo da carta
+                "Taireth é uma mutação dos tubaões brancos, ele vive em zonas tropicais de águas quentes, seu tamanho pode chegar aos 5 metros e a pesar 200Kg. ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/06/06_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/06/06_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                3, //Ataque
+                4, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                agua //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                07, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/07/07_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Taireth",//Titulo da carta
+                "Taireth de terra é da família do Tubarão-tigre, vive em águas tropicais, em suas costas este Elemental carrega uma espécie de coral hipnótico paralisante, que serve para facilitar a caça.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/07/07_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/07/07_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                1, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                terra //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                08, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/08/08_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Caedin",//Titulo da carta
+                "Caedin de terra é um cachorro com uma super proteção natural, seu corpo tem pequenos escudos de pedra, e ao longo do tempo conseguiu controlar muito bem a terra e pedras ao seu redor",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/08/08_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/08/08_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                1, //Ataque
+                5, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                terra //Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                09, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/09/09_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Caedin",//Titulo da carta
+                "Caedin de terra é um cachorro com uma super proteção natural, seu corpo tem pequenos escudos de pedra, e ao longo do tempo conseguiru controlar muito bem a terra e pedras ao seu redor.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/09/09_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/09/09_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                4, //Ataque
+                1, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                10, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/10/10_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Caedin",//Titulo da carta
+                "Caedin de fogo é o segundo estágio da evolução de um cachorro do elemento fogo. Agora, Caedin tem uma calda a mais, seu corpo tem uma inversão de cores e seus olho grande quantia de calor. ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/10/10_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/10/10_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                8, //Ataque
+                4, //Defesa
+                2, //Cristais
+                2, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                11, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/11/11_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Gork",//Titulo da carta
+                "Gorki tem habilidades para controlar as plantas terrestres, ele consegue fazer as flores soltarem venenos, as raízes saírem do chão e fazer com que as gramas cresçam muito alto e rapidamente.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/11/11_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/11/11_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                2, //Ataque
+                5, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                terra//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                12, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/12/12_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Gork",//Titulo da carta
+                "Este Primata do elemento fogo em estágio 1 da raça Guerreiro com ataque 29 e defesa 20, possui poderes vulcânicos ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/12/12_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/12/12_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                4, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                13, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/13/13_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Gaeron",//Titulo da carta
+                "Gaeron de fogo é está em seu primeiro estágio evolutivo, sua maio habilidade são os disparos de pequenas bolas de chamas. Em sua cabeça e colunas é possível ver alguns ossos saltando de seu corpo. ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/13/13_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/13/13_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                2, //Ataque
+                1, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                14, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/14/14_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Gaeron",//Titulo da carta
+                "Gaeron	Tigure	Felino	Fogo	2	Guerreiro	2	6	3		14	Este Elemental felino em estágio de evolução 2 possui suas habilidades e amaduras melhoradas e fortificadas ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/14/14_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/14/14_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                6, //Ataque
+                3, //Defesa
+                2, //Cristais
+                2, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                15, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/15/15_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Gaeron",//Titulo da carta
+                "Evolução de estágio 2 do felino de terra da classe Tanque e possui uma forte defesa decorrente de sua armadura evoluida",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/15/15_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/15/15_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                5, //Ataque
+                8, //Defesa
+                2, //Cristais
+                2, //Evolução(nivel)
+                terra//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                16, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/16/16_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "keigar",//Titulo da carta
+                "Metade do seu corpo é coberto por uma espessa casca de pedra o que faz dele um predador blindado e, ao mesmo tempo agressivo por natureza ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/16/16_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/16/16_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                2, //Ataque
+                5, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                terra//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                17, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/17/17_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Farmos",//Titulo da carta
+                "Farmos de terra está em seu segundo estágio evolutivo, agora ele tem o triplo do tamanho, o bulbo em suas costas se abriu e virou uma bela planta que expele um forte veneno estonteante.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/17/17_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/17/17_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                5, //Ataque
+                7, //Defesa
+                2, //Cristais
+                2, //Evolução(nivel)
+                terra//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                18, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/18/18_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Farmos",//Titulo da carta
+                "Elemental de estágio 2 da classe Guerreiro e possui a habilidade de controlar o fogo mas não possui muita defesa",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/18/18_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/18/18_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                6, //Ataque
+                4, //Defesa
+                1, //Cristais
+                2, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                19, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/19/19_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Jargonus",//Titulo da carta
+                "Este é um Elemental do tipo água sua evolução é proveniente do jacaré. Na suas costas, ele conta com espinhos reluzentes e muito venenosos ",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/19/19_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/19/19_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                5, //Ataque
+                4, //Defesa
+                2, //Cristais
+                2, //Evolução(nivel)
+                agua//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                20, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/20/20_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Urlain",//Titulo da carta
+                "Urlain de terra é Elemental em estágio 1 da classe dos Urcatos, sua defesa é estremamente forte, porem seu ataque nem tanto. Sua mior habilidade é dontrolar as raizes e galhos de arvores ao seu redor.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/20/20_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/20/20_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                1, //Ataque
+                4, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                terra//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                21, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/21/21_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Urlain",//Titulo da carta
+                "Este Elemetal é da família Urcatos mas do tipo elemento fogo",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/21/21_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/21/21_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                5, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                22, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/22/22_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Jain",//Titulo da carta
+                "Jay é um pássaro da família dos corvos e pode pareces dócil, mas sua personalidade é agressiva e pode facilmente se tornar um carnívoro quando necessário.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/22/22_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/22/22_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                1, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                ar//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                23, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/23/23_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Jain",//Titulo da carta
+                "Jay de fogo também é um pássaro da família dos corvos, sua personalidade é ainda mais agressiva e pode facilmente se tornar um carnívoro quando se sente ameaçado.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/23/23_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/23/23_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                4, //Ataque
+                1, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                24, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/24/24_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Conin",//Titulo da carta
+                "Este Elemental do tipo terra é da família dos roedores e pode ser muito ágil",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/24/24_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/24/24_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                1, //Ataque
+                5, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                terra//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                25, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/25/25_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Conin",//Titulo da carta
+                "Elemental do tipo fogo e da família dos roedores, possui habilidades de rapidez e controle de fogo",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/25/25_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/25/25_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                4, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                fogo//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        deckTotal.Add(new CartaGeral(
+                TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+                26, // id da carta
+                Resources.Load<Sprite>("imagens/Elementais/26/26_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+                "Ardus",//Titulo da carta
+                "Ardus é uma vespa do elemento ar, sua maior habilidade é de atacar coordenado em conjunto. Ela também emite um zumbido muito alto que pode atordoar os oponentes.",//Descricao
+                Resources.LoadAll<Sprite>("imagens/Elementais/26/26_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+                Resources.Load<Sprite>("imagens/Elementais/26/26_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+                3, //Ataque
+                2, //Defesa
+                1, //Cristais
+                1, //Evolução(nivel)
+                ar//Elemento (fogo, agua, terra, ar)
+         ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
+        //deckTotal.Add(new CartaGeral(
+        //        TipoCarta.Elemental, //tipo de carta (Elemental/Auxiliar/Armadilha)
+        //        27, // id da carta
+        //        Resources.Load<Sprite>("imagens/Elementais/27/27_card"),// foto da carta (manter os nomes só mudar pra ficar igual o ID)
+        //        "Nagini",//Titulo da carta
+        //        "Nagini de terra é da espécie de serpentes atheris hispida, sua picada pode ser mortal e sua defesa física em forma de armadura de madeira é absurdamente forte. As escamas de madeira pontudas e os olhos verdes ipnotizantes ajudam a serpente a ficar assustadora.",//Descricao
+        //        Resources.LoadAll<Sprite>("imagens/Elementais/27/27_sprites").ToList(),//Animação do campo (manter os nomes só mudar pra ficar igual o ID)
+        //        Resources.Load<Sprite>("imagens/Elementais/27/27_arco"),//Foto da UI Topo (manter os nomes só mudar pra ficar igual o ID)
+        //        2, //Ataque
+        //        4, //Defesa
+        //        1, //Cristais
+        //        1, //Evolução(nivel)
+        //        terra//Elemento (fogo, agua, terra, ar)
+        // ));
+        //////////////////////////////////////////////////////////////////////////////////////////////////////
         AuxArmGeral armadilha = new AuxArmGeral(Resources.Load<Sprite>("imagens/Armadilhas/molduraArmadilha"), Resources.Load<Sprite>("imagens/Armadilhas/iconArmadilha"), Resources.Load<Sprite>("imagens/Armadilhas/maskArmadilha"), Resources.Load<Sprite>("imagens/Armadilhas/armMolduraCampo"));
         AuxArmGeral auxiliar = new AuxArmGeral(Resources.Load<Sprite>("imagens/Auxiliares/molduraAuxiliar"), Resources.Load<Sprite>("imagens/Auxiliares/iconAuxiliar"), Resources.Load<Sprite>("imagens/auxiliares/maskAuxiliar"), Resources.Load<Sprite>("imagens/auxiliares/auxMolduraCampo"));
 
@@ -1745,7 +2250,7 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     {
         if (deckPlayer.Count > 0 && !rodandoAnimacao && !movimentandoCarta && turnoLocal)
         {
-            int id = Random.Range(0, deckPlayer.Count - 1);
+            int id = UnityEngine.Random.Range(0, deckPlayer.Count - 1);
             passarParaMao(id, rodaAnimacao);
         }
     }
@@ -1816,6 +2321,10 @@ public class GerenciadorJogo : MonoBehaviourPunCallbacks
     public void ExecutarAcaoBatalha()
     {
         executarAnimAtaque = true;
+    }
+    public void EmAnimacao(bool b)
+    {
+        ExecutandoAnimacao = b;
     }
     #endregion
 

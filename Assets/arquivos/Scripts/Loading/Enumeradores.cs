@@ -71,7 +71,8 @@ public enum TipoPartida
 
 public enum EfeitoAo
 {
-    Dropar, Selecionar
+    Dropar, Selecionar, MorteElemental,
+    Clicar
 }
 
 public enum LocalAnim
