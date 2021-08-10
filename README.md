@@ -1,4 +1,4 @@
-# ![logo_rodape_home (1)](C:\Users\desen\Elementais\Assets\arquivos\Imagens\Login\LoginComponentImages\logo_rodape_home (1).png)Elementais
+# Elementais
 
 
 
